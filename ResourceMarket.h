@@ -11,10 +11,13 @@
  *
  */
 
+#include <iostream>
+#include <string>
+
 #ifndef RESOURCEMARKET_H_
 #define RESOURCEMARKET_H_
 
-namespace Mike {
+namespace Mike2 {
 
 class ResourceMarket {
 private:

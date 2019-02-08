@@ -41,7 +41,7 @@ int getElektros() { return elektros; } //close get elektros
 void setElektros(int quantity){ elektros = quantity; };
 void addElektros(int quantity) { elektros += quantity; };
 void removeElektros(int quantity) { elektros -= quantity; };
-void addCity(int quantity) { city++; };
+void addCity() { numOfCities++; };
 int getCoal(){return coal; }
 void addCoal() { coal++; }
 void addCoal(int add) { coal += add; }

@@ -43,8 +43,7 @@ public:
 	void setElektros(int quantity);
 	void addElektros(int quantity);
 	void removeElektros(int quantity);
-	int promptForNumOfPlayers();
-	void promptPlayerForName();
+	void addCity();
 
 	int getCoal();
 	void addCoal();
@@ -66,6 +65,10 @@ public:
 	void addUranium(int add);
 	void removeUranium();
 	void removeUranium(int add);
+
+	int promptForNumOfPlayers();
+	void promptPlayerForName();
+
 };
 //close player class.h
 
