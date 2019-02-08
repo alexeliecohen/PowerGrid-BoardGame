@@ -18,16 +18,50 @@
 namespace Mike {
 
 //Attributes
+int numOfPlayers;
 std::string playerName;
+int elektros;
+int oil, coal, garbage, uranium;
+int numOfCities;
+//Power plants?
+
 
 //Constructors / Destructors
-Player::Player() {}//close constructor
-Player::Player(std::string nameIn) { playerName = nameIn; }//close constructor
+Player::Player() {elektros = 50; oil = 0; coal = 0; garbage = 0; uranium = 0; numOfCities = 0; }//close constructor
+Player::Player(std::string nameIn) { playerName = nameIn; elektros = 50; oil = 0; coal = 0; garbage = 0; uranium = 0; numOfCities = 0; }//close constructor
 Player::~Player() {}//close destructor
 
 //Setters and Getters
+
 std::string Player::getName() {return playerName;}
 void setName(std::string nameIn) {playerName = nameIn;} //close set name
+void setNumOfPlayers(int num) {numOfPlayers = num; }
+int getNumOfPlayers() { return numOfPlayers; }
+int getElektros() { return elektros; } //close get elektros
+void setElektros(int quantity){ elektros = quantity; };
+void addElektros(int quantity) { elektros += quantity; };
+void removeElektros(int quantity) { elektros -= quantity; };
+void addCity(int quantity) { city++; };
+int getCoal(){return coal; }
+void addCoal() { coal++; }
+void addCoal(int add) { coal += add; }
+void removeCoal() { coal--; }
+void removeCoal(int remove) { coal -= remove; }
+int getGarbage() { return garbage; }
+void addGarbage() { garbage++; }
+void addGarbage(int add) { garbage += add; }
+void removeGarbage(int remove) { garbage -= remove; }
+void removeGarbage() { garbage--; }
+int getOil() { return oil; }
+void addOil() { oil++; }
+void addOil(int add) { oil += add; };
+void removeOil() { oil--; }
+void removeOil(int remove) { oil -= remove; }
+int getUranium() { return uranium; }
+void addUranium() { uranium++; }
+void addUranium(int add) {uranium += add; }
+void removeUranium() { uranium--; }
+void removeUranium(int add) {uranium -= add; }
 
 //Other methods
 //Prompt user number of players
