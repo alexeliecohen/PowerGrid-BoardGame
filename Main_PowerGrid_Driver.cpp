@@ -35,9 +35,7 @@ int main() {
 	//Declare variables
 	int numOfPlayers;
 	Player player1;
-	//Player * p1Ptr = new player1();
-	//Player players[];
-	//string pNames[];
+
 
 	//Welcome Message
 	cout << "Hello and welcome to POWER GRID V1.0\n\n" ;
@@ -56,12 +54,6 @@ int main() {
 	for (int i = 0 ; i < numOfPlayers ; i++)
 		players[i].promptPlayerForName();
 
-	//Print details for each player
-	for (int i = 0 ; i < numOfPlayers ; i++){
-		cout << endl << players[i].toString() << endl ;
-		cout << "Iteration " << i << " of the printing players loop" << endl;
-	}//close for
-
 
 	//GARBAGE COLLECTION
 	delete players;
@@ -72,12 +64,10 @@ int main() {
 */
 
 
-
-
-
 	//exit call and pause
 	string anykey;
 	cout << "Press any key to continue";
 	cin >> anykey;
 	return 0;
 }// close main loop
+
