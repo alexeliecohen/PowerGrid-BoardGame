@@ -1,0 +1,30 @@
+Quebec,5
+Ontario,5
+Manitoba,4
+Saskatchewan,3
+Alberta,3
+British Columbia,3
+Montreal,Laval,1
+Montreal,Quebec,5
+Montreal,Trois Rivieres,4
+Montreal,Sherbrooke, 4
+Montreal,Gatineau,3
+Montreal,Toronto,5 
+Toronto,Ottawa,5
+Toronto,Hamilton,2
+Toronto,London,3
+Toronto,Kingston,4
+Toronto,Guelph,1 
+Winnipeg,Brandon,3
+Winnipeg,Steinbach,2
+Winnipeg,Winkler,4
+Winnipeg,Selkirk,1
+Regina,Saskatoon,4
+Regina,Moose Jaw,2
+Regina,Yorkton,3
+Edmonton,Calgary,4
+Edmonton,Lethbridge,3
+Edmonton,Medicine Hat,3
+Vancouver,Victoria,2
+Vancouver,Kelowna,4
+Vanocuver,Surrey,3
