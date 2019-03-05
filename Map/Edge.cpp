@@ -3,13 +3,15 @@
 //
 
 #include "Edge.h"
+#include <iostream>
+#include <string>
 
 Edge::Edge() {
     endpoints = new std::vector<Vertex>();
     cost = 0;
 }
 
-Edge::Edge(Vertex &u, Vertex &v, int &cost) {
+Edge::Edge(Vertex &u, Vertex &v, int cost) {
     endpoints = new std::vector<Vertex>();
     endpoints->push_back(u);
     endpoints->push_back(v);
@@ -29,11 +31,11 @@ Edge::Edge(const Edge &e) {
     }
 }
 
-int Edge::getCost() {
+int Edge::getCost() const {
     return cost;
 }
 
-std::vector<Vertex>* Edge::getEndpoints() {
+std::vector<Vertex> * Edge::getEndpoints() const {
     return endpoints;
 }
 
@@ -53,4 +55,9 @@ Edge &Edge::operator=(const Edge &e) {
         endpoints = 0;
     }
     return *this;
+}
+
+std::ostream &operator<<(std::ostream &os, const Edge &e) {
+    os << e.getEndpoints()->at(0).getName() << " -> " << e.getEndpoints()->at(1).getName() << ", " << e.getCost() << "\n";
+    return os;
 }

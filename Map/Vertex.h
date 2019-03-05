@@ -17,11 +17,13 @@ public:
     Vertex(const Vertex &v);
     std::vector<Edge>* getEdges();
     int getCost();
-    std::string getRegion();
+    std::string getRegion() const;
     int getPlayerCount();
     std::string getPlayer(int i);
-    std::string getName();
+    std::string getName() const;
     Vertex& operator=(const Vertex &v);
+    bool operator==(const Vertex &v);
+    friend std::ostream& operator<<(std::ostream& os, const Vertex v);
 private:
     int cost[3];
     int playerCount = 0;

@@ -11,8 +11,13 @@
 class Map {
 public:
     Map();
-    Map(const Map &m);
-    void addVertex(Vertex v);
+    int numVertex();
+    int numEdges();
+    std::vector<Vertex>* getVertices();
+    std::vector<Edge>* getEdges();
+    int degree(Vertex v);
+    std::vector<Edge>* getVertexEdges(Vertex v);
+    void addVertex(std::string name, std::string region);
     void addEdge(Vertex u, Vertex v, int cost);
     bool BFS(Vertex v);
 private:

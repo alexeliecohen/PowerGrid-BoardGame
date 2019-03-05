@@ -13,11 +13,12 @@ class Vertex;
 class Edge {
 public:
     Edge();
-    Edge(Vertex &u, Vertex &v, int &cost);
+    Edge(Vertex &u, Vertex &v, int cost);
     Edge(const Edge &e);
     Edge& operator=(const Edge &e);
-    std::vector<Vertex>* getEndpoints();
-    int getCost();
+    std::vector<Vertex>* getEndpoints() const;
+    int getCost() const;
+    friend std::ostream& operator<<(std::ostream& os, const Edge &e);
 private:
     std::vector<Vertex> *endpoints;
     int cost;

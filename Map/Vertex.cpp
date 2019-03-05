@@ -3,6 +3,8 @@
 //
 
 #include "Vertex.h"
+#include <iostream>
+#include <string>
 
 Vertex::Vertex() {
     region = "none";
@@ -59,7 +61,7 @@ int Vertex::getCost() {
     return cost[playerCount];
 }
 
-std::string Vertex::getRegion() {
+std::string Vertex::getRegion() const {
     return region;
 }
 
@@ -71,7 +73,7 @@ std::string Vertex::getPlayer(int i) {
     return players[i];
 }
 
-std::string Vertex::getName() {
+std::string Vertex::getName() const {
     return name;
 }
 
@@ -99,4 +101,14 @@ Vertex& Vertex::operator=(const Vertex &v) {
         edges = 0;
     }
     return *this;
+}
+
+bool Vertex::operator==(const Vertex &v) {
+
+    return false;
+}
+
+std::ostream &operator<<(std::ostream &os, const Vertex v) {
+    os << v.getName() << ", " << v.getRegion() << "\n";
+    return os;
 }
