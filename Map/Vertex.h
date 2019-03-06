@@ -13,13 +13,13 @@ class Edge;
 class Vertex {
 public:
     Vertex();
-    Vertex(std::string name, std::string region);
+    Vertex(const std::string name, const std::string region);
     Vertex(const Vertex &v);
     std::vector<Edge>* getEdges();
     int getCost();
     std::string getRegion() const;
     int getPlayerCount();
-    std::string getPlayer(int i);
+    std::string getPlayer(const int i);
     std::string getName() const;
     void addEdge(Edge e);
     Vertex& operator=(const Vertex &v);

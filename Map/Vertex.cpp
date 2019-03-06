@@ -6,6 +6,9 @@
 #include <iostream>
 #include <string>
 
+/**
+ * Constructor for a Vertex
+ */
 Vertex::Vertex() {
     region = "none";
     name = "none";
@@ -19,7 +22,12 @@ Vertex::Vertex() {
     edges = new std::vector<Edge>();
 }
 
-Vertex::Vertex(std::string name, std::string region) {
+/**
+ * Parameterized constructor for a Vertex
+ * @param name the name of the city
+ * @param region the region the city is in
+ */
+Vertex::Vertex(const std::string name, const std::string region) {
     this->region = region;
     this->name = name;
     cost[0] = 10;
@@ -32,6 +40,10 @@ Vertex::Vertex(std::string name, std::string region) {
     edges = new std::vector<Edge>();
 }
 
+/**
+ * Copy constructor for a vertex
+ * @param v The vertex to be copied
+ */
 Vertex::Vertex(const Vertex &v) {
     region = v.region;
     name = v.name;
@@ -47,34 +59,64 @@ Vertex::Vertex(const Vertex &v) {
         edges = v.edges;
     }
     else {
-        edges = 0;
+        edges = nullptr;
     }
 }
 
+/**
+ * Getter for the edges
+ * @return the set of edges adjacent to this vertex
+ */
 std::vector<Edge>* Vertex::getEdges() {
     return edges;
 }
 
+/**
+ * Getter for the cost of placing a house
+ * @return the cost of placing a house
+ */
 int Vertex::getCost() {
     return cost[playerCount];
 }
 
+/**
+ * Getter for the region
+ * @return the region the city is in
+ */
 std::string Vertex::getRegion() const {
     return region;
 }
 
+/**
+ * Getter for the playerCount
+ * @return the number of players who have a house placed on this city
+ */
 int Vertex::getPlayerCount() {
     return playerCount;
 }
 
-std::string Vertex::getPlayer(int i) {
+/**
+ * Getter for the player
+ * @param i which player to return
+ * @return the specified player on this city
+ */
+std::string Vertex::getPlayer(const int i) {
     return players[i];
 }
 
+/**
+ * Getter for the name
+ * @return the name of the city
+ */
 std::string Vertex::getName() const {
     return name;
 }
 
+/**
+ * Operator overload for assignment operator
+ * @param v a Vertex
+ * @return a reference to the copied vertex
+ */
 Vertex& Vertex::operator=(const Vertex &v) {
     if(this == &v) {
         return *this;
@@ -94,26 +136,36 @@ Vertex& Vertex::operator=(const Vertex &v) {
         edges = v.edges;
     }
     else {
-        edges = 0;
+        edges = nullptr;
     }
     return *this;
 }
 
+/**
+ * Operator overload for the equality condition
+ * returns true if the vertices have the same attributes
+ * @param v a Vertex
+ * @return whether or not the two vertices are equal
+ */
 bool Vertex::operator==(const Vertex &v) {
-    if(playerCount != v.playerCount || name != v.name || region != v.region) {
-        return false;
-    }
-    if(edges != v.edges) {
-        return false;
-    }
-    return true;
+    return playerCount == v.playerCount && name == v.name && region == v.region && edges == v.edges;
 }
 
+/**
+ * Operator overload for the output stream
+ * @param os an output stream
+ * @param v a Vertex
+ * @return ouputs the Vertex in string format
+ */
 std::ostream &operator<<(std::ostream &os, const Vertex v) {
     os << v.getName() << ", " << v.getRegion() << "\n";
     return os;
 }
 
+/**
+ * Adds an adjacent edge to this vertex
+ * @param e the edge to be added
+ */
 void Vertex::addEdge(Edge e) {
     edges->push_back(e);
 }

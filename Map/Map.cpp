@@ -93,8 +93,7 @@ std::ostream &operator<<(std::ostream &os, Map &m) {
 }
 
 Vertex* Map::findVertex(std::string s) {
-    for(int i = 0; i < vertices->size(); i++) {
-        Vertex v = vertices->at(i);
+    for (auto v : *vertices) {
         if(v.getName() == s ) {
             return &v;
         }
