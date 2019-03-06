@@ -3,91 +3,100 @@
 //
 
 #include "Map.h"
+#include "Vertex.h"
+#include "Edge.h"
+#include<list>
+#include <iostream>
+#include <algorithm>
 
 Map::Map() {
-    Map(false);
+    vertices = new std::vector<Vertex>();
+    edges = new std::vector<Edge>();
 }
 
-Map::Map(bool isDirected) {
-    this->isDirected = isDirected;
+void Map::addVertex(Vertex v) {
+    vertices->push_back(v);
 }
 
-//TODO implement copy constructor
-Map::Map(Map &m) {
-
+void Map::addEdge(Vertex &u, Vertex &v, int cost) {
+    Edge e(u, v, cost);
+    u.addEdge(e);
+    v.addEdge(e);
+    edges->push_back(e);
 }
 
-//TODO implement destructor
-Map::~Map() {
-
-}
-
-//TODO implement operator overload
-Map &Map::operator=(Map &m) {
-
-}
-
-int Map::numVertices() {
-    return vertices.size();
-}
-
-std::list<Vertex> Map::getVertices() {
-    return std::list<Vertex>();
+int Map::numVertex() {
+    return vertices->size();
 }
 
 int Map::numEdges() {
-    return edges.size();
+    return edges->size();
 }
 
-std::list<Edge> Map::getEdges() {
-    return std::list<Edge>();
+std::vector<Vertex>* Map::getVertices() {
+    return vertices;
 }
 
-int Map::outDegree(Vertex v) {
-    return v.getOutgoing().size();
+std::vector<Edge>* Map::getEdges() {
+    return edges;
 }
 
-//TODO switch map to vector
-std::vector<Edge> Map::outgoingEdges(Vertex v) {
-
+int Map::degree(Vertex v) {
+    return v.getEdges()->size();
 }
 
-int Map::inDegree(Vertex v) {
-    return v.getIncoming().size();
+std::vector<Edge>* Map::getVertexEdges(Vertex v) {
+    return v.getEdges();
 }
 
-//TODO switch map to vector
-std::vector<Edge> Map::incomingEdges(Vertex v) {
-    return std::vector<Edge>();
-}
-
-Edge Map::getEdge(Vertex u, Vertex v) {
-    return u.getOutgoing().at(v);
-}
-
-Vertex *Map::endVertices(Edge e) {
-    return e.getEndpoints();
-}
-
-//TODO implement method
 Vertex Map::opposite(Vertex v, Edge e) {
-    //return Vertex();
+    Vertex* endpoints = e.getEndpoints();
+    if(endpoints[0] == v) {
+        return endpoints[1];
+    }
+    else {
+        return endpoints[0];
+    }
 }
 
-Vertex Map::insertVertex(int &city) {
-    Vertex v(city, false);
-    vertices.push_back(v);
+bool Map::BFS(Vertex &s) {
+    auto level = std::vector<Vertex>();
+    auto known = std::vector<Vertex>();
+    level.push_back(s);
+    known.push_back(s);
+    while(!level.empty()) {
+        auto nextLevel = std::vector<Vertex>();
+        for(auto &u : level) {
+            for(auto &e : *getVertexEdges(u)) {
+                Vertex v = opposite(u, e);
+                if(!(std::find(known.begin(), known.end(), v) != known.end())) {
+                    known.push_back(v);
+                    nextLevel.push_back(v);
+                }
+            }
+        }
+        level = nextLevel;
+    }
+    return known.size() == numVertex();
 }
 
-//TODO check for already existing edge
-Edge Map::insertEdge(Vertex u, Vertex v, int cost) {
-    Edge e(u, v, cost);
-    edges.push_back(e);
-    u.getOutgoing().insert(u.getOutgoing().begin(), u.getOutgoing().find(v));
-    v.getOutgoing().insert(v.getOutgoing().begin(), v.getOutgoing().find(u));
-    return e;
+std::ostream &operator<<(std::ostream &os, Map &m) {
+    os << "Vertices:\n";
+    for(int i = 0; i < m.numVertex(); i++) {
+        os << m.getVertices()->at(i);
+    }
+    os << "\nEdges:\n";
+    for(int i = 0; i < m.numEdges(); i++) {
+        os << m.getEdges()->at(i);
+    }
+    return os;
 }
 
-void Map::removeVertex(Vertex v) {
-
+Vertex* Map::findVertex(std::string s) {
+    for (auto v : *vertices) {
+        if(v.getName() == s ) {
+            return &v;
+        }
+    }
+    return nullptr;
 }

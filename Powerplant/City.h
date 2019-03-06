@@ -9,7 +9,6 @@
 class City {
     int cost;
 
-
 };
 
 
