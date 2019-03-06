@@ -13,8 +13,7 @@ Map::Map() {
     edges = new std::vector<Edge>();
 }
 
-void Map::addVertex(std::string name, std::string region) {
-    Vertex v(name, region);
+void Map::addVertex(Vertex v) {
     vertices->push_back(v);
 }
 
@@ -51,17 +50,16 @@ std::vector<Edge>* Map::getVertexEdges(Vertex v) {
 
 //TODO finish BFS
 bool Map::BFS(Vertex v) {
-    std::list<Vertex> queue;
+    std::vector<Vertex> level;
     std::vector<Vertex> known;
-    queue.push_back(v);
+    level.push_back(v);
     known.push_back(v);
-    while(!queue.empty()) {
-        v = queue.front();
-        //TODO implement << overload
-        //std::cout << v << " ";
-        queue.pop_front();
-        for(int i = 0; i < getVertexEdges(v)->size(); i++) {
+    while(!level.empty()) {
+        std::vector<Vertex> nextLevel;
+        for(int i = 0; i < level.size(); i++) {
+            for(int j = 0; j = level.at(i).getEdges()->size(); j++) {
 
+            }
         }
     }
     return false;
