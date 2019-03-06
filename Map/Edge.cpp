@@ -7,35 +7,30 @@
 #include <string>
 
 Edge::Edge() {
-    endpoints = new std::vector<Vertex>();
+    endpoints = new Vertex[2];
     cost = 0;
 }
 
 Edge::Edge(Vertex &u, Vertex &v, int cost) {
-    endpoints = new std::vector<Vertex>();
-    endpoints->push_back(u);
-    endpoints->push_back(v);
+    endpoints = new Vertex[2];
+    endpoints[0] = u;
+    endpoints[1] = v;
     this->cost = cost;
 }
 
 Edge::Edge(const Edge &e) {
     cost = e.cost;
-//    if(e.endpoints) {
-//        endpoints = new std::vector<Vertex>();
-//        for(int i = 0; i < e.endpoints->size(); i++) {
-//            endpoints[i] = e.endpoints[i];
-//        }
-//    }
-//    else {
-//        endpoints = 0;
-//    }
+    endpoints = new Vertex[2];
+    for(int i = 0; i < 2; i++) {
+        endpoints[i] = e.endpoints[i];
+    }
 }
 
 int Edge::getCost() const {
     return cost;
 }
 
-std::vector<Vertex> * Edge::getEndpoints() const {
+Vertex* Edge::getEndpoints() {
     return endpoints;
 }
 
@@ -43,16 +38,9 @@ Edge &Edge::operator=(const Edge &e) {
     if(this == &e) {
         return *this;
     }
-    delete endpoints;
     cost = e.cost;
-    if(e.endpoints) {
-        endpoints = new std::vector<Vertex>();
-        for(int i = 0; i < e.endpoints->size(); i++) {
-            endpoints[i] = e.endpoints[i];
-        }
-    }
-    else {
-        endpoints = 0;
+    for(int i = 0; i < 2; i++) {
+        endpoints[i] = e.endpoints[i];
     }
     return *this;
 }

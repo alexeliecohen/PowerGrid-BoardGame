@@ -7,6 +7,7 @@
 #include "Edge.h"
 #include<list>
 #include <iostream>
+#include <algorithm>
 
 Map::Map() {
     vertices = new std::vector<Vertex>();
@@ -48,6 +49,16 @@ std::vector<Edge>* Map::getVertexEdges(Vertex v) {
     return v.getEdges();
 }
 
+Vertex Map::opposite(Vertex v, Edge e) {
+    Vertex* endpoints = e.getEndpoints();
+    if(endpoints[0] == v) {
+        return endpoints[1];
+    }
+    else {
+        return endpoints[0];
+    }
+}
+
 //TODO finish BFS
 bool Map::BFS(Vertex v) {
     std::vector<Vertex> level;
@@ -57,12 +68,17 @@ bool Map::BFS(Vertex v) {
     while(!level.empty()) {
         std::vector<Vertex> nextLevel;
         for(int i = 0; i < level.size(); i++) {
-            for(int j = 0; j = level.at(i).getEdges()->size(); j++) {
-
+            for(int j = 0; j < level.at(i).getEdges()->size(); j++) {
+                Vertex u = opposite(level.at(i), level.at(i).getEdges()->at(j));
+                if(std::find(known.begin(), known.end(), u) != std::end(known)) {
+                    known.push_back(u);
+                    nextLevel.push_back(u);
+                }
             }
         }
+        level = nextLevel;
     }
-    return false;
+    return level.size() == numVertex();
 }
 
 std::ostream &operator<<(std::ostream &os, Map &m) {

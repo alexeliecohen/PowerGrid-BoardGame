@@ -19,6 +19,7 @@ public:
     std::vector<Edge>* getVertexEdges(Vertex v);
     void addVertex(Vertex v);
     void addEdge(Vertex &u, Vertex &v, int cost);
+    Vertex opposite(Vertex v, Edge e);
     bool BFS(Vertex v);
     friend std::ostream& operator<<(std::ostream& os, Map& m);
 private:
