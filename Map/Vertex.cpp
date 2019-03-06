@@ -44,9 +44,7 @@ Vertex::Vertex(const Vertex &v) {
     }
     if(v.edges) {
         edges = new std::vector<Edge>();
-        for(int i = 0; i < v.edges->size(); i++) {
-            edges[i] = v.edges[i];
-        }
+        edges = v.edges;
     }
     else {
         edges = 0;
@@ -93,9 +91,7 @@ Vertex& Vertex::operator=(const Vertex &v) {
     }
     if(v.edges) {
         edges = new std::vector<Edge>();
-        for(int i = 0; i < v.edges->size(); i++) {
-            edges[i] = v.edges[i];
-        }
+        edges = v.edges;
     }
     else {
         edges = 0;
@@ -107,10 +103,10 @@ bool Vertex::operator==(const Vertex &v) {
     if(playerCount != v.playerCount || name != v.name || region != v.region) {
         return false;
     }
-    if(edges == v.edges) {
-        return true;
+    if(edges != v.edges) {
+        return false;
     }
-    return false;
+    return true;
 }
 
 std::ostream &operator<<(std::ostream &os, const Vertex v) {

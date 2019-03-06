@@ -59,26 +59,25 @@ Vertex Map::opposite(Vertex v, Edge e) {
     }
 }
 
-//TODO finish BFS
-bool Map::BFS(Vertex v) {
-    std::vector<Vertex> level;
-    std::vector<Vertex> known;
-    level.push_back(v);
-    known.push_back(v);
+bool Map::BFS(Vertex &s) {
+    auto level = std::vector<Vertex>();
+    auto known = std::vector<Vertex>();
+    level.push_back(s);
+    known.push_back(s);
     while(!level.empty()) {
-        std::vector<Vertex> nextLevel;
-        for(int i = 0; i < level.size(); i++) {
-            for(int j = 0; j < level.at(i).getEdges()->size(); j++) {
-                Vertex u = opposite(level.at(i), level.at(i).getEdges()->at(j));
-                if(std::find(known.begin(), known.end(), u) != std::end(known)) {
-                    known.push_back(u);
-                    nextLevel.push_back(u);
+        auto nextLevel = std::vector<Vertex>();
+        for(auto &u : level) {
+            for(auto &e : *getVertexEdges(u)) {
+                Vertex v = opposite(u, e);
+                if(!(std::find(known.begin(), known.end(), v) != known.end())) {
+                    known.push_back(v);
+                    nextLevel.push_back(v);
                 }
             }
         }
         level = nextLevel;
     }
-    return level.size() == numVertex();
+    return known.size() == numVertex();
 }
 
 std::ostream &operator<<(std::ostream &os, Map &m) {
@@ -93,11 +92,12 @@ std::ostream &operator<<(std::ostream &os, Map &m) {
     return os;
 }
 
-Vertex Map::findVertex(std::string s) {
+Vertex* Map::findVertex(std::string s) {
     for(int i = 0; i < vertices->size(); i++) {
         Vertex v = vertices->at(i);
         if(v.getName() == s ) {
-            return v;
+            return &v;
         }
     }
+    return nullptr;
 }

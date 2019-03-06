@@ -30,7 +30,7 @@ int Edge::getCost() const {
     return cost;
 }
 
-Vertex* Edge::getEndpoints() {
+Vertex * Edge::getEndpoints() const {
     return endpoints;
 }
 
@@ -49,9 +49,9 @@ bool Edge::operator==(const Edge &e) {
     if(cost != e.cost) {
         return false;
     }
-    if(endpoints == e.endpoints) {
-        return true;
-    }
+//    if(endpoints == e.endpoints) {
+//        return true;
+//    }
 //    for(int i = 0; i < endpoints->size(); i++) {
 //        if(endpoints[i] != e.endpoints[i]) {
 //            return false;
@@ -61,6 +61,7 @@ bool Edge::operator==(const Edge &e) {
 }
 
 std::ostream &operator<<(std::ostream &os, const Edge &e) {
-    os << e.getCost() << "\n";
+    Vertex* endpoints = e.getEndpoints();
+    os << endpoints[0].getName() << " -> " << endpoints[1].getName() << ", " << e.getCost() << "\n";
     return os;
 }

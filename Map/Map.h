@@ -20,8 +20,8 @@ public:
     void addVertex(Vertex v);
     void addEdge(Vertex &u, Vertex &v, int cost);
     Vertex opposite(Vertex v, Edge e);
-    Vertex findVertex(std::string s);
-    bool BFS(Vertex v);
+    Vertex* findVertex(std::string s);
+    bool BFS(Vertex &v);
     friend std::ostream& operator<<(std::ostream& os, Map& m);
 private:
     std::vector<Vertex>* vertices;
