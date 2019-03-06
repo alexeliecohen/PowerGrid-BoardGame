@@ -18,8 +18,9 @@ public:
     int degree(Vertex v);
     std::vector<Edge>* getVertexEdges(Vertex v);
     void addVertex(std::string name, std::string region);
-    void addEdge(Vertex u, Vertex v, int cost);
+    void addEdge(Vertex &u, Vertex &v, int cost);
     bool BFS(Vertex v);
+    friend std::ostream& operator<<(std::ostream& os, Map& m);
 private:
     std::vector<Vertex>* vertices;
     std::vector<Edge>* edges;

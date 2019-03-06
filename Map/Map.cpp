@@ -18,10 +18,10 @@ void Map::addVertex(std::string name, std::string region) {
     vertices->push_back(v);
 }
 
-void Map::addEdge(Vertex u, Vertex v, int cost) {
+void Map::addEdge(Vertex &u, Vertex &v, int cost) {
     Edge e(u, v, cost);
-    u.getEdges()->push_back(e);
-    v.getEdges()->push_back(e);
+    u.addEdge(e);
+    v.addEdge(e);
     edges->push_back(e);
 }
 
@@ -51,12 +51,10 @@ std::vector<Edge>* Map::getVertexEdges(Vertex v) {
 
 //TODO finish BFS
 bool Map::BFS(Vertex v) {
-    bool *visited = new bool[vertices->size()];
-    for(int i = 0; i < vertices->size(); i++) {
-        visited[i] = false;
-    }
     std::list<Vertex> queue;
+    std::vector<Vertex> known;
     queue.push_back(v);
+    known.push_back(v);
     while(!queue.empty()) {
         v = queue.front();
         //TODO implement << overload
@@ -67,4 +65,16 @@ bool Map::BFS(Vertex v) {
         }
     }
     return false;
+}
+
+std::ostream &operator<<(std::ostream &os, Map &m) {
+    os << "Vertices:\n";
+    for(int i = 0; i < m.numVertex(); i++) {
+        os << m.getVertices()->at(i);
+    }
+    os << "\nEdges:\n";
+    for(int i = 0; i < m.numEdges(); i++) {
+        os << m.getEdges()->at(i);
+    }
+    return os;
 }

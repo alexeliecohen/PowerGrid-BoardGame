@@ -18,6 +18,7 @@ public:
     Edge& operator=(const Edge &e);
     std::vector<Vertex>* getEndpoints() const;
     int getCost() const;
+    bool operator==(const Edge &e);
     friend std::ostream& operator<<(std::ostream& os, const Edge &e);
 private:
     std::vector<Vertex> *endpoints;

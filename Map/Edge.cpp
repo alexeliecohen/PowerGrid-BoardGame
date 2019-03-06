@@ -20,15 +20,15 @@ Edge::Edge(Vertex &u, Vertex &v, int cost) {
 
 Edge::Edge(const Edge &e) {
     cost = e.cost;
-    if(e.endpoints) {
-        endpoints = new std::vector<Vertex>();
-        for(int i = 0; i < e.endpoints->size(); i++) {
-            endpoints[i] = e.endpoints[i];
-        }
-    }
-    else {
-        endpoints = 0;
-    }
+//    if(e.endpoints) {
+//        endpoints = new std::vector<Vertex>();
+//        for(int i = 0; i < e.endpoints->size(); i++) {
+//            endpoints[i] = e.endpoints[i];
+//        }
+//    }
+//    else {
+//        endpoints = 0;
+//    }
 }
 
 int Edge::getCost() const {
@@ -57,7 +57,22 @@ Edge &Edge::operator=(const Edge &e) {
     return *this;
 }
 
+bool Edge::operator==(const Edge &e) {
+    if(cost != e.cost) {
+        return false;
+    }
+    if(endpoints == e.endpoints) {
+        return true;
+    }
+//    for(int i = 0; i < endpoints->size(); i++) {
+//        if(endpoints[i] != e.endpoints[i]) {
+//            return false;
+//        }
+//    }
+    return false;
+}
+
 std::ostream &operator<<(std::ostream &os, const Edge &e) {
-    os << e.getEndpoints()->at(0).getName() << " -> " << e.getEndpoints()->at(1).getName() << ", " << e.getCost() << "\n";
+    os << e.getCost() << "\n";
     return os;
 }

@@ -21,6 +21,7 @@ public:
     int getPlayerCount();
     std::string getPlayer(int i);
     std::string getName() const;
+    void addEdge(Edge e);
     Vertex& operator=(const Vertex &v);
     bool operator==(const Vertex &v);
     friend std::ostream& operator<<(std::ostream& os, const Vertex v);

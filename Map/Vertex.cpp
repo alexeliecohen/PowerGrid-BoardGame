@@ -54,7 +54,7 @@ Vertex::Vertex(const Vertex &v) {
 }
 
 std::vector<Edge>* Vertex::getEdges() {
-    return this->edges;
+    return edges;
 }
 
 int Vertex::getCost() {
@@ -104,11 +104,20 @@ Vertex& Vertex::operator=(const Vertex &v) {
 }
 
 bool Vertex::operator==(const Vertex &v) {
-
+    if(playerCount != v.playerCount || name != v.name || region != v.region) {
+        return false;
+    }
+    if(edges == v.edges) {
+        return true;
+    }
     return false;
 }
 
 std::ostream &operator<<(std::ostream &os, const Vertex v) {
     os << v.getName() << ", " << v.getRegion() << "\n";
     return os;
+}
+
+void Vertex::addEdge(Edge e) {
+    edges->push_back(e);
 }
