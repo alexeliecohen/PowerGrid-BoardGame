@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter\ 2019/COMP\ 345/COMP345Team21/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter\ 2019/COMP\ 345/COMP345Team21/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter\ 2019/COMP\ 345/COMP345Team21/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter\ 2019/COMP\ 345/COMP345Team21/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter\ 2019/COMP\ 345/COMP345Team21/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter\ 2019/COMP\ 345/COMP345Team21/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter\ 2019/COMP\ 345/COMP345Team21/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter\ 2019/COMP\ 345/COMP345Team21/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Powerplant">
-				<Option output="/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/Powerplant.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug/Powerplant.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -42,15 +42,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 Powerplant"/>
-					<CompileFile command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter\ 2019/COMP\ 345/COMP345Team21/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 Powerplant"/>
+					<CompileFile command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter\ 2019/COMP\ 345/COMP345Team21/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter\ 2019/COMP\ 345/COMP345Team21/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter\ 2019/COMP\ 345/COMP345Team21/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Powerplant/fast">
-				<Option output="/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/Powerplant.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug/Powerplant.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -63,57 +63,93 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 Powerplant/fast"/>
-					<CompileFile command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter\ 2019/COMP\ 345/COMP345Team21/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 Powerplant/fast"/>
+					<CompileFile command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter\ 2019/COMP\ 345/COMP345Team21/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter\ 2019/COMP\ 345/COMP345Team21/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter\ 2019/COMP\ 345/COMP345Team21/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter\ 2019/COMP\ 345/COMP345Team21/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter\ 2019/COMP\ 345/COMP345Team21/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter\ 2019/COMP\ 345/COMP345Team21/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/cygwin64/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter\ 2019/COMP\ 345/COMP345Team21/Powerplant/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/City.cpp">
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Card.cpp">
 			<Option target="Powerplant"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/City.h">
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Card.h">
 			<Option target="Powerplant"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/Houses.cpp">
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Deck.cpp">
 			<Option target="Powerplant"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/Houses.h">
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Deck.h">
 			<Option target="Powerplant"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/Market.cpp">
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Powerplant.cpp">
 			<Option target="Powerplant"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/Market.h">
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Powerplant.h">
 			<Option target="Powerplant"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/Powerplant.cpp">
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Step13.cpp">
 			<Option target="Powerplant"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/Powerplant.h">
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Step13.h">
 			<Option target="Powerplant"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/Resource.cpp">
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Game.cpp">
 			<Option target="Powerplant"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/Resource.h">
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Game.h">
 			<Option target="Powerplant"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/main.cpp">
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Player.cpp">
 			<Option target="Powerplant"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Player.h">
+			<Option target="Powerplant"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/HousesAndCities/City.cpp">
+			<Option target="Powerplant"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/HousesAndCities/City.h">
+			<Option target="Powerplant"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/HousesAndCities/Houses.cpp">
+			<Option target="Powerplant"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/HousesAndCities/Houses.h">
+			<Option target="Powerplant"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Market/Market.cpp">
+			<Option target="Powerplant"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Market/Market.h">
+			<Option target="Powerplant"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Market/ResourceMarket.cpp">
+			<Option target="Powerplant"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Market/ResourceMarket.h">
+			<Option target="Powerplant"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Resource/Resource.cpp">
+			<Option target="Powerplant"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Resource/Resource.h">
+			<Option target="Powerplant"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/main.cpp">
+			<Option target="Powerplant"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

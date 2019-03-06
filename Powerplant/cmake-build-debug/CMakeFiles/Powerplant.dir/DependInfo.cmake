@@ -4,12 +4,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/City.cpp" "/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/City.cpp.o"
-  "/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/Houses.cpp" "/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/Houses.cpp.o"
-  "/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/Market.cpp" "/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/Market.cpp.o"
-  "/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/Powerplant.cpp" "/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/Powerplant.cpp.o"
-  "/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/Resource.cpp" "/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/Resource.cpp.o"
-  "/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/main.cpp" "/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/main.cpp.o"
+  "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Card.cpp" "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/Card/Card.cpp.o"
+  "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Deck.cpp" "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/Card/Deck.cpp.o"
+  "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Powerplant.cpp" "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/Card/Powerplant.cpp.o"
+  "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Step13.cpp" "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/Card/Step13.cpp.o"
+  "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Game.cpp" "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/GameAndPlayer/Game.cpp.o"
+  "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Player.cpp" "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/GameAndPlayer/Player.cpp.o"
+  "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/HousesAndCities/City.cpp" "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/HousesAndCities/City.cpp.o"
+  "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/HousesAndCities/Houses.cpp" "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/HousesAndCities/Houses.cpp.o"
+  "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Market/Market.cpp" "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/Market/Market.cpp.o"
+  "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Market/ResourceMarket.cpp" "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/Market/ResourceMarket.cpp.o"
+  "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Resource/Resource.cpp" "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/Resource/Resource.cpp.o"
+  "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/main.cpp" "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

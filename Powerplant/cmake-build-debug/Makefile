@@ -48,10 +48,10 @@ RM = /cygdrive/c/Users/alext/.CLion2018.3/system/cygwin_cmake/bin/cmake.exe -E r
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant
+CMAKE_SOURCE_DIR = "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug
+CMAKE_BINARY_DIR = "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/CMakeFiles /cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug/CMakeFiles" "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -123,140 +123,302 @@ Powerplant/fast:
 	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/build
 .PHONY : Powerplant/fast
 
-City.o: City.cpp.o
+Card/Card.o: Card/Card.cpp.o
 
-.PHONY : City.o
-
-# target to build an object file
-City.cpp.o:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/City.cpp.o
-.PHONY : City.cpp.o
-
-City.i: City.cpp.i
-
-.PHONY : City.i
-
-# target to preprocess a source file
-City.cpp.i:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/City.cpp.i
-.PHONY : City.cpp.i
-
-City.s: City.cpp.s
-
-.PHONY : City.s
-
-# target to generate assembly for a file
-City.cpp.s:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/City.cpp.s
-.PHONY : City.cpp.s
-
-Houses.o: Houses.cpp.o
-
-.PHONY : Houses.o
+.PHONY : Card/Card.o
 
 # target to build an object file
-Houses.cpp.o:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Houses.cpp.o
-.PHONY : Houses.cpp.o
+Card/Card.cpp.o:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Card/Card.cpp.o
+.PHONY : Card/Card.cpp.o
 
-Houses.i: Houses.cpp.i
+Card/Card.i: Card/Card.cpp.i
 
-.PHONY : Houses.i
+.PHONY : Card/Card.i
 
 # target to preprocess a source file
-Houses.cpp.i:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Houses.cpp.i
-.PHONY : Houses.cpp.i
+Card/Card.cpp.i:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Card/Card.cpp.i
+.PHONY : Card/Card.cpp.i
 
-Houses.s: Houses.cpp.s
+Card/Card.s: Card/Card.cpp.s
 
-.PHONY : Houses.s
+.PHONY : Card/Card.s
 
 # target to generate assembly for a file
-Houses.cpp.s:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Houses.cpp.s
-.PHONY : Houses.cpp.s
+Card/Card.cpp.s:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Card/Card.cpp.s
+.PHONY : Card/Card.cpp.s
 
-Market.o: Market.cpp.o
+Card/Deck.o: Card/Deck.cpp.o
 
-.PHONY : Market.o
+.PHONY : Card/Deck.o
 
 # target to build an object file
-Market.cpp.o:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Market.cpp.o
-.PHONY : Market.cpp.o
+Card/Deck.cpp.o:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Card/Deck.cpp.o
+.PHONY : Card/Deck.cpp.o
 
-Market.i: Market.cpp.i
+Card/Deck.i: Card/Deck.cpp.i
 
-.PHONY : Market.i
+.PHONY : Card/Deck.i
 
 # target to preprocess a source file
-Market.cpp.i:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Market.cpp.i
-.PHONY : Market.cpp.i
+Card/Deck.cpp.i:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Card/Deck.cpp.i
+.PHONY : Card/Deck.cpp.i
 
-Market.s: Market.cpp.s
+Card/Deck.s: Card/Deck.cpp.s
 
-.PHONY : Market.s
+.PHONY : Card/Deck.s
 
 # target to generate assembly for a file
-Market.cpp.s:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Market.cpp.s
-.PHONY : Market.cpp.s
+Card/Deck.cpp.s:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Card/Deck.cpp.s
+.PHONY : Card/Deck.cpp.s
 
-Powerplant.o: Powerplant.cpp.o
+Card/Powerplant.o: Card/Powerplant.cpp.o
 
-.PHONY : Powerplant.o
+.PHONY : Card/Powerplant.o
 
 # target to build an object file
-Powerplant.cpp.o:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Powerplant.cpp.o
-.PHONY : Powerplant.cpp.o
+Card/Powerplant.cpp.o:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Card/Powerplant.cpp.o
+.PHONY : Card/Powerplant.cpp.o
 
-Powerplant.i: Powerplant.cpp.i
+Card/Powerplant.i: Card/Powerplant.cpp.i
 
-.PHONY : Powerplant.i
+.PHONY : Card/Powerplant.i
 
 # target to preprocess a source file
-Powerplant.cpp.i:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Powerplant.cpp.i
-.PHONY : Powerplant.cpp.i
+Card/Powerplant.cpp.i:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Card/Powerplant.cpp.i
+.PHONY : Card/Powerplant.cpp.i
 
-Powerplant.s: Powerplant.cpp.s
+Card/Powerplant.s: Card/Powerplant.cpp.s
 
-.PHONY : Powerplant.s
+.PHONY : Card/Powerplant.s
 
 # target to generate assembly for a file
-Powerplant.cpp.s:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Powerplant.cpp.s
-.PHONY : Powerplant.cpp.s
+Card/Powerplant.cpp.s:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Card/Powerplant.cpp.s
+.PHONY : Card/Powerplant.cpp.s
 
-Resource.o: Resource.cpp.o
+Card/Step13.o: Card/Step13.cpp.o
 
-.PHONY : Resource.o
+.PHONY : Card/Step13.o
 
 # target to build an object file
-Resource.cpp.o:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Resource.cpp.o
-.PHONY : Resource.cpp.o
+Card/Step13.cpp.o:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Card/Step13.cpp.o
+.PHONY : Card/Step13.cpp.o
 
-Resource.i: Resource.cpp.i
+Card/Step13.i: Card/Step13.cpp.i
 
-.PHONY : Resource.i
+.PHONY : Card/Step13.i
 
 # target to preprocess a source file
-Resource.cpp.i:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Resource.cpp.i
-.PHONY : Resource.cpp.i
+Card/Step13.cpp.i:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Card/Step13.cpp.i
+.PHONY : Card/Step13.cpp.i
 
-Resource.s: Resource.cpp.s
+Card/Step13.s: Card/Step13.cpp.s
 
-.PHONY : Resource.s
+.PHONY : Card/Step13.s
 
 # target to generate assembly for a file
-Resource.cpp.s:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Resource.cpp.s
-.PHONY : Resource.cpp.s
+Card/Step13.cpp.s:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Card/Step13.cpp.s
+.PHONY : Card/Step13.cpp.s
+
+GameAndPlayer/Game.o: GameAndPlayer/Game.cpp.o
+
+.PHONY : GameAndPlayer/Game.o
+
+# target to build an object file
+GameAndPlayer/Game.cpp.o:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/GameAndPlayer/Game.cpp.o
+.PHONY : GameAndPlayer/Game.cpp.o
+
+GameAndPlayer/Game.i: GameAndPlayer/Game.cpp.i
+
+.PHONY : GameAndPlayer/Game.i
+
+# target to preprocess a source file
+GameAndPlayer/Game.cpp.i:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/GameAndPlayer/Game.cpp.i
+.PHONY : GameAndPlayer/Game.cpp.i
+
+GameAndPlayer/Game.s: GameAndPlayer/Game.cpp.s
+
+.PHONY : GameAndPlayer/Game.s
+
+# target to generate assembly for a file
+GameAndPlayer/Game.cpp.s:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/GameAndPlayer/Game.cpp.s
+.PHONY : GameAndPlayer/Game.cpp.s
+
+GameAndPlayer/Player.o: GameAndPlayer/Player.cpp.o
+
+.PHONY : GameAndPlayer/Player.o
+
+# target to build an object file
+GameAndPlayer/Player.cpp.o:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/GameAndPlayer/Player.cpp.o
+.PHONY : GameAndPlayer/Player.cpp.o
+
+GameAndPlayer/Player.i: GameAndPlayer/Player.cpp.i
+
+.PHONY : GameAndPlayer/Player.i
+
+# target to preprocess a source file
+GameAndPlayer/Player.cpp.i:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/GameAndPlayer/Player.cpp.i
+.PHONY : GameAndPlayer/Player.cpp.i
+
+GameAndPlayer/Player.s: GameAndPlayer/Player.cpp.s
+
+.PHONY : GameAndPlayer/Player.s
+
+# target to generate assembly for a file
+GameAndPlayer/Player.cpp.s:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/GameAndPlayer/Player.cpp.s
+.PHONY : GameAndPlayer/Player.cpp.s
+
+HousesAndCities/City.o: HousesAndCities/City.cpp.o
+
+.PHONY : HousesAndCities/City.o
+
+# target to build an object file
+HousesAndCities/City.cpp.o:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/HousesAndCities/City.cpp.o
+.PHONY : HousesAndCities/City.cpp.o
+
+HousesAndCities/City.i: HousesAndCities/City.cpp.i
+
+.PHONY : HousesAndCities/City.i
+
+# target to preprocess a source file
+HousesAndCities/City.cpp.i:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/HousesAndCities/City.cpp.i
+.PHONY : HousesAndCities/City.cpp.i
+
+HousesAndCities/City.s: HousesAndCities/City.cpp.s
+
+.PHONY : HousesAndCities/City.s
+
+# target to generate assembly for a file
+HousesAndCities/City.cpp.s:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/HousesAndCities/City.cpp.s
+.PHONY : HousesAndCities/City.cpp.s
+
+HousesAndCities/Houses.o: HousesAndCities/Houses.cpp.o
+
+.PHONY : HousesAndCities/Houses.o
+
+# target to build an object file
+HousesAndCities/Houses.cpp.o:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/HousesAndCities/Houses.cpp.o
+.PHONY : HousesAndCities/Houses.cpp.o
+
+HousesAndCities/Houses.i: HousesAndCities/Houses.cpp.i
+
+.PHONY : HousesAndCities/Houses.i
+
+# target to preprocess a source file
+HousesAndCities/Houses.cpp.i:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/HousesAndCities/Houses.cpp.i
+.PHONY : HousesAndCities/Houses.cpp.i
+
+HousesAndCities/Houses.s: HousesAndCities/Houses.cpp.s
+
+.PHONY : HousesAndCities/Houses.s
+
+# target to generate assembly for a file
+HousesAndCities/Houses.cpp.s:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/HousesAndCities/Houses.cpp.s
+.PHONY : HousesAndCities/Houses.cpp.s
+
+Market/Market.o: Market/Market.cpp.o
+
+.PHONY : Market/Market.o
+
+# target to build an object file
+Market/Market.cpp.o:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Market/Market.cpp.o
+.PHONY : Market/Market.cpp.o
+
+Market/Market.i: Market/Market.cpp.i
+
+.PHONY : Market/Market.i
+
+# target to preprocess a source file
+Market/Market.cpp.i:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Market/Market.cpp.i
+.PHONY : Market/Market.cpp.i
+
+Market/Market.s: Market/Market.cpp.s
+
+.PHONY : Market/Market.s
+
+# target to generate assembly for a file
+Market/Market.cpp.s:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Market/Market.cpp.s
+.PHONY : Market/Market.cpp.s
+
+Market/ResourceMarket.o: Market/ResourceMarket.cpp.o
+
+.PHONY : Market/ResourceMarket.o
+
+# target to build an object file
+Market/ResourceMarket.cpp.o:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Market/ResourceMarket.cpp.o
+.PHONY : Market/ResourceMarket.cpp.o
+
+Market/ResourceMarket.i: Market/ResourceMarket.cpp.i
+
+.PHONY : Market/ResourceMarket.i
+
+# target to preprocess a source file
+Market/ResourceMarket.cpp.i:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Market/ResourceMarket.cpp.i
+.PHONY : Market/ResourceMarket.cpp.i
+
+Market/ResourceMarket.s: Market/ResourceMarket.cpp.s
+
+.PHONY : Market/ResourceMarket.s
+
+# target to generate assembly for a file
+Market/ResourceMarket.cpp.s:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Market/ResourceMarket.cpp.s
+.PHONY : Market/ResourceMarket.cpp.s
+
+Resource/Resource.o: Resource/Resource.cpp.o
+
+.PHONY : Resource/Resource.o
+
+# target to build an object file
+Resource/Resource.cpp.o:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Resource/Resource.cpp.o
+.PHONY : Resource/Resource.cpp.o
+
+Resource/Resource.i: Resource/Resource.cpp.i
+
+.PHONY : Resource/Resource.i
+
+# target to preprocess a source file
+Resource/Resource.cpp.i:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Resource/Resource.cpp.i
+.PHONY : Resource/Resource.cpp.i
+
+Resource/Resource.s: Resource/Resource.cpp.s
+
+.PHONY : Resource/Resource.s
+
+# target to generate assembly for a file
+Resource/Resource.cpp.s:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Resource/Resource.cpp.s
+.PHONY : Resource/Resource.cpp.s
 
 main.o: main.cpp.o
 
@@ -294,21 +456,39 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Powerplant"
 	@echo "... edit_cache"
-	@echo "... City.o"
-	@echo "... City.i"
-	@echo "... City.s"
-	@echo "... Houses.o"
-	@echo "... Houses.i"
-	@echo "... Houses.s"
-	@echo "... Market.o"
-	@echo "... Market.i"
-	@echo "... Market.s"
-	@echo "... Powerplant.o"
-	@echo "... Powerplant.i"
-	@echo "... Powerplant.s"
-	@echo "... Resource.o"
-	@echo "... Resource.i"
-	@echo "... Resource.s"
+	@echo "... Card/Card.o"
+	@echo "... Card/Card.i"
+	@echo "... Card/Card.s"
+	@echo "... Card/Deck.o"
+	@echo "... Card/Deck.i"
+	@echo "... Card/Deck.s"
+	@echo "... Card/Powerplant.o"
+	@echo "... Card/Powerplant.i"
+	@echo "... Card/Powerplant.s"
+	@echo "... Card/Step13.o"
+	@echo "... Card/Step13.i"
+	@echo "... Card/Step13.s"
+	@echo "... GameAndPlayer/Game.o"
+	@echo "... GameAndPlayer/Game.i"
+	@echo "... GameAndPlayer/Game.s"
+	@echo "... GameAndPlayer/Player.o"
+	@echo "... GameAndPlayer/Player.i"
+	@echo "... GameAndPlayer/Player.s"
+	@echo "... HousesAndCities/City.o"
+	@echo "... HousesAndCities/City.i"
+	@echo "... HousesAndCities/City.s"
+	@echo "... HousesAndCities/Houses.o"
+	@echo "... HousesAndCities/Houses.i"
+	@echo "... HousesAndCities/Houses.s"
+	@echo "... Market/Market.o"
+	@echo "... Market/Market.i"
+	@echo "... Market/Market.s"
+	@echo "... Market/ResourceMarket.o"
+	@echo "... Market/ResourceMarket.i"
+	@echo "... Market/ResourceMarket.s"
+	@echo "... Resource/Resource.o"
+	@echo "... Resource/Resource.i"
+	@echo "... Resource/Resource.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

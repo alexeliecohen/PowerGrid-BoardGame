@@ -6,27 +6,49 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/Houses.h
+/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Card.h
+iostream
+-
+
+/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Powerplant.h
+iostream
+-
+Card.h
+/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Card.h
+
+/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Game.cpp
+Game.h
+/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Game.h
+
+/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Game.h
+Player.h
+/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Player.h
+
+/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Player.cpp
+Player.h
+/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Player.h
 string
 -
-
-/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/Powerplant.h
-iostream
--
-Resource.h
-/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/Resource.h
-
-/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/Resource.h
 iostream
 -
 
-/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/main.cpp
+/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Player.h
+string
+-
 iostream
 -
-Houses.h
-/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/Houses.h
-Powerplant.h
-/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/Powerplant.h
-Resource.h
-/cygdrive/c/Users/alext/Desktop/MyFiles/Programming/Powerplant/Resource.h
+vector
+-
+../HousesAndCities/Houses.h
+/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/HousesAndCities/Houses.h
+../Card/Powerplant.h
+/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Powerplant.h
+
+/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/HousesAndCities/Houses.h
+string
+-
+iostream
+-
+vector
+-
 
