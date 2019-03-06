@@ -92,3 +92,12 @@ std::ostream &operator<<(std::ostream &os, Map &m) {
     }
     return os;
 }
+
+Vertex Map::findVertex(std::string s) {
+    for(int i = 0; i < vertices->size(); i++) {
+        Vertex v = vertices->at(i);
+        if(v.getName() == s ) {
+            return v;
+        }
+    }
+}
