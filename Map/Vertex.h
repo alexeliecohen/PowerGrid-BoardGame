@@ -33,5 +33,4 @@ private:
     std::string region;
     std::vector<Edge> *edges;
 };
-
 #endif //COMP345TEAM21_VERTEX_H

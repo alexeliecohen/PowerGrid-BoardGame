@@ -24,5 +24,4 @@ private:
     Vertex* endpoints;
     int cost;
 };
-
 #endif //COMP345TEAM21_EDGE_H
