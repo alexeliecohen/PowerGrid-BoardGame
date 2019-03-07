@@ -3,6 +3,7 @@
 //
 #include <iostream>
 #include "Card.h"
+#include <string>
 
 #ifndef POWERPLANT_POWERPLANT_H
 #define POWERPLANT_POWERPLANT_H
@@ -30,6 +31,8 @@ public:
     int getProductionValue() const;
 
     virtual std::ostream& toString(std::ostream& stream);
+
+    bool operator==(Powerplant p1);
 
 //    friend std::ostream &operator<<(std::ostream &stream, Powerplant &somePowerplant);
 

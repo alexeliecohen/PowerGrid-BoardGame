@@ -5,6 +5,7 @@
 #include <string>
 #include <iostream>
 #include <vector>
+#include <algorithm>
 #include "../HousesAndCities/Houses.h"
 #include "../Card/Powerplant.h"
 
@@ -102,13 +103,19 @@ public:
 
     Powerplant& getPowerPlant(int plantNumber);
 
-    void addHouses();
-
     void addPowerplant(Powerplant& somePowerplant);
 
     void removePowerplant(Powerplant& somePowerplant);
 
-    friend ostream &operator<<(ostream &stream, const Player &Object);
+    ostream& displayPowerplants(ostream& stream);
+
+    void addHouses(Houses& someHouse);
+
+    void removeHouses(Houses& someHouse);
+
+    ostream& displayHouses(ostream& stream);
+
+    friend ostream &operator<<(ostream &stream, Player &Object);
 
 
 };

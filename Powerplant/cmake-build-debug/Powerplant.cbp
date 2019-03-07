@@ -104,6 +104,12 @@
 		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Step13.h">
 			<Option target="Powerplant"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Summary.cpp">
+			<Option target="Powerplant"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Summary.h">
+			<Option target="Powerplant"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Game.cpp">
 			<Option target="Powerplant"/>
 		</Unit>

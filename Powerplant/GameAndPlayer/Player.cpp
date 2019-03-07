@@ -97,10 +97,22 @@ vector<string> Player::houseColor = {"Green","Blue","Black","Pink","Yellow","Ora
 //    }//close function prompt user
 
 
-    ostream &operator<<(ostream &stream, const Player &Object) {
+
+ostream& Player::displayHouses(ostream& stream) {
+    for (int i = 0; i < myHouses.size(); ++i) {
+        stream << myHouses[i] << endl;
+    }
+    return stream;
+
+}
+
+
+    ostream &operator<<(ostream &stream, Player &Object) {
         stream << "Player Name: " << Object.playerName << "/n" << "# Electros: " << Object.elektros << "/n"
                << "Total # Resources: " << Object.oil + Object.coal + Object.garbage + Object.uranium << "/n" << "# Oil: " << Object.oil << "/n"
                << "Coal: " << Object.coal << "/n" << "Garbage: " << Object.garbage << "/n" << "Uranium: " << Object.uranium << endl;
+        stream = Object.displayPowerplants(stream);
+//        stream << Object.displayHouses(stream) << endl;
     }
 
 int Player::getNumOfPlayers() {
@@ -156,12 +168,7 @@ void Player::removeElektro(int elektro) {
     }
 
 void Player::addOil(int oil) {
-        if (oil+this->oil <= MAXOIL) {
             this->oil += oil;
-        }
-        else {
-            cout << "Cannot add this amount of oil, you can buy " << MAXOIL-(oil+this->oil) << " oil" << endl;
-        }
     }
 
 void Player::removeOil(int oil) {
@@ -169,16 +176,7 @@ void Player::removeOil(int oil) {
     }
 
 void Player::addGarbage(int garbage) {
-    if (oil+this->oil <= MAXOIL) {
-        this->oil += oil;
-    }
-    else {
-        cout << "Cannot add this amount of oil, you can buy " << MAXOIL-(oil+this->oil) << " oil" << endl;
-    }
-
-
-
-        this->garbage += garbage;
+           this->garbage += garbage;
     }
 
 void Player::removeGarabge(int garbage) {
@@ -193,21 +191,41 @@ void Player::removeUranium(int uranium) {
         this->uranium -= uranium;
     }
 
-//void Player::addHomes() {
-//
-//    }
-//
-//void Player::removeHome(int homes) {
-//        this->numbHomes -=homes;
-//    }
-
-void Powerplant::addPowerplant(Powerplant& somePowerplant) {
-        myP
-
+void Player::addPowerplant(Powerplant& somePowerplant) {
+        myPowerPlant.push_back(somePowerplant);
     }
 
-void Powerplant::removePowerplant(Powerplant& somePowerplant);
+void Player::removePowerplant(Powerplant& somePowerplant) {
+    std::vector<Powerplant>::iterator position = std::find(myPowerPlant.begin(), myPowerPlant.end(),somePowerplant);
+    if (position != myPowerPlant.end()) // == myVector.end() means the element was not found
+        myPowerPlant.erase(position);
+    }
+Powerplant& Player::getPowerPlant(int plantNumber) {
+        cout << "pick a powerplant: ";
+        int pos;
+        for (int i = 0; i < myPowerPlant.size(); ++i) {
+            cout << i << ": " << myPowerPlant[i] << endl;
+        }
+        cin>>pos;
+        Powerplant cpy = Powerplant(myPowerPlant[pos]) ;
+        return cpy;
+}
 
+ostream& Player::displayPowerplants(ostream& stream) {
+    for (int i = 0; i < myPowerPlant.size(); ++i) {
+        stream << myPowerPlant[i] << endl;
+    }
+    return  stream;
+    }
 
+void Player::addHouses(Houses& someHouse) {
+    myHouses.push_back(someHouse);
 
+}
+
+void Player::removeHouses(Houses& someHouse) {
+    std::vector<Houses>::iterator position = std::find(myHouses.begin(), myHouses.end(),someHouse);
+    if (position != myHouses.end()) // == myVector.end() means the element was not found
+        myHouses.erase(position);
+    }
 

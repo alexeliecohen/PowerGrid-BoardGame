@@ -48,6 +48,13 @@ std::ostream& Powerplant::toString(std::ostream& stream) {
            resourceType << " and Powers " << productionValue << " cities" << std::endl;
     return stream;
 }
+
+bool Powerplant::operator==(Powerplant p1) {
+    return(priceCost==p1.priceCost && energyCost == p1.energyCost && productionValue == p1.productionValue && resourceType==p1.resourceType);
+
+}
+
+
 //std::ostream& operator<<(std::ostream& stream, Powerplant &somePowerplant) {
 //   return somePowerplant.toString(stream);
 //}

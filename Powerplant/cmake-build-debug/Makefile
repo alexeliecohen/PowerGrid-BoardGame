@@ -231,6 +231,33 @@ Card/Step13.cpp.s:
 	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Card/Step13.cpp.s
 .PHONY : Card/Step13.cpp.s
 
+Card/Summary.o: Card/Summary.cpp.o
+
+.PHONY : Card/Summary.o
+
+# target to build an object file
+Card/Summary.cpp.o:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Card/Summary.cpp.o
+.PHONY : Card/Summary.cpp.o
+
+Card/Summary.i: Card/Summary.cpp.i
+
+.PHONY : Card/Summary.i
+
+# target to preprocess a source file
+Card/Summary.cpp.i:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Card/Summary.cpp.i
+.PHONY : Card/Summary.cpp.i
+
+Card/Summary.s: Card/Summary.cpp.s
+
+.PHONY : Card/Summary.s
+
+# target to generate assembly for a file
+Card/Summary.cpp.s:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Card/Summary.cpp.s
+.PHONY : Card/Summary.cpp.s
+
 GameAndPlayer/Game.o: GameAndPlayer/Game.cpp.o
 
 .PHONY : GameAndPlayer/Game.o
@@ -468,6 +495,9 @@ help:
 	@echo "... Card/Step13.o"
 	@echo "... Card/Step13.i"
 	@echo "... Card/Step13.s"
+	@echo "... Card/Summary.o"
+	@echo "... Card/Summary.i"
+	@echo "... Card/Summary.s"
 	@echo "... GameAndPlayer/Game.o"
 	@echo "... GameAndPlayer/Game.i"
 	@echo "... GameAndPlayer/Game.s"

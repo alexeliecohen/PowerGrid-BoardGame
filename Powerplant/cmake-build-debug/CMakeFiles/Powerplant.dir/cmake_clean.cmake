@@ -11,6 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Powerplant.dir/Card/Step13.cpp.o"
   "CMakeFiles/Powerplant.dir/Card/Card.cpp.o"
   "CMakeFiles/Powerplant.dir/Card/Deck.cpp.o"
+  "CMakeFiles/Powerplant.dir/Card/Summary.cpp.o"
   "Powerplant.pdb"
   "Powerplant.exe"
   "libPowerplant.dll.a"
