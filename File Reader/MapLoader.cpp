@@ -130,4 +130,3 @@ MapLoader::MapLoader() {}
 MapLoader::~MapLoader() {}
 
 } /* namespace Mike */
-
