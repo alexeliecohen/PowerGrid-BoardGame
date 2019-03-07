@@ -7,6 +7,7 @@
 #include <vector>
 #include <iostream>
 #include <cstdlib>
+#include <algorithm>
 #ifndef POWERPLANT_DECK_H
 #define POWERPLANT_DECK_H
 
@@ -20,9 +21,10 @@ class Deck {
         Deck();
         void swapCards(Card* card1,Card* card2);
         void shuffle();
-//        ~Deck();
         virtual ~Deck();
         friend std::ostream& operator<<(std::ostream& stream,Deck& myDeck);
+        Card& removeCard(Card& myCard);
+        Card* removeCard(int pos);
 };
 
 

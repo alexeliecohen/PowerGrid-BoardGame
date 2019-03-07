@@ -91,13 +91,17 @@ public:
 
     void removeUranium(int uranium);
 
-    void addHomes(Houses& homes);
+    void addCoal(int coal);
 
-    void removeHomes(Houses& homes);
+    void removeCoal(int coal);
 
-    void addCities(int cities);
-
-    void removeCities(int cities);
+//    void addHomes(Houses& homes);
+//
+//    void removeHomes(Houses& homes);
+//
+//    void addCities(int cities);
+//
+//    void removeCities(int cities);
 
     const vector<Powerplant> &getMyPowerPlant() const;
 
@@ -117,6 +121,7 @@ public:
 
     friend ostream &operator<<(ostream &stream, Player &Object);
 
+    int generatePower();
 
 };
 //close player class.h

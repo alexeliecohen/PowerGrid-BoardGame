@@ -18,8 +18,13 @@
 int Player::numOfPlayers=0;
 vector<string> Player::houseColor = {"Green","Blue","Black","Pink","Yellow","Orange"};
 
-//Constructors / Destructors
+//Constructors
+/**
+ * Player default constructor takes the playername the choice of house color and sets variables to default
+ * values at start of the game
+ */
     Player::Player() {
+        cout << "Welcome Player " << numOfPlayers+1 << "!" << endl;
         if (numOfPlayers == MAXNUMBERPLAYERS) {
             std::cout << "Max Number of players reached, cannot create more";
             return;
@@ -40,11 +45,16 @@ vector<string> Player::houseColor = {"Green","Blue","Black","Pink","Yellow","Ora
         oil = DEFAULTRESOURCE;
         coal = DEFAULTRESOURCE;
         uranium = DEFAULTRESOURCE;
+        garbage = DEFAULTRESOURCE;
         numOfCities = DEFAULTHOME;
         numbHomes = DEFAULTHOME;
         numOfPlayers++;
     }//close constructor
 
+    /**
+     *
+     * @param nameIn parametrized constructor takes name
+     */
     Player::Player(std::string nameIn) {
         if (numOfPlayers == MAXNUMBERPLAYERS) {
             std::cout << "Max Number of players reached, cannot create more";
@@ -108,11 +118,16 @@ ostream& Player::displayHouses(ostream& stream) {
 
 
     ostream &operator<<(ostream &stream, Player &Object) {
-        stream << "Player Name: " << Object.playerName << "/n" << "# Electros: " << Object.elektros << "/n"
-               << "Total # Resources: " << Object.oil + Object.coal + Object.garbage + Object.uranium << "/n" << "# Oil: " << Object.oil << "/n"
-               << "Coal: " << Object.coal << "/n" << "Garbage: " << Object.garbage << "/n" << "Uranium: " << Object.uranium << endl;
-        stream = Object.displayPowerplants(stream);
-//        stream << Object.displayHouses(stream) << endl;
+        stream << "Player Name: " << Object.playerName << "\n" << "# Electros: " << Object.elektros << "\n"
+               << "Total # Resources: " << Object.oil + Object.coal + Object.garbage + Object.uranium << "\n" << "# Oil: " << Object.oil << "\n"
+               << "Coal: " << Object.coal << "\n" << "Garbage: " << Object.garbage << "\n" << "Uranium: " << Object.uranium << endl;
+        for (int i = 0; i < Object.myPowerPlant.size(); ++i) {
+            stream << "Powerplant #:" << i+1 << ": " << Object.myPowerPlant[i] << endl;
+        }
+        for (int i = 0; i < Object.myHouses.size(); ++i) {
+            stream << "House # " << i <<  " " <<  Object.myHouses[i] << endl;
+        }
+        return stream;
     }
 
 int Player::getNumOfPlayers() {
@@ -164,6 +179,11 @@ void Player::addElektro(int elektro) {
 }
 
 void Player::removeElektro(int elektro) {
+        if (elektros - elektro < 0) {
+            cout << "Cannot have a negative value for elektro, can only remove " << elektro << " "
+                                                                                               "elektro";
+            return;
+        }
         elektros -= elektro;
     }
 
@@ -172,6 +192,10 @@ void Player::addOil(int oil) {
     }
 
 void Player::removeOil(int oil) {
+    if (this->oil - oil < 0) {
+        cout << "Cannot have a negative value for oil, can only remove " << this->oil << " oil";
+        return;
+    }
         this->oil -= oil;
     }
 
@@ -180,6 +204,10 @@ void Player::addGarbage(int garbage) {
     }
 
 void Player::removeGarabge(int garbage) {
+    if (this->garbage - garbage < 0) {
+        cout << "Cannot have a negative value for garbage, can only remove " << this->garbage << " garbage";
+        return;
+    }
         this->garbage -= garbage;
     }
 
@@ -188,8 +216,25 @@ void Player::addUranium(int uranium) {
     }
 
 void Player::removeUranium(int uranium) {
+    if (this->uranium - uranium < 0) {
+        cout << "Cannot have a negative value for uranium, can only remove " << this->uranium << " uranium";
+        return;
+    }
         this->uranium -= uranium;
     }
+void Player::addCoal(int coal) {
+        this->coal += coal;
+    }
+
+void Player::removeCoal(int coal) {
+    if (this->coal - coal < 0) {
+        cout << "Cannot have a negative value for coal, can only remove " << this->coal<< " coal";
+        return;
+    }
+    this->coal -= coal;
+}
+
+
 
 void Player::addPowerplant(Powerplant& somePowerplant) {
         myPowerPlant.push_back(somePowerplant);
@@ -220,12 +265,16 @@ ostream& Player::displayPowerplants(ostream& stream) {
 
 void Player::addHouses(Houses& someHouse) {
     myHouses.push_back(someHouse);
-
+    numbHomes++;
+    numOfCities++;
 }
 
 void Player::removeHouses(Houses& someHouse) {
     std::vector<Houses>::iterator position = std::find(myHouses.begin(), myHouses.end(),someHouse);
-    if (position != myHouses.end()) // == myVector.end() means the element was not found
+    if (position != myHouses.end()) { // == myVector.end() means the element was not found
         myHouses.erase(position);
+    }
+    numbHomes--;
+    numOfCities--;
     }
 

@@ -34,6 +34,8 @@ public:
 
     bool operator==(Powerplant p1);
 
+    int generatePower();
+
 //    friend std::ostream &operator<<(std::ostream &stream, Powerplant &somePowerplant);
 
 };

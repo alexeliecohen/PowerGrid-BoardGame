@@ -9,17 +9,23 @@ Houses::Houses() {
 }
 Houses::Houses(int houseCost, std::string myColor, std::string owner) {
     this->houseCost = houseCost;
-//     myColor = color;
+    this->myColor = myColor;
+    this->owner = owner;
+}
 
-            this->owner = owner;
+Houses::Houses(int houseCost,string myColor,string owner,string city) {
+    this->houseCost = houseCost;
+    this->myColor = myColor;
+    this->owner = owner;
+    this->city = city;
 }
 
 Houses::~Houses() {
     std::cout << "House object terminated"<< std::endl;}
 
 ostream& operator<<(ostream& outs,const Houses& theObject) {
-    outs << "Owner: " << theObject.owner << "/nCity: " << theObject.city << "/nCost: "
-    << theObject.houseCost << "/nColor: " << theObject.myColor << endl;
+    outs << "Owner: " << theObject.owner << " City: " << theObject.city << " Cost: "
+    << theObject.houseCost << " Color: " << theObject.myColor << endl;
 }
 
 const string &Houses::getMyColor() const {

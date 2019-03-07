@@ -3,6 +3,7 @@
 //
 
 #include "Powerplant.h"
+using namespace std;
 
 
 Powerplant::Powerplant(int priceCost, int energyCost, int productionValue, std::string resourceType) {

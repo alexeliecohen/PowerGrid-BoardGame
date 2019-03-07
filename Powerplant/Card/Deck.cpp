@@ -116,3 +116,20 @@ std::ostream& operator<<(std::ostream& stream,Deck& myDeck) {
 
     return stream;
 }
+//Card& Deck::removeCard(Card& myCard) {
+//    Card *someCard;
+//    std::vector<Card *>::iterator position = std::find(CardDeck.begin(), CardDeck.end(), myCard);
+//    if (position != CardDeck.end()) // == myVector.end() means the element was not found {
+////        someCard = CardDeck.at(position);
+//
+//        CardDeck.erase(position);
+//}
+//
+//
+//}
+
+Card* Deck::removeCard(int pos) {
+    Card *c1 = CardDeck[pos];
+    CardDeck.erase(CardDeck.begin() + pos);
+    return c1;
+}

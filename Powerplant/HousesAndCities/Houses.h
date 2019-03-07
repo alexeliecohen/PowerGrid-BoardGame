@@ -19,6 +19,8 @@ private:
 public:
     Houses(int houseCost,string myColor,string owner);
 
+    Houses(int houseCost,string myColor,string owner,string city);
+
     Houses();
 
     ~Houses();
@@ -39,11 +41,9 @@ public:
 
     void setCity(const string &city);
 
-    Houses &operator++();
-
     friend ostream &operator<<(ostream &outs, const Houses &theObject);
 
-   bool operator==(const Houses& h1);
+    bool operator==(const Houses& h1);
 
 };
 
