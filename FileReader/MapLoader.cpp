@@ -55,6 +55,7 @@ namespace Mike {
         if ( !(fileInput.at(0) == ("AUTHORIZEDPOWERGRIDMAP") )) {
             cout << "MAP LOADER ERROR - THE FILE BEING USED IS NOT AN AUTHORIZED MAP FILE" << endl;
             validMap = false;
+            return Map();
         }//close if not authorized file
 
         //READ IN CITIES
