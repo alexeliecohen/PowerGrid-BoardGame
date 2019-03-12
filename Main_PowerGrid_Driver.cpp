@@ -41,34 +41,35 @@ using std::string;
 int main() {
 
     //Part 1
-    Map g = Map();
-    std::vector<Vertex> cities = std::vector<Vertex>();
-
-    //Adding cities
-    cities.emplace_back("Montreal", "Canada");
-    cities.emplace_back("Toronto", "Canada");
-    cities.emplace_back("New York", "USA");
-    cities.emplace_back(Vertex("Los Angeles", "USA"));
-    cities.emplace_back(Vertex("Paris", "France"));
-    cities.emplace_back(Vertex("London", "England"));
-    cities.emplace_back(Vertex("Berlin", "Germany"));
-    cities.emplace_back(Vertex("Shanghai", "China"));
-    for(auto &i : cities) {
-        g.addVertex(i);
-    }
-
-    //Adding edges
-    g.addEdge(cities[0], cities[1], 10);
-    g.addEdge(cities[0], cities[2], 10);
-    g.addEdge(cities[2], cities[4], 10);
-    g.addEdge(cities[4], cities[5], 10);
-    g.addEdge(cities[3], cities[6], 10);
-    g.addEdge(cities[7], cities[6], 10);
-    g.addEdge(cities[7], cities[5], 10);
-
-    //checking connectivity
-    cout << g;
-    cout << g.BFS(cities[0]) << endl;
+    //github test
+//    Map g = Map();
+//    std::vector<Vertex> cities = std::vector<Vertex>();
+//
+//    //Adding cities
+//    cities.emplace_back("Montreal", "Canada");
+//    cities.emplace_back("Toronto", "Canada");
+//    cities.emplace_back("New York", "USA");
+//    cities.emplace_back(Vertex("Los Angeles", "USA"));
+//    cities.emplace_back(Vertex("Paris", "France"));
+//    cities.emplace_back(Vertex("London", "England"));
+//    cities.emplace_back(Vertex("Berlin", "Germany"));
+//    cities.emplace_back(Vertex("Shanghai", "China"));
+//    for(auto &i : cities) {
+//        g.addVertex(i);
+//    }
+//
+//    //Adding edges
+//    g.addEdge(cities[0], cities[1], 10);
+//    g.addEdge(cities[0], cities[2], 10);
+//    g.addEdge(cities[2], cities[4], 10);
+//    g.addEdge(cities[4], cities[5], 10);
+//    g.addEdge(cities[3], cities[6], 10);
+//    g.addEdge(cities[7], cities[6], 10);
+//    g.addEdge(cities[7], cities[5], 10);
+//
+//    //checking connectivity
+//    cout << g;
+//    cout << g.BFS(cities[0]) << endl;
 
     //Loading a map
     MapLoaderB ml = MapLoaderB();
