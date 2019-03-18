@@ -28,7 +28,7 @@ using std::vector;
 namespace Mike {
 
 //ATTRIBUTES
-string fileName = "C:/Users/Hubert/CLionProjects/COMP345Team21/FileReader/mapFile.txt";
+string fileName = "../FileReader/file";
 
 //METHODS
 vector<string> File_Reader::getLines(){
@@ -38,7 +38,7 @@ vector<string> File_Reader::getLines(){
 	string line;
 
 	//open file
-	fileStream.open("C:/Users/Hubert/CLionProjects/COMP345Team21/FileReader/mapFile.txt");
+	fileStream.open("../FileReader/mapFile.txt");
 
 	while(!fileStream.eof()){
 		fileStream >> line;

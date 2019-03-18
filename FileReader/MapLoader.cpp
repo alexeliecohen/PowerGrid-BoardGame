@@ -78,50 +78,18 @@ namespace Mike {
         iCount--;
         cout << fileInput.at( iCount ) << endl << endl ;
         iCount++;
-
-        //NEW CODE BELOW****************************************************************************************
-        vector<Vertex> vlist1;
-        vector<Vertex> vlist2;
-        int vlistCounter = 0;
-
-        //READ IN EDGES
-        //Update variable
-        cityC1 = fileInput.at( iCount );
-        iCount++;
-        vlist1.push_back( returnMap.findVertex( cityC1 ) );
-        cityC2 = fileInput.at( iCount );
-        cout << "cityC2 = " << cityC2 << endl ;
-        vlist2.push_back( returnMap.findVertex( cityC2 ) );
-        iCount++;
-        connectionCost = std::stoi( fileInput.at( iCount ) );	//std::stoi( STR ) Converts string to integer type
-        iCount++;
-        cout << "NOW ENTERING WHILE LOOP\niCount = " << iCount << "\nfileSize = " << (int) fileInput.size() << endl;
-
-        while (iCount < (int) fileInput.size() ){
-            cout << "vlist1 = " << vlist1.at(vlistCounter) << endl ;
-            cout << "vlist2 = " << vlist2.at(vlistCounter) << endl ;
-            cout << "connectionCost = " << connectionCost << endl ;
-
-            //add edge to map
-            returnMap.addEdge( vlist1.at(vlistCounter), vlist2.at(vlistCounter), connectionCost );
-
-            //Update all values for next iteration
-            cityC1 = fileInput.at( iCount );
+        do {
+            string city1 = fileInput.at(iCount);
+            Vertex u = returnMap.findVertex(city1);
             iCount++;
-            vlistCounter++;
-            vlist1.push_back( returnMap.findVertex( cityC1 ) );
-
-            cityC2 = fileInput.at( iCount );
+            string city2 = fileInput.at(iCount);
+            Vertex v = returnMap.findVertex(city2);
             iCount++;
-            vlist2.push_back(returnMap.findVertex( cityC2 ) );
-            connectionCost = std::stoi( fileInput.at( iCount ) );	//std::stoi( STR ) Converts string to integer type
+            int i = std::stoi(fileInput.at(iCount));
             iCount++;
-        }//close WHILE read in connections while there are still contents in the file
-
-        //NEW CODE ABOVE ****************************************************************************************
-
-
-        if (validMap)
+            returnMap.addEdge(u, v, i);
+        } while(iCount < fileInput.size());
+        if (returnMap.BFS())
             cout << "\n\nThe Map loader is now returning a valid map\n\n";
         else
             cout << "\n\nTHE MAP LOADER READ AN INVALID MAP TYPE FILE\nPLEASE LOAD A VALID MAP FILE!\n\n";
