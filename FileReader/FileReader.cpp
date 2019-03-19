@@ -38,7 +38,7 @@ vector<string> File_Reader::getLines(){
 	string line;
 
 	//open file
-	fileStream.open("../FileReader/file");
+	fileStream.open("../MapFiles/file");
 
 	while(!fileStream.eof()){
 		fileStream >> line;

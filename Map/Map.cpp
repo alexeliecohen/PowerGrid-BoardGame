@@ -5,7 +5,6 @@
 #include "Map.h"
 #include "Vertex.h"
 #include "Edge.h"
-#include <list>
 #include <iostream>
 #include <algorithm>
 
