@@ -44,7 +44,8 @@ namespace Mike {
         bool validMap = true;
         string nextCity;
         string nextRegion;
-        int iCount = 3;
+        string region;
+        int iCount = 2;
         string cityC1, cityC2;
         int connectionCost;
 
@@ -58,23 +59,33 @@ namespace Mike {
             return Map();
         }//close if not authorized file
 
+        //READ IN REGIONS
+        region = fileInput.at(iCount);
+        while(region != "cities") {
+            returnMap.addRegion(region);
+            iCount++;
+            region = fileInput.at(iCount);
+        }
+        iCount++;
         //READ IN CITIES
-        nextCity = fileInput.at(2);
-        nextRegion = fileInput.at(3);
+        nextCity = fileInput.at(iCount);
+        iCount++;
+        nextRegion = fileInput.at(iCount);
+        iCount++;
         while (nextCity != "CONNECTIONS"){
             //create vertex
             Vertex *vtx = new Vertex( nextCity, nextRegion);
             //add vertex to map
             returnMap.addVertex( *vtx );
             //Update all values for next iteration
-            iCount++;
             nextCity = fileInput.at( iCount );
             iCount++;
             nextRegion = fileInput.at(iCount);
+            iCount++;
         }//close read in cities until CONNECTIONS IS  READ
-
         //backtrack the counter by 1 place
         cout << "\nFinished reading in cities, now reading in the connections\nThe iCount is currently reading from ";
+        iCount--;
         iCount--;
         cout << fileInput.at( iCount ) << endl << endl ;
         iCount++;
@@ -89,6 +100,7 @@ namespace Mike {
             iCount++;
             returnMap.addEdge(u, v, i);
         } while(iCount < fileInput.size());
+
         if (returnMap.BFS())
             cout << "\n\nThe Map loader is now returning a valid map\n\n";
         else

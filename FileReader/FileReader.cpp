@@ -38,7 +38,7 @@ vector<string> File_Reader::getLines(){
 	string line;
 
 	//open file
-	fileStream.open("../FileReader/mapFile.txt");
+	fileStream.open("../FileReader/file");
 
 	while(!fileStream.eof()){
 		fileStream >> line;
@@ -55,45 +55,11 @@ vector<string> File_Reader::getLines(){
 		fileStream.close();
 	return fileContent;
 }//close get file content
-/*
-char[] File_Reader::getLines() {
-	//Declare Variables
-	//vector <string> returnStrings;
-	vector<char> fileContents;
-	string line;
-	std::ifstream fileStream(fileName);
-
-	//open file
-	fileStream.open(fileName);
-	//Read lines while there is a next line to read
-	cout << "blaaa blaaa\n\n";
-
-	while (fileStream.good()){
-		fileStream >> fileContents;
-
-	}//close while
-
-	fileStream.close();
-
-	//Print function closing results
-	 std::cout << "The file contains " << fileContents.size() << " lines\n" ;
-	//Print results before returning string array
-	std::cout << "The FileReader.getLines function will display its string array values before returning them: " << std::endl ;
-	for (int i = 0 ; i < (int) fileContents.size() ; i++){
-		std::cout << fileContents.at(i) << std::endl ;
-	}//close for
-
-	//Return output
-	return fileContents;
-}//close get lines
-*/
 string File_Reader::getName() { return fileName; }
 
 //CONSTRUCTORS
 File_Reader::File_Reader() {}//close constructor
 File_Reader::File_Reader(string fName) { fileName = fName; }//close constructor
 File_Reader::~File_Reader() {} //close constructor
-
-
 
 };//close name space Mike
