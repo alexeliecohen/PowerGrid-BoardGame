@@ -28,16 +28,16 @@ using std::endl;
 namespace Mike {
 
 //Gets a vector containing all of the strings from the file
-    vector<string> MapLoaderB::getMapInfoB(){
+    vector<string> MapLoaderB::getMapInfoB(std::string s){
         //Variables
         //File being used in File_Reader class
         File_Reader fw;
-        vector<string> words = fw.getLines();
+        vector<string> words = fw.getLines(s);
         return words;
     }//close getMapInfo
 
 //Uses mapFile.txt to load all data
-    Map MapLoaderB::buildMapB() {
+    Map MapLoaderB::buildMapB(std::string s) {
         //Declare variables
         vector<string> fileInput;
         Map returnMap;
@@ -50,7 +50,7 @@ namespace Mike {
         int connectionCost;
 
         //Get file contents
-        fileInput = getMapInfoB();
+        fileInput = getMapInfoB(s);
 
         //Authorize file
         if ( !(fileInput.at(0) == ("AUTHORIZEDPOWERGRIDMAP") )) {

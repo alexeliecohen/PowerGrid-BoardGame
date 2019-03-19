@@ -27,18 +27,15 @@ using std::vector;
 
 namespace Mike {
 
-//ATTRIBUTES
-string fileName = "../FileReader/file";
-
 //METHODS
-vector<string> File_Reader::getLines(){
+vector<string> File_Reader::getLines(std::string s){
 	//Declare variables
 	vector<string> fileContent;			//fileContent = {"do", "re", "mi"};
 	std::ifstream fileStream;
 	string line;
 
 	//open file
-	fileStream.open("../MapFiles/file");
+	fileStream.open(s);
 
 	while(!fileStream.eof()){
 		fileStream >> line;

@@ -37,7 +37,7 @@ public:
 	virtual ~File_Reader();
 
 	string getName();
-	std::vector<string> getLines();
+	std::vector<string> getLines(std::string s);
 
 
 
