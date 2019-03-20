@@ -1,6 +1,7 @@
 //
 // Created by Hubert on 2/9/2019.
 //
+//TODO add comments
 
 #include "Map.h"
 #include "Vertex.h"
@@ -15,15 +16,26 @@ Map::Map() {
     subgraphs = std::vector<Map>();
 }
 
+//TODO fix case where vertex already exists
 void Map::addVertex(Vertex v) {
-    vertices.push_back(v);
+    if(!(std::find(vertices.begin(), vertices.end(), v) != vertices.end())) {
+        vertices.push_back(v);
+    }
+    else {
+        std::cout << "Vertex already exists";
+    }
 }
 
 void Map::addEdge(Vertex &u, Vertex &v, int cost) {
     Edge e = Edge(u, v, cost);
-    u.addEdge(e);
-    v.addEdge(e);
-    edges.push_back(e);
+    if(!(std::find(edges.begin(), edges.end(), e) != edges.end())) {
+        u.addEdge(e);
+        v.addEdge(e);
+        edges.push_back(e);
+    }
+    else {
+        std::cout << "Edge already exists";
+    }
 }
 
 int Map::numVertex() {
@@ -40,10 +52,6 @@ std::vector<Vertex> Map::getVertices() {
 
 std::vector<Edge> Map::getEdges() {
     return edges;
-}
-
-int Map::degree(Vertex v) {
-    return v.getEdges()->size();
 }
 
 std::vector<Edge>* Map::getVertexEdges(Vertex v) {
@@ -98,8 +106,9 @@ std::ostream &operator<<(std::ostream &os, Map &m) {
     return os;
 }
 
+//TODO what to return if vertex not found
 Vertex Map::findVertex(std::string s) {
-    for (auto v : vertices) {
+    for (const auto &v : vertices) {
         if(v.getName() == s ) {
             return v;
         }
@@ -108,10 +117,10 @@ Vertex Map::findVertex(std::string s) {
 
 void Map::createSubgraphs() {
     int i = 0;
-    for(auto r : regions) {
+    for(const auto &r : regions) {
         Map g = Map();
         g.addRegion(r);
-        for(auto v : vertices) {
+        for(const auto &v : vertices) {
             if(r == v.getRegion()) {
                 g.addVertex(v);
             }
@@ -139,8 +148,20 @@ std::vector<Map> Map::getSubgraphs() {
     return subgraphs;
 }
 
+//TODO fix case where edge already exists
 void Map::addEdge(Edge &e) {
     edges.push_back(e);
+}
+
+//TODO finish function to return Map with regions selected
+Map Map::createFinalMap() {
+    Map g = Map();
+    //take selected regions and add them to final graph
+//    for(every subgraph selected) {
+//
+//    }
+    //add edges between regions selected
+    return g;
 }
 
 //void Map::placeHouse(Vertex v, House h) {

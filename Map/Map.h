@@ -18,7 +18,6 @@ public:
     std::vector<Edge> getEdges();
     std::vector<std::string> getRegions();
     std::vector<Map> getSubgraphs();
-    int degree(Vertex v);
     std::vector<Edge>* getVertexEdges(Vertex v);
     void addVertex(Vertex v);
     void addEdge(Vertex &u, Vertex &v, int cost);
@@ -28,6 +27,7 @@ public:
     Vertex findVertex(std::string s);
     bool BFS();
     void createSubgraphs();
+    Map createFinalMap();
     friend std::ostream& operator<<(std::ostream& os, Map& m);
 //    void placeHouse(Vertex v, House h);
 private:

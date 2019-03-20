@@ -53,6 +53,7 @@ namespace Mike {
         fileInput = getMapInfoB(s);
 
         //Authorize file
+        //TODO throw exception for wrong file
         if ( !(fileInput.at(0) == ("AUTHORIZEDPOWERGRIDMAP") )) {
             cout << "MAP LOADER ERROR - THE FILE BEING USED IS NOT AN AUTHORIZED MAP FILE" << endl;
             validMap = false;

@@ -20,6 +20,8 @@
 #include <algorithm>
 #include <iostream>
 
+#include <filesystem>
+
 //Include classes in other files
 #include "Map/Map.h"
 #include "Powerplant/GameAndPlayer/Player.h"
@@ -32,55 +34,56 @@
 
 //Name Space
 using namespace Mike;
-using std::cout;
-using std::cin;
-using std::endl;
-using std::string;
+using namespace std;
+//using std::cout;
+//using std::cin;
+//using std::endl;
+//using std::string;
 
 int main() {
+    int i = 1;
+    int mapFile = 0;
+    int numPlayers = 0;
+    int regionNumber = 0;
+    string path = "../MapFiles/";
+    std::vector<string> files = std::vector<string>();
+    std::vector<Player> players = std::vector<Player>();
 
-    //Part 1
-//    Map g = Map();
-//    std::vector<Vertex> cities = std::vector<Vertex>();
-//
-//    //Adding cities
-//    cities.emplace_back("Montreal", "Canada");
-//    cities.emplace_back("Toronto", "Canada");
-//    cities.emplace_back("New York", "USA");
-//    cities.emplace_back(Vertex("Los Angeles", "USA"));
-//    cities.emplace_back(Vertex("Paris", "France"));
-//    cities.emplace_back(Vertex("London", "England"));
-//    cities.emplace_back(Vertex("Berlin", "Germany"));
-//    cities.emplace_back(Vertex("Shanghai", "China"));
-//    for(auto &i : cities) {
-//        g.addVertex(i);
-//    }
-//
-//    //Adding edges
-//    g.addEdge(cities[0], cities[1], 10);
-//    g.addEdge(cities[0], cities[2], 10);
-//    g.addEdge(cities[2], cities[4], 10);
-//    g.addEdge(cities[4], cities[5], 10);
-//    g.addEdge(cities[3], cities[6], 10);
-//    g.addEdge(cities[7], cities[6], 10);
-//    g.addEdge(cities[7], cities[5], 10);
-//
-//    //checking connectivity
-//    cout << g;
-//    cout << g.BFS() << endl;
-//    Map m = g.createSubgraph("Canada");
-//    cout << m;
+    cout << "----------------------------------------\n";
+    cout << "          WELCOME TO POWERGRID!!        \n";
+    cout << "----------------------------------------\n";
 
+    cout << "\nPlease enter the number of the map you would like to play: \n";
+    for (auto entry : filesystem::directory_iterator(path)) {
+        files.push_back(entry.path().string());
+        cout << i << ") " << entry.path().string().substr(12) << std::endl;
+        i++;
+    }
+    cin >> mapFile;
     //Loading a map
     MapLoaderB ml = MapLoaderB();
-    Map m = ml.buildMapB();
+    Map m = ml.buildMapB(files.at(mapFile - 1));
     //printing the loaded map
     cout << m;
+    std::vector<string> regions = m.getRegions();
     m.createSubgraphs();
     std::vector<Map> graphs = m.getSubgraphs();
     for(auto s : graphs) {
         cout << s;
     }
+    cout << "Please enter the number of players(2-6): ";
+    cin >> numPlayers;
+    for(int j = 0; j < numPlayers; j++) {
+        //players.at(j) = Player();
+        cout << "Please select a region: \n";
+        for(int k = 0; k < regions.size(); k++) {
+            cout << k + 1 << ") " << regions[k] << "\n";
+        }
+        cin >> regionNumber;
+        regions.erase(regions.begin()+ regionNumber - 1);
+    }
+
+
 //
 //
 //    const int numbHouses = 132;
