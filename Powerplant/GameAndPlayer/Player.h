@@ -1,3 +1,138 @@
+<<<<<<< HEAD
+//
+// Created by alext on 2/20/2019.
+//
+#include <string>
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include "../HousesAndCities/Houses.h"
+#include "../Card/Powerplant.h"
+
+#ifndef POWERPLANT_PLAYER_H
+#define POWERPLANT_PLAYER_H
+
+/*
+ * Player.h
+ *
+ * 	MICHAEL GARNER
+ * 	26338739
+ * 	COMP 445
+ * 	WINTER 2019
+ *
+ * 	ASSIGNMENT 1
+ * 	POWER GRID
+ *
+ *
+*/
+
+//namespace Mike {
+static int MAXCOAL;
+static int MAXOIL;
+static int MAXGARBAGE;
+static int MAXURANIUM;
+
+
+class Player {
+private:
+    static int numOfPlayers; //keeps a a tabk
+    static vector<string> houseColor;  //Keeps a tab of the available house colors to choose from
+    string myHouseColor; //specific house color for the player class
+    std::string playerName; //player name
+    int elektros; //the number of elektros a player owns
+    int oil, coal, garbage, uranium; //the resources the player owns
+    int numbHomes, numOfCities; //the number of totals homes and the number of connected cities
+    std::vector<Powerplant> myPowerPlant; //list of powerplants a player owns
+    std::vector<Houses> myHouses; //list of homes the player owns
+    bool auctionReady;
+
+public:
+    Player();
+
+    Player(std::string name);
+
+    virtual ~Player();
+
+    static int getNumOfPlayers();
+
+    const string &getMyHouseColor() const;
+
+    const string &getPlayerName() const;
+
+    int getElektros() const;
+
+    int getOil() const;
+
+    int getCoal() const;
+
+    int getGarbage() const;
+
+    int getUranium() const;
+
+    int getNumbHomes() const;
+
+    int getNumOfCities() const;
+
+    void addElektro(int elektro);
+
+    void removeElektro(int elektro);
+
+    void addOil(int oil);
+
+    void removeOil(int oil);
+
+    void addGarbage(int garbage);
+
+    void removeGarabge(int garbage);
+
+    void addUranium(int uranium);
+
+    void removeUranium(int uranium);
+
+    void addCoal(int coal);
+
+    void removeCoal(int coal);
+
+//    void addHomes(Houses& homes);
+//
+//    void removeHomes(Houses& homes);
+//
+//    void addCities(int cities);
+//
+//    void removeCities(int cities);
+
+    const vector<Powerplant> &getMyPowerPlant() const;
+
+    Powerplant &getPowerPlant(int plantNumber);
+
+    void addPowerplant(Powerplant &somePowerplant);
+
+    void removePowerplant(Powerplant &somePowerplant);
+
+    ostream &displayPowerplants(ostream &stream);
+
+    void addHouses(Houses &someHouse);
+
+    void removeHouses(Houses &someHouse);
+
+    ostream &displayHouses(ostream &stream);
+
+    friend ostream &operator<<(ostream &stream, Player &Object);
+
+    bool operator<(Player &p1);
+
+    bool isAuctionReady() const;
+
+    void setAuctionReady(bool auctionReady);
+
+
+};
+//close player class.h
+
+
+
+#endif //POWERPLANT_PLAYER_H
+=======
 //
 // Created by alext on 2/20/2019.
 //
@@ -129,3 +264,4 @@ public:
 
 
 #endif //POWERPLANT_PLAYER_H
+>>>>>>> ba322169f69d5c08b2ff60172d0b5f3022c7a0e2
