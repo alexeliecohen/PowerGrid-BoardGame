@@ -13,10 +13,11 @@ class Powerplant : public Card {
 private:
     int priceCost, energyCost, productionValue, powerPlantNumber;
     std::string resourceType;
+    static int number;
 public:
     Powerplant();
 
-     Powerplant(const Powerplant &p2);
+    Powerplant(const Powerplant &p2);
 
     Powerplant(int priceCost, int energyCost, int productionValue, std::string resourceType);
 
@@ -30,11 +31,15 @@ public:
 
     int getProductionValue() const;
 
-    virtual std::ostream& toString(std::ostream& stream);
+    virtual std::ostream &toString(std::ostream &stream);
 
-    bool operator==(Powerplant p1);
+    bool operator==(const Powerplant &p1) const;
+
+    bool operator<(Powerplant &p1);
 
     int generatePower();
+
+
 
 //    friend std::ostream &operator<<(std::ostream &stream, Powerplant &somePowerplant);
 

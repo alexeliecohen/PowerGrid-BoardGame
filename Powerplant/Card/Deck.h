@@ -19,7 +19,6 @@ class Deck {
         static std::vector<Card*> CardDeck;
     public:
         Deck();
-        void swapCards(Card* card1,Card* card2);
         void shuffle();
         virtual ~Deck();
         friend std::ostream& operator<<(std::ostream& stream,Deck& myDeck);

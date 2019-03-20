@@ -20,8 +20,7 @@ Houses::Houses(int houseCost,string myColor,string owner,string city) {
     this->city = city;
 }
 
-Houses::~Houses() {
-    std::cout << "House object terminated"<< std::endl;}
+Houses::~Houses() {}
 
 ostream& operator<<(ostream& outs,const Houses& theObject) {
     outs << "Owner: " << theObject.owner << " City: " << theObject.city << " Cost: "

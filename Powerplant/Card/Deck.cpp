@@ -7,11 +7,7 @@
 
 
 std::vector<Card*> Deck::CardDeck;
-//int size = Deck::CardDeck;
-
 Deck::Deck() {
-
-    CardDeck.push_back(new Step13());
 
     CardDeck.push_back(new Powerplant(4,2,1,"Coal"));
     CardDeck.push_back(new Powerplant(8,3,2,"Coal"));
@@ -64,29 +60,14 @@ Deck::Deck() {
     CardDeck.push_back(new Powerplant(37,0,4,"Ecological"));
     CardDeck.push_back(new Powerplant(44,0,5,"Ecological"));
 
-
+//   Add step3 Card
+    CardDeck.push_back(new Step13());
 }
 Deck::~Deck() {
     for (int i = 0; i < CardDeck.size(); ++i) {
         delete CardDeck[i];
     }
 }
-
-
-void Deck::swapCards(Card* card1,Card* card2) {
-    Card temp = *card1;
-    std::cout << temp << std::endl;
-
-//    std::cout << *card1 << std::endl;
-//    std::cout << *card2 << std::endl;
-    *card1 = *card2;
-    *card2 = temp;
-    std::cout << *card1 << std::endl;
-    std::cout << *card2 << std::endl;
-
-}
-
-
 
 void Deck::shuffle() {
     int random=0;
@@ -97,36 +78,11 @@ void Deck::shuffle() {
 }
 
 std::ostream& operator<<(std::ostream& stream,Deck& myDeck) {
-//    for (int i = 0; i < myDeck.CardDeck.size(); ++i) {
-//        stream << *(myDeck.CardDeck[i])<< std::endl;
-////        stream << i << std::endl;
-//    }
-
-//
-//    for (const auto& str: myDeck)
-//        std::cout << *str << std::endl;
-//
-//    vector<*>::iterator iter;
-//    for (iter = firstname_list.begin(); iter != firstname_list.end(); ++iter)
-//        std::cout << **iter;
     for (std::vector<Card*>::iterator it = myDeck.CardDeck.begin(); it != myDeck.CardDeck.end(); ++it) {
         stream << **it << std::endl;
-//        stream << "hello" << std::endl;
     }
-
     return stream;
 }
-//Card& Deck::removeCard(Card& myCard) {
-//    Card *someCard;
-//    std::vector<Card *>::iterator position = std::find(CardDeck.begin(), CardDeck.end(), myCard);
-//    if (position != CardDeck.end()) // == myVector.end() means the element was not found {
-////        someCard = CardDeck.at(position);
-//
-//        CardDeck.erase(position);
-//}
-//
-//
-//}
 
 Card* Deck::removeCard(int pos) {
     Card *c1 = CardDeck[pos];

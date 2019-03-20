@@ -231,33 +231,6 @@ Card/Step13.cpp.s:
 	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Card/Step13.cpp.s
 .PHONY : Card/Step13.cpp.s
 
-Card/Summary.o: Card/Summary.cpp.o
-
-.PHONY : Card/Summary.o
-
-# target to build an object file
-Card/Summary.cpp.o:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Card/Summary.cpp.o
-.PHONY : Card/Summary.cpp.o
-
-Card/Summary.i: Card/Summary.cpp.i
-
-.PHONY : Card/Summary.i
-
-# target to preprocess a source file
-Card/Summary.cpp.i:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Card/Summary.cpp.i
-.PHONY : Card/Summary.cpp.i
-
-Card/Summary.s: Card/Summary.cpp.s
-
-.PHONY : Card/Summary.s
-
-# target to generate assembly for a file
-Card/Summary.cpp.s:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Card/Summary.cpp.s
-.PHONY : Card/Summary.cpp.s
-
 GameAndPlayer/Game.o: GameAndPlayer/Game.cpp.o
 
 .PHONY : GameAndPlayer/Game.o
@@ -393,6 +366,33 @@ Market/Market.cpp.s:
 	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Market/Market.cpp.s
 .PHONY : Market/Market.cpp.s
 
+Market/PowerplantMarket.o: Market/PowerplantMarket.cpp.o
+
+.PHONY : Market/PowerplantMarket.o
+
+# target to build an object file
+Market/PowerplantMarket.cpp.o:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Market/PowerplantMarket.cpp.o
+.PHONY : Market/PowerplantMarket.cpp.o
+
+Market/PowerplantMarket.i: Market/PowerplantMarket.cpp.i
+
+.PHONY : Market/PowerplantMarket.i
+
+# target to preprocess a source file
+Market/PowerplantMarket.cpp.i:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Market/PowerplantMarket.cpp.i
+.PHONY : Market/PowerplantMarket.cpp.i
+
+Market/PowerplantMarket.s: Market/PowerplantMarket.cpp.s
+
+.PHONY : Market/PowerplantMarket.s
+
+# target to generate assembly for a file
+Market/PowerplantMarket.cpp.s:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Market/PowerplantMarket.cpp.s
+.PHONY : Market/PowerplantMarket.cpp.s
+
 Market/ResourceMarket.o: Market/ResourceMarket.cpp.o
 
 .PHONY : Market/ResourceMarket.o
@@ -447,32 +447,32 @@ Resource/Resource.cpp.s:
 	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Resource/Resource.cpp.s
 .PHONY : Resource/Resource.cpp.s
 
-main.o: main.cpp.o
+newMain.o: newMain.cpp.o
 
-.PHONY : main.o
+.PHONY : newMain.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/main.cpp.o
-.PHONY : main.cpp.o
+newMain.cpp.o:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/newMain.cpp.o
+.PHONY : newMain.cpp.o
 
-main.i: main.cpp.i
+newMain.i: newMain.cpp.i
 
-.PHONY : main.i
+.PHONY : newMain.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/main.cpp.i
-.PHONY : main.cpp.i
+newMain.cpp.i:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/newMain.cpp.i
+.PHONY : newMain.cpp.i
 
-main.s: main.cpp.s
+newMain.s: newMain.cpp.s
 
-.PHONY : main.s
+.PHONY : newMain.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/main.cpp.s
-.PHONY : main.cpp.s
+newMain.cpp.s:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/newMain.cpp.s
+.PHONY : newMain.cpp.s
 
 # Help Target
 help:
@@ -495,9 +495,6 @@ help:
 	@echo "... Card/Step13.o"
 	@echo "... Card/Step13.i"
 	@echo "... Card/Step13.s"
-	@echo "... Card/Summary.o"
-	@echo "... Card/Summary.i"
-	@echo "... Card/Summary.s"
 	@echo "... GameAndPlayer/Game.o"
 	@echo "... GameAndPlayer/Game.i"
 	@echo "... GameAndPlayer/Game.s"
@@ -513,15 +510,18 @@ help:
 	@echo "... Market/Market.o"
 	@echo "... Market/Market.i"
 	@echo "... Market/Market.s"
+	@echo "... Market/PowerplantMarket.o"
+	@echo "... Market/PowerplantMarket.i"
+	@echo "... Market/PowerplantMarket.s"
 	@echo "... Market/ResourceMarket.o"
 	@echo "... Market/ResourceMarket.i"
 	@echo "... Market/ResourceMarket.s"
 	@echo "... Resource/Resource.o"
 	@echo "... Resource/Resource.i"
 	@echo "... Resource/Resource.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... newMain.o"
+	@echo "... newMain.i"
+	@echo "... newMain.s"
 .PHONY : help
 
 
