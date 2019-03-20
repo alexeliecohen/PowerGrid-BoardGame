@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //
 // Created by alext on 2/27/2019.
 //
@@ -24,3 +25,20 @@ public:
 
 
 #endif //POWERPLANT_POWERPLANTMARKET_H
+=======
+//
+// Created by alext on 2/27/2019.
+//
+
+#ifndef POWERPLANT_POWERPLANTMARKET_H
+#define POWERPLANT_POWERPLANTMARKET_H
+
+
+class PowerplantMarket {
+private:
+
+};
+
+
+#endif //POWERPLANT_POWERPLANTMARKET_H
+>>>>>>> ba322169f69d5c08b2ff60172d0b5f3022c7a0e2
