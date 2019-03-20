@@ -23,6 +23,8 @@ public:
     void addEdge(Vertex &u, Vertex &v, int cost);
     void addEdge(Edge &e);
     void addRegion(std::string region);
+    void removeEdge(Edge e);
+    void removeVertex(Vertex v);
     Vertex opposite(Vertex v, Edge e);
     Vertex findVertex(std::string s);
     bool BFS();

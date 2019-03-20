@@ -16,7 +16,6 @@ Map::Map() {
     subgraphs = std::vector<Map>();
 }
 
-//TODO fix case where vertex already exists
 void Map::addVertex(Vertex v) {
     if(!(std::find(vertices.begin(), vertices.end(), v) != vertices.end())) {
         vertices.push_back(v);
@@ -148,9 +147,13 @@ std::vector<Map> Map::getSubgraphs() {
     return subgraphs;
 }
 
-//TODO fix case where edge already exists
 void Map::addEdge(Edge &e) {
-    edges.push_back(e);
+    if(!(std::find(edges.begin(), edges.end(), e) != edges.end())) {
+        edges.push_back(e);
+    }
+    else {
+        std::cout << "Edge already exists";
+    }
 }
 
 //TODO finish function to return Map with regions selected
@@ -162,6 +165,21 @@ Map Map::createFinalMap() {
 //    }
     //add edges between regions selected
     return g;
+}
+
+//TODO implement method
+void Map::removeVertex(Vertex v) {
+    auto i = std::find(vertices.begin(), vertices.end(), v);
+    vertices.erase(vertices.begin() + 0);
+}
+
+//TODO implement method
+void Map::removeEdge(Edge e) {
+    Vertex* endpoints = e.getEndpoints();
+    std::vector<Edge> *e1 = endpoints[0].getEdges();
+    std::vector<Edge> *e2 = endpoints[1].getEdges();
+    auto i = std::find(edges.begin(), edges.end(), e);
+    edges.pop_back();
 }
 
 //void Map::placeHouse(Vertex v, House h) {
