@@ -1,4 +1,10 @@
 AUTHORIZEDPOWERGRIDMAP
+regions
+West
+East
+North
+South
+Central
 cities
 SaintLaurent West
 Pierrefonds West
