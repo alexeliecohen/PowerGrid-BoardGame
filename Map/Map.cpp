@@ -170,7 +170,7 @@ Map Map::createFinalMap() {
 //TODO implement method
 void Map::removeVertex(Vertex v) {
     auto i = std::find(vertices.begin(), vertices.end(), v);
-    vertices.erase(vertices.begin() + 0);
+    //vertices.erase(vertices.begin() + 0);
 }
 
 //TODO implement method
