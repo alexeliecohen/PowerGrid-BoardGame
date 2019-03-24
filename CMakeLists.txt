@@ -10,16 +10,16 @@ add_executable(untitled
         Map/Map.cpp
         FileReader/FileReader.cpp
         FileReader/MapLoader.cpp
-        Powerplant/HousesAndCities/City.cpp
-        Powerplant/Market/Market.cpp
-        Powerplant/HousesAndCities/Houses.cpp
-        Powerplant/Card/Powerplant.cpp
-        Powerplant/Resource/Resource.cpp
-        Powerplant/Market/ResourceMarket.cpp
-        Powerplant/GameAndPlayer/Game.cpp
-        Powerplant/GameAndPlayer/Player.cpp
-        Powerplant/Card/Step13.cpp
         Powerplant/Card/Card.cpp
         Powerplant/Card/Deck.cpp
-        Powerplant/Card/Summary.cpp
+        Powerplant/Card/Powerplant.cpp
+        Powerplant/Card/Step13.cpp
+        Powerplant/GameAndPlayer/Game.cpp
+        Powerplant/GameAndPlayer/Player.cpp
+        Powerplant/HousesAndCities/City.cpp
+        Powerplant/HousesAndCities/Houses.cpp
+        Powerplant/Market/Market.cpp
+        Powerplant/Market/PowerplantMarket.cpp
+        Powerplant/Market/ResourceMarket.cpp
+        Powerplant/Resource/Resource.cpp
         )
