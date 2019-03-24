@@ -50,7 +50,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main_PowerGrid_Driver.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-440">
+            <state relative-caret-position="-344">
               <caret line="49" column="56" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
               <folding>
                 <element signature="e#1#138#0" />
@@ -162,41 +162,6 @@
               <item name="COMP345Team21" type="b2602c69:ProjectViewProjectNode" />
               <item name="COMP345Team21" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="COMP345Team21" type="b2602c69:ProjectViewProjectNode" />
-              <item name="COMP345Team21" type="462c0819:PsiDirectoryNode" />
-              <item name="Powerplant" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="COMP345Team21" type="b2602c69:ProjectViewProjectNode" />
-              <item name="COMP345Team21" type="462c0819:PsiDirectoryNode" />
-              <item name="Powerplant" type="462c0819:PsiDirectoryNode" />
-              <item name="Card" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="COMP345Team21" type="b2602c69:ProjectViewProjectNode" />
-              <item name="COMP345Team21" type="462c0819:PsiDirectoryNode" />
-              <item name="Powerplant" type="462c0819:PsiDirectoryNode" />
-              <item name="GameAndPlayer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="COMP345Team21" type="b2602c69:ProjectViewProjectNode" />
-              <item name="COMP345Team21" type="462c0819:PsiDirectoryNode" />
-              <item name="Powerplant" type="462c0819:PsiDirectoryNode" />
-              <item name="HousesAndCities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="COMP345Team21" type="b2602c69:ProjectViewProjectNode" />
-              <item name="COMP345Team21" type="462c0819:PsiDirectoryNode" />
-              <item name="Powerplant" type="462c0819:PsiDirectoryNode" />
-              <item name="Market" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="COMP345Team21" type="b2602c69:ProjectViewProjectNode" />
-              <item name="COMP345Team21" type="462c0819:PsiDirectoryNode" />
-              <item name="Powerplant" type="462c0819:PsiDirectoryNode" />
-              <item name="Resource" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -257,12 +222,12 @@
       <workItem from="1553133243121" duration="246000" />
       <workItem from="1553192558766" duration="2232000" />
       <workItem from="1553290116738" duration="2271000" />
-      <workItem from="1553449694816" duration="3799000" />
+      <workItem from="1553449694816" duration="4140000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67592000" />
+    <option name="totallyTimeSpent" value="67933000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -275,21 +240,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16107382" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16107382" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3753541" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3753541" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.39660057" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.4206799" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.2592068" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.23937677" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.3286119" />
@@ -609,7 +573,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Main_PowerGrid_Driver.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-440">
+        <state relative-caret-position="-344">
           <caret line="49" column="56" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
           <folding>
             <element signature="e#1#138#0" />
