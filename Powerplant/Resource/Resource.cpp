@@ -3,10 +3,7 @@
 //
 
 #include "Resource.h"
-<<<<<<< HEAD
-=======
 #include <string>
->>>>>>> ba322169f69d5c08b2ff60172d0b5f3022c7a0e2
 
  Resource::Resource() {}
  Resource::Resource(int cost, int amount, string resourceType) {

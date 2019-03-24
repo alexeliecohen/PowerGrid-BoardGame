@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 //
 // Created by alext on 2/27/2019.
 //
@@ -15,10 +15,3 @@ ostream& operator<<(ostream& stream,PowerplantMarket p1) {
     }
     return stream;
 }
-=======
-//
-// Created by alext on 2/27/2019.
-//
-
-#include "PowerplantMarket.h"
->>>>>>> ba322169f69d5c08b2ff60172d0b5f3022c7a0e2
