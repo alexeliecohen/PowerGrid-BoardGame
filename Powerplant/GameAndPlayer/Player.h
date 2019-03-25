@@ -1,17 +1,3 @@
-//
-// Created by alext on 2/20/2019.
-//
-#include "Game.h"
-#include <string>
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include "../HousesAndCities/Houses.h"
-#include "../Card/Powerplant.h"
-
-#ifndef POWERPLANT_PLAYER_H
-#define POWERPLANT_PLAYER_H
-
 /*
  * Player.h
  *
@@ -25,13 +11,27 @@
  *
  *
 */
+//
+// Created by alext on 2/20/2019.
+//
+#include "Game.h"
+#include <string>
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include "../HousesAndCities/Houses.h"
+#include "../Card/Powerplant.h"
+#include "ResourceMarket.h"
+
+#ifndef POWERPLANT_PLAYER_H
+#define POWERPLANT_PLAYER_H
+
 
 //namespace Mike {
 static int MAXCOAL;
 static int MAXOIL;
 static int MAXGARBAGE;
 static int MAXURANIUM;
-
 
 
 class Player {
@@ -122,6 +122,14 @@ public:
     friend ostream &operator<<(ostream &stream, Player &Object);
 
     int generatePower();
+
+
+	//Buying resources methods and sub routines
+	void buyResources(ResourceMarket *resourceMarket);
+	int getOilCap();
+	int getCoalCap();
+	int getUraniumCap();
+	int getGarbageCap();
 
 };
 //close player class.h
