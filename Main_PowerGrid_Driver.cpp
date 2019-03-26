@@ -21,6 +21,7 @@
 #include <iostream>
 
 #include <filesystem>
+#include <queue>
 
 //Include classes in other files
 #include "Map/Map.h"
@@ -69,6 +70,7 @@ int main() {
     for(auto s : graphs) {
         cout << s;
     }
+    m.shortestPath("montreal", "toronto");
     cout << "Please enter the number of players(2-6): ";
     cin >> numPlayers;
     for(int j = 0; j < numPlayers; j++) {
@@ -82,5 +84,8 @@ int main() {
         regions.erase(regions.begin()+ regionNumber - 1);
     }
 
+    Deck d = Deck();
+
+    d.shuffle();
 	return 0;
 }// close main loop
