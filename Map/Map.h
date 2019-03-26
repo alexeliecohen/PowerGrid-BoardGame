@@ -30,6 +30,8 @@ public:
     bool BFS();
     void createSubgraphs();
     Map createFinalMap();
+    int shortestPath(std::string src, std::string destination);
+    //bool comparePair(const std::pair<int, std::string> *p1, const std::pair<int, std::string> *p2);
     friend std::ostream& operator<<(std::ostream& os, Map& m);
 //    void placeHouse(Vertex v, House h);
 private:

@@ -8,6 +8,8 @@
 #include "Edge.h"
 #include <iostream>
 #include <algorithm>
+#include <unordered_map>
+#include <queue>
 
 Map::Map() {
     vertices = std::vector<Vertex>();
@@ -180,6 +182,53 @@ void Map::removeEdge(Edge e) {
     std::vector<Edge> *e2 = endpoints[1].getEdges();
     auto i = std::find(edges.begin(), edges.end(), e);
     edges.pop_back();
+}
+
+static bool comparePair(const std::pair<int, std::string> p1, const std::pair<int, std::string> p2) {
+    return p1.first < p2.first;
+}
+
+int Map::shortestPath(std::string src, std::string destination) {
+    std::unordered_map<std::string, int> d;
+    std::unordered_map<std::string, int> cloud;
+    std::list<std::pair<int, std::string>> pq;
+    std::unordered_map<std::string, std::pair<int, std::string>> pqTokens;
+    for(Vertex v : vertices) {
+        if(v.getName() == src) {
+            std::pair<std::string, int> p(v.getName(), 0);
+            d.insert(p);
+        }
+        else {
+            std::pair<std::string, int> p(v.getName(), INT_MAX);
+            d.insert(p);
+        }
+        std::pair<int, std::string> p(d.at(v.getName()), v.getName());
+        pq.push_back(p);
+        std::pair<std::string, std::pair<int, std::string>> p1(v.getName(), p);
+        pqTokens.insert(p1);
+    }
+    while(!pq.empty()) {
+        pq.sort(comparePair);
+        std::pair p = pq.front();
+        pq.erase(pq.begin());
+        Vertex u = findVertex(p.second);
+        int key = p.first;
+        std::pair p1(u.getName(), key);
+        cloud.insert(p1);
+        pqTokens.erase(u.getName());
+        for(Edge e : edges) {
+            Vertex v = opposite(u, e);
+            if(cloud.find(v.getName()) == cloud.end()) {
+                int wgt = e.getCost();
+                if(d.at(u.getName()) + wgt < d.at(v.getName())) {
+                    std::pair p2(v.getName(), d.at(u.getName()) + wgt);
+                    d.insert(p2);
+                    //pq.replaceKey(pqTokens.at(v.getName()), d.at(v.getName()))
+                }
+            }
+        }
+    }
+    return 0;
 }
 
 //void Map::placeHouse(Vertex v, House h) {
