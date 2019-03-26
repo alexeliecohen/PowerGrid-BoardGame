@@ -41,6 +41,11 @@ vector<string> Player::houseColor = {"Green","Blue","Black","Pink","Yellow","Ora
         myHouseColor = houseColor[choice];
         houseColor.erase(houseColor.begin()+choice);
 
+        for(int i = 0; i < DEFAULTHOME; i++) {
+            Houses *h = new Houses(0, myHouseColor, playerName);
+            myHouses.push_back(*h);
+        }
+
         elektros = DEFAULTELECTRO;
         oil = DEFAULTRESOURCE;
         coal = DEFAULTRESOURCE;
