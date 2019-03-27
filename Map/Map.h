@@ -18,7 +18,7 @@ public:
     std::vector<Edge> getEdges();
     std::vector<std::string> getRegions();
     std::vector<Map> getSubgraphs();
-    std::vector<Edge> getVertexEdges(Vertex v);
+    std::vector<Edge> getVertexEdges(Vertex &v);
     void addVertex(Vertex v);
     void addEdge(Vertex &u, Vertex &v, int cost);
     void addEdge(Edge &e);

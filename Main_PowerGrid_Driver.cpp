@@ -69,7 +69,7 @@ int main() {
 //    for(auto s : graphs) {
 //        cout << s;
 //    }
-    cout << m.shortestPath("Boston", "Detroit");
+    m.shortestPath("Boston", "Detroit");
 //    cout << "Please enter the number of players(2-6): ";
 //    cin >> numPlayers;
 //    for(int j = 0; j < numPlayers; j++) {

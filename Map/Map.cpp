@@ -55,7 +55,11 @@ std::vector<Edge> Map::getEdges() {
     return edges;
 }
 
+<<<<<<< HEAD
 std::vector<Edge> Map::getVertexEdges(Vertex v) {
+=======
+std::vector<Edge> Map::getVertexEdges(Vertex &v) {
+>>>>>>> 4aac0ce75a478f90cebf8f7d398eaf8125274480
     return v.getEdges();
 }
 
@@ -203,35 +207,32 @@ int Map::shortestPath(std::string src, std::string destination) {
         pq.push_back(std::pair<int, std::string> (d.at(v.getName()), v.getName()));
         pqTokens.insert(std::pair<std::string, std::pair<int, std::string>> (v.getName(), std::pair<int, std::string> (d.at(v.getName()), v.getName())));
     }
-    //while(!pq.empty()) {
+    while(!pq.empty()) {
         pq.sort(comparePair);
         std::pair p = pq.front();
-        //std::cout << p.first << " " << p.second << "\n";
         pq.erase(pq.begin());
         Vertex u = findVertex(p.second);
         int key = p.first;
-        cloud.insert(std::pair (u.getName(), key));
+        std::pair p2(u.getName(), key);
+        cloud.insert(p2);
         pqTokens.erase(u.getName());
-        for(const Edge &e : getVertexEdges(u)) {
-            Vertex v = opposite(u, e);
-            std::cout << v;
-            pq.remove(std::pair(d.at(v.getName()), v.getName()));
-            if(cloud.find(v.getName()) == cloud.end()) {
-                int wgt = e.getCost();
-                if(d.at(u.getName()) + wgt < d.at(v.getName())) {
-                    d.insert(std::pair (v.getName(), d.at(u.getName()) + wgt));
-                    std::pair p1(d.at(u.getName()) + wgt, v.getName());
-                    std::cout << p1.first << " " << p1.second << "\n";
-                    pq.push_back(p1);
+        for(auto &e : edges) {
+            if(e.getEndpoints()[0] == u || e.getEndpoints()[1] == u) {
+                Vertex v = opposite(u, e);
+                if(cloud.find(v.getName()) == cloud.end()) {
+                    int wgt = e.getCost();
+                    if(d.at(u.getName()) + wgt < d.at(v.getName())) {
+                        d.erase(v.getName());
+                        d.insert(std::pair (v.getName(), d.at(u.getName()) + wgt));
+                        pq.remove(std::pair(d.at(v.getName()), v.getName()));
+                        std::pair p1(d.at(u.getName()) + wgt, v.getName());
+                        pq.push_back(p1);
+                    }
                 }
             }
         }
-    //}
-//    for(auto v : vertices) {
-//        std::cout << v.getName() << " " << cloud.at(v.getName()) << "\n";
-//    }
-    //return cloud.at(destination);
-    return 0;
+    }
+    return cloud.at(destination);
 }
 
 //void Map::placeHouse(Vertex v, House h) {
