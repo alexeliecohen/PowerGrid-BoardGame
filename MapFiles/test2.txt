@@ -1,0 +1,10 @@
+AUTHORIZEDPOWERGRIDMAP
+regions
+something
+somethingelse
+cities
+city1 something
+city2 something
+city3 somethingelse
+CONNECTIONS
+city1 city2 2

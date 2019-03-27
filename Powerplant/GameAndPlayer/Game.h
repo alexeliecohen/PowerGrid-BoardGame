@@ -74,7 +74,7 @@ static int PAYMENT[] = {10,22,33,44,54,64,73,82,90,98,105,112,118,124,129,134,13
 //payment in electros based on cities supplied with electricity
 static int DEFAULTELECTRO = 50;//default electro for each player at the start of the game
 static int DEFAULTRESOURCE = 0;//default resource at the beginning of the game
-static int DEFAULTHOME = 0;//default number of homes for each player at the beginning of the game
+static int DEFAULTHOME = 22;//default number of homes for each player at the beginning of the game
 static int MAXNUMBERPLAYERS=6; //max number of players in the game
 static int MINNUMBERPLAYERS=2;//min number players in the game.
 //static int MAXRESOURCE

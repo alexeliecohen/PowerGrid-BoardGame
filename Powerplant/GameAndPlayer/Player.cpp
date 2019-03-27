@@ -24,57 +24,63 @@ vector<string> Player::houseColor = {"Green","Blue","Black","Pink","Yellow","Ora
  * Player default constructor takes the playername the choice of house color and sets variables to default
  * values at start of the game
  */
-Player::Player() {
-	cout << "Welcome Player " << numOfPlayers+1 << "!" << endl;
-	if (numOfPlayers == MAXNUMBERPLAYERS) {
-		std::cout << "Max Number of players reached, cannot create more";
-		return;
-	}
-	cout << "Please enter your player name: " << endl;
-	cin >> playerName;
+    Player::Player() {
+        cout << "Welcome Player " << numOfPlayers+1 << "!" << endl;
+        if (numOfPlayers == MAXNUMBERPLAYERS) {
+            std::cout << "Max Number of players reached, cannot create more";
+            return;
+        }
+        cout << "Please enter your player name: " << endl;
+        cin >> playerName;
 
-	cout << "Please select a number for a house color:" << endl;
-	for (int i = 0; i < houseColor.size() ; ++i) {
-		cout << i << ":" << houseColor[i] << endl;
-	}
-	int choice;
-	cin >> choice;
-	myHouseColor = houseColor[choice];
-	houseColor.erase(houseColor.begin()+choice);
+        cout << "Please select a number for a house color:" << endl;
+        for (int i = 0; i < houseColor.size() ; ++i) {
+            cout << i << ":" << houseColor[i] << endl;
+        }
+        int choice;
+        cin >> choice;
+        myHouseColor = houseColor[choice];
+        houseColor.erase(houseColor.begin()+choice);
 
-	elektros = DEFAULTELECTRO;
-	oil = DEFAULTRESOURCE;
-	coal = DEFAULTRESOURCE;
-	uranium = DEFAULTRESOURCE;
-	garbage = DEFAULTRESOURCE;
-	numOfCities = DEFAULTHOME;
-	numbHomes = DEFAULTHOME;
-	numOfPlayers++;
-}//close constructor
+        for(int i = 0; i < DEFAULTHOME; i++) {
+            Houses *h = new Houses(0, myHouseColor, playerName);
+            myHouses.push_back(*h);
+        }
 
-/**
- *
- * @param nameIn parametrized constructor takes name
- */
-Player::Player(std::string nameIn) {
-	if (numOfPlayers == MAXNUMBERPLAYERS) {
-		std::cout << "Max Number of players reached, cannot create more";
-		return;
-	}
-	playerName = nameIn;
-	this->myHouseColor = myHouseColor;
-	elektros = DEFAULTELECTRO;
-	oil = DEFAULTRESOURCE;
-	coal = DEFAULTRESOURCE;
-	uranium = DEFAULTRESOURCE;
-	numOfCities = DEFAULTHOME;
-	numbHomes = DEFAULTHOME;
-	this->numOfPlayers++;
-}
+        elektros = DEFAULTELECTRO;
+        oil = DEFAULTRESOURCE;
+        coal = DEFAULTRESOURCE;
+        uranium = DEFAULTRESOURCE;
+        garbage = DEFAULTRESOURCE;
+        numOfCities = DEFAULTHOME;
+        numbHomes = DEFAULTHOME;
+        numOfPlayers++;
+    }//close constructor
 
-Player::~Player() {
-	std::cout << "Player " << playerName << " has left the game" << endl;
-}//close destructor
+    /**
+     *
+     * @param nameIn parametrized constructor takes name
+     */
+    Player::Player(std::string nameIn) {
+        if (numOfPlayers == MAXNUMBERPLAYERS) {
+            std::cout << "Max Number of players reached, cannot create more";
+            return;
+        }
+        playerName = nameIn;
+        this->myHouseColor = myHouseColor;
+        elektros = DEFAULTELECTRO;
+        oil = DEFAULTRESOURCE;
+        coal = DEFAULTRESOURCE;
+        uranium = DEFAULTRESOURCE;
+        numOfCities = DEFAULTHOME;
+        numbHomes = DEFAULTHOME;
+        this->numOfPlayers++;
+    }
+
+    Player::~Player() {
+        std::cout << "Player " << playerName << " has left the game" << endl;
+    }//close destructor
+
 
 //Setters and Getters
 
