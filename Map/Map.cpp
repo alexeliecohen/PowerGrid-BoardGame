@@ -9,8 +9,10 @@
 #include <iostream>
 #include <algorithm>
 #include <unordered_map>
-#include <queue>
 
+/**
+ * Default constructor for the map
+ */
 Map::Map() {
     vertices = std::vector<Vertex>();
     edges = std::vector<Edge>();
@@ -18,6 +20,10 @@ Map::Map() {
     subgraphs = std::vector<Map>();
 }
 
+/**
+ * Method to add a new vertex to the map
+ * @param v the vertex to be added
+ */
 void Map::addVertex(Vertex v) {
     if(!(std::find(vertices.begin(), vertices.end(), v) != vertices.end())) {
         vertices.push_back(v);
@@ -27,6 +33,12 @@ void Map::addVertex(Vertex v) {
     }
 }
 
+/**
+ * Method to add a new edge to the map
+ * @param u an endpoint
+ * @param v the other endpoint
+ * @param cost the weight of the edge
+ */
 void Map::addEdge(Vertex &u, Vertex &v, int cost) {
     Edge e = Edge(u, v, cost);
     if(!(std::find(edges.begin(), edges.end(), e) != edges.end())) {
@@ -39,26 +51,44 @@ void Map::addEdge(Vertex &u, Vertex &v, int cost) {
     }
 }
 
+/**
+ * calculates the number of vertices in the map
+ * @return the number of vertices
+ */
 int Map::numVertex() {
     return vertices.size();
 }
 
+/**
+ * calculates the number of edges in the map
+ * @return the number of edges
+ */
 int Map::numEdges() {
     return edges.size();
 }
 
+/**
+ * Getter for the set of vertices for the map
+ * @return a vector of vertices
+ */
 std::vector<Vertex> Map::getVertices() {
     return vertices;
 }
 
+/**
+ * Getter fot the set of edges for the map
+ * @return a vector of edges
+ */
 std::vector<Edge> Map::getEdges() {
     return edges;
 }
 
-std::vector<Edge> Map::getVertexEdges(Vertex &v) {
-    return v.getEdges();
-}
-
+/**
+ * Method to find the vertex opposite the given vertex, through the given edge
+ * @param v the starting vertex
+ * @param e the edge to go through
+ * @return the vertex opposite the edge
+ */
 Vertex Map::opposite(Vertex v, Edge e) {
     Vertex* endpoints = e.getEndpoints();
     if(endpoints[0] == v) {
@@ -69,6 +99,10 @@ Vertex Map::opposite(Vertex v, Edge e) {
     }
 }
 
+/**
+ * Method to check if the map is connected, implemented using breadth-first search
+ * @return if the graph is connected
+ */
 bool Map::BFS() {
     auto level = std::vector<Vertex>();
     auto known = std::vector<Vertex>();
@@ -92,6 +126,12 @@ bool Map::BFS() {
     return known.size() == numVertex();
 }
 
+/**
+ * Operator overload for the output stream
+ * @param os an output stream
+ * @param m a map object
+ * @return a stream to output the contents of the map
+ */
 std::ostream &operator<<(std::ostream &os, Map &m) {
     os << "Regions:\n";
     for(const auto &r : m.getRegions()) {
@@ -110,6 +150,11 @@ std::ostream &operator<<(std::ostream &os, Map &m) {
 }
 
 //TODO what to return if vertex not found
+/**
+ * Method to find a specified vertex in the map
+ * @param s the name of the vertex
+ * @return the vertex with the specified name
+ */
 Vertex Map::findVertex(std::string s) {
     for (const auto &v : vertices) {
         if(v.getName() == s ) {
@@ -118,6 +163,9 @@ Vertex Map::findVertex(std::string s) {
     }
 }
 
+/**
+ * Method to split the map into subgraphs based on the regions of the map
+ */
 void Map::createSubgraphs() {
     int i = 0;
     for(const auto &r : regions) {
@@ -139,18 +187,34 @@ void Map::createSubgraphs() {
     }
 }
 
+/**
+ * Adds a new region name to the graph
+ * @param region a region name
+ */
 void Map::addRegion(std::string region) {
     regions.push_back(region);
 }
 
+/**
+ * Getter for the set of region names of the map
+ * @return a vector with the region names
+ */
 std::vector<std::string> Map::getRegions() {
     return regions;
 }
 
+/**
+ * Getter for the set of subgraphs of the map
+ * @return a vector with all the subgraphs of the map
+ */
 std::vector<Map> Map::getSubgraphs() {
     return subgraphs;
 }
 
+/**
+ * Adds an edge to the graph
+ * @param e an edge
+ */
 void Map::addEdge(Edge &e) {
     if(!(std::find(edges.begin(), edges.end(), e) != edges.end())) {
         edges.push_back(e);
@@ -161,6 +225,10 @@ void Map::addEdge(Edge &e) {
 }
 
 //TODO finish function to return Map with regions selected
+/**
+ * Method to create the final map to be used in the game
+ * @return a map
+ */
 Map Map::createFinalMap() {
     Map g = Map();
     //take selected regions and add them to final graph
@@ -172,12 +240,20 @@ Map Map::createFinalMap() {
 }
 
 //TODO implement method
+/**
+ * Method to remove a vertex from the map
+ * @param v the vertex to be removed
+ */
 void Map::removeVertex(Vertex v) {
     auto i = std::find(vertices.begin(), vertices.end(), v);
     //vertices.erase(vertices.begin() + 0);
 }
 
 //TODO implement method
+/**
+ * Method to remove an edge from the map
+ * @param e the edge to be removed
+ */
 void Map::removeEdge(Edge e) {
     Vertex* endpoints = e.getEndpoints();
     std::vector<Edge> e1 = endpoints[0].getEdges();
@@ -186,10 +262,23 @@ void Map::removeEdge(Edge e) {
     edges.pop_back();
 }
 
+/**
+ * Helper method for the shortest path algorithm,
+ * Compares two standard library pairs based on the first value
+ * @param p1 a standard library pair
+ * @param p2 a second standard library pair
+ * @return if the first pair is smaller than the second
+ */
 static bool comparePair(const std::pair<int, std::string> p1, const std::pair<int, std::string> p2) {
     return p1.first < p2.first;
 }
 
+/**
+ * Method to calculate the shortest path between two vertices in the map
+ * @param src the starting vertex
+ * @param destination the ending vertex
+ * @return the shortest path between the two vertices
+ */
 int Map::shortestPath(std::string src, std::string destination) {
     std::unordered_map<std::string, int> d;
     std::unordered_map<std::string, int> cloud;
