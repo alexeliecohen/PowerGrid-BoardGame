@@ -55,11 +55,7 @@ std::vector<Edge> Map::getEdges() {
     return edges;
 }
 
-<<<<<<< HEAD
-std::vector<Edge> Map::getVertexEdges(Vertex v) {
-=======
 std::vector<Edge> Map::getVertexEdges(Vertex &v) {
->>>>>>> 4aac0ce75a478f90cebf8f7d398eaf8125274480
     return v.getEdges();
 }
 
@@ -81,11 +77,13 @@ bool Map::BFS() {
     while(!level.empty()) {
         auto nextLevel = std::vector<Vertex>();
         for(auto &u : level) {
-            for(auto &e : getVertexEdges(u)) {
-                Vertex v = opposite(u, e);
-                if(!(std::find(known.begin(), known.end(), v) != known.end())) {
-                    known.push_back(v);
-                    nextLevel.push_back(v);
+            for(auto &e : edges) {
+                if(e.getEndpoints()[0] == u || e.getEndpoints()[1] == u) {
+                    Vertex v = opposite(u, e);
+                    if (!(std::find(known.begin(), known.end(), v) != known.end())) {
+                        known.push_back(v);
+                        nextLevel.push_back(v);
+                    }
                 }
             }
         }
@@ -232,7 +230,12 @@ int Map::shortestPath(std::string src, std::string destination) {
             }
         }
     }
-    return cloud.at(destination);
+    if(cloud.find(destination) == cloud.end()) {
+        return -1;
+    }
+    else {
+        return cloud.at(destination);
+    }
 }
 
 //void Map::placeHouse(Vertex v, House h) {
