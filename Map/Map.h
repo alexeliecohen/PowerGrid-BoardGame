@@ -18,22 +18,18 @@ public:
     std::vector<Edge> getEdges();
     std::vector<std::string> getRegions();
     std::vector<Map> getSubgraphs();
-    std::vector<Edge> getVertexEdges(Vertex &v);
     void addVertex(Vertex v);
     void addEdge(Vertex &u, Vertex &v, int cost);
     void addEdge(Edge &e);
     void addRegion(std::string region);
-    void removeEdge(Edge e);
-    void removeVertex(Vertex v);
     Vertex opposite(Vertex v, Edge e);
     Vertex findVertex(std::string s);
+    void removeRegion(int i);
     bool BFS();
+    int shortestPath(std::string src, std::string destination);
     void createSubgraphs();
     Map createFinalMap();
-    int shortestPath(std::string src, std::string destination);
-    //bool comparePair(const std::pair<int, std::string> *p1, const std::pair<int, std::string> *p2);
     friend std::ostream& operator<<(std::ostream& os, Map& m);
-//    void placeHouse(Vertex v, House h);
 private:
     std::vector<Vertex> vertices;
     std::vector<Edge> edges;

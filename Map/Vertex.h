@@ -22,6 +22,7 @@ public:
     std::string getPlayer(const int i);
     std::string getName() const;
     void addEdge(Edge e);
+    void setPlayer(std::string name);
     Vertex& operator=(const Vertex &v);
     bool operator==(const Vertex &v);
     friend std::ostream& operator<<(std::ostream& os, const Vertex v);

@@ -154,3 +154,8 @@ std::ostream &operator<<(std::ostream &os, const Vertex v) {
 void Vertex::addEdge(Edge e) {
     edges.push_back(e);
 }
+
+void Vertex::setPlayer(std::string name) {
+    players[playerCount] = name;
+    playerCount++;
+}
