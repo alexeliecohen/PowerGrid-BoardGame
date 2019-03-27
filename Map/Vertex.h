@@ -25,12 +25,10 @@ public:
     Vertex& operator=(const Vertex &v);
     bool operator==(const Vertex &v);
     friend std::ostream& operator<<(std::ostream& os, const Vertex v);
-//    void setHouse(House house);
 private:
     int cost[3];
     int playerCount = 0;
     std::string players[3];
-//    House houses[3];
     std::string name;
     std::string region;
     std::vector<Edge> edges;

@@ -20,7 +20,6 @@ Vertex::Vertex() {
         players[i] = "none";
     }
     edges = std::vector<Edge>();
-    //houses = House[3];
 }
 
 /**
@@ -39,7 +38,6 @@ Vertex::Vertex(const std::string name, const std::string region) {
         players[i] = "none";
     }
     edges = std::vector<Edge>();
-    //houses = House[3];
 }
 
 /**
@@ -56,9 +54,6 @@ Vertex::Vertex(const Vertex &v) {
     for (int i = 0; i < v.players->size(); i++) {
         players[i] = v.players[i];
     }
-//    for(int i = 0; i < 3; i++) {
-//        houses[i] = v.houses[i];
-//    }
 }
 
 /**
@@ -125,9 +120,6 @@ Vertex& Vertex::operator=(const Vertex &v) {
     for(int i = 0; i < 3; i++) {
         cost[i] = v.cost[i];
     }
-//    for(int i = 0; i < 3; i++) {
-//        houses[i] = v.houses[i];
-//    }
     for(int i = 0; i < v.players->size(); i++) {
         players[i] = v.players[i];
     }
@@ -162,7 +154,3 @@ std::ostream &operator<<(std::ostream &os, const Vertex v) {
 void Vertex::addEdge(Edge e) {
     edges.push_back(e);
 }
-
-//void Vertex::setHouse(House house) {
-//    houses[0] = house;
-//}
