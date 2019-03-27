@@ -55,7 +55,7 @@ std::vector<Edge> Map::getEdges() {
     return edges;
 }
 
-std::vector<Edge>* Map::getVertexEdges(Vertex v) {
+std::vector<Edge> Map::getVertexEdges(Vertex &v) {
     return v.getEdges();
 }
 
@@ -77,7 +77,7 @@ bool Map::BFS() {
     while(!level.empty()) {
         auto nextLevel = std::vector<Vertex>();
         for(auto &u : level) {
-            for(auto &e : *getVertexEdges(u)) {
+            for(auto &e : getVertexEdges(u)) {
                 Vertex v = opposite(u, e);
                 if(!(std::find(known.begin(), known.end(), v) != known.end())) {
                     known.push_back(v);
@@ -178,8 +178,8 @@ void Map::removeVertex(Vertex v) {
 //TODO implement method
 void Map::removeEdge(Edge e) {
     Vertex* endpoints = e.getEndpoints();
-    std::vector<Edge> *e1 = endpoints[0].getEdges();
-    std::vector<Edge> *e2 = endpoints[1].getEdges();
+    std::vector<Edge> e1 = endpoints[0].getEdges();
+    std::vector<Edge> e2 = endpoints[1].getEdges();
     auto i = std::find(edges.begin(), edges.end(), e);
     edges.pop_back();
 }
@@ -195,12 +195,10 @@ int Map::shortestPath(std::string src, std::string destination) {
     std::unordered_map<std::string, std::pair<int, std::string>> pqTokens;
     for(Vertex v : vertices) {
         if(v.getName() == src) {
-            std::pair<std::string, int> p(v.getName(), 0);
-            d.insert(p);
+            d.insert(std::pair<std::string, int> (v.getName(), 0));
         }
         else {
-            std::pair<std::string, int> p(v.getName(), INT_MAX);
-            d.insert(p);
+            d.insert(std::pair<std::string, int> (v.getName(), INT_MAX));
         }
         std::pair<int, std::string> p(d.at(v.getName()), v.getName());
         pq.push_back(p);
@@ -213,22 +211,26 @@ int Map::shortestPath(std::string src, std::string destination) {
         pq.erase(pq.begin());
         Vertex u = findVertex(p.second);
         int key = p.first;
-        std::pair p1(u.getName(), key);
-        cloud.insert(p1);
+        std::pair p2(u.getName(), key);
+        cloud.insert(p2);
         pqTokens.erase(u.getName());
-        for(Edge e : edges) {
-            Vertex v = opposite(u, e);
-            if(cloud.find(v.getName()) == cloud.end()) {
-                int wgt = e.getCost();
-                if(d.at(u.getName()) + wgt < d.at(v.getName())) {
-                    std::pair p2(v.getName(), d.at(u.getName()) + wgt);
-                    d.insert(p2);
-                    //pq.replaceKey(pqTokens.at(v.getName()), d.at(v.getName()))
+        for(auto &e : edges) {
+            if(e.getEndpoints()[0] == u || e.getEndpoints()[1] == u) {
+                Vertex v = opposite(u, e);
+                if(cloud.find(v.getName()) == cloud.end()) {
+                    int wgt = e.getCost();
+                    if(d.at(u.getName()) + wgt < d.at(v.getName())) {
+                        d.erase(v.getName());
+                        d.insert(std::pair (v.getName(), d.at(u.getName()) + wgt));
+                        pq.remove(std::pair(d.at(v.getName()), v.getName()));
+                        std::pair p1(d.at(u.getName()) + wgt, v.getName());
+                        pq.push_back(p1);
+                    }
                 }
             }
         }
     }
-    return 0;
+    return cloud.at(destination);
 }
 
 //void Map::placeHouse(Vertex v, House h) {

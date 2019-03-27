@@ -19,7 +19,7 @@ Vertex::Vertex() {
     for(int i = 0; i < players->size(); i++) {
         players[i] = "none";
     }
-    edges = new std::vector<Edge>();
+    edges = std::vector<Edge>();
     //houses = House[3];
 }
 
@@ -38,7 +38,7 @@ Vertex::Vertex(const std::string name, const std::string region) {
     for(int i = 0; i < players->size(); i++) {
         players[i] = "none";
     }
-    edges = new std::vector<Edge>();
+    edges = std::vector<Edge>();
     //houses = House[3];
 }
 
@@ -56,13 +56,6 @@ Vertex::Vertex(const Vertex &v) {
     for (int i = 0; i < v.players->size(); i++) {
         players[i] = v.players[i];
     }
-    if(v.edges) {
-        edges = new std::vector<Edge>();
-        edges = v.edges;
-    }
-    else {
-        edges = nullptr;
-    }
 //    for(int i = 0; i < 3; i++) {
 //        houses[i] = v.houses[i];
 //    }
@@ -72,7 +65,7 @@ Vertex::Vertex(const Vertex &v) {
  * Getter for the edges
  * @return the set of edges adjacent to this vertex
  */
-std::vector<Edge>* Vertex::getEdges() {
+std::vector<Edge> Vertex::getEdges() {
     return edges;
 }
 
@@ -126,7 +119,6 @@ Vertex& Vertex::operator=(const Vertex &v) {
     if(this == &v) {
         return *this;
     }
-    delete edges;
     playerCount = v.playerCount;
     name = v.name;
     region = v.region;
@@ -138,13 +130,6 @@ Vertex& Vertex::operator=(const Vertex &v) {
 //    }
     for(int i = 0; i < v.players->size(); i++) {
         players[i] = v.players[i];
-    }
-    if(v.edges) {
-        edges = new std::vector<Edge>();
-        edges = v.edges;
-    }
-    else {
-        edges = nullptr;
     }
     return *this;
 }
@@ -175,7 +160,7 @@ std::ostream &operator<<(std::ostream &os, const Vertex v) {
  * @param e the edge to be added
  */
 void Vertex::addEdge(Edge e) {
-    edges->push_back(e);
+    edges.push_back(e);
 }
 
 //void Vertex::setHouse(House house) {
