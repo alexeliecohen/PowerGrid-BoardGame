@@ -15,7 +15,7 @@ public:
     Vertex();
     Vertex(const std::string name, const std::string region);
     Vertex(const Vertex &v);
-    std::vector<Edge>* getEdges();
+    std::vector<Edge> getEdges();
     int getCost();
     std::string getRegion() const;
     int getPlayerCount();
@@ -33,6 +33,6 @@ private:
 //    House houses[3];
     std::string name;
     std::string region;
-    std::vector<Edge> *edges;
+    std::vector<Edge> edges;
 };
 #endif //COMP345TEAM21_VERTEX_H
