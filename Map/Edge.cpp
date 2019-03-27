@@ -77,7 +77,7 @@ Edge &Edge::operator=(const Edge &e) {
  * @return  whether the two edges are equal
  */
 bool Edge::operator==(const Edge &e) {
-    return cost == e.cost;
+    return cost == e.cost && endpoints[0] == e.endpoints[0] && endpoints[1] == e.endpoints[1];
 }
 
 /**

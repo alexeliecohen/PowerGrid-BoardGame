@@ -156,7 +156,7 @@ Vertex& Vertex::operator=(const Vertex &v) {
  * @return whether or not the two vertices are equal
  */
 bool Vertex::operator==(const Vertex &v) {
-    return playerCount == v.playerCount && name == v.name && region == v.region && edges == v.edges;
+    return playerCount == v.playerCount && name == v.name && region == v.region;
 }
 
 /**

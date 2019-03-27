@@ -1,15 +1,3 @@
-/*
- * ResourceMarket.h
- *
- * 	MICHAEL GARNER
- * 	26338739
- * 	COMP 445
- * 	WINTER 2019
- *
- * 	ASSIGNMENT 1
- * 	POWER GRID
- *
- */
 
 #include <iostream>
 #include <string>

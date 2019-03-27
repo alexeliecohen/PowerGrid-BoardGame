@@ -1,3 +1,4 @@
+
 /*
  * Player.h
  *
@@ -11,9 +12,6 @@
  *
  *
 */
-//
-// Created by alext on 2/20/2019.
-//
 #include "Game.h"
 #include <string>
 #include <iostream>

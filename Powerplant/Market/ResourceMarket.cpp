@@ -1,3 +1,4 @@
+
 /*
  * ResourceMarket.cpp
  * 	MICHAEL GARNER
@@ -8,6 +9,11 @@
  * 	ASSIGNMENT 1
  * 	POWER GRID
  */
+
+#include "ResourceMarket.h"
+//
+// Created by alext on 2/21/2019.
+//
 
 #include <iostream>
 #include <string>
