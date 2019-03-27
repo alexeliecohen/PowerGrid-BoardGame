@@ -44,8 +44,7 @@ private:
     int numbHomes;
     int numOfCities;
     std::vector<Powerplant> myPowerPlant;
-    std::vector<Houses> myHouses;
-
+	std::vector<std::string> myHouses;
 public:
     Player();
 
@@ -128,7 +127,6 @@ public:
 	int getCoalCap();
 	int getUraniumCap();
 	int getGarbageCap();
-
 };
 //close player class.h
 
