@@ -56,8 +56,8 @@ namespace Mike {
         //TODO throw exception for wrong file
         if ( !(fileInput.at(0) == ("AUTHORIZEDPOWERGRIDMAP") )) {
             cout << "MAP LOADER ERROR - THE FILE BEING USED IS NOT AN AUTHORIZED MAP FILE" << endl;
-            validMap = false;
-            return Map();
+            cout << "Please enter a valid map file next time you play!";
+            exit(0);
         }//close if not authorized file
 
         //READ IN REGIONS
@@ -104,8 +104,11 @@ namespace Mike {
 
         if (returnMap.BFS())
             cout << "\n\nThe Map loader is now returning a valid map\n\n";
-        else
+        else {
             cout << "\n\nTHE MAP LOADER READ AN INVALID MAP TYPE FILE\nPLEASE LOAD A VALID MAP FILE!\n\n";
+            cout << "The map entered is not connected, please try again with a connected map next time!";
+            exit(0);
+        }
         //return map
         return returnMap;
     }//close map builder
