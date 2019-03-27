@@ -65,27 +65,27 @@ int main() {
 //    m.removeVertex(m.getVertices().at(0));
 //    cout << m;
     std::vector<string> regions = m.getRegions();
-    m.createSubgraphs();
-    std::vector<Map> graphs = m.getSubgraphs();
-    for(auto s : graphs) {
-        cout << s;
-    }
-    m.shortestPath("montreal", "toronto");
-    cout << "Please enter the number of players(2-6): ";
-    cin >> numPlayers;
-    for(int j = 0; j < numPlayers; j++) {
-        Player *p = new Player();
-        players.push_back(*p);
-        cout << "Please select a region: \n";
-        for(int k = 0; k < regions.size(); k++) {
-            cout << k + 1 << ") " << regions[k] << "\n";
-        }
-        cin >> regionNumber;
-        regions.erase(regions.begin()+ regionNumber - 1);
-    }
-
-    Deck d = Deck();
-
-    d.shuffle();
+//    m.createSubgraphs();
+//    std::vector<Map> graphs = m.getSubgraphs();
+//    for(auto s : graphs) {
+//        cout << s;
+//    }
+    m.shortestPath("Boston", "Detroit");
+//    cout << "Please enter the number of players(2-6): ";
+//    cin >> numPlayers;
+//    for(int j = 0; j < numPlayers; j++) {
+//        Player *p = new Player();
+//        players.push_back(*p);
+//        cout << "Please select a region: \n";
+//        for(int k = 0; k < regions.size(); k++) {
+//            cout << k + 1 << ") " << regions[k] << "\n";
+//        }
+//        cin >> regionNumber;
+//        regions.erase(regions.begin()+ regionNumber - 1);
+//    }
+//
+//    Deck d = Deck();
+//
+//    d.shuffle();
 	return 0;
 }// close main loop
