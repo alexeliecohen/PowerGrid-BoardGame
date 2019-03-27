@@ -20,6 +20,7 @@
 #include "../HousesAndCities/Houses.h"
 #include "../Card/Powerplant.h"
 #include "../Market/ResourceMarket.h"
+#include "../../Map/Map.h"
 
 #ifndef POWERPLANT_PLAYER_H
 #define POWERPLANT_PLAYER_H
@@ -127,6 +128,7 @@ public:
 	int getCoalCap();
 	int getUraniumCap();
 	int getGarbageCap();
+	void buyCities(Map *map, int gamePhaseNumber);
 };
 //close player class.h
 

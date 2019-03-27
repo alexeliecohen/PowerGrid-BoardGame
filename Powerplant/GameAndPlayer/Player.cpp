@@ -270,20 +270,20 @@ ostream& Player::displayPowerplants(ostream& stream) {
 	return  stream;
 }
 
-void Player::addHouses(Houses& someHouse) {
-	myHouses.push_back(someHouse);
-	numbHomes++;
-	numOfCities++;
-}
-
-void Player::removeHouses(Houses& someHouse) {
-	std::vector<Houses>::iterator position = std::find(myHouses.begin(), myHouses.end(),someHouse);
-	if (position != myHouses.end()) { // == myVector.end() means the element was not found
-		myHouses.erase(position);
-	}
-	numbHomes--;
-	numOfCities--;
-}
+//void Player::addHouses(Houses& someHouse) {
+//	myHouses.push_back(someHouse);
+//	numbHomes++;
+//	numOfCities++;
+//}
+//
+//void Player::removeHouses(Houses& someHouse) {
+//	std::vector<Houses>::iterator position = std::find(myHouses.begin(), myHouses.end(),someHouse);
+//	if (position != myHouses.end()) { // == myVector.end() means the element was not found
+//		myHouses.erase(position);
+//	}
+//	numbHomes--;
+//	numOfCities--;
+//}
 
 //Buy resources method - Call this method in the driver, using a loop for each player
 void Player::buyResources(Mike2::ResourceMarket *resourceMarket){
@@ -310,7 +310,7 @@ void Player::buyResources(Mike2::ResourceMarket *resourceMarket){
 				std::cout<<"INVALID INPUT - THERE SHOULD ONLY BE 1 CHARACTER ENTERED"<<std::endl;
 			}//if
 			else{
-				if (userInput.at(0).isDigit()){
+				if (isdigit(userInput.at(0))) {
 					playerSelection = std::stoi( userInput );
 					if ( playerSelection > 0 && playerSelection < 6)
 						validInput = true;
@@ -319,9 +319,9 @@ void Player::buyResources(Mike2::ResourceMarket *resourceMarket){
 		}//close while not valid input
 		if (playerSelection == 1){//player selects to buy 1 oil
 			//Validate that the 1)player has enough money	2)space to purchase the resource	3)There is oil available to purchase
-			if ( this->elektros >= resourceMarket->getOilPrice() && this.getOilCap() >= 1 && resourceMarket->oil > 0){
+			if ( this->elektros >= resourceMarket->getOilPrice() && this->getOilCap() >= 1 && resourceMarket->getOil() > 0){
 				//Add oil to player
-				this->addOil();
+				this->addOil(1);
 				//Charge player elektros for the resource purchase
 				this->elektros -= resourceMarket->getOilPrice();
 				//Remove oil from supply
@@ -331,14 +331,14 @@ void Player::buyResources(Mike2::ResourceMarket *resourceMarket){
 				std::cout<<"Sorry, you do not have enough elektros to purchase this unit of oil\nYou currently have "<<elektros<<" elektros, and require at least "<<resourceMarket->getOilPrice()<<" elektros\n";
 			else if ( this->getOilCap() < 1 )
 				std::cout<<"Sorry, you do not have enough room in your power plants to store more oil\nYou currently have "<<oil<<" oil\n";
-			else if ( resourceMarket->oil == 0 )
+			else if ( resourceMarket->getOil() == 0 )
 				std::cout<<"Sorry, there is no oil left on the market to be purchased\n";
 		}//close if player selects option 1 to buy 1 oil
 		else if (playerSelection == 2){//player selects to buy 2 coal
 			//Validate that the 1)player has enough money	2)space to purchase the resource	3)There is oil available to purchase
-			if ( this->elektros >= resourceMarket->getCoalPrice() && this.getCoalCap() >= 1 && resourceMarket->coal > 0){
+			if ( this->elektros >= resourceMarket->getCoalPrice() && this->getCoalCap() >= 1 && resourceMarket->getCoal() > 0){
 				//Add oil to player
-				this->addCoal();
+				this->addCoal(1);
 				//Charge player elektros for the resource purchase
 				this->elektros -= resourceMarket->getCoalPrice();
 				//Remove oil from supply
@@ -348,14 +348,14 @@ void Player::buyResources(Mike2::ResourceMarket *resourceMarket){
 				std::cout<<"Sorry, you do not have enough elektros to purchase this unit of coal\nYou currently have "<<elektros<<" elektros, and require at least "<<resourceMarket->getCoalPrice()<<" elektros\n";
 			else if ( this->getCoalCap() < 1 )
 				std::cout<<"Sorry, you do not have enough room in your power plants to store more coal\nYou currently have "<<coal<<" coal\n";
-			else if ( resourceMarket->coal == 0 )
+			else if ( resourceMarket->getCoal() == 0 )
 				std::cout<<"Sorry, there is no coal left on the market to be purchased\n";
 		}//close if player selects option 2 to buy 1 coal
 		else if (playerSelection == 3){//player selects to buy 3 uranium
 			//Validate that the 1)player has enough money	2)space to purchase the resource	3)There is uranium available to purchase
-			if ( this->elektros >= resourceMarket->getUraniumPrice() && this.getUraniumCap() >= 1 && resourceMarket->uranium > 0){
+			if ( this->elektros >= resourceMarket->getUraniumPrice() && this->getUraniumCap() >= 1 && resourceMarket->getUranium() > 0){
 				//Add oil to player
-				this->addUranium();
+				this->addUranium(1);
 				//Charge player elektros for the resource purchase
 				this->elektros -= resourceMarket->getUraniumPrice();
 				//Remove uranium from supply
@@ -365,14 +365,14 @@ void Player::buyResources(Mike2::ResourceMarket *resourceMarket){
 				std::cout<<"Sorry, you do not have enough elektros to purchase this unit of uranium\nYou currently have "<<elektros<<" elektros, and require at least "<<resourceMarket->getUraniumPrice()<<" elektros\n";
 			else if ( this->getUraniumCap() < 1 )
 				std::cout<<"Sorry, you do not have enough room in your power plants to store more uranium\nYou currently have "<<uranium<<" uranium\n";
-			else if ( resourceMarket->uranium == 0 )
+			else if ( resourceMarket->getUranium() == 0 )
 				std::cout<<"Sorry, there is no uranium left on the market to be purchased\n";
 		}//close if player selects option 3 to buy 1 uranium
 		else if (playerSelection == 4){//player selects to buy 4 garbage
 			//Validate that the 1)player has enough money	2)space to purchase the resource	3)There is uranium available to purchase
-			if ( this->elektros >= resourceMarket->getGarbagePrice() && this.getGarbageCap() >= 1 && resourceMarket->garbage > 0){
+			if ( this->elektros >= resourceMarket->getGarbagePrice() && this->getGarbageCap() >= 1 && resourceMarket->getGarbage() > 0){
 				//Add oil to player
-				this->addGarbage();
+				this->addGarbage(1);
 				//Charge player elektros for the resource purchase
 				this->elektros -= resourceMarket->getGarbagePrice();
 				//Remove uranium from supply
@@ -382,7 +382,7 @@ void Player::buyResources(Mike2::ResourceMarket *resourceMarket){
 				std::cout<<"Sorry, you do not have enough elektros to purchase this unit of garbage\nYou currently have "<<elektros<<" elektros, and require at least "<<resourceMarket->getGarbagePrice()<<" elektros\n";
 			else if ( this->getUraniumCap() < 1 )
 				std::cout<<"Sorry, you do not have enough room in your power plants to store more garbage\nYou currently have "<<garbage<<" garbage\n";
-			else if ( resourceMarket->uranium == 0 )
+			else if ( resourceMarket->getUranium() == 0 )
 				std::cout<<"Sorry, there is no garbage left on the market to be purchased\n";
 		}//close if player selects option 4 to buy 1 garbage
 		else if (playerSelection == 5){//player selects 5 to stop buying rersources
@@ -396,37 +396,37 @@ int Player::getOilCap(){
 	int returnValue = 0;
 	for (int i = 0 ; i < myPowerPlant.size() ; i++ ){
 		//check if plant is of
-		if ( getPowerPlant(i).getResourceType().equals("Oil") || getPowerPlant(i).getResourceType().equals("Hybrid") )
+		if ( getPowerPlant(i).getResourceType() == "Oil" || getPowerPlant(i).getResourceType() == "Hybrid" )
 			returnValue += 2*(getPowerPlant(i).getEnergyCost());
 	}//close for loop for each powerplant that the player owns
-	return (returnValue - this.oil);
+	return (returnValue - this->oil);
 }//close get oil cap function
 int Player::getCoalCap(){
 	int returnValue = 0;
 	for (int i = 0 ; i < myPowerPlant.size() ; i++ ){
 		//check if plant is of
-		if ( getPowerPlant(i).getResourceType().equals("Coal") || getPowerPlant(i).getResourceType().equals("Hybrid") )
+		if ( getPowerPlant(i).getResourceType() == "Coal" || getPowerPlant(i).getResourceType() == "Hybrid" )
 			returnValue += 2*(getPowerPlant(i).getEnergyCost());
 	}//close for loop for each powerplant that the player owns
-	return (returnValue - this.coal);
+	return (returnValue - this->coal);
 }//close get coal cap function
 int Player::Player::getUraniumCap(){
 	int returnValue = 0;
 	for (int i = 0 ; i < myPowerPlant.size() ; i++ ){
 		//check if plant is of
-		if ( getPowerPlant(i).getResourceType().equals("Uranium") )
+		if ( getPowerPlant(i).getResourceType() == "Uranium" )
 			returnValue += 2*(getPowerPlant(i).getEnergyCost());
 	}//close for loop for each powerplant that the player owns
-	return (returnValue - this.uranium);
+	return (returnValue - this->uranium);
 }//close get Uranium cap function
 int Player::getGarbageCap(){
 	int returnValue = 0;
 	for (int i = 0 ; i < myPowerPlant.size() ; i++ ){
 		//check if plant is of
-		if ( getPowerPlant(i).getResourceType().equals("Garbage") )
+		if ( getPowerPlant(i).getResourceType() == "Garbage" )
 			returnValue += 2*(getPowerPlant(i).getEnergyCost());
 	}//close for loop for each powerplant that the player owns
-	return (returnValue - this.garbage);
+	return (returnValue - this->garbage);
 }//close get oil garbage function
 
 //Building cities
@@ -503,7 +503,7 @@ void Player::buyCities(Map *map, int gamePhaseNumber){
 			std::vector<int> shortestPathToAllVertices;
 			for (int i = 0 ; i < myHouses.size() ; i++)
 				//Get the shortest path from the user selected city to all other cities in the network
-				shortestPathToAllVertices.push_back(  shortestPath(userIn, std::string destinationyHouses.at(i)) );
+				shortestPathToAllVertices.push_back(  map->shortestPath(userIn, myHouses.at(i)) );
 			std::sort( shortestPathToAllVertices.begin(), shortestPathToAllVertices.end() );
 			connectionCost = shortestPathToAllVertices.at(0);
 		}//else get the shortest path between the vertex given and
