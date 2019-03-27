@@ -24,6 +24,7 @@ public:
     void addRegion(std::string region);
     Vertex opposite(Vertex v, Edge e);
     Vertex findVertex(std::string s);
+    bool isVertex(std::string nameIn);
     void removeRegion(int i);
     bool BFS();
     int shortestPath(std::string src, std::string destination);
