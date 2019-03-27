@@ -19,7 +19,7 @@
 #include <algorithm>
 #include "../HousesAndCities/Houses.h"
 #include "../Card/Powerplant.h"
-#include "ResourceMarket.h"
+#include "../Market/ResourceMarket.h"
 
 #ifndef POWERPLANT_PLAYER_H
 #define POWERPLANT_PLAYER_H
@@ -123,7 +123,7 @@ public:
 
 
 	//Buying resources methods and sub routines
-	void buyResources(ResourceMarket *resourceMarket);
+	void buyResources(Mike2::ResourceMarket *resourceMarket);
 	int getOilCap();
 	int getCoalCap();
 	int getUraniumCap();
