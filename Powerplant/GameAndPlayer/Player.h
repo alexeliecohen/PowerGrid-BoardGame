@@ -1,3 +1,17 @@
+//
+// Created by alext on 2/20/2019.
+//
+#include "Game.h"
+#include <string>
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include "../HousesAndCities/Houses.h"
+#include "../Card/Powerplant.h"
+#include "ResourceMarket.h"
+
+#ifndef POWERPLANT_PLAYER_H
+#define POWERPLANT_PLAYER_H
 
 /*
  * Player.h
@@ -12,24 +26,13 @@
  *
  *
 */
-#include "Game.h"
-#include <string>
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include "../HousesAndCities/Houses.h"
-#include "../Card/Powerplant.h"
-#include "ResourceMarket.h"
-
-#ifndef POWERPLANT_PLAYER_H
-#define POWERPLANT_PLAYER_H
-
 
 //namespace Mike {
 static int MAXCOAL;
 static int MAXOIL;
 static int MAXGARBAGE;
 static int MAXURANIUM;
+
 
 
 class Player {
@@ -44,53 +47,39 @@ private:
     int numbHomes;
     int numOfCities;
     std::vector<Powerplant> myPowerPlant;
-    std::vector<Houses> myHouses;
+
+
+
+
+    //DELETE ME, replace with vector<Vertex> 	<-- 	 std::vector<Houses> myHouses;
+
+    //ADD THIS ATTRIBUTE TO PLAYER CLASS FOR FLAGGING WETHER NETWORK OF CITIES HAS BEEN STARTED
+    bool startedNetwork;
+    std::vector<Vertex> *myHouses;
 
 public:
     Player();
-
     Player(std::string name);
-
     virtual ~Player();
-
     static int getNumOfPlayers();
-
     const string &getMyHouseColor() const;
-
     const string &getPlayerName() const;
-
     int getElektros() const;
-
     int getOil() const;
-
     int getCoal() const;
-
     int getGarbage() const;
-
     int getUranium() const;
-
     int getNumbHomes() const;
-
     int getNumOfCities() const;
-
     void addElektro(int elektro);
-
     void removeElektro(int elektro);
-
     void addOil(int oil);
-
     void removeOil(int oil);
-
     void addGarbage(int garbage);
-
     void removeGarabge(int garbage);
-
     void addUranium(int uranium);
-
     void removeUranium(int uranium);
-
     void addCoal(int coal);
-
     void removeCoal(int coal);
 
 //    void addHomes(Houses& homes);
@@ -102,15 +91,10 @@ public:
 //    void removeCities(int cities);
 
     const vector<Powerplant> &getMyPowerPlant() const;
-
     Powerplant& getPowerPlant(int plantNumber);
-
     void addPowerplant(Powerplant& somePowerplant);
-
     void removePowerplant(Powerplant& somePowerplant);
-
     ostream& displayPowerplants(ostream& stream);
-
     void addHouses(Houses& someHouse);
 
     void removeHouses(Houses& someHouse);
@@ -128,6 +112,9 @@ public:
 	int getCoalCap();
 	int getUraniumCap();
 	int getGarbageCap();
+
+	//Building cities
+	void buyCities(Map map, int gamePhaseNumber);
 
 };
 //close player class.h
