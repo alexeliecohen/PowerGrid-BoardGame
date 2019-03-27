@@ -32,6 +32,7 @@ public:
     Map createFinalMap();
     friend std::ostream& operator<<(std::ostream& os, Map& m);
 //    void placeHouse(Vertex v, House h);
+     bool isVertex(std::string nameIn);
 private:
     std::vector<Vertex> vertices;
     std::vector<Edge> edges;
