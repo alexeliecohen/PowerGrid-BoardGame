@@ -19,6 +19,10 @@
 int Player::numOfPlayers=0;
 vector<string> Player::houseColor = {"Green","Blue","Black","Pink","Yellow","Orange"};
 
+//ADD THIS ATTRIBUTE TO PLAYER CLASS FOR FLAGGING WETHER NETWORK OF CITIES HAS BEEN STARTED
+bool startedNetwork;
+std::vector<Vertex> myHouses;
+
 //Constructors
 /**
  * Player default constructor takes the playername the choice of house color and sets variables to default
@@ -329,56 +333,56 @@ void Player::buyResources(ResourceMarket *resourceMarket){
 				std::cout<<"Sorry, there is no oil left on the market to be purchased\n";
 		}//close if player selects option 1 to buy 1 oil
 		else if (playerSelection == 2){//player selects to buy 2 coal
-					//Validate that the 1)player has enough money	2)space to purchase the resource	3)There is oil available to purchase
-					if ( this.elektros >= resourceMarket->getCoalPrice() && this.getCoalCap() >= 1 && resourceMarket->coal > 0){
-						//Add oil to player
-						this.addCoal();
-						//Charge player elektros for the resource purchase
-						this.elektros -= resourceMarket->getCoalPrice();
-						//Remove oil from supply
-						resourceMarket->removeCoal();
-					}//close if player is able to purchase the oil
-					else if ( this.elektros < resourceMarket->getCoalPrice() )
-						std::cout<<"Sorry, you do not have enough elektros to purchase this unit of coal\nYou currently have "<<elektros<<" elektros, and require at least "<<resourceMarket->getCoalPrice()<<" elektros\n";
-					else if ( this.getCoalCap() < 1 )
-						std::cout<<"Sorry, you do not have enough room in your power plants to store more coal\nYou currently have "<<coal<<" coal\n";
-					else if ( resourceMarket->coal == 0 )
-						std::cout<<"Sorry, there is no coal left on the market to be purchased\n";
-				}//close if player selects option 2 to buy 1 coal
+			//Validate that the 1)player has enough money	2)space to purchase the resource	3)There is oil available to purchase
+			if ( this.elektros >= resourceMarket->getCoalPrice() && this.getCoalCap() >= 1 && resourceMarket->coal > 0){
+				//Add oil to player
+				this.addCoal();
+				//Charge player elektros for the resource purchase
+				this.elektros -= resourceMarket->getCoalPrice();
+				//Remove oil from supply
+				resourceMarket->removeCoal();
+			}//close if player is able to purchase the oil
+			else if ( this.elektros < resourceMarket->getCoalPrice() )
+				std::cout<<"Sorry, you do not have enough elektros to purchase this unit of coal\nYou currently have "<<elektros<<" elektros, and require at least "<<resourceMarket->getCoalPrice()<<" elektros\n";
+			else if ( this.getCoalCap() < 1 )
+				std::cout<<"Sorry, you do not have enough room in your power plants to store more coal\nYou currently have "<<coal<<" coal\n";
+			else if ( resourceMarket->coal == 0 )
+				std::cout<<"Sorry, there is no coal left on the market to be purchased\n";
+		}//close if player selects option 2 to buy 1 coal
 		else if (playerSelection == 3){//player selects to buy 3 uranium
-					//Validate that the 1)player has enough money	2)space to purchase the resource	3)There is uranium available to purchase
-					if ( this.elektros >= resourceMarket->getUraniumPrice() && this.getUraniumCap() >= 1 && resourceMarket->uranium > 0){
-						//Add oil to player
-						this.addUranium();
-						//Charge player elektros for the resource purchase
-						this.elektros -= resourceMarket->getUraniumPrice();
-						//Remove uranium from supply
-						resourceMarket->removeUranium();
-					}//close if player is able to purchase the uranium
-					else if ( this.elektros < resourceMarket->getUraniumPrice() )
-						std::cout<<"Sorry, you do not have enough elektros to purchase this unit of uranium\nYou currently have "<<elektros<<" elektros, and require at least "<<resourceMarket->getUraniumPrice()<<" elektros\n";
-					else if ( this.getUraniumCap() < 1 )
-						std::cout<<"Sorry, you do not have enough room in your power plants to store more uranium\nYou currently have "<<uranium<<" uranium\n";
-					else if ( resourceMarket->uranium == 0 )
-						std::cout<<"Sorry, there is no uranium left on the market to be purchased\n";
-				}//close if player selects option 3 to buy 1 uranium
+			//Validate that the 1)player has enough money	2)space to purchase the resource	3)There is uranium available to purchase
+			if ( this.elektros >= resourceMarket->getUraniumPrice() && this.getUraniumCap() >= 1 && resourceMarket->uranium > 0){
+				//Add oil to player
+				this.addUranium();
+				//Charge player elektros for the resource purchase
+				this.elektros -= resourceMarket->getUraniumPrice();
+				//Remove uranium from supply
+				resourceMarket->removeUranium();
+			}//close if player is able to purchase the uranium
+			else if ( this.elektros < resourceMarket->getUraniumPrice() )
+				std::cout<<"Sorry, you do not have enough elektros to purchase this unit of uranium\nYou currently have "<<elektros<<" elektros, and require at least "<<resourceMarket->getUraniumPrice()<<" elektros\n";
+			else if ( this.getUraniumCap() < 1 )
+				std::cout<<"Sorry, you do not have enough room in your power plants to store more uranium\nYou currently have "<<uranium<<" uranium\n";
+			else if ( resourceMarket->uranium == 0 )
+				std::cout<<"Sorry, there is no uranium left on the market to be purchased\n";
+		}//close if player selects option 3 to buy 1 uranium
 		else if (playerSelection == 4){//player selects to buy 4 garbage
-					//Validate that the 1)player has enough money	2)space to purchase the resource	3)There is uranium available to purchase
-					if ( this.elektros >= resourceMarket->getGarbagePrice() && this.getGarbageCap() >= 1 && resourceMarket->garbage > 0){
-						//Add oil to player
-						this.addGarbage();
-						//Charge player elektros for the resource purchase
-						this.elektros -= resourceMarket->getGarbagePrice();
-						//Remove uranium from supply
-						resourceMarket->removeGarbage();
-					}//close if player is able to purchase the uranium
-					else if ( this.elektros < resourceMarket->getGarbagePrice() )
-						std::cout<<"Sorry, you do not have enough elektros to purchase this unit of garbage\nYou currently have "<<elektros<<" elektros, and require at least "<<resourceMarket->getGarbagePrice()<<" elektros\n";
-					else if ( this.getUraniumCap() < 1 )
-						std::cout<<"Sorry, you do not have enough room in your power plants to store more garbage\nYou currently have "<<garbage<<" garbage\n";
-					else if ( resourceMarket->uranium == 0 )
-						std::cout<<"Sorry, there is no garbage left on the market to be purchased\n";
-				}//close if player selects option 4 to buy 1 garbage
+			//Validate that the 1)player has enough money	2)space to purchase the resource	3)There is uranium available to purchase
+			if ( this.elektros >= resourceMarket->getGarbagePrice() && this.getGarbageCap() >= 1 && resourceMarket->garbage > 0){
+				//Add oil to player
+				this.addGarbage();
+				//Charge player elektros for the resource purchase
+				this.elektros -= resourceMarket->getGarbagePrice();
+				//Remove uranium from supply
+				resourceMarket->removeGarbage();
+			}//close if player is able to purchase the uranium
+			else if ( this.elektros < resourceMarket->getGarbagePrice() )
+				std::cout<<"Sorry, you do not have enough elektros to purchase this unit of garbage\nYou currently have "<<elektros<<" elektros, and require at least "<<resourceMarket->getGarbagePrice()<<" elektros\n";
+			else if ( this.getUraniumCap() < 1 )
+				std::cout<<"Sorry, you do not have enough room in your power plants to store more garbage\nYou currently have "<<garbage<<" garbage\n";
+			else if ( resourceMarket->uranium == 0 )
+				std::cout<<"Sorry, there is no garbage left on the market to be purchased\n";
+		}//close if player selects option 4 to buy 1 garbage
 		else if (playerSelection == 5){//player selects 5 to stop buying rersources
 			playerTurn = false;
 		}//close else if player selects 5 to end buying resources
@@ -422,3 +426,103 @@ int getGarbageCap(){
 	}//close for loop for each powerplant that the player owns
 	return (returnValue - this.garbage);
 }//close get oil garbage function
+
+//Building cities
+//Function to be called in driver, in a loop by each team player
+//Will use the shortest path algorithm defined in Map.cpp to return the distance between 2 vertices
+//ADD BOOLEAN TO PLAYER CLASS TO FLAG WETHER THE FIRST CITY HAS BEEN CHOSEN
+void buyCities(Map *map, int gamePhaseNumber){
+	//DECLARE VARIABLES
+	int connectionCost = 0;
+	int houseCost = 10;
+	int totalHouseBuildingCost;
+	std::string userIn;
+	Vertex houseBuildingLocation;
+	bool validEntry = false;
+	bool playerTurn = true;
+	bool foundVertex = false;
+	vector<std::string> nameOfPlayerCities;
+	vector<std::string> nameOfMapCities;
+	vector<Vertex> existingCities = map->getVertices;
+
+	//START LOOP FOR THE PLAYER BUILDING PHASE
+	while (playerTurn){
+		//START LOOP FOR VALID INPUT
+		while (!validEntry){
+			//DISPLAY MAP AND AVAILABLE CITIES
+			cout<<"Now displaying map\n"<<map<<"\n";
+			if (!startedNetwork)
+				cout<<"Your network is currently empty\nYou can start your city anywhere available\n";
+			else {
+				//Display player network
+				std::cout<<"Now displaying "<<playerName<<"'s network:\n";
+				for (int i = 0 ; i < myHouses.size ; i++)
+					std::cout<<"House #"<<i<<" located at: "<<myHouses.at(i)<<"\n";
+			}//close else, player already started network
+
+			//PROMPT PLAYER TO SELECT CITY
+			std::cout<<playerName<<", please enter the name of the city that you would like to add to your network, or type PASS to continue\n";
+			std::cin>>userIn;
+			if ( userIn.equals("PASS") ){
+				cout << "\n"<<playerName<<" has selected to pass\n";
+				playerTurn = false;		//exits outer while loop
+				validEntry = true;		//exits inner while loop
+				//return;
+			}//close if player selects PASS
+			else{
+				//ENTER VALIDATE AND RE-SELECT
+				//VALIDATE SELECTION	--> Validate that the vertex exists, if new network, validate that its not owned
+				//Validation 1 - Existence of vertex with that name
+				for (int i = 0 ; i < existingCities.size() ; i++ )
+					if ( existingCities.at(i).getName.equals(userIn) ){
+						validEntry = true;
+						std::cout<<"\nThe vertex entered has passed the 1st verification test, because it exists on the map\n";
+					}//close if valid entry found
+				if (!validEntry)
+					std::cout<<"\nThe vertex entered is invalid, because it does not exist on the map\n";
+
+				//Validation 2 - player does not own that city and it is available
+				if (validEntry && startedNetwork){
+					//Make invalid if a match is already found
+					for (int i = 0 ; i < myHouses.size ; i++)
+						if (myHouses.at(i).getName.equals(userIn)){
+							validEntry = false;
+							std::cout<<"\nError - "<<playerName<<" already owns the vertex "<<userIn;
+						}//close if found player owns a house at this vertex/city
+				}//close if vertex exists and network has been started
+
+			}//close else player selects a City(Vertex)
+		}//close while invalidEntry loop
+
+		//CALCULATE CONNECTION COST --> CHECK IF FIRST CITY HAS BEEN SELECTED, IF NO, CONNECTION COST = 0
+		if (!startedNetwork)
+			connectionCost = 0;
+		else{
+			std::vector<int> shortestPathToAllVertices;
+			for (int i = 0 ; i < myHouses.size ; i++)
+				//Get the shortest path from the user selected city to all other cities in the network
+				shortestPathToAllVertices.push_back(  shortestPath(userIn, std::string destinationyHouses.at(i)) );
+			std::sort( shortestPathToAllVertices );
+			connectionCost = shortestPathToAllVertices.at(0);
+		}//else get the shortest path between the vertex given and
+
+		//GET HOUSE COST AND ADD TO TOTAL
+		totalCost = ( connectionCost + map.getVertex(userIn).getCost() );
+
+		//VALIDATE THAT PLAYER HAS ENOUGH ELEKTROS
+		if ( totalCost > elektros ){
+			std::cout<<playerName<<" does not have enough elektros to purchase a house at the location: "<<userIn<<"\n";
+			std::cout<<playerName<<" has "<<elektros<<" the total cost to build at location: "<<userIn<<" is "<<totalCost;
+		}//if player does not have enough elektros
+
+		else{
+		//UPDATE ALL OBJECTS - VERTEX, NUMOFCITIES, Player.numOfCities, Player.myHouses, HOUSE OBJECT?
+			elektros -= totalCost;
+			myHouses.push_back( map.getVertex( userIn ) );
+			numOfCities++;
+			map.getVertex( userIn ).setPlayer( playerName );
+		}//close else, player has added this city to his netowrk
+	}//close while player turn
+	cout<<"End of "<<playerName<<"'s turn to build houses\n";
+}//close build cities
+
