@@ -161,6 +161,14 @@ Vertex Map::findVertex(std::string s) {
     exit(0);
 }
 
+bool Map::isVertex(std::string nameIn){
+	bool returnValue = false;
+	for (int i = 0 ; i < vertices.size() ; i++)
+		if ( vertices.at(i).getName().equals( nameIn ) )
+			returnValue = true;
+	return returnValue;
+}//close isVertex
+
 void Map::removeRegion(int i) {
     regions.erase(regions.begin() + i);
 }
