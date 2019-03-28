@@ -16,8 +16,10 @@
 #include "Player.h"
 #include "../../Map/Vertex.h"
 #include "../../Map/Map.h"
+#include "../../Powerplant/Resource/Resource.h"
 #include <string>
 #include <iostream>
+
 int Player::numOfPlayers=0;
 vector<string> Player::houseColor = {"Green","Blue","Black","Pink","Yellow","Orange"};
 
@@ -116,11 +118,10 @@ Player::~Player() {
 
 
 ostream& Player::displayHouses(ostream& stream) {
-	for (int i = 0; i < myHouses.size(); ++i) {
-		stream << myHouses[i] << endl;
+	for (int i = 0; i < myHouses->size(); ++i) {
+		stream << myHouses->at(i) << endl;
 	}
 	return stream;
-
 }
 
 
@@ -131,8 +132,8 @@ ostream &operator<<(ostream &stream, Player &Object) {
 	for (int i = 0; i < Object.myPowerPlant.size(); ++i) {
 		stream << "Powerplant #:" << i+1 << ": " << Object.myPowerPlant[i] << endl;
 	}
-	for (int i = 0; i < Object.myHouses.size(); ++i) {
-		stream << "House # " << i <<  " " <<  Object.myHouses[i] << endl;
+	for (int i = 0; i < Object.myHouses->size(); ++i) {
+		stream << "House # " << i <<  " " <<  Object.myHouses->at(i) << endl;
 	}
 	return stream;
 }
@@ -286,7 +287,7 @@ ostream& Player::displayPowerplants(ostream& stream) {
 //}
 
 //Buy resources method - Call this method in the driver, using a loop for each player
-void Player::buyResources(Mike2::ResourceMarket *resourceMarket){
+void Player::buyResources(ResourceMarket *resourceMarket){
 	//Declare variables
 	string userInput;
 	int playerSelection;
@@ -432,7 +433,7 @@ int Player::getGarbageCap(){
 //Building cities
 //Function to be called in driver, in a loop by each team player
 //Will use the shortest path algorithm defined in Map.cpp to return the distance between 2 vertices
-//ADD BOOLEAN TO PLAYER CLASS TO FLAG WETHER THE FIRST CITY HAS BEEN CHOSEN
+//ADD BOOLEAN TO PLAYER CLASS TO FLAG WHETHER THE FIRST CITY HAS BEEN CHOSEN
 void Player::buyCities(Map *map, int gamePhaseNumber){
 	//DECLARE VARIABLES
 	int connectionCost = 0;
@@ -458,8 +459,8 @@ void Player::buyCities(Map *map, int gamePhaseNumber){
 			else {
 				//Display player network
 				std::cout<<"Now displaying "<<playerName<<"'s network:\n";
-				for (int i = 0 ; i < myHouses.size() ; i++)
-					std::cout<<"House #"<<i<<" located at: "<<myHouses.at(i)<<"\n";
+				for (int i = 0 ; i < myHouses->size() ; i++)
+					std::cout<<"House #"<<i<<" located at: "<<myHouses->at(i)<<"\n";
 			}//close else, player already started network
 
 			//PROMPT PLAYER TO SELECT CITY
@@ -486,8 +487,8 @@ void Player::buyCities(Map *map, int gamePhaseNumber){
 				//Validation 2 - player does not own that city and it is available
 				if (validEntry && startedNetwork){
 					//Make invalid if a match is already found
-					for (int i = 0 ; i < myHouses.size() ; i++)
-						if (myHouses.at(i) == userIn){
+					for (int i = 0 ; i < myHouses->size() ; i++)
+						if (myHouses->at(i) == userIn){
 							validEntry = false;
 							std::cout<<"\nError - "<<playerName<<" already owns the vertex "<<userIn;
 						}//close if found player owns a house at this vertex/city
@@ -501,9 +502,9 @@ void Player::buyCities(Map *map, int gamePhaseNumber){
 			connectionCost = 0;
 		else{
 			std::vector<int> shortestPathToAllVertices;
-			for (int i = 0 ; i < myHouses.size() ; i++)
+			for (int i = 0 ; i < myHouses->size() ; i++)
 				//Get the shortest path from the user selected city to all other cities in the network
-				shortestPathToAllVertices.push_back(  map->shortestPath(userIn, myHouses.at(i)) );
+				shortestPathToAllVertices.push_back(  map->shortestPath(userIn, myHouses->at(i)) );
 			std::sort( shortestPathToAllVertices.begin(), shortestPathToAllVertices.end() );
 			connectionCost = shortestPathToAllVertices.at(0);
 		}//else get the shortest path between the vertex given and
@@ -520,7 +521,7 @@ void Player::buyCities(Map *map, int gamePhaseNumber){
 		else{
 		//UPDATE ALL OBJECTS - VERTEX, NUMOFCITIES, Player.numOfCities, Player.myHouses, HOUSE OBJECT?
 			elektros -= totalCost;
-			myHouses.push_back( map->findVertex( userIn ).getName() );
+			myHouses->push_back( map->findVertex( userIn ).getName() );
 			numOfCities++;
 			map->findVertex( userIn ).setPlayer( playerName );
 		}//close else, player has added this city to his netowrk

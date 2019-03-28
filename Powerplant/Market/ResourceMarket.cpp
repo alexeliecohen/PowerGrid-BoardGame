@@ -10,11 +10,6 @@
  * 	POWER GRID
  */
 
-#include "ResourceMarket.h"
-//
-// Created by alext on 2/21/2019.
-//
-
 #include <iostream>
 #include <string>
 #include "ResourceMarket.h"
@@ -41,13 +36,13 @@ ResourceMarket::ResourceMarket() {oil=18;	coal=24;	garbage = 6;	uranium = 2;}
 ResourceMarket::~ResourceMarket() {}
 
 //Methods
-void addOil() {
+void ResourceMarket::addOil() {
 	if (oil<24)
 		oil++;
 	else
 		std::cout << "\nThere is no supply left of oil to add to the resource market\n" ;
 }//close add oil1
-void addOil(int amt){
+void ResourceMarket::addOil(int amt){
 	if (oil+amt <= 24)
 		oil+=amt;
 	else {
@@ -55,13 +50,13 @@ void addOil(int amt){
 		oil = 24;
 	}//close else no oil supply left
 }//close add oil2
-void removeOil(){
+void ResourceMarket::removeOil(){
 	if (oil>0)
 		oil--;
 	else
 		std::cout << "\nThere is no oil left in the resource market\n" ;
 }//close remove oil
-void removeOil(int amt){
+void ResourceMarket::removeOil(int amt){
 	if (oil-amt >= 0)
 		oil-=amt;
 	else {
@@ -69,24 +64,24 @@ void removeOil(int amt){
 		oil = 0;
 	}//close else no oil supply left
 }//close remove oil 2
-int getOil(){return oil;}
-void addCoal(){coal++;}
-void addCoal(int amt){coal+=amt;}
-void removeCoal(){coal--;}
-void removeCoal(int amt){coal-=amt;}
-int getCoal(){return coal;}
-void addGarbage(){garbage++;}
-void addGarbage(int amt){garbage+=amt;}
-void removeGarbage(){garbage--;};
-void removeGarbage(int amt){garbage-=amt;};
-int getGarbage(){return garbage;}
-void addUranium(){uranium++;}
-void addUranium(int amt){uranium+=amt;}
-void removeUranium(){uranium--;}
-void removeUranium(int amt){uranium-=amt;};
-int getUranium(){return uranium;}
+int ResourceMarket::getOil(){return oil;}
+void ResourceMarket::addCoal(){coal++;}
+void ResourceMarket::addCoal(int amt){coal+=amt;}
+void ResourceMarket::removeCoal(){coal--;}
+void ResourceMarket::removeCoal(int amt){coal-=amt;}
+int ResourceMarket::getCoal(){return coal;}
+void ResourceMarket::addGarbage(){garbage++;}
+void ResourceMarket::addGarbage(int amt){garbage+=amt;}
+void ResourceMarket::removeGarbage(){garbage--;};
+void ResourceMarket::removeGarbage(int amt){garbage-=amt;};
+int ResourceMarket::getGarbage(){return garbage;}
+void ResourceMarket::addUranium(){uranium++;}
+void ResourceMarket::addUranium(int amt){uranium+=amt;}
+void ResourceMarket::removeUranium(){uranium--;}
+void ResourceMarket::removeUranium(int amt){uranium-=amt;};
+int ResourceMarket::getUranium(){return uranium;}
 
-int getCoalPrice() {
+int ResourceMarket::getCoalPrice() {
 	if (coal < 4 && coal!=0 )
 		return 8;
 	else if ( coal < 7 )
@@ -106,7 +101,7 @@ int getCoalPrice() {
 	else
 		return 999999;
 }//close get coal price
-int getOilPrice(){
+int ResourceMarket::getOilPrice(){
 	if (oil < 4 && oil!=0 )
 		return 8;
 	else if ( oil < 7 )
@@ -126,7 +121,7 @@ int getOilPrice(){
 	else
 		return 999999;
 }//close getOilPrice
-int getGarbagePrice(){
+int ResourceMarket::getGarbagePrice(){
 	if (garbage < 4 && garbage!=0 )
 		return 8;
 	else if ( garbage < 7 )
@@ -146,7 +141,7 @@ int getGarbagePrice(){
 	else
 		return 999999;
 }//close get garbage price
-int getUraniumPrice(){
+int ResourceMarket::getUraniumPrice(){
 	if (uranium == 1)
 		return 16;
 	else if (uranium == 2)
@@ -176,17 +171,17 @@ int getUraniumPrice(){
 }//close get uranium price
 
 //Display
-void printResourceMarketStock(){
+void ResourceMarket::printResourceMarketStock(){
 	std::cout << "Printing Resource Market Stock\nOil:\t"+oil<<"\nCoal:\t"+coal<<"\nGarbage:\t"+garbage<<"\nUranium:\t"<<uranium<<"\n\n";
 }//close print function
-void printResourceMarket(){
+void ResourceMarket::printResourceMarket(){
 	std::cout << "Printing Resource Market\nOil Quantity:\t"+oil<<"\tPrice of next Oil:\t\t"+getOilPrice()<<
 			"\nCoal:\t"+coal<<"\tPrice of next Coal:\t\t"+getCoalPrice()<<
 			"\nGarbage:\t"+garbage<<"\tPrice:\t\t"+getGarbagePrice()<<
 			"\nUranium:\t"<<uranium<<"\n\n"<<"\tPrice:\t\t"+getUraniumPrice();
 }//close print function
 
-void resupplyMarket(int numOfPlayas, int gamePhaseNum){
+void ResourceMarket::resupplyMarket(int numOfPlayas, int gamePhaseNum){
 	//RE_SUUPLY
 	//RESSUPLYMARKET[5][3][4]
 	//[Number Of Players] [Game Phase Number] [amount of: COAL, OIL, GARBAGE, URANIUM]

@@ -9,7 +9,10 @@
 #include <algorithm>
 #include "../HousesAndCities/Houses.h"
 #include "../Card/Powerplant.h"
-#include "ResourceMarket.h"
+#include "../../Map/Map.h"
+#include "../Market/ResourceMarket.h"
+
+using namespace Mike2;
 
 #ifndef POWERPLANT_PLAYER_H
 #define POWERPLANT_PLAYER_H
@@ -56,7 +59,7 @@ private:
 
     //ADD THIS ATTRIBUTE TO PLAYER CLASS FOR FLAGGING WETHER NETWORK OF CITIES HAS BEEN STARTED
     bool startedNetwork;
-    std::vector<Vertex> *myHouses;
+    std::vector<string> *myHouses;
 
 public:
     Player();
@@ -115,7 +118,7 @@ public:
 	int getGarbageCap();
 
 	//Building cities
-	void buyCities(Map map, int gamePhaseNumber);
+	void buyCities(Map *map, int gamePhaseNumber);
 
 };
 //close player class.h

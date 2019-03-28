@@ -56,7 +56,7 @@ public:
 	void printResourceMarket();
 
 	//Re-supply at end of turn
-	void resupply(int numOfPlayers, int gamePhase){}
+	void resupplyMarket(int numOfPlayers, int gamePhase);
 
 	//Overload <<
 
