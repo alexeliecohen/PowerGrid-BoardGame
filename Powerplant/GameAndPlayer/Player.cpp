@@ -153,11 +153,11 @@ const string &Player::getPlayerName() const {
 int Player::getElektros() const {
 	return elektros;
 }
-
+/*
 int Player::getOil() const {
-	return oil;
+	return this->oil;
 }
-
+*/
 int Player::getCoal() const {
 	return coal;
 }

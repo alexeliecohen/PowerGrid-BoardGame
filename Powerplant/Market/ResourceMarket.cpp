@@ -65,21 +65,69 @@ void ResourceMarket::removeOil(int amt){
 	}//close else no oil supply left
 }//close remove oil 2
 int ResourceMarket::getOil(){return oil;}
-void ResourceMarket::addCoal(){coal++;}
-void ResourceMarket::addCoal(int amt){coal+=amt;}
-void ResourceMarket::removeCoal(){coal--;}
-void ResourceMarket::removeCoal(int amt){coal-=amt;}
-int ResourceMarket::getCoal(){return coal;}
-void ResourceMarket::addGarbage(){garbage++;}
-void ResourceMarket::addGarbage(int amt){garbage+=amt;}
-void ResourceMarket::removeGarbage(){garbage--;};
-void ResourceMarket::removeGarbage(int amt){garbage-=amt;};
-int ResourceMarket::getGarbage(){return garbage;}
-void ResourceMarket::addUranium(){uranium++;}
-void ResourceMarket::addUranium(int amt){uranium+=amt;}
-void ResourceMarket::removeUranium(){uranium--;}
-void ResourceMarket::removeUranium(int amt){uranium-=amt;};
-int ResourceMarket::getUranium(){return uranium;}
+void ResourceMarket::addCoal(){
+		coal++;
+		if (coal>24)
+			coal = 24;
+	}//close add coal
+	void ResourceMarket::addCoal(int amt){
+		coal+=amt;
+		if (coal>24)
+			coal = 24;
+	}//close add coal
+	void ResourceMarket::removeCoal(){
+		coal--;
+		if (coal < 0 )
+			coal = 0;
+	}//close coal
+	void ResourceMarket::removeCoal(int amt){
+		coal-=amt;
+		if (coal < 0)
+			coal = 0;
+	}//close remove coal
+	int ResourceMarket::getCoal(){return coal;}
+	void ResourceMarket::addGarbage(){
+		garbage++;
+		if (garbage > 24 )
+			garbage = 24;
+	}//close add garbage
+	void ResourceMarket::addGarbage(int amt){
+		garbage+=amt;
+		if (garbage > 24)
+			garbage = 24;
+	}//close add garbage
+	void ResourceMarket::removeGarbage(){
+		garbage--;
+		if (garbage < 0)
+			garbage = 0;
+	}//close remove garbage
+	void ResourceMarket::removeGarbage(int amt){
+		garbage-=amt;
+		if (garbage < 0)
+			garbage = 0;
+	}//close remove garbage
+	int ResourceMarket::getGarbage(){return garbage;}
+	void ResourceMarket::addUranium(){
+		uranium++;
+		if (uranium >12)
+			uranium = 12;
+	}//close add uranium
+	void ResourceMarket::addUranium(int amt){
+		uranium+=amt;
+		if (uranium > 12)
+			uranium = 12;
+	}//close add uranium
+	void ResourceMarket::removeUranium(){
+		uranium--;
+		if (uranium < 0)
+			uranium = 0;
+	}//close remove uranium
+	void ResourceMarket::removeUranium(int amt){
+		uranium-=amt;
+		if (uranium < 0)
+			uranium = 0;
+	}//close remove uranium
+	int ResourceMarket::getUranium(){return uranium;}
 
 int ResourceMarket::getCoalPrice() {
 	if (coal < 4 && coal!=0 )

@@ -51,14 +51,7 @@ private:
     int numbHomes;
     int numOfCities;
     std::vector<Powerplant> myPowerPlant;
-
-
-
-
-    //DELETE ME, replace with vector<Vertex> 	<-- 	 std::vector<Houses> myHouses;
-
-    //ADD THIS ATTRIBUTE TO PLAYER CLASS FOR FLAGGING WETHER NETWORK OF CITIES HAS BEEN STARTED
-    bool startedNetwork;
+    bool startedNetwork;					//true when player builds his/her 1st house
     std::vector<string> *myHouses;
 
 public:
