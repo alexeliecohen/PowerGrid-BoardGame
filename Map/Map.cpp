@@ -164,7 +164,7 @@ Vertex Map::findVertex(std::string s) {
 bool Map::isVertex(std::string nameIn){
 	bool returnValue = false;
 	for (int i = 0 ; i < vertices.size() ; i++)
-		if ( vertices.at(i).getName() == nameIn  )
+		if ( vertices.at(i).getName().equlas( nameIn ) )
 			returnValue = true;
 	return returnValue;
 }//close isVertex
