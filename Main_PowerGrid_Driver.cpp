@@ -88,7 +88,9 @@ int main() {
     std::cout << d << "\n\n";
     d.shuffle();
     std::cout << d;
-    ResourceMarket rMarket = ResourceMarket();
+    ResourceMarket *rMarket = new ResourceMarket();
     PowerplantMarket pMarket = PowerplantMarket(d);
-	return 0;
+    Player p = Player();
+    p.buyResources(rMarket);
+    return 0;
 }// close main loop
