@@ -31,6 +31,7 @@
 #include "Powerplant/Card/Deck.h"
 #include "Powerplant/Resource/Resource.h"
 #include "Powerplant/GameAndPlayer/Player.h"
+#include "Powerplant/Market/PowerplantMarket.h"
 
 //Name Space
 using namespace Mike;
@@ -70,22 +71,24 @@ int main() {
     for(auto s : graphs) {
         cout << s;
     }
-//    cout << "Please enter the number of players(2-6): ";
-//    cin >> numPlayers;
-//    for(int j = 0; j < numPlayers; j++) {
-//        Player *p = new Player();
-//        players.push_back(*p);
-//        cout << "Please select a region: \n";
-//        for(int k = 0; k < regions.size(); k++) {
-//            cout << k + 1 << ") " << regions[k] << "\n";
-//        }
-//        cin >> regionNumber;
-//        regions.erase(regions.begin()+ regionNumber - 1);
-//    }
-//
-//    Deck d = Deck();
-//    std::cout << d << "\n\n";
-//    d.shuffle();
-//    std::cout << d;
+    cout << "Please enter the number of players(2-6): ";
+    cin >> numPlayers;
+    for(int j = 0; j < numPlayers; j++) {
+        Player *p = new Player();
+        players.push_back(*p);
+        cout << "Please select a region: \n";
+        for(int k = 0; k < regions.size(); k++) {
+            cout << k + 1 << ") " << regions[k] << "\n";
+        }
+        cin >> regionNumber;
+        regions.erase(regions.begin()+ regionNumber - 1);
+    }
+
+    Deck d = Deck();
+    std::cout << d << "\n\n";
+    d.shuffle();
+    std::cout << d;
+    ResourceMarket rMarket = ResourceMarket();
+    PowerplantMarket pMarket = PowerplantMarket(d);
 	return 0;
 }// close main loop
