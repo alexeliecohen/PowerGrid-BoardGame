@@ -84,11 +84,26 @@ int main() {
         regions.erase(regions.begin()+ regionNumber - 1);
     }
 
+
+
     Deck d = Deck();
     std::cout << d << "\n\n";
     d.shuffle();
     std::cout << d;
     ResourceMarket rMarket = ResourceMarket();
     PowerplantMarket pMarket = PowerplantMarket(d);
+    ResourceMarket *resourceMarket = &rMarket;
+
+    /*
+     *  PART 3 ASSIGNMENT 2
+     */
+
+    /*
+     *  RESOURCE BUYING PHASE
+     */
+
+    for ( int i = 0 ; i < players.size() ; i++ )
+        players.at(i).buyResources( resourceMarket );
+
 	return 0;
 }// close main loop

@@ -220,13 +220,13 @@ int ResourceMarket::getUraniumPrice(){
 
 //Display
 void ResourceMarket::printResourceMarketStock(){
-	std::cout << "Printing Resource Market Stock\nOil:\t"+oil<<"\nCoal:\t"+coal<<"\nGarbage:\t"+garbage<<"\nUranium:\t"<<uranium<<"\n\n";
+	std::cout << "Printing Resource Market Stock\nOil:\t\t"<<oil<<"\n"<<coal<<":\t\t"<<coal<<"\nGarbage:\t"<<garbage<<"\nUranium:\t"<<uranium<<"\n\n";
 }//close print function
 void ResourceMarket::printResourceMarket(){
 	std::cout << "Printing Resource Market\nOil Quantity:\t"+oil<<"\tPrice of next Oil:\t\t"+getOilPrice()<<
-			"\nCoal:\t"+coal<<"\tPrice of next Coal:\t\t"+getCoalPrice()<<
-			"\nGarbage:\t"+garbage<<"\tPrice:\t\t"+getGarbagePrice()<<
-			"\nUranium:\t"<<uranium<<"\n\n"<<"\tPrice:\t\t"+getUraniumPrice();
+			"\nCoal:\t"<<coal<<"\tPrice of next Coal:\t\t"<<getCoalPrice()<<
+			"\nGarbage:\t"+garbage<<"\tPrice:\t\t"<<getGarbagePrice()<<
+			"\nUranium:\t"<<uranium<<"\n\n"<<"\tPrice:\t\t"<<getUraniumPrice();
 }//close print function
 
 void ResourceMarket::resupplyMarket(int numOfPlayas, int gamePhaseNum){
