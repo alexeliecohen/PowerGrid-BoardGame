@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Hubert/CLionProjects/COMP345Team21/Map/Edge.h
+vector
+-
+Vertex.h
+C:/Users/Hubert/CLionProjects/COMP345Team21/Map/Vertex.h
+
+C:/Users/Hubert/CLionProjects/COMP345Team21/Map/Map.cpp
+Map.h
+C:/Users/Hubert/CLionProjects/COMP345Team21/Map/Map.h
+Vertex.h
+C:/Users/Hubert/CLionProjects/COMP345Team21/Map/Vertex.h
+Edge.h
+C:/Users/Hubert/CLionProjects/COMP345Team21/Map/Edge.h
+iostream
+-
+algorithm
+-
+unordered_map
+-
+
+C:/Users/Hubert/CLionProjects/COMP345Team21/Map/Map.h
+vector
+-
+string
+-
+Vertex.h
+C:/Users/Hubert/CLionProjects/COMP345Team21/Map/Vertex.h
+
+C:/Users/Hubert/CLionProjects/COMP345Team21/Map/Vertex.h
+vector
+-
+Edge.h
+C:/Users/Hubert/CLionProjects/COMP345Team21/Map/Edge.h
+
