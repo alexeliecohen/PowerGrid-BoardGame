@@ -23,7 +23,6 @@ public:
     void addRegion(const std::string& region);
     static Vertex opposite(const Vertex& v, const Edge& e);
     bool isVertex(const std::string& nameIn);
-    void addRegion(std::string region);
     Vertex findVertex(const std::string& s);
     Vertex* findVertexP(const std::string& s);
     void removeRegion(int i);

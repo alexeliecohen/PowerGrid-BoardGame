@@ -160,25 +160,6 @@ bool Map::isVertex(const std::string &nameIn){
 	return returnValue;
 }//close isVertex
 
-/**
- * Method to check if the map is connected, implemented using breadth-first search
- * @return if the graph is connected
- */
-/**
- * Method to find a specified vertex in the map
- * @param s the name of the vertex
- * @return the vertex with the specified name
- */
-Vertex Map::findVertex(const std::string& s) {
-    for (const auto &v : vertices) {
-        if(v.getName() == s ) {
-            return v;
-        }
-    }
-    std::cout << "Vertex does not belong to the map. Please enter a valid vertex";
-    exit(0);
-}
-
 Vertex* Map::findVertexP(const std::string& s) {
     for (auto &v : vertices) {
         if(v.getName() == s ) {
@@ -188,14 +169,6 @@ Vertex* Map::findVertexP(const std::string& s) {
     std::cout << "Vertex does not belong to the map. Please enter a valid vertex";
     exit(0);
 }//close get vertex aaddress
-
-bool Map::isVertex(std::string nameIn){
-	bool returnValue = false;
-	for (int i = 0 ; i < vertices.size() ; i++)
-		if ( vertices.at(i).getName() == nameIn)
-			returnValue = true;
-	return returnValue;
-}//close isVertex
 
 void Map::removeRegion(int i) {
     regions.erase(regions.begin() + i);
@@ -302,29 +275,6 @@ void Map::createFinalMap(std::vector<std::string> regionsUsed) {
             }
         }
     }
-}
-
-/**
- * Operator overload for the output stream
- * @param os an output stream
- * @param m a map object
- * @return a stream to output the contents of the map
- */
-std::ostream &operator<<(std::ostream &os, Map &m) {
-    os << "Regions:\n";
-    for(const auto &r : m.getRegions()) {
-        os << r << "\n";
-    }
-    os << "\nVertices:\n";
-    for(int i = 0; i < m.numVertex(); i++) {
-        os << m.getVertices().at(i);
-    }
-    os << "\nEdges:\n";
-    for(int i = 0; i < m.numEdges(); i++) {
-        os << m.getEdges().at(i);
-    }
-    os << "\n";
-    return os;
 }
 
 /**

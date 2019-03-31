@@ -12,12 +12,11 @@
  *
  *
 */
-#include "Game.h"
+//#include "Game.h"
 #include <string>
 #include <iostream>
 #include <vector>
 #include <algorithm>
-//#include "../HousesAndCities/Houses.h"
 #include "../Card/Powerplant.h"
 #include "../../Map/Map.h"
 #include "../Market/ResourceMarket.h"
@@ -49,16 +48,6 @@ private:
 //    std::vector<Houses> myHouses; //list of homes the player owns
     bool auctionReady,roundReady;
     int numCities;
-    static int numOfPlayers;
-    static vector<string> houseColor;
-
-    string  myHouseColor;
-    std::string playerName;
-    int elektros;
-    int oil, coal, garbage, uranium;
-    int numbHomes;
-    int numOfCities;
-    std::vector<Powerplant> myPowerPlant;
     bool startedNetwork;					//true when player builds his/her 1st house
     std::vector<string> myHouses;
 
@@ -302,6 +291,11 @@ public:
 
 	//Building cities
 	void buyCities(Map *map, int gamePhaseNumber);
+    void buyResources(ResourceMarket *resourceMarket);
+    int getOilCap();
+    int getCoalCap();
+    int getUraniumCap();
+    int getGarbageCap();
 
 };
 //close player class.h

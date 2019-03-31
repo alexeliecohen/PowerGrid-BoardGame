@@ -112,17 +112,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named untitled
+# Target rules for targets named COMP345Team21
 
 # Build rule for target.
-untitled: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) untitled
-.PHONY : untitled
+COMP345Team21: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) COMP345Team21
+.PHONY : COMP345Team21
 
 # fast build rule for target.
-untitled\fast:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\build
-.PHONY : untitled\fast
+COMP345Team21\fast:
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\build
+.PHONY : COMP345Team21\fast
 
 FileReader\FileReader.obj: FileReader\FileReader.cpp.obj
 
@@ -130,7 +130,7 @@ FileReader\FileReader.obj: FileReader\FileReader.cpp.obj
 
 # target to build an object file
 FileReader\FileReader.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\FileReader\FileReader.cpp.obj
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\FileReader\FileReader.cpp.obj
 .PHONY : FileReader\FileReader.cpp.obj
 
 FileReader\FileReader.i: FileReader\FileReader.cpp.i
@@ -139,7 +139,7 @@ FileReader\FileReader.i: FileReader\FileReader.cpp.i
 
 # target to preprocess a source file
 FileReader\FileReader.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\FileReader\FileReader.cpp.i
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\FileReader\FileReader.cpp.i
 .PHONY : FileReader\FileReader.cpp.i
 
 FileReader\FileReader.s: FileReader\FileReader.cpp.s
@@ -148,7 +148,7 @@ FileReader\FileReader.s: FileReader\FileReader.cpp.s
 
 # target to generate assembly for a file
 FileReader\FileReader.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\FileReader\FileReader.cpp.s
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\FileReader\FileReader.cpp.s
 .PHONY : FileReader\FileReader.cpp.s
 
 FileReader\MapLoader.obj: FileReader\MapLoader.cpp.obj
@@ -157,7 +157,7 @@ FileReader\MapLoader.obj: FileReader\MapLoader.cpp.obj
 
 # target to build an object file
 FileReader\MapLoader.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\FileReader\MapLoader.cpp.obj
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\FileReader\MapLoader.cpp.obj
 .PHONY : FileReader\MapLoader.cpp.obj
 
 FileReader\MapLoader.i: FileReader\MapLoader.cpp.i
@@ -166,7 +166,7 @@ FileReader\MapLoader.i: FileReader\MapLoader.cpp.i
 
 # target to preprocess a source file
 FileReader\MapLoader.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\FileReader\MapLoader.cpp.i
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\FileReader\MapLoader.cpp.i
 .PHONY : FileReader\MapLoader.cpp.i
 
 FileReader\MapLoader.s: FileReader\MapLoader.cpp.s
@@ -175,7 +175,7 @@ FileReader\MapLoader.s: FileReader\MapLoader.cpp.s
 
 # target to generate assembly for a file
 FileReader\MapLoader.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\FileReader\MapLoader.cpp.s
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\FileReader\MapLoader.cpp.s
 .PHONY : FileReader\MapLoader.cpp.s
 
 Map\Edge.obj: Map\Edge.cpp.obj
@@ -184,7 +184,7 @@ Map\Edge.obj: Map\Edge.cpp.obj
 
 # target to build an object file
 Map\Edge.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Map\Edge.cpp.obj
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Map\Edge.cpp.obj
 .PHONY : Map\Edge.cpp.obj
 
 Map\Edge.i: Map\Edge.cpp.i
@@ -193,7 +193,7 @@ Map\Edge.i: Map\Edge.cpp.i
 
 # target to preprocess a source file
 Map\Edge.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Map\Edge.cpp.i
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Map\Edge.cpp.i
 .PHONY : Map\Edge.cpp.i
 
 Map\Edge.s: Map\Edge.cpp.s
@@ -202,7 +202,7 @@ Map\Edge.s: Map\Edge.cpp.s
 
 # target to generate assembly for a file
 Map\Edge.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Map\Edge.cpp.s
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Map\Edge.cpp.s
 .PHONY : Map\Edge.cpp.s
 
 Map\Map.obj: Map\Map.cpp.obj
@@ -211,7 +211,7 @@ Map\Map.obj: Map\Map.cpp.obj
 
 # target to build an object file
 Map\Map.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Map\Map.cpp.obj
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Map\Map.cpp.obj
 .PHONY : Map\Map.cpp.obj
 
 Map\Map.i: Map\Map.cpp.i
@@ -220,7 +220,7 @@ Map\Map.i: Map\Map.cpp.i
 
 # target to preprocess a source file
 Map\Map.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Map\Map.cpp.i
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Map\Map.cpp.i
 .PHONY : Map\Map.cpp.i
 
 Map\Map.s: Map\Map.cpp.s
@@ -229,7 +229,7 @@ Map\Map.s: Map\Map.cpp.s
 
 # target to generate assembly for a file
 Map\Map.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Map\Map.cpp.s
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Map\Map.cpp.s
 .PHONY : Map\Map.cpp.s
 
 Map\Vertex.obj: Map\Vertex.cpp.obj
@@ -238,7 +238,7 @@ Map\Vertex.obj: Map\Vertex.cpp.obj
 
 # target to build an object file
 Map\Vertex.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Map\Vertex.cpp.obj
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Map\Vertex.cpp.obj
 .PHONY : Map\Vertex.cpp.obj
 
 Map\Vertex.i: Map\Vertex.cpp.i
@@ -247,7 +247,7 @@ Map\Vertex.i: Map\Vertex.cpp.i
 
 # target to preprocess a source file
 Map\Vertex.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Map\Vertex.cpp.i
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Map\Vertex.cpp.i
 .PHONY : Map\Vertex.cpp.i
 
 Map\Vertex.s: Map\Vertex.cpp.s
@@ -256,7 +256,7 @@ Map\Vertex.s: Map\Vertex.cpp.s
 
 # target to generate assembly for a file
 Map\Vertex.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Map\Vertex.cpp.s
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Map\Vertex.cpp.s
 .PHONY : Map\Vertex.cpp.s
 
 Powerplant\Card\Card.obj: Powerplant\Card\Card.cpp.obj
@@ -265,7 +265,7 @@ Powerplant\Card\Card.obj: Powerplant\Card\Card.cpp.obj
 
 # target to build an object file
 Powerplant\Card\Card.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\Card\Card.cpp.obj
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Powerplant\Card\Card.cpp.obj
 .PHONY : Powerplant\Card\Card.cpp.obj
 
 Powerplant\Card\Card.i: Powerplant\Card\Card.cpp.i
@@ -274,7 +274,7 @@ Powerplant\Card\Card.i: Powerplant\Card\Card.cpp.i
 
 # target to preprocess a source file
 Powerplant\Card\Card.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\Card\Card.cpp.i
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Powerplant\Card\Card.cpp.i
 .PHONY : Powerplant\Card\Card.cpp.i
 
 Powerplant\Card\Card.s: Powerplant\Card\Card.cpp.s
@@ -283,7 +283,7 @@ Powerplant\Card\Card.s: Powerplant\Card\Card.cpp.s
 
 # target to generate assembly for a file
 Powerplant\Card\Card.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\Card\Card.cpp.s
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Powerplant\Card\Card.cpp.s
 .PHONY : Powerplant\Card\Card.cpp.s
 
 Powerplant\Card\Deck.obj: Powerplant\Card\Deck.cpp.obj
@@ -292,7 +292,7 @@ Powerplant\Card\Deck.obj: Powerplant\Card\Deck.cpp.obj
 
 # target to build an object file
 Powerplant\Card\Deck.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\Card\Deck.cpp.obj
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Powerplant\Card\Deck.cpp.obj
 .PHONY : Powerplant\Card\Deck.cpp.obj
 
 Powerplant\Card\Deck.i: Powerplant\Card\Deck.cpp.i
@@ -301,7 +301,7 @@ Powerplant\Card\Deck.i: Powerplant\Card\Deck.cpp.i
 
 # target to preprocess a source file
 Powerplant\Card\Deck.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\Card\Deck.cpp.i
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Powerplant\Card\Deck.cpp.i
 .PHONY : Powerplant\Card\Deck.cpp.i
 
 Powerplant\Card\Deck.s: Powerplant\Card\Deck.cpp.s
@@ -310,7 +310,7 @@ Powerplant\Card\Deck.s: Powerplant\Card\Deck.cpp.s
 
 # target to generate assembly for a file
 Powerplant\Card\Deck.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\Card\Deck.cpp.s
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Powerplant\Card\Deck.cpp.s
 .PHONY : Powerplant\Card\Deck.cpp.s
 
 Powerplant\Card\Powerplant.obj: Powerplant\Card\Powerplant.cpp.obj
@@ -319,7 +319,7 @@ Powerplant\Card\Powerplant.obj: Powerplant\Card\Powerplant.cpp.obj
 
 # target to build an object file
 Powerplant\Card\Powerplant.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\Card\Powerplant.cpp.obj
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Powerplant\Card\Powerplant.cpp.obj
 .PHONY : Powerplant\Card\Powerplant.cpp.obj
 
 Powerplant\Card\Powerplant.i: Powerplant\Card\Powerplant.cpp.i
@@ -328,7 +328,7 @@ Powerplant\Card\Powerplant.i: Powerplant\Card\Powerplant.cpp.i
 
 # target to preprocess a source file
 Powerplant\Card\Powerplant.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\Card\Powerplant.cpp.i
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Powerplant\Card\Powerplant.cpp.i
 .PHONY : Powerplant\Card\Powerplant.cpp.i
 
 Powerplant\Card\Powerplant.s: Powerplant\Card\Powerplant.cpp.s
@@ -337,7 +337,7 @@ Powerplant\Card\Powerplant.s: Powerplant\Card\Powerplant.cpp.s
 
 # target to generate assembly for a file
 Powerplant\Card\Powerplant.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\Card\Powerplant.cpp.s
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Powerplant\Card\Powerplant.cpp.s
 .PHONY : Powerplant\Card\Powerplant.cpp.s
 
 Powerplant\Card\Step13.obj: Powerplant\Card\Step13.cpp.obj
@@ -346,7 +346,7 @@ Powerplant\Card\Step13.obj: Powerplant\Card\Step13.cpp.obj
 
 # target to build an object file
 Powerplant\Card\Step13.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\Card\Step13.cpp.obj
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Powerplant\Card\Step13.cpp.obj
 .PHONY : Powerplant\Card\Step13.cpp.obj
 
 Powerplant\Card\Step13.i: Powerplant\Card\Step13.cpp.i
@@ -355,7 +355,7 @@ Powerplant\Card\Step13.i: Powerplant\Card\Step13.cpp.i
 
 # target to preprocess a source file
 Powerplant\Card\Step13.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\Card\Step13.cpp.i
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Powerplant\Card\Step13.cpp.i
 .PHONY : Powerplant\Card\Step13.cpp.i
 
 Powerplant\Card\Step13.s: Powerplant\Card\Step13.cpp.s
@@ -364,8 +364,35 @@ Powerplant\Card\Step13.s: Powerplant\Card\Step13.cpp.s
 
 # target to generate assembly for a file
 Powerplant\Card\Step13.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\Card\Step13.cpp.s
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Powerplant\Card\Step13.cpp.s
 .PHONY : Powerplant\Card\Step13.cpp.s
+
+Powerplant\Card\Summary.obj: Powerplant\Card\Summary.cpp.obj
+
+.PHONY : Powerplant\Card\Summary.obj
+
+# target to build an object file
+Powerplant\Card\Summary.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Powerplant\Card\Summary.cpp.obj
+.PHONY : Powerplant\Card\Summary.cpp.obj
+
+Powerplant\Card\Summary.i: Powerplant\Card\Summary.cpp.i
+
+.PHONY : Powerplant\Card\Summary.i
+
+# target to preprocess a source file
+Powerplant\Card\Summary.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Powerplant\Card\Summary.cpp.i
+.PHONY : Powerplant\Card\Summary.cpp.i
+
+Powerplant\Card\Summary.s: Powerplant\Card\Summary.cpp.s
+
+.PHONY : Powerplant\Card\Summary.s
+
+# target to generate assembly for a file
+Powerplant\Card\Summary.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Powerplant\Card\Summary.cpp.s
+.PHONY : Powerplant\Card\Summary.cpp.s
 
 Powerplant\GameAndPlayer\Game.obj: Powerplant\GameAndPlayer\Game.cpp.obj
 
@@ -373,7 +400,7 @@ Powerplant\GameAndPlayer\Game.obj: Powerplant\GameAndPlayer\Game.cpp.obj
 
 # target to build an object file
 Powerplant\GameAndPlayer\Game.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Game.cpp.obj
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Powerplant\GameAndPlayer\Game.cpp.obj
 .PHONY : Powerplant\GameAndPlayer\Game.cpp.obj
 
 Powerplant\GameAndPlayer\Game.i: Powerplant\GameAndPlayer\Game.cpp.i
@@ -382,7 +409,7 @@ Powerplant\GameAndPlayer\Game.i: Powerplant\GameAndPlayer\Game.cpp.i
 
 # target to preprocess a source file
 Powerplant\GameAndPlayer\Game.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Game.cpp.i
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Powerplant\GameAndPlayer\Game.cpp.i
 .PHONY : Powerplant\GameAndPlayer\Game.cpp.i
 
 Powerplant\GameAndPlayer\Game.s: Powerplant\GameAndPlayer\Game.cpp.s
@@ -391,7 +418,7 @@ Powerplant\GameAndPlayer\Game.s: Powerplant\GameAndPlayer\Game.cpp.s
 
 # target to generate assembly for a file
 Powerplant\GameAndPlayer\Game.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Game.cpp.s
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Powerplant\GameAndPlayer\Game.cpp.s
 .PHONY : Powerplant\GameAndPlayer\Game.cpp.s
 
 Powerplant\GameAndPlayer\Player.obj: Powerplant\GameAndPlayer\Player.cpp.obj
@@ -400,7 +427,7 @@ Powerplant\GameAndPlayer\Player.obj: Powerplant\GameAndPlayer\Player.cpp.obj
 
 # target to build an object file
 Powerplant\GameAndPlayer\Player.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.obj
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Powerplant\GameAndPlayer\Player.cpp.obj
 .PHONY : Powerplant\GameAndPlayer\Player.cpp.obj
 
 Powerplant\GameAndPlayer\Player.i: Powerplant\GameAndPlayer\Player.cpp.i
@@ -409,7 +436,7 @@ Powerplant\GameAndPlayer\Player.i: Powerplant\GameAndPlayer\Player.cpp.i
 
 # target to preprocess a source file
 Powerplant\GameAndPlayer\Player.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.i
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Powerplant\GameAndPlayer\Player.cpp.i
 .PHONY : Powerplant\GameAndPlayer\Player.cpp.i
 
 Powerplant\GameAndPlayer\Player.s: Powerplant\GameAndPlayer\Player.cpp.s
@@ -418,7 +445,7 @@ Powerplant\GameAndPlayer\Player.s: Powerplant\GameAndPlayer\Player.cpp.s
 
 # target to generate assembly for a file
 Powerplant\GameAndPlayer\Player.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.s
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Powerplant\GameAndPlayer\Player.cpp.s
 .PHONY : Powerplant\GameAndPlayer\Player.cpp.s
 
 Powerplant\Market\PowerplantMarket.obj: Powerplant\Market\PowerplantMarket.cpp.obj
@@ -427,7 +454,7 @@ Powerplant\Market\PowerplantMarket.obj: Powerplant\Market\PowerplantMarket.cpp.o
 
 # target to build an object file
 Powerplant\Market\PowerplantMarket.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\Market\PowerplantMarket.cpp.obj
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Powerplant\Market\PowerplantMarket.cpp.obj
 .PHONY : Powerplant\Market\PowerplantMarket.cpp.obj
 
 Powerplant\Market\PowerplantMarket.i: Powerplant\Market\PowerplantMarket.cpp.i
@@ -436,7 +463,7 @@ Powerplant\Market\PowerplantMarket.i: Powerplant\Market\PowerplantMarket.cpp.i
 
 # target to preprocess a source file
 Powerplant\Market\PowerplantMarket.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\Market\PowerplantMarket.cpp.i
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Powerplant\Market\PowerplantMarket.cpp.i
 .PHONY : Powerplant\Market\PowerplantMarket.cpp.i
 
 Powerplant\Market\PowerplantMarket.s: Powerplant\Market\PowerplantMarket.cpp.s
@@ -445,7 +472,7 @@ Powerplant\Market\PowerplantMarket.s: Powerplant\Market\PowerplantMarket.cpp.s
 
 # target to generate assembly for a file
 Powerplant\Market\PowerplantMarket.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\Market\PowerplantMarket.cpp.s
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Powerplant\Market\PowerplantMarket.cpp.s
 .PHONY : Powerplant\Market\PowerplantMarket.cpp.s
 
 Powerplant\Market\ResourceMarket.obj: Powerplant\Market\ResourceMarket.cpp.obj
@@ -454,7 +481,7 @@ Powerplant\Market\ResourceMarket.obj: Powerplant\Market\ResourceMarket.cpp.obj
 
 # target to build an object file
 Powerplant\Market\ResourceMarket.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\Market\ResourceMarket.cpp.obj
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Powerplant\Market\ResourceMarket.cpp.obj
 .PHONY : Powerplant\Market\ResourceMarket.cpp.obj
 
 Powerplant\Market\ResourceMarket.i: Powerplant\Market\ResourceMarket.cpp.i
@@ -463,7 +490,7 @@ Powerplant\Market\ResourceMarket.i: Powerplant\Market\ResourceMarket.cpp.i
 
 # target to preprocess a source file
 Powerplant\Market\ResourceMarket.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\Market\ResourceMarket.cpp.i
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Powerplant\Market\ResourceMarket.cpp.i
 .PHONY : Powerplant\Market\ResourceMarket.cpp.i
 
 Powerplant\Market\ResourceMarket.s: Powerplant\Market\ResourceMarket.cpp.s
@@ -472,7 +499,7 @@ Powerplant\Market\ResourceMarket.s: Powerplant\Market\ResourceMarket.cpp.s
 
 # target to generate assembly for a file
 Powerplant\Market\ResourceMarket.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\Market\ResourceMarket.cpp.s
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\Powerplant\Market\ResourceMarket.cpp.s
 .PHONY : Powerplant\Market\ResourceMarket.cpp.s
 
 test.obj: test.cpp.obj
@@ -481,7 +508,7 @@ test.obj: test.cpp.obj
 
 # target to build an object file
 test.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\test.cpp.obj
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\test.cpp.obj
 .PHONY : test.cpp.obj
 
 test.i: test.cpp.i
@@ -490,7 +517,7 @@ test.i: test.cpp.i
 
 # target to preprocess a source file
 test.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\test.cpp.i
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\test.cpp.i
 .PHONY : test.cpp.i
 
 test.s: test.cpp.s
@@ -499,7 +526,7 @@ test.s: test.cpp.s
 
 # target to generate assembly for a file
 test.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\test.cpp.s
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\COMP345Team21.dir\test.cpp.s
 .PHONY : test.cpp.s
 
 # Help Target
@@ -509,7 +536,7 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
-	@echo ... untitled
+	@echo ... COMP345Team21
 	@echo ... rebuild_cache
 	@echo ... FileReader/FileReader.obj
 	@echo ... FileReader/FileReader.i
@@ -538,6 +565,9 @@ help:
 	@echo ... Powerplant/Card/Step13.obj
 	@echo ... Powerplant/Card/Step13.i
 	@echo ... Powerplant/Card/Step13.s
+	@echo ... Powerplant/Card/Summary.obj
+	@echo ... Powerplant/Card/Summary.i
+	@echo ... Powerplant/Card/Summary.s
 	@echo ... Powerplant/GameAndPlayer/Game.obj
 	@echo ... Powerplant/GameAndPlayer/Game.i
 	@echo ... Powerplant/GameAndPlayer/Game.s

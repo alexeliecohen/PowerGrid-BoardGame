@@ -15,7 +15,6 @@
 #include "Player.h"
 #include "../../Map/Vertex.h"
 #include "../../Map/Map.h"
-#include "../../Powerplant/Resource/Resource.h"
 #include <string>
 #include <iostream>
 #include <locale>
@@ -551,7 +550,7 @@ int Player::getCoalCap(){
 	}//close for loop for each powerplant that the player owns
 	return (returnValue - this->coal);
 }//close get coal cap function
-int Player::Player::getUraniumCap(){
+int Player::getUraniumCap(){
 	int returnValue = 0;
 	for (int i = 0 ; i < myPowerPlant.size() ; i++ ){
 		//check if plant is of

@@ -79,13 +79,36 @@ int main() {
         cout << s << "\n";
     }
 
-//    Deck d = Deck();
-//    std::cout << d << "\n\n";
-//    d.shuffle();
-//    std::cout << d;
-//    auto *rMarket = new ResourceMarket();
-//    PowerplantMarket pMarket = PowerplantMarket(d);
-    return 0;
+    Deck d = Deck();
+    std::cout << d << "\n\n";
+    d.shuffle();
+    std::cout << d;
+    auto *rMarket = new ResourceMarket();
+    PowerplantMarket pMarket = PowerplantMarket(d);
+
+
+    /*
+    *  PART 3 ASSIGNMENT 2
+    */
+
+    /*
+     *  RESOURCE BUYING PHASE
+     *  requires a resource market and players --> hard-coded below
+     */
+
+    std::cout<<"\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n";
+    std::cout<<"\nWELCOME TO POWER GRID PHASE 3\n";
+    std::cout<<"\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n";
+    std::cout<<"\nCREATING OBJECTS FOR PHASE 3 OF ASSIGNMENT 2\n";
+    std::cout<<"\nCREATING 2 PLAYERS, player1 & player2\n";
+
+    //Create Players
+    std::vector<Player> playersPhase3 = std::vector<Player>();
+    Player p1 = Player( "player1" );
+    Player p2 = Player( "player2" );
+    playersPhase3.push_back( p1 );
+    playersPhase3.push_back( p2 );
+
     //Create Map
     MapLoaderB mapLoaderPart3 = MapLoaderB();
     Map mapPhase3 = mapLoaderPart3.buildMapB(files.at(mapFile - 1));           //ERROR HERE
@@ -94,7 +117,7 @@ int main() {
 
     //Create Resource Market
     ResourceMarket resMarket = ResourceMarket();
-    ResourceMarket *resMarketPtr = &rMarket;
+    ResourceMarket *resMarketPtr = reinterpret_cast<ResourceMarket *>(&rMarket);
 
     //Give Power Plants To Player 2
     std::cout<<"\nPowerplants for player2 are being placed into his/her possesion for demoing's Part 3, buying resources\n";
