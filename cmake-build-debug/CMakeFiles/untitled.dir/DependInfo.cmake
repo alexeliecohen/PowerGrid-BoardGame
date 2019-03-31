@@ -6,7 +6,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Hubert/CLionProjects/COMP345Team21/FileReader/FileReader.cpp" "C:/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/untitled.dir/FileReader/FileReader.cpp.obj"
   "C:/Users/Hubert/CLionProjects/COMP345Team21/FileReader/MapLoader.cpp" "C:/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/untitled.dir/FileReader/MapLoader.cpp.obj"
-  "C:/Users/Hubert/CLionProjects/COMP345Team21/Main_PowerGrid_Driver.cpp" "C:/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/untitled.dir/Main_PowerGrid_Driver.cpp.obj"
   "C:/Users/Hubert/CLionProjects/COMP345Team21/Map/Edge.cpp" "C:/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/untitled.dir/Map/Edge.cpp.obj"
   "C:/Users/Hubert/CLionProjects/COMP345Team21/Map/Map.cpp" "C:/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/untitled.dir/Map/Map.cpp.obj"
   "C:/Users/Hubert/CLionProjects/COMP345Team21/Map/Vertex.cpp" "C:/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/untitled.dir/Map/Vertex.cpp.obj"
@@ -18,6 +17,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/GameAndPlayer/Player.cpp" "C:/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/untitled.dir/Powerplant/GameAndPlayer/Player.cpp.obj"
   "C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Market/PowerplantMarket.cpp" "C:/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/untitled.dir/Powerplant/Market/PowerplantMarket.cpp.obj"
   "C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Market/ResourceMarket.cpp" "C:/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/untitled.dir/Powerplant/Market/ResourceMarket.cpp.obj"
+  "C:/Users/Hubert/CLionProjects/COMP345Team21/test.cpp" "C:/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/untitled.dir/test.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 

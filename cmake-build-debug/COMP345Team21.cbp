@@ -94,9 +94,6 @@
 		<Unit filename="C:/Users/Hubert/CLionProjects/COMP345Team21/FileReader/MapLoader.h">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="C:/Users/Hubert/CLionProjects/COMP345Team21/Main_PowerGrid_Driver.cpp">
-			<Option target="untitled"/>
-		</Unit>
 		<Unit filename="C:/Users/Hubert/CLionProjects/COMP345Team21/Map/Edge.cpp">
 			<Option target="untitled"/>
 		</Unit>
@@ -161,6 +158,9 @@
 			<Option target="untitled"/>
 		</Unit>
 		<Unit filename="C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Market/ResourceMarket.h">
+			<Option target="untitled"/>
+		</Unit>
+		<Unit filename="C:/Users/Hubert/CLionProjects/COMP345Team21/test.cpp">
 			<Option target="untitled"/>
 		</Unit>
 		<Unit filename="C:/Users/Hubert/CLionProjects/COMP345Team21/CMakeLists.txt">

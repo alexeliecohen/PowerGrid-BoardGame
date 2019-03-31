@@ -267,4 +267,17 @@ void Game::Phase1() {
         phaseOnePlayersRemaining--;
     }//end phase1 while loop
     cout << endl << "All players have either skipped or purchases a powerplant, Phase 1 Terminated" << endl;
-}//end method
+}
+
+/**
+ * Method phase 4, powering cities by using resources and power plants to generate elecktro
+ */
+void Game::Phase4() {
+    for (Player *p : playerList) {
+        p->powerCities();
+    }
+    for(int i = 0; i < 4; i++) {
+        pMarket.replaceFutureMarket(myDeck);
+    }
+}
+//end method

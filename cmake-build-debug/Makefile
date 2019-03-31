@@ -178,33 +178,6 @@ FileReader\MapLoader.cpp.s:
 	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\FileReader\MapLoader.cpp.s
 .PHONY : FileReader\MapLoader.cpp.s
 
-Main_PowerGrid_Driver.obj: Main_PowerGrid_Driver.cpp.obj
-
-.PHONY : Main_PowerGrid_Driver.obj
-
-# target to build an object file
-Main_PowerGrid_Driver.cpp.obj:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Main_PowerGrid_Driver.cpp.obj
-.PHONY : Main_PowerGrid_Driver.cpp.obj
-
-Main_PowerGrid_Driver.i: Main_PowerGrid_Driver.cpp.i
-
-.PHONY : Main_PowerGrid_Driver.i
-
-# target to preprocess a source file
-Main_PowerGrid_Driver.cpp.i:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Main_PowerGrid_Driver.cpp.i
-.PHONY : Main_PowerGrid_Driver.cpp.i
-
-Main_PowerGrid_Driver.s: Main_PowerGrid_Driver.cpp.s
-
-.PHONY : Main_PowerGrid_Driver.s
-
-# target to generate assembly for a file
-Main_PowerGrid_Driver.cpp.s:
-	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Main_PowerGrid_Driver.cpp.s
-.PHONY : Main_PowerGrid_Driver.cpp.s
-
 Map\Edge.obj: Map\Edge.cpp.obj
 
 .PHONY : Map\Edge.obj
@@ -502,6 +475,33 @@ Powerplant\Market\ResourceMarket.cpp.s:
 	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\Market\ResourceMarket.cpp.s
 .PHONY : Powerplant\Market\ResourceMarket.cpp.s
 
+test.obj: test.cpp.obj
+
+.PHONY : test.obj
+
+# target to build an object file
+test.cpp.obj:
+	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\test.cpp.obj
+.PHONY : test.cpp.obj
+
+test.i: test.cpp.i
+
+.PHONY : test.i
+
+# target to preprocess a source file
+test.cpp.i:
+	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\test.cpp.i
+.PHONY : test.cpp.i
+
+test.s: test.cpp.s
+
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.cpp.s:
+	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\test.cpp.s
+.PHONY : test.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -517,9 +517,6 @@ help:
 	@echo ... FileReader/MapLoader.obj
 	@echo ... FileReader/MapLoader.i
 	@echo ... FileReader/MapLoader.s
-	@echo ... Main_PowerGrid_Driver.obj
-	@echo ... Main_PowerGrid_Driver.i
-	@echo ... Main_PowerGrid_Driver.s
 	@echo ... Map/Edge.obj
 	@echo ... Map/Edge.i
 	@echo ... Map/Edge.s
@@ -553,6 +550,9 @@ help:
 	@echo ... Powerplant/Market/ResourceMarket.obj
 	@echo ... Powerplant/Market/ResourceMarket.i
 	@echo ... Powerplant/Market/ResourceMarket.s
+	@echo ... test.obj
+	@echo ... test.i
+	@echo ... test.s
 .PHONY : help
 
 

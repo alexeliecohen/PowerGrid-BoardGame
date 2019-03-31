@@ -15,6 +15,7 @@
 #include "Player.h"
 #include <string>
 #include <iostream>
+#include <locale>
 #include "Game.h"
 
 int Player::numOfPlayers = 0;
@@ -59,6 +60,7 @@ Player::Player() {
     auctionReady = true;
     roundReady = true;
     numOfPlayers++;
+    numCities = 0;
 }//close constructor
 
 /**
@@ -77,11 +79,13 @@ Player::Player(std::string nameIn) {
     oil = DEFAULTRESOURCE;
     coal = DEFAULTRESOURCE;
     uranium = DEFAULTRESOURCE;
+    garbage = DEFAULTRESOURCE;
     numOfCities = DEFAULTHOME;
     numbHomes = DEFAULTHOME;
     auctionReady = true;
     roundReady = true;
     this->numOfPlayers++;
+    numCities = 0;
 }
 
 Player::~Player() {
@@ -326,3 +330,87 @@ void Player::setRoundReady(bool roundReady) {
 bool Player::isRoundReady() const {
     return roundReady;
 }
+
+void Player::powerCities() {
+    int n = -1;
+    int poweredCities = 0;
+    int k;
+    char choice;
+    do {
+        k = 0;
+        std::cout << "Do you want to power a plant: ";
+        cin >> choice;
+        if(tolower(choice) == 'n') {
+            std::cout << playerName << " has decided to skip phase 5 \n";
+            break;
+        }
+        std::cout << "Please choose a power plant you want to power: \n";
+        for (int i = 0; i < myPowerPlant.size(); i++) {
+            if (myPowerPlant[i].getResourceType() == "Oil") {
+                if (myPowerPlant[i].getEnergyCost() <= oil) {
+                    k++;
+                    std::cout << i << ": " << myPowerPlant[i] << "\n";
+                }
+            }
+            if (myPowerPlant[i].getResourceType() == "Coal") {
+                if (myPowerPlant[i].getEnergyCost() <= coal) {
+                    k++;
+                    std::cout << i << ": " << myPowerPlant[i] << "\n";
+                }
+            }
+            if (myPowerPlant[i].getResourceType() == "Garbage") {
+                if (myPowerPlant[i].getEnergyCost() <= garbage) {
+                    k++;
+                    std::cout << i << ": " << myPowerPlant[i] << "\n";
+                }
+            }
+            if (myPowerPlant[i].getResourceType() == "Uranium") {
+                if (myPowerPlant[i].getEnergyCost() <= uranium) {
+                    k++;
+                    std::cout << i << ": " << myPowerPlant[i] << "\n";
+                }
+            }
+        }
+        if(k == 0) {
+            std::cout << "No powerplants can be powered\n";
+            break;
+        }
+        cin >> n;
+
+        if(myPowerPlant[n].getResourceType() == "Oil") {
+            oil -= myPowerPlant[n].getEnergyCost();
+            poweredCities += myPowerPlant[n].getProductionValue();
+            std::cout << myPowerPlant[n].getEnergyCost() << " has been removed from the player's oil.\n";
+            std::cout << myPowerPlant[n].getProductionValue() << " cities have been powered.\n";
+        }
+        if(myPowerPlant[n].getResourceType() == "Coal") {
+            coal -= myPowerPlant[n].getEnergyCost();
+            poweredCities += myPowerPlant[n].getProductionValue();
+            std::cout << myPowerPlant[n].getEnergyCost() << " has been removed from the player's coal.\n";
+            std::cout << myPowerPlant[n].getProductionValue() << " cities have been powered.\n";
+        }
+        if(myPowerPlant[n].getResourceType() == "Garbage") {
+            garbage -= myPowerPlant[n].getEnergyCost();
+            poweredCities += myPowerPlant[n].getProductionValue();
+            std::cout << myPowerPlant[n].getEnergyCost() << " has been removed from the player's garbage.\n";
+            std::cout << myPowerPlant[n].getProductionValue() << " cities have been powered.\n";
+        }
+        if(myPowerPlant[n].getResourceType() == "Uranium") {
+            uranium -= myPowerPlant[n].getEnergyCost();
+            poweredCities += myPowerPlant[n].getProductionValue();
+            std::cout << myPowerPlant[n].getEnergyCost() << " has been removed from the player's uranium.\n";
+            std::cout << myPowerPlant[n].getProductionValue() << " cities have been powered.\n";
+        }
+    } while(k > 0);
+    if(poweredCities > numCities) {
+        elektros += PAYMENT[numCities];
+        std::cout << playerName << " has powered " << numCities << " and has a surplus of " << poweredCities - numCities << " power\n";
+        std::cout << PAYMENT[numCities] << " elecktros has been given to " << playerName << "\n";
+    }
+    else {
+        elektros += PAYMENT[poweredCities];
+        std::cout << playerName << " has powered " << numCities << " and has a surplus of " << poweredCities - numCities << " power\n";
+        std::cout << PAYMENT[poweredCities] << " elecktros has been given to " << playerName << "\n";
+    }
+}
+

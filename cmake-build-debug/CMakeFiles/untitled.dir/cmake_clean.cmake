@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/untitled.dir/Main_PowerGrid_Driver.cpp.obj"
   "CMakeFiles/untitled.dir/Map/Vertex.cpp.obj"
   "CMakeFiles/untitled.dir/Map/Edge.cpp.obj"
   "CMakeFiles/untitled.dir/Map/Map.cpp.obj"
@@ -13,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/untitled.dir/Powerplant/GameAndPlayer/Player.cpp.obj"
   "CMakeFiles/untitled.dir/Powerplant/Market/PowerplantMarket.cpp.obj"
   "CMakeFiles/untitled.dir/Powerplant/Market/ResourceMarket.cpp.obj"
+  "CMakeFiles/untitled.dir/test.cpp.obj"
   "untitled.pdb"
   "untitled.exe"
   "untitled.exe.manifest"

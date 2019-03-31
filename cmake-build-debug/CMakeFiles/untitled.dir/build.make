@@ -58,28 +58,9 @@ include CMakeFiles\untitled.dir\progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles\untitled.dir\flags.make
 
-CMakeFiles\untitled.dir\Main_PowerGrid_Driver.cpp.obj: CMakeFiles\untitled.dir\flags.make
-CMakeFiles\untitled.dir\Main_PowerGrid_Driver.cpp.obj: ..\Main_PowerGrid_Driver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/untitled.dir/Main_PowerGrid_Driver.cpp.obj"
-	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\untitled.dir\Main_PowerGrid_Driver.cpp.obj /FdCMakeFiles\untitled.dir\ /FS -c C:\Users\Hubert\CLionProjects\COMP345Team21\Main_PowerGrid_Driver.cpp
-<<
-
-CMakeFiles\untitled.dir\Main_PowerGrid_Driver.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/Main_PowerGrid_Driver.cpp.i"
-	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe > CMakeFiles\untitled.dir\Main_PowerGrid_Driver.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Hubert\CLionProjects\COMP345Team21\Main_PowerGrid_Driver.cpp
-<<
-
-CMakeFiles\untitled.dir\Main_PowerGrid_Driver.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/Main_PowerGrid_Driver.cpp.s"
-	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\untitled.dir\Main_PowerGrid_Driver.cpp.s /c C:\Users\Hubert\CLionProjects\COMP345Team21\Main_PowerGrid_Driver.cpp
-<<
-
 CMakeFiles\untitled.dir\Map\Vertex.cpp.obj: CMakeFiles\untitled.dir\flags.make
 CMakeFiles\untitled.dir\Map\Vertex.cpp.obj: ..\Map\Vertex.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/untitled.dir/Map/Vertex.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/untitled.dir/Map/Vertex.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\untitled.dir\Map\Vertex.cpp.obj /FdCMakeFiles\untitled.dir\ /FS -c C:\Users\Hubert\CLionProjects\COMP345Team21\Map\Vertex.cpp
 <<
@@ -98,7 +79,7 @@ CMakeFiles\untitled.dir\Map\Vertex.cpp.s: cmake_force
 
 CMakeFiles\untitled.dir\Map\Edge.cpp.obj: CMakeFiles\untitled.dir\flags.make
 CMakeFiles\untitled.dir\Map\Edge.cpp.obj: ..\Map\Edge.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/untitled.dir/Map/Edge.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/untitled.dir/Map/Edge.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\untitled.dir\Map\Edge.cpp.obj /FdCMakeFiles\untitled.dir\ /FS -c C:\Users\Hubert\CLionProjects\COMP345Team21\Map\Edge.cpp
 <<
@@ -117,7 +98,7 @@ CMakeFiles\untitled.dir\Map\Edge.cpp.s: cmake_force
 
 CMakeFiles\untitled.dir\Map\Map.cpp.obj: CMakeFiles\untitled.dir\flags.make
 CMakeFiles\untitled.dir\Map\Map.cpp.obj: ..\Map\Map.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/untitled.dir/Map/Map.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/untitled.dir/Map/Map.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\untitled.dir\Map\Map.cpp.obj /FdCMakeFiles\untitled.dir\ /FS -c C:\Users\Hubert\CLionProjects\COMP345Team21\Map\Map.cpp
 <<
@@ -136,7 +117,7 @@ CMakeFiles\untitled.dir\Map\Map.cpp.s: cmake_force
 
 CMakeFiles\untitled.dir\FileReader\FileReader.cpp.obj: CMakeFiles\untitled.dir\flags.make
 CMakeFiles\untitled.dir\FileReader\FileReader.cpp.obj: ..\FileReader\FileReader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/untitled.dir/FileReader/FileReader.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/untitled.dir/FileReader/FileReader.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\untitled.dir\FileReader\FileReader.cpp.obj /FdCMakeFiles\untitled.dir\ /FS -c C:\Users\Hubert\CLionProjects\COMP345Team21\FileReader\FileReader.cpp
 <<
@@ -155,7 +136,7 @@ CMakeFiles\untitled.dir\FileReader\FileReader.cpp.s: cmake_force
 
 CMakeFiles\untitled.dir\FileReader\MapLoader.cpp.obj: CMakeFiles\untitled.dir\flags.make
 CMakeFiles\untitled.dir\FileReader\MapLoader.cpp.obj: ..\FileReader\MapLoader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/untitled.dir/FileReader/MapLoader.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/untitled.dir/FileReader/MapLoader.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\untitled.dir\FileReader\MapLoader.cpp.obj /FdCMakeFiles\untitled.dir\ /FS -c C:\Users\Hubert\CLionProjects\COMP345Team21\FileReader\MapLoader.cpp
 <<
@@ -174,7 +155,7 @@ CMakeFiles\untitled.dir\FileReader\MapLoader.cpp.s: cmake_force
 
 CMakeFiles\untitled.dir\Powerplant\Card\Card.cpp.obj: CMakeFiles\untitled.dir\flags.make
 CMakeFiles\untitled.dir\Powerplant\Card\Card.cpp.obj: ..\Powerplant\Card\Card.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/untitled.dir/Powerplant/Card/Card.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/untitled.dir/Powerplant/Card/Card.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\untitled.dir\Powerplant\Card\Card.cpp.obj /FdCMakeFiles\untitled.dir\ /FS -c C:\Users\Hubert\CLionProjects\COMP345Team21\Powerplant\Card\Card.cpp
 <<
@@ -193,7 +174,7 @@ CMakeFiles\untitled.dir\Powerplant\Card\Card.cpp.s: cmake_force
 
 CMakeFiles\untitled.dir\Powerplant\Card\Deck.cpp.obj: CMakeFiles\untitled.dir\flags.make
 CMakeFiles\untitled.dir\Powerplant\Card\Deck.cpp.obj: ..\Powerplant\Card\Deck.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/untitled.dir/Powerplant/Card/Deck.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/untitled.dir/Powerplant/Card/Deck.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\untitled.dir\Powerplant\Card\Deck.cpp.obj /FdCMakeFiles\untitled.dir\ /FS -c C:\Users\Hubert\CLionProjects\COMP345Team21\Powerplant\Card\Deck.cpp
 <<
@@ -212,7 +193,7 @@ CMakeFiles\untitled.dir\Powerplant\Card\Deck.cpp.s: cmake_force
 
 CMakeFiles\untitled.dir\Powerplant\Card\Powerplant.cpp.obj: CMakeFiles\untitled.dir\flags.make
 CMakeFiles\untitled.dir\Powerplant\Card\Powerplant.cpp.obj: ..\Powerplant\Card\Powerplant.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/untitled.dir/Powerplant/Card/Powerplant.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/untitled.dir/Powerplant/Card/Powerplant.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\untitled.dir\Powerplant\Card\Powerplant.cpp.obj /FdCMakeFiles\untitled.dir\ /FS -c C:\Users\Hubert\CLionProjects\COMP345Team21\Powerplant\Card\Powerplant.cpp
 <<
@@ -231,7 +212,7 @@ CMakeFiles\untitled.dir\Powerplant\Card\Powerplant.cpp.s: cmake_force
 
 CMakeFiles\untitled.dir\Powerplant\Card\Step13.cpp.obj: CMakeFiles\untitled.dir\flags.make
 CMakeFiles\untitled.dir\Powerplant\Card\Step13.cpp.obj: ..\Powerplant\Card\Step13.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/untitled.dir/Powerplant/Card/Step13.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/untitled.dir/Powerplant/Card/Step13.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\untitled.dir\Powerplant\Card\Step13.cpp.obj /FdCMakeFiles\untitled.dir\ /FS -c C:\Users\Hubert\CLionProjects\COMP345Team21\Powerplant\Card\Step13.cpp
 <<
@@ -250,7 +231,7 @@ CMakeFiles\untitled.dir\Powerplant\Card\Step13.cpp.s: cmake_force
 
 CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Game.cpp.obj: CMakeFiles\untitled.dir\flags.make
 CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Game.cpp.obj: ..\Powerplant\GameAndPlayer\Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/untitled.dir/Powerplant/GameAndPlayer/Game.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/untitled.dir/Powerplant/GameAndPlayer/Game.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Game.cpp.obj /FdCMakeFiles\untitled.dir\ /FS -c C:\Users\Hubert\CLionProjects\COMP345Team21\Powerplant\GameAndPlayer\Game.cpp
 <<
@@ -269,7 +250,7 @@ CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Game.cpp.s: cmake_force
 
 CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.obj: CMakeFiles\untitled.dir\flags.make
 CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.obj: ..\Powerplant\GameAndPlayer\Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/untitled.dir/Powerplant/GameAndPlayer/Player.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/untitled.dir/Powerplant/GameAndPlayer/Player.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.obj /FdCMakeFiles\untitled.dir\ /FS -c C:\Users\Hubert\CLionProjects\COMP345Team21\Powerplant\GameAndPlayer\Player.cpp
 <<
@@ -288,7 +269,7 @@ CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.s: cmake_force
 
 CMakeFiles\untitled.dir\Powerplant\Market\PowerplantMarket.cpp.obj: CMakeFiles\untitled.dir\flags.make
 CMakeFiles\untitled.dir\Powerplant\Market\PowerplantMarket.cpp.obj: ..\Powerplant\Market\PowerplantMarket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/untitled.dir/Powerplant/Market/PowerplantMarket.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/untitled.dir/Powerplant/Market/PowerplantMarket.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\untitled.dir\Powerplant\Market\PowerplantMarket.cpp.obj /FdCMakeFiles\untitled.dir\ /FS -c C:\Users\Hubert\CLionProjects\COMP345Team21\Powerplant\Market\PowerplantMarket.cpp
 <<
@@ -307,7 +288,7 @@ CMakeFiles\untitled.dir\Powerplant\Market\PowerplantMarket.cpp.s: cmake_force
 
 CMakeFiles\untitled.dir\Powerplant\Market\ResourceMarket.cpp.obj: CMakeFiles\untitled.dir\flags.make
 CMakeFiles\untitled.dir\Powerplant\Market\ResourceMarket.cpp.obj: ..\Powerplant\Market\ResourceMarket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/untitled.dir/Powerplant/Market/ResourceMarket.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/untitled.dir/Powerplant/Market/ResourceMarket.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\untitled.dir\Powerplant\Market\ResourceMarket.cpp.obj /FdCMakeFiles\untitled.dir\ /FS -c C:\Users\Hubert\CLionProjects\COMP345Team21\Powerplant\Market\ResourceMarket.cpp
 <<
@@ -324,9 +305,27 @@ CMakeFiles\untitled.dir\Powerplant\Market\ResourceMarket.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\untitled.dir\Powerplant\Market\ResourceMarket.cpp.s /c C:\Users\Hubert\CLionProjects\COMP345Team21\Powerplant\Market\ResourceMarket.cpp
 <<
 
+CMakeFiles\untitled.dir\test.cpp.obj: CMakeFiles\untitled.dir\flags.make
+CMakeFiles\untitled.dir\test.cpp.obj: ..\test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/untitled.dir/test.cpp.obj"
+	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\untitled.dir\test.cpp.obj /FdCMakeFiles\untitled.dir\ /FS -c C:\Users\Hubert\CLionProjects\COMP345Team21\test.cpp
+<<
+
+CMakeFiles\untitled.dir\test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/test.cpp.i"
+	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe > CMakeFiles\untitled.dir\test.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Hubert\CLionProjects\COMP345Team21\test.cpp
+<<
+
+CMakeFiles\untitled.dir\test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/test.cpp.s"
+	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\untitled.dir\test.cpp.s /c C:\Users\Hubert\CLionProjects\COMP345Team21\test.cpp
+<<
+
 # Object files for target untitled
 untitled_OBJECTS = \
-"CMakeFiles\untitled.dir\Main_PowerGrid_Driver.cpp.obj" \
 "CMakeFiles\untitled.dir\Map\Vertex.cpp.obj" \
 "CMakeFiles\untitled.dir\Map\Edge.cpp.obj" \
 "CMakeFiles\untitled.dir\Map\Map.cpp.obj" \
@@ -339,12 +338,12 @@ untitled_OBJECTS = \
 "CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Game.cpp.obj" \
 "CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.obj" \
 "CMakeFiles\untitled.dir\Powerplant\Market\PowerplantMarket.cpp.obj" \
-"CMakeFiles\untitled.dir\Powerplant\Market\ResourceMarket.cpp.obj"
+"CMakeFiles\untitled.dir\Powerplant\Market\ResourceMarket.cpp.obj" \
+"CMakeFiles\untitled.dir\test.cpp.obj"
 
 # External object files for target untitled
 untitled_EXTERNAL_OBJECTS =
 
-untitled.exe: CMakeFiles\untitled.dir\Main_PowerGrid_Driver.cpp.obj
 untitled.exe: CMakeFiles\untitled.dir\Map\Vertex.cpp.obj
 untitled.exe: CMakeFiles\untitled.dir\Map\Edge.cpp.obj
 untitled.exe: CMakeFiles\untitled.dir\Map\Map.cpp.obj
@@ -358,6 +357,7 @@ untitled.exe: CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Game.cpp.obj
 untitled.exe: CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.obj
 untitled.exe: CMakeFiles\untitled.dir\Powerplant\Market\PowerplantMarket.cpp.obj
 untitled.exe: CMakeFiles\untitled.dir\Powerplant\Market\ResourceMarket.cpp.obj
+untitled.exe: CMakeFiles\untitled.dir\test.cpp.obj
 untitled.exe: CMakeFiles\untitled.dir\build.make
 untitled.exe: CMakeFiles\untitled.dir\objects1.rsp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable untitled.exe"
