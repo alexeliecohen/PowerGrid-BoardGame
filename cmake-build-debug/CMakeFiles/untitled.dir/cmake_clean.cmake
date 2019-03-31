@@ -11,6 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/untitled.dir/Powerplant/Card/Step13.cpp.obj"
   "CMakeFiles/untitled.dir/Powerplant/GameAndPlayer/Game.cpp.obj"
   "CMakeFiles/untitled.dir/Powerplant/GameAndPlayer/Player.cpp.obj"
+  "CMakeFiles/untitled.dir/Powerplant/HousesAndCities/City.cpp.obj"
   "CMakeFiles/untitled.dir/Powerplant/HousesAndCities/Houses.cpp.obj"
   "CMakeFiles/untitled.dir/Powerplant/Market/Market.cpp.obj"
   "CMakeFiles/untitled.dir/Powerplant/Market/PowerplantMarket.cpp.obj"

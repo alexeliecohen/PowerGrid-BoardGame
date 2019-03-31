@@ -22,11 +22,8 @@ CMakeFiles/untitled.dir/Main_PowerGrid_Driver.cpp.obj
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Card/Deck.h
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Card/Powerplant.h
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Card/Step13.h
- C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/GameAndPlayer/Game.h
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/GameAndPlayer/Player.h
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/HousesAndCities/Houses.h
- C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Market/PowerplantMarket.h
- C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Market/ResourceMarket.h
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Resource/Resource.h
 CMakeFiles/untitled.dir/Map/Edge.cpp.obj
  C:/Users/Hubert/CLionProjects/COMP345Team21/Map/Edge.cpp
@@ -59,20 +56,35 @@ CMakeFiles/untitled.dir/Powerplant/Card/Step13.cpp.obj
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Card/Step13.cpp
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Card/Step13.h
 CMakeFiles/untitled.dir/Powerplant/GameAndPlayer/Game.cpp.obj
+ C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Card/Card.h
+ C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Card/Deck.h
+ C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Card/Powerplant.h
+ C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Card/Step13.h
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/GameAndPlayer/Game.cpp
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/GameAndPlayer/Game.h
+ C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/GameAndPlayer/Player.h
+ C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/HousesAndCities/Houses.h
+ C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Market/Market.h
+ C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Market/PowerplantMarket.h
+ C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Market/ResourceMarket.h
+ C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Resource/Resource.h
 CMakeFiles/untitled.dir/Powerplant/GameAndPlayer/Player.cpp.obj
- C:/Users/Hubert/CLionProjects/COMP345Team21/Map/Edge.h
- C:/Users/Hubert/CLionProjects/COMP345Team21/Map/Map.h
- C:/Users/Hubert/CLionProjects/COMP345Team21/Map/Vertex.h
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Card/Card.h
+ C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Card/Deck.h
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Card/Powerplant.h
+ C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Card/Step13.h
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/GameAndPlayer/Game.h
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/GameAndPlayer/Player.cpp
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/GameAndPlayer/Player.h
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/HousesAndCities/Houses.h
+ C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Market/Market.h
+ C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Market/PowerplantMarket.h
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Market/ResourceMarket.h
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Resource/Resource.h
+CMakeFiles/untitled.dir/Powerplant/HousesAndCities/City.cpp.obj
+ C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/HousesAndCities/City.cpp
+ C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/HousesAndCities/City.h
+ C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/HousesAndCities/Houses.h
 CMakeFiles/untitled.dir/Powerplant/HousesAndCities/Houses.cpp.obj
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/HousesAndCities/Houses.cpp
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/HousesAndCities/Houses.h
@@ -83,22 +95,21 @@ CMakeFiles/untitled.dir/Powerplant/Market/Market.cpp.obj
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Market/Market.h
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Resource/Resource.h
 CMakeFiles/untitled.dir/Powerplant/Market/PowerplantMarket.cpp.obj
- C:/Users/Hubert/CLionProjects/COMP345Team21/Map/Edge.h
- C:/Users/Hubert/CLionProjects/COMP345Team21/Map/Map.h
- C:/Users/Hubert/CLionProjects/COMP345Team21/Map/Vertex.h
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Card/Card.h
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Card/Deck.h
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Card/Powerplant.h
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Card/Step13.h
- C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/GameAndPlayer/Game.h
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/GameAndPlayer/Player.h
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/HousesAndCities/Houses.h
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Market/PowerplantMarket.cpp
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Market/PowerplantMarket.h
- C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Market/ResourceMarket.h
 CMakeFiles/untitled.dir/Powerplant/Market/ResourceMarket.cpp.obj
+ C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Card/Card.h
+ C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Card/Powerplant.h
+ C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Market/Market.h
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Market/ResourceMarket.cpp
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Market/ResourceMarket.h
+ C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Resource/Resource.h
 CMakeFiles/untitled.dir/Powerplant/Resource/Resource.cpp.obj
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Resource/Resource.cpp
  C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Resource/Resource.h

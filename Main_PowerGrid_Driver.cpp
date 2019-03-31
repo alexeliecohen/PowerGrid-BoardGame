@@ -34,11 +34,6 @@
 
 //Name Space
 using namespace Mike;
-using namespace std;
-//using std::cout;
-//using std::cin;
-//using std::endl;
-//using std::string;
 
 int main() {
     int i = 1;
@@ -49,14 +44,14 @@ int main() {
     std::vector<string> files = std::vector<string>();
     std::vector<Player> players = std::vector<Player>();
 
-    cout << "----------------------------------------\n";
-    cout << "          WELCOME TO POWERGRID!!        \n";
-    cout << "----------------------------------------\n";
+    std::cout << "----------------------------------------\n";
+    std::cout << "          WELCOME TO POWERGRID!!        \n";
+    std::cout << "----------------------------------------\n";
 
-    cout << "\nPlease enter the number of the map you would like to play: \n";
+    std::cout << "\nPlease enter the number of the map you would like to play: \n";
     for (auto entry : filesystem::directory_iterator(path)) {
         files.push_back(entry.path().string());
-        cout << i << ") " << entry.path().string().substr(12) << std::endl;
+        std::cout << i << ") " << entry.path().string().substr(12) << std::endl;
         i++;
     }
     cin >> mapFile;
@@ -65,15 +60,15 @@ int main() {
     Map m = ml.buildMapB(files.at(mapFile - 1));
     //printing the loaded map
     cout << m;
-    m.removeEdge(m.getEdges().at(0));
-    m.removeVertex(m.getVertices().at(0));
-    cout << m;
+//    m.removeEdge(m.getEdges().at(0));
+//    m.removeVertex(m.getVertices().at(0));
+//    cout << m;
     std::vector<string> regions = m.getRegions();
-//    m.createSubgraphs();
-//    std::vector<Map> graphs = m.getSubgraphs();
-//    for(auto s : graphs) {
-//        cout << s;
-//    }
+    m.createSubgraphs();
+    std::vector<Map> graphs = m.getSubgraphs();
+    for(auto s : graphs) {
+        cout << s;
+    }
     cout << "Please enter the number of players(2-6): ";
     cin >> numPlayers;
     for(int j = 0; j < numPlayers; j++) {
@@ -85,9 +80,11 @@ int main() {
         }
         cin >> regionNumber;
         regions.erase(regions.begin()+ regionNumber - 1);
-        cout << *p;
     }
+
     Deck d = Deck();
-    cout << d;
+    std::cout << d << "\n\n";
+    d.shuffle();
+    std::cout << d;
 	return 0;
 }// close main loop

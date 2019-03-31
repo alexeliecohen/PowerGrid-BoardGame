@@ -21,11 +21,8 @@ CMakeFiles\untitled.dir\Main_PowerGrid_Driver.cpp.obj: ..\Powerplant\Card\Card.h
 CMakeFiles\untitled.dir\Main_PowerGrid_Driver.cpp.obj: ..\Powerplant\Card\Deck.h
 CMakeFiles\untitled.dir\Main_PowerGrid_Driver.cpp.obj: ..\Powerplant\Card\Powerplant.h
 CMakeFiles\untitled.dir\Main_PowerGrid_Driver.cpp.obj: ..\Powerplant\Card\Step13.h
-CMakeFiles\untitled.dir\Main_PowerGrid_Driver.cpp.obj: ..\Powerplant\GameAndPlayer\Game.h
 CMakeFiles\untitled.dir\Main_PowerGrid_Driver.cpp.obj: ..\Powerplant\GameAndPlayer\Player.h
 CMakeFiles\untitled.dir\Main_PowerGrid_Driver.cpp.obj: ..\Powerplant\HousesAndCities\Houses.h
-CMakeFiles\untitled.dir\Main_PowerGrid_Driver.cpp.obj: ..\Powerplant\Market\PowerplantMarket.h
-CMakeFiles\untitled.dir\Main_PowerGrid_Driver.cpp.obj: ..\Powerplant\Market\ResourceMarket.h
 CMakeFiles\untitled.dir\Main_PowerGrid_Driver.cpp.obj: ..\Powerplant\Resource\Resource.h
 
 CMakeFiles\untitled.dir\Map\Edge.cpp.obj: ..\Map\Edge.cpp
@@ -58,20 +55,35 @@ CMakeFiles\untitled.dir\Powerplant\Card\Step13.cpp.obj: ..\Powerplant\Card\Card.
 CMakeFiles\untitled.dir\Powerplant\Card\Step13.cpp.obj: ..\Powerplant\Card\Step13.cpp
 CMakeFiles\untitled.dir\Powerplant\Card\Step13.cpp.obj: ..\Powerplant\Card\Step13.h
 
+CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Game.cpp.obj: ..\Powerplant\Card\Card.h
+CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Game.cpp.obj: ..\Powerplant\Card\Deck.h
+CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Game.cpp.obj: ..\Powerplant\Card\Powerplant.h
+CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Game.cpp.obj: ..\Powerplant\Card\Step13.h
 CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Game.cpp.obj: ..\Powerplant\GameAndPlayer\Game.cpp
 CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Game.cpp.obj: ..\Powerplant\GameAndPlayer\Game.h
+CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Game.cpp.obj: ..\Powerplant\GameAndPlayer\Player.h
+CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Game.cpp.obj: ..\Powerplant\HousesAndCities\Houses.h
+CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Game.cpp.obj: ..\Powerplant\Market\Market.h
+CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Game.cpp.obj: ..\Powerplant\Market\PowerplantMarket.h
+CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Game.cpp.obj: ..\Powerplant\Market\ResourceMarket.h
+CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Game.cpp.obj: ..\Powerplant\Resource\Resource.h
 
-CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.obj: ..\Map\Edge.h
-CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.obj: ..\Map\Map.h
-CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.obj: ..\Map\Vertex.h
 CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.obj: ..\Powerplant\Card\Card.h
+CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.obj: ..\Powerplant\Card\Deck.h
 CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.obj: ..\Powerplant\Card\Powerplant.h
+CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.obj: ..\Powerplant\Card\Step13.h
 CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.obj: ..\Powerplant\GameAndPlayer\Game.h
 CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.obj: ..\Powerplant\GameAndPlayer\Player.cpp
 CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.obj: ..\Powerplant\GameAndPlayer\Player.h
 CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.obj: ..\Powerplant\HousesAndCities\Houses.h
+CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.obj: ..\Powerplant\Market\Market.h
+CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.obj: ..\Powerplant\Market\PowerplantMarket.h
 CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.obj: ..\Powerplant\Market\ResourceMarket.h
 CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.obj: ..\Powerplant\Resource\Resource.h
+
+CMakeFiles\untitled.dir\Powerplant\HousesAndCities\City.cpp.obj: ..\Powerplant\HousesAndCities\City.cpp
+CMakeFiles\untitled.dir\Powerplant\HousesAndCities\City.cpp.obj: ..\Powerplant\HousesAndCities\City.h
+CMakeFiles\untitled.dir\Powerplant\HousesAndCities\City.cpp.obj: ..\Powerplant\HousesAndCities\Houses.h
 
 CMakeFiles\untitled.dir\Powerplant\HousesAndCities\Houses.cpp.obj: ..\Powerplant\HousesAndCities\Houses.cpp
 CMakeFiles\untitled.dir\Powerplant\HousesAndCities\Houses.cpp.obj: ..\Powerplant\HousesAndCities\Houses.h
@@ -82,22 +94,21 @@ CMakeFiles\untitled.dir\Powerplant\Market\Market.cpp.obj: ..\Powerplant\Market\M
 CMakeFiles\untitled.dir\Powerplant\Market\Market.cpp.obj: ..\Powerplant\Market\Market.h
 CMakeFiles\untitled.dir\Powerplant\Market\Market.cpp.obj: ..\Powerplant\Resource\Resource.h
 
-CMakeFiles\untitled.dir\Powerplant\Market\PowerplantMarket.cpp.obj: ..\Map\Edge.h
-CMakeFiles\untitled.dir\Powerplant\Market\PowerplantMarket.cpp.obj: ..\Map\Map.h
-CMakeFiles\untitled.dir\Powerplant\Market\PowerplantMarket.cpp.obj: ..\Map\Vertex.h
 CMakeFiles\untitled.dir\Powerplant\Market\PowerplantMarket.cpp.obj: ..\Powerplant\Card\Card.h
 CMakeFiles\untitled.dir\Powerplant\Market\PowerplantMarket.cpp.obj: ..\Powerplant\Card\Deck.h
 CMakeFiles\untitled.dir\Powerplant\Market\PowerplantMarket.cpp.obj: ..\Powerplant\Card\Powerplant.h
 CMakeFiles\untitled.dir\Powerplant\Market\PowerplantMarket.cpp.obj: ..\Powerplant\Card\Step13.h
-CMakeFiles\untitled.dir\Powerplant\Market\PowerplantMarket.cpp.obj: ..\Powerplant\GameAndPlayer\Game.h
 CMakeFiles\untitled.dir\Powerplant\Market\PowerplantMarket.cpp.obj: ..\Powerplant\GameAndPlayer\Player.h
 CMakeFiles\untitled.dir\Powerplant\Market\PowerplantMarket.cpp.obj: ..\Powerplant\HousesAndCities\Houses.h
 CMakeFiles\untitled.dir\Powerplant\Market\PowerplantMarket.cpp.obj: ..\Powerplant\Market\PowerplantMarket.cpp
 CMakeFiles\untitled.dir\Powerplant\Market\PowerplantMarket.cpp.obj: ..\Powerplant\Market\PowerplantMarket.h
-CMakeFiles\untitled.dir\Powerplant\Market\PowerplantMarket.cpp.obj: ..\Powerplant\Market\ResourceMarket.h
 
+CMakeFiles\untitled.dir\Powerplant\Market\ResourceMarket.cpp.obj: ..\Powerplant\Card\Card.h
+CMakeFiles\untitled.dir\Powerplant\Market\ResourceMarket.cpp.obj: ..\Powerplant\Card\Powerplant.h
+CMakeFiles\untitled.dir\Powerplant\Market\ResourceMarket.cpp.obj: ..\Powerplant\Market\Market.h
 CMakeFiles\untitled.dir\Powerplant\Market\ResourceMarket.cpp.obj: ..\Powerplant\Market\ResourceMarket.cpp
 CMakeFiles\untitled.dir\Powerplant\Market\ResourceMarket.cpp.obj: ..\Powerplant\Market\ResourceMarket.h
+CMakeFiles\untitled.dir\Powerplant\Market\ResourceMarket.cpp.obj: ..\Powerplant\Resource\Resource.h
 
 CMakeFiles\untitled.dir\Powerplant\Resource\Resource.cpp.obj: ..\Powerplant\Resource\Resource.cpp
 CMakeFiles\untitled.dir\Powerplant\Resource\Resource.cpp.obj: ..\Powerplant\Resource\Resource.h

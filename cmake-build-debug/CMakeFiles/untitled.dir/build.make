@@ -286,9 +286,28 @@ CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.s /c C:\Users\Hubert\CLionProjects\COMP345Team21\Powerplant\GameAndPlayer\Player.cpp
 <<
 
+CMakeFiles\untitled.dir\Powerplant\HousesAndCities\City.cpp.obj: CMakeFiles\untitled.dir\flags.make
+CMakeFiles\untitled.dir\Powerplant\HousesAndCities\City.cpp.obj: ..\Powerplant\HousesAndCities\City.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/untitled.dir/Powerplant/HousesAndCities/City.cpp.obj"
+	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\untitled.dir\Powerplant\HousesAndCities\City.cpp.obj /FdCMakeFiles\untitled.dir\ /FS -c C:\Users\Hubert\CLionProjects\COMP345Team21\Powerplant\HousesAndCities\City.cpp
+<<
+
+CMakeFiles\untitled.dir\Powerplant\HousesAndCities\City.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/Powerplant/HousesAndCities/City.cpp.i"
+	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe > CMakeFiles\untitled.dir\Powerplant\HousesAndCities\City.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Hubert\CLionProjects\COMP345Team21\Powerplant\HousesAndCities\City.cpp
+<<
+
+CMakeFiles\untitled.dir\Powerplant\HousesAndCities\City.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/Powerplant/HousesAndCities/City.cpp.s"
+	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\untitled.dir\Powerplant\HousesAndCities\City.cpp.s /c C:\Users\Hubert\CLionProjects\COMP345Team21\Powerplant\HousesAndCities\City.cpp
+<<
+
 CMakeFiles\untitled.dir\Powerplant\HousesAndCities\Houses.cpp.obj: CMakeFiles\untitled.dir\flags.make
 CMakeFiles\untitled.dir\Powerplant\HousesAndCities\Houses.cpp.obj: ..\Powerplant\HousesAndCities\Houses.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/untitled.dir/Powerplant/HousesAndCities/Houses.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/untitled.dir/Powerplant/HousesAndCities/Houses.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\untitled.dir\Powerplant\HousesAndCities\Houses.cpp.obj /FdCMakeFiles\untitled.dir\ /FS -c C:\Users\Hubert\CLionProjects\COMP345Team21\Powerplant\HousesAndCities\Houses.cpp
 <<
@@ -307,7 +326,7 @@ CMakeFiles\untitled.dir\Powerplant\HousesAndCities\Houses.cpp.s: cmake_force
 
 CMakeFiles\untitled.dir\Powerplant\Market\Market.cpp.obj: CMakeFiles\untitled.dir\flags.make
 CMakeFiles\untitled.dir\Powerplant\Market\Market.cpp.obj: ..\Powerplant\Market\Market.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/untitled.dir/Powerplant/Market/Market.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/untitled.dir/Powerplant/Market/Market.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\untitled.dir\Powerplant\Market\Market.cpp.obj /FdCMakeFiles\untitled.dir\ /FS -c C:\Users\Hubert\CLionProjects\COMP345Team21\Powerplant\Market\Market.cpp
 <<
@@ -326,7 +345,7 @@ CMakeFiles\untitled.dir\Powerplant\Market\Market.cpp.s: cmake_force
 
 CMakeFiles\untitled.dir\Powerplant\Market\PowerplantMarket.cpp.obj: CMakeFiles\untitled.dir\flags.make
 CMakeFiles\untitled.dir\Powerplant\Market\PowerplantMarket.cpp.obj: ..\Powerplant\Market\PowerplantMarket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/untitled.dir/Powerplant/Market/PowerplantMarket.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/untitled.dir/Powerplant/Market/PowerplantMarket.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\untitled.dir\Powerplant\Market\PowerplantMarket.cpp.obj /FdCMakeFiles\untitled.dir\ /FS -c C:\Users\Hubert\CLionProjects\COMP345Team21\Powerplant\Market\PowerplantMarket.cpp
 <<
@@ -345,7 +364,7 @@ CMakeFiles\untitled.dir\Powerplant\Market\PowerplantMarket.cpp.s: cmake_force
 
 CMakeFiles\untitled.dir\Powerplant\Market\ResourceMarket.cpp.obj: CMakeFiles\untitled.dir\flags.make
 CMakeFiles\untitled.dir\Powerplant\Market\ResourceMarket.cpp.obj: ..\Powerplant\Market\ResourceMarket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/untitled.dir/Powerplant/Market/ResourceMarket.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/untitled.dir/Powerplant/Market/ResourceMarket.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\untitled.dir\Powerplant\Market\ResourceMarket.cpp.obj /FdCMakeFiles\untitled.dir\ /FS -c C:\Users\Hubert\CLionProjects\COMP345Team21\Powerplant\Market\ResourceMarket.cpp
 <<
@@ -364,7 +383,7 @@ CMakeFiles\untitled.dir\Powerplant\Market\ResourceMarket.cpp.s: cmake_force
 
 CMakeFiles\untitled.dir\Powerplant\Resource\Resource.cpp.obj: CMakeFiles\untitled.dir\flags.make
 CMakeFiles\untitled.dir\Powerplant\Resource\Resource.cpp.obj: ..\Powerplant\Resource\Resource.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/untitled.dir/Powerplant/Resource/Resource.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/untitled.dir/Powerplant/Resource/Resource.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\untitled.dir\Powerplant\Resource\Resource.cpp.obj /FdCMakeFiles\untitled.dir\ /FS -c C:\Users\Hubert\CLionProjects\COMP345Team21\Powerplant\Resource\Resource.cpp
 <<
@@ -395,6 +414,7 @@ untitled_OBJECTS = \
 "CMakeFiles\untitled.dir\Powerplant\Card\Step13.cpp.obj" \
 "CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Game.cpp.obj" \
 "CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.obj" \
+"CMakeFiles\untitled.dir\Powerplant\HousesAndCities\City.cpp.obj" \
 "CMakeFiles\untitled.dir\Powerplant\HousesAndCities\Houses.cpp.obj" \
 "CMakeFiles\untitled.dir\Powerplant\Market\Market.cpp.obj" \
 "CMakeFiles\untitled.dir\Powerplant\Market\PowerplantMarket.cpp.obj" \
@@ -416,6 +436,7 @@ untitled.exe: CMakeFiles\untitled.dir\Powerplant\Card\Powerplant.cpp.obj
 untitled.exe: CMakeFiles\untitled.dir\Powerplant\Card\Step13.cpp.obj
 untitled.exe: CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Game.cpp.obj
 untitled.exe: CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.obj
+untitled.exe: CMakeFiles\untitled.dir\Powerplant\HousesAndCities\City.cpp.obj
 untitled.exe: CMakeFiles\untitled.dir\Powerplant\HousesAndCities\Houses.cpp.obj
 untitled.exe: CMakeFiles\untitled.dir\Powerplant\Market\Market.cpp.obj
 untitled.exe: CMakeFiles\untitled.dir\Powerplant\Market\PowerplantMarket.cpp.obj
@@ -423,7 +444,7 @@ untitled.exe: CMakeFiles\untitled.dir\Powerplant\Market\ResourceMarket.cpp.obj
 untitled.exe: CMakeFiles\untitled.dir\Powerplant\Resource\Resource.cpp.obj
 untitled.exe: CMakeFiles\untitled.dir\build.make
 untitled.exe: CMakeFiles\untitled.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable untitled.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable untitled.exe"
 	"C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\untitled.dir --manifests  -- C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1416~1.270\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\untitled.dir\objects1.rsp @<<
  /out:untitled.exe /implib:untitled.lib /pdb:C:\Users\Hubert\CLionProjects\COMP345Team21\cmake-build-debug\untitled.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<

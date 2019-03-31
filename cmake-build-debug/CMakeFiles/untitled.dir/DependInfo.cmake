@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Card/Step13.cpp" "C:/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/untitled.dir/Powerplant/Card/Step13.cpp.obj"
   "C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/GameAndPlayer/Game.cpp" "C:/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/untitled.dir/Powerplant/GameAndPlayer/Game.cpp.obj"
   "C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/GameAndPlayer/Player.cpp" "C:/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/untitled.dir/Powerplant/GameAndPlayer/Player.cpp.obj"
+  "C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/HousesAndCities/City.cpp" "C:/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/untitled.dir/Powerplant/HousesAndCities/City.cpp.obj"
   "C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/HousesAndCities/Houses.cpp" "C:/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/untitled.dir/Powerplant/HousesAndCities/Houses.cpp.obj"
   "C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Market/Market.cpp" "C:/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/untitled.dir/Powerplant/Market/Market.cpp.obj"
   "C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Market/PowerplantMarket.cpp" "C:/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/untitled.dir/Powerplant/Market/PowerplantMarket.cpp.obj"

@@ -448,6 +448,33 @@ Powerplant\GameAndPlayer\Player.cpp.s:
 	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\GameAndPlayer\Player.cpp.s
 .PHONY : Powerplant\GameAndPlayer\Player.cpp.s
 
+Powerplant\HousesAndCities\City.obj: Powerplant\HousesAndCities\City.cpp.obj
+
+.PHONY : Powerplant\HousesAndCities\City.obj
+
+# target to build an object file
+Powerplant\HousesAndCities\City.cpp.obj:
+	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\HousesAndCities\City.cpp.obj
+.PHONY : Powerplant\HousesAndCities\City.cpp.obj
+
+Powerplant\HousesAndCities\City.i: Powerplant\HousesAndCities\City.cpp.i
+
+.PHONY : Powerplant\HousesAndCities\City.i
+
+# target to preprocess a source file
+Powerplant\HousesAndCities\City.cpp.i:
+	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\HousesAndCities\City.cpp.i
+.PHONY : Powerplant\HousesAndCities\City.cpp.i
+
+Powerplant\HousesAndCities\City.s: Powerplant\HousesAndCities\City.cpp.s
+
+.PHONY : Powerplant\HousesAndCities\City.s
+
+# target to generate assembly for a file
+Powerplant\HousesAndCities\City.cpp.s:
+	$(MAKE) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\Powerplant\HousesAndCities\City.cpp.s
+.PHONY : Powerplant\HousesAndCities\City.cpp.s
+
 Powerplant\HousesAndCities\Houses.obj: Powerplant\HousesAndCities\Houses.cpp.obj
 
 .PHONY : Powerplant\HousesAndCities\Houses.obj
@@ -628,6 +655,9 @@ help:
 	@echo ... Powerplant/GameAndPlayer/Player.obj
 	@echo ... Powerplant/GameAndPlayer/Player.i
 	@echo ... Powerplant/GameAndPlayer/Player.s
+	@echo ... Powerplant/HousesAndCities/City.obj
+	@echo ... Powerplant/HousesAndCities/City.i
+	@echo ... Powerplant/HousesAndCities/City.s
 	@echo ... Powerplant/HousesAndCities/Houses.obj
 	@echo ... Powerplant/HousesAndCities/Houses.i
 	@echo ... Powerplant/HousesAndCities/Houses.s
