@@ -326,4 +326,3 @@ void Player::setRoundReady(bool roundReady) {
 bool Player::isRoundReady() const {
     return roundReady;
 }
-
