@@ -24,8 +24,8 @@ int Player::numOfPlayers=0;
 vector<string> Player::houseColor = {"Green","Blue","Black","Pink","Yellow","Orange"};
 
 //ADD THIS ATTRIBUTE TO PLAYER CLASS FOR FLAGGING WETHER NETWORK OF CITIES HAS BEEN STARTED
-bool startedNetwork;
-std::vector<Vertex> myHouses;
+bool startedNetwork = false;
+std::vector<string> myHouses;
 
 //Constructors
 /**
@@ -50,6 +50,7 @@ Player::Player() {
 	myHouseColor = houseColor[choice];
 	houseColor.erase(houseColor.begin()+choice);
 
+	startedNetwork = false;
 	elektros = DEFAULTELECTRO;
 	oil = DEFAULTRESOURCE;
 	coal = DEFAULTRESOURCE;
@@ -70,6 +71,7 @@ Player::Player(std::string nameIn) {
 		return;
 	}
 	playerName = nameIn;
+	startedNetwork = false;
 	this->myHouseColor = myHouseColor;
 	elektros = DEFAULTELECTRO;
 	oil = DEFAULTRESOURCE;
@@ -118,8 +120,8 @@ Player::~Player() {
 
 
 ostream& Player::displayHouses(ostream& stream) {
-	for (int i = 0; i < myHouses->size(); ++i) {
-		stream << myHouses->at(i) << endl;
+	for (int i = 0; i < myHouses.size(); ++i) {
+		stream << myHouses.at(i) << endl;
 	}
 	return stream;
 }
@@ -132,8 +134,8 @@ ostream &operator<<(ostream &stream, Player &Object) {
 	for (int i = 0; i < Object.myPowerPlant.size(); ++i) {
 		stream << "Powerplant #:" << i+1 << ": " << Object.myPowerPlant[i] << endl;
 	}
-	for (int i = 0; i < Object.myHouses->size(); ++i) {
-		stream << "House # " << i <<  " " <<  Object.myHouses->at(i) << endl;
+	for (int i = 0; i < Object.myHouses.size(); ++i) {
+		stream << "House # " << i <<  " " <<  Object.myHouses.at(i) << endl;
 	}
 	return stream;
 }
@@ -295,7 +297,8 @@ void Player::buyResources(ResourceMarket *resourceMarket){
 	bool validInput = false;
 	bool playerTurn = true;
 	while (playerTurn){
-		std::cout<<"It is currently "<<playerName<<"'s turn to buy resources"<<std::endl;
+		validInput = false;
+		std::cout<<"\nIt is currently "<<playerName<<"'s turn to buy resources"<<std::endl;
 		resourceMarket->printResourceMarketStock();
 		std::cout<<"Enter 1 to buy a unit of oil"<<std::endl;
 		std::cout<<"Enter 2 to buy a unit of coal"<<std::endl;
@@ -304,6 +307,7 @@ void Player::buyResources(ResourceMarket *resourceMarket){
 		std::cout<<"Enter 5 to stop buying resources"<<std::endl;
 		//get INPUT
 		cin >> userInput;
+		//cout<<"The user input is "<<userInput<<std::endl;
 		//VALIDATE INPUT
 		while ( !validInput ){
 			if (!(userInput.size()==1)){
@@ -311,12 +315,18 @@ void Player::buyResources(ResourceMarket *resourceMarket){
 				std::cout<<"INVALID INPUT - THERE SHOULD ONLY BE 1 CHARACTER ENTERED"<<std::endl;
 			}//if
 			else{
+				cout<<"debug 1 - input is valid\n";
+
 				if (isdigit(userInput.at(0))) {
+					cout<<"debug 2 - input at(0) isdigit\n";
 					playerSelection = std::stoi( userInput );
-					if ( playerSelection > 0 && playerSelection < 6)
+					if ( playerSelection > 0 && playerSelection < 6) {
 						validInput = true;
+						//std::cout<<"THE USER INPUT IS VALID\n";
+					}//close inner if between 0 and 6
 				}//close if is 1 digit
 			}//1 character entered by the user
+			//std::cout<<"EXITING VALIDATION LOOP\n";
 		}//close while not valid input
 		if (playerSelection == 1){//player selects to buy 1 oil
 			//Validate that the 1)player has enough money	2)space to purchase the resource	3)There is oil available to purchase
@@ -443,6 +453,7 @@ void Player::buyCities(Map *map, int gamePhaseNumber){
 	Vertex houseBuildingLocation;
 	bool validEntry = false;
 	bool playerTurn = true;
+	bool houseAvailbleAtLocation = false;
 	bool foundVertex = false;
 	vector<std::string> nameOfPlayerCities;
 	vector<std::string> nameOfMapCities;
@@ -450,17 +461,21 @@ void Player::buyCities(Map *map, int gamePhaseNumber){
 
 	//START LOOP FOR THE PLAYER BUILDING PHASE
 	while (playerTurn){
+		//Update booleans for iteration
+		validEntry = false;
+		houseAvailbleAtLocation = false;
+		std::cout<<"STARTING playerTurn LOOP for "<<playerName<<"\n";
 		//START LOOP FOR VALID INPUT
 		while (!validEntry){
 			//DISPLAY MAP AND AVAILABLE CITIES
-			cout<<"Now displaying map\n"<<map<<"\n";
+			cout<<"Now displaying map\n"<<*map<<"\n";
 			if (!startedNetwork)
-				cout<<"Your network is currently empty\nYou can start your city anywhere available\n";
+				cout<<playerName<<" your network is currently empty\nYou can start your city anywhere available\n";
 			else {
 				//Display player network
 				std::cout<<"Now displaying "<<playerName<<"'s network:\n";
-				for (int i = 0 ; i < myHouses->size() ; i++)
-					std::cout<<"House #"<<i<<" located at: "<<myHouses->at(i)<<"\n";
+				for (int i = 0 ; i < myHouses.size() ; i++)
+					std::cout<<"House #"<<i<<" located at: "<<myHouses.at(i)<<"\n";
 			}//close else, player already started network
 
 			//PROMPT PLAYER TO SELECT CITY
@@ -470,9 +485,10 @@ void Player::buyCities(Map *map, int gamePhaseNumber){
 				cout << "\n"<<playerName<<" has selected to pass\n";
 				playerTurn = false;		//exits outer while loop
 				validEntry = true;		//exits inner while loop
-				//return;
+				return;
 			}//close if player selects PASS
 			else{
+				std::cout<<"Debug 1 - entered else, not PASS\n";
 				//ENTER VALIDATE AND RE-SELECT
 				//VALIDATE SELECTION	--> Validate that the vertex exists, if new network, validate that its not owned
 				//Validation 1 - Existence of vertex with that name
@@ -487,10 +503,10 @@ void Player::buyCities(Map *map, int gamePhaseNumber){
 				//Validation 2 - player does not own that city and it is available
 				if (validEntry && startedNetwork){
 					//Make invalid if a match is already found
-					for (int i = 0 ; i < myHouses->size() ; i++)
-						if (myHouses->at(i) == userIn){
+					for (int i = 0 ; i < myHouses.size() ; i++)
+						if (myHouses.at(i) == userIn){
 							validEntry = false;
-							std::cout<<"\nError - "<<playerName<<" already owns the vertex "<<userIn;
+							std::cout<<"\nError - "<<playerName<<" already owns the vertex "<<userIn<<"\n";
 						}//close if found player owns a house at this vertex/city
 				}//close if vertex exists and network has been started
 
@@ -502,29 +518,52 @@ void Player::buyCities(Map *map, int gamePhaseNumber){
 			connectionCost = 0;
 		else{
 			std::vector<int> shortestPathToAllVertices;
-			for (int i = 0 ; i < myHouses->size() ; i++)
+			for (int i = 0 ; i < myHouses.size() ; i++)
 				//Get the shortest path from the user selected city to all other cities in the network
-				shortestPathToAllVertices.push_back(  map->shortestPath(userIn, myHouses->at(i)) );
+				shortestPathToAllVertices.push_back(  map->shortestPath(userIn, myHouses.at(i)) );
 			std::sort( shortestPathToAllVertices.begin(), shortestPathToAllVertices.end() );
 			connectionCost = shortestPathToAllVertices.at(0);
 		}//else get the shortest path between the vertex given and
+		std::cout<<"The connection cost to this city is: "<<connectionCost<<std::endl;
 
 		//GET HOUSE COST AND ADD TO TOTAL
 		int totalCost = ( connectionCost + map->findVertex(userIn).getCost() );
+		std::cout<<"The total cost to build a house at this city is: "<<totalCost<<std::endl;
+		std::cout<<playerName<<" has "<<elektros<<std::endl;
 
+		//VALIDATE THAT NO OTHER PLAYER IS ALREADY AT THIS LOCATION
+		//houseAvailbleAtLocation = map->canBuildHouse(  map->findVertex(userIn), gamePhaseNumber); <--------- just fix the error caused here
+		//Vertex v = map->findVertex(userIn);
+		//houseAvailbleAtLocation = map->canBuildHouse( map->findVertex(userIn), gamePhaseNumber);
 		//VALIDATE THAT PLAYER HAS ENOUGH ELEKTROS
 		if ( totalCost > elektros ){
 			std::cout<< playerName <<" does not have enough elektros to purchase a house at the location: "<<userIn<<"\n";
 			std::cout<<playerName<<" has "<<elektros<<" the total cost to build at location: "<<userIn<<" is "<<totalCost;
 		}//if player does not have enough elektros
 
+		else if ( !houseAvailbleAtLocation )
+			std::cout<<"\nCan not Build at this location, there is already a house here\n";
 		else{
+			std::cout<<playerName<<" has built a house in "<<userIn<<"\n";
 		//UPDATE ALL OBJECTS - VERTEX, NUMOFCITIES, Player.numOfCities, Player.myHouses, HOUSE OBJECT?
+			std::cout<<"Debug A\n";
 			elektros -= totalCost;
-			myHouses->push_back( map->findVertex( userIn ).getName() );
+			std::cout<<"Debug B\n";
+			std::cout<<"B1 - Display vertex below - map->findVertex( userIn ).getName(): \n";
+			std::cout<<map->findVertex( userIn ).getName()<<std::endl;
+			string nameOfNewHouseLocation = map->findVertex( userIn ).getName();
+			std::cout<<"B2.... \n";
+			std::cout<<nameOfNewHouseLocation<<"\n";
+			std::cout<<"B3.... \n";
+			myHouses.push_back( nameOfNewHouseLocation );	// <--- Program exits here
+			std::cout<<"Debug C\n";
 			numOfCities++;
+			std::cout<<"Debug D\n";
 			map->findVertex( userIn ).setPlayer( playerName );
-		}//close else, player has added this city to his netowrk
+			std::cout<<"Debug E\n";
+			startedNetwork = true;
+		}//close else, player has added this city to his network
+		std::cout<<"Debug Finish while playerTurn iteration\n";
 	}//close while player turn
 	cout<<"End of "<<playerName<<"'s turn to build houses\n";
 }//close build cities

@@ -52,7 +52,7 @@ private:
     int numOfCities;
     std::vector<Powerplant> myPowerPlant;
     bool startedNetwork;					//true when player builds his/her 1st house
-    std::vector<string> *myHouses;
+    std::vector<string> myHouses;
 
 public:
     Player();
