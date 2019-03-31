@@ -73,18 +73,19 @@ int main() {
             cout << k + 1 << ") " << regions[k] << "\n";
         }
         cin >> regionNumber;
-        regionsUsed.push_back(regions.at(i - 1));
+        regionsUsed.push_back(regions.at(regionNumber - 1));
         regions.erase(regions.begin()+ regionNumber - 1);
     }
-    m.createFinalMap();
+    m.createFinalMap(regionsUsed);
+    for(string s : m.getRegions()) {
+        cout << s << "\n";
+    }
 
-    Deck d = Deck();
-    std::cout << d << "\n\n";
-    d.shuffle();
-    std::cout << d;
-    auto *rMarket = new ResourceMarket();
-    PowerplantMarket pMarket = PowerplantMarket(d);
-    Player p = Player();
-    p.buyResources(rMarket);
+//    Deck d = Deck();
+//    std::cout << d << "\n\n";
+//    d.shuffle();
+//    std::cout << d;
+//    auto *rMarket = new ResourceMarket();
+//    PowerplantMarket pMarket = PowerplantMarket(d);
     return 0;
 }// close main loop

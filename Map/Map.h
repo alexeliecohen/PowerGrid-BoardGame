@@ -17,22 +17,21 @@ public:
     std::vector<Vertex> getVertices();
     std::vector<Edge> getEdges();
     std::vector<std::string> getRegions();
-    void addVertex(Vertex v);
+    void addVertex(const Vertex &v);
     void addEdge(Vertex &u, Vertex &v, int cost);
     void addEdge(Edge &e);
-    void addRegion(std::string region);
-    Vertex opposite(Vertex v, Edge e);
-    Vertex findVertex(std::string s);
-    bool isVertex(std::string nameIn);
+    void addRegion(const std::string& region);
+    static Vertex opposite(const Vertex& v, const Edge& e);
+    Vertex findVertex(const std::string& s);
+    bool isVertex(const std::string& nameIn);
     bool BFS();
-    int shortestPath(std::string src, std::string destination);
+    int shortestPath(const std::string& src, const std::string& destination);
     void createFinalMap(std::vector<std::string> regionsUsed);
     friend std::ostream& operator<<(std::ostream& os, Map& m);
 private:
     std::vector<Vertex> vertices;
     std::vector<Edge> edges;
     std::vector<std::string> regions;
-    std::vector<Map> subgraphs;
 };
 
 #endif //COMP345TEAM21_MAP_H

@@ -16,7 +16,7 @@
  * @param p2 a second standard library pair
  * @return if the first pair is smaller than the second
  */
-static bool comparePair(const std::pair<int, std::string> p1, const std::pair<int, std::string> p2) {
+static bool comparePair(const std::pair<int, std::string> &p1, const std::pair<int, std::string> &p2) {
     return p1.first < p2.first;
 }
 
@@ -27,7 +27,6 @@ Map::Map() {
     vertices = std::vector<Vertex>();
     edges = std::vector<Edge>();
     regions = std::vector<std::string>();
-    subgraphs = std::vector<Map>();
 }
 
 /**
@@ -71,18 +70,10 @@ std::vector<std::string> Map::getRegions() {
 }
 
 /**
- * Getter for the set of subgraphs of the map
- * @return a vector with all the subgraphs of the map
- */
-std::vector<Map> Map::getSubgraphs() {
-    return subgraphs;
-}
-
-/**
  * Method to add a new vertex to the map
  * @param v the vertex to be added
  */
-void Map::addVertex(Vertex v) {
+void Map::addVertex(const Vertex &v) {
     if(!(std::find(vertices.begin(), vertices.end(), v) != vertices.end())) {
         vertices.push_back(v);
     }
@@ -126,7 +117,7 @@ void Map::addEdge(Edge &e) {
  * Adds a new region name to the graph
  * @param region a region name
  */
-void Map::addRegion(std::string region) {
+void Map::addRegion(const std::string &region) {
     regions.push_back(region);
 }
 
@@ -136,7 +127,7 @@ void Map::addRegion(std::string region) {
  * @param e the edge to go through
  * @return the vertex opposite the edge
  */
-Vertex Map::opposite(Vertex v, Edge e) {
+Vertex Map::opposite(const Vertex& v, const Edge &e) {
     Vertex* endpoints = e.getEndpoints();
     if(endpoints[0] == v) {
         return endpoints[1];
@@ -151,7 +142,7 @@ Vertex Map::opposite(Vertex v, Edge e) {
  * @param s the name of the vertex
  * @return the vertex with the specified name
  */
-Vertex Map::findVertex(std::string s) {
+Vertex Map::findVertex(const std::string &s) {
     for (const auto &v : vertices) {
         if(v.getName() == s ) {
             return v;
@@ -161,17 +152,13 @@ Vertex Map::findVertex(std::string s) {
     exit(0);
 }
 
-bool Map::isVertex(std::string nameIn){
+bool Map::isVertex(const std::string &nameIn){
 	bool returnValue = false;
-	for (int i = 0 ; i < vertices.size() ; i++)
-		if ( vertices.at(i).getName() == nameIn)
+	for (auto &vertex : vertices)
+		if ( vertex.getName() == nameIn)
 			returnValue = true;
 	return returnValue;
 }//close isVertex
-
-void Map::removeRegion(int i) {
-    regions.erase(regions.begin() + i);
-}
 
 /**
  * Method to check if the map is connected, implemented using breadth-first search
@@ -206,7 +193,7 @@ bool Map::BFS() {
  * @param destination the ending vertex
  * @return the shortest path between the two vertices
  */
-int Map::shortestPath(std::string src, std::string destination) {
+int Map::shortestPath(const std::string &src, const std::string &destination) {
     std::unordered_map<std::string, int> d;
     std::unordered_map<std::string, int> cloud;
     std::list<std::pair<int, std::string>> pq;
@@ -255,38 +242,24 @@ int Map::shortestPath(std::string src, std::string destination) {
 }
 
 /**
- * Method to split the map into subgraphs based on the regions of the map
- */
-void Map::createSubgraphs() {
-    int i = 0;
-    for(const auto &r : regions) {
-        Map g = Map();
-        g.addRegion(r);
-        for(const auto &v : vertices) {
-            if(r == v.getRegion()) {
-                g.addVertex(v);
-            }
-        }
-        for(auto e : edges) {
-            Vertex* endpoints = e.getEndpoints();
-            if(endpoints[0].getRegion() == r && endpoints[1].getRegion() == r) {
-                g.addEdge(e);
-            }
-        }
-        subgraphs.push_back(g);
-        i++;
-    }
-}
-
-//TODO finish function to return Map with regions selected
-/**
  * Method to create the final map to be used in the game
  * @return a map
  */
 void Map::createFinalMap(std::vector<std::string> regionsUsed) {
-    for(std::string s : regions) {
-        if(!(std::find(regionsUsed.begin(), regionsUsed.end(), s) != regionsUsed.end()))
-            regions.erase(std::find(regionsUsed.begin(), regionsUsed.end(), s));
+    for(std::string s1 : regions) {
+        std::cout << s1 << "\n";
+    }
+    for(const std::string &s : regions) {
+        std::cout << s << "\n";
+        std::cout << "Position in regions used " << std::find(regionsUsed.begin(), regionsUsed.end(), s) - regionsUsed.begin() << "\n";
+        if(!(std::find(regionsUsed.begin(), regionsUsed.end(), s) != regionsUsed.end())) {
+            auto position = std::find(regions.begin(), regions.end(), s);
+            std::cout << "Position in regions " << position - regions.begin() << "\n";
+            if (position != regions.end()) {
+                std::cout << regions.at(position - regions.begin()) << "\n";
+                regions.erase(position);
+            }
+        }
     }
 }
 
