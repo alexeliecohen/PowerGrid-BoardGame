@@ -16,8 +16,5 @@ add_executable(untitled
         Powerplant/Card/Step13.cpp
         Powerplant/GameAndPlayer/Game.cpp
         Powerplant/GameAndPlayer/Player.cpp
-        Powerplant/HousesAndCities/Houses.cpp
-        Powerplant/Market/Market.cpp
         Powerplant/Market/PowerplantMarket.cpp
-        Powerplant/Market/ResourceMarket.cpp
-        Powerplant/Resource/Resource.cpp)
+        Powerplant/Market/ResourceMarket.cpp)
