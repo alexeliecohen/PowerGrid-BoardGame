@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //
 // Created by alext on 2/20/2019.
 //
@@ -6,7 +5,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include "../HousesAndCities/Houses.h"
+//#include "../HousesAndCities/Houses.h"
 #include "../Card/Powerplant.h"
 
 #ifndef POWERPLANT_PLAYER_H
@@ -32,7 +31,7 @@ static int MAXOIL;
 static int MAXGARBAGE;
 static int MAXURANIUM;
 
-
+using namespace std;
 class Player {
 private:
     static int numOfPlayers; //keeps a a tabk
@@ -42,226 +41,245 @@ private:
     int elektros; //the number of elektros a player owns
     int oil, coal, garbage, uranium; //the resources the player owns
     int numbHomes, numOfCities; //the number of totals homes and the number of connected cities
+    int currentBid;
     std::vector<Powerplant> myPowerPlant; //list of powerplants a player owns
-    std::vector<Houses> myHouses; //list of homes the player owns
-    bool auctionReady;
+//    std::vector<Houses> myHouses; //list of homes the player owns
+    bool auctionReady,roundReady;
 
 public:
+    /**
+     * Default constructor for the Player object
+     */
     Player();
 
+    /**
+     * Fully parametrized constructor for the Player object
+     * @param name Name of the Player
+     */
     Player(std::string name);
 
+    /**
+     * Destructor for the player class
+     */
     virtual ~Player();
 
+    /**
+     * Static method Gets the total number of players playing the game
+     * @return Number of players
+     */
     static int getNumOfPlayers();
 
+    /**
+     * Returns a string value representing the players chosen house color
+     * @return
+     */
     const string &getMyHouseColor() const;
 
+    /**
+     * Getter method returns the player name
+     * @return
+     */
     const string &getPlayerName() const;
 
+    /**
+     * Getter method returns the players money
+     * @return
+     */
     int getElektros() const;
 
+    /**
+     * Getter method returns the amount of oil stored
+     * @return integer representing the amount of oil
+     */
     int getOil() const;
 
+    /**
+     * Getter method returns the amount of coal stored
+     * @return integer representing coal amount
+     */
     int getCoal() const;
 
+    /**
+     *Getter method returns the amount of garbage stored
+     * @return integer representing garbage amount
+     */
     int getGarbage() const;
 
+    /**
+     * Getter method returns the amount of uranium stored
+     * @return integer representing uranium amount
+     */
     int getUranium() const;
 
+    /**
+     * Getter method returns the number of homes the player owns
+     * @return integer representing the number of homes owned
+     */
     int getNumbHomes() const;
 
+    /**
+     * Getter method for the number of cities the player is connected to
+     * @return Integer representing the number of connected cities
+     */
     int getNumOfCities() const;
 
+    /**
+     * Adds elektro to the player class
+     * @param elektro
+     */
     void addElektro(int elektro);
 
+    /**
+     * Removes elektro from the player class
+     * @param elektro
+     */
     void removeElektro(int elektro);
 
+    /**
+     * Adds oil to the player calss
+     * @param oil integer representing value of added oil
+     */
     void addOil(int oil);
 
+    /**
+     * Remove oil for the player class
+     * @param oil integer representing the value of oil to remove
+     */
     void removeOil(int oil);
 
+    /**
+     * Adds garbge resource to the player class
+     * @param garbage integer represnting the amount of garbage to add
+     */
     void addGarbage(int garbage);
 
+    /**
+     * Remove garbage from the player class
+     * @param garbage integer representing amount of garbage to remove
+     */
     void removeGarabge(int garbage);
 
+    /**
+     * Add uranium reosurce to the player class
+     * @param uranium integer representing amount of uranium to add
+     */
     void addUranium(int uranium);
 
+    /**
+     * Remove uranium from the player class
+     * @param uranium integer representing amount of uranium to remove
+     */
     void removeUranium(int uranium);
 
+    /**
+     *
+     * @param coal
+     */
     void addCoal(int coal);
 
+    /**
+     *
+     * @param coal
+     */
     void removeCoal(int coal);
 
-//    void addHomes(Houses& homes);
-//
-//    void removeHomes(Houses& homes);
-//
-//    void addCities(int cities);
-//
-//    void removeCities(int cities);
-
+    /**
+     * Returnsa list of powerplants that the player owns
+     * @return list of powerplants
+     */
     const vector<Powerplant> &getMyPowerPlant() const;
 
+    /**
+     * Returns a poweprlant owned by the player based on index
+     * @param plantNumber number of the powerplabt that he/she owns
+     * @return Powerplant reference
+     */
     Powerplant &getPowerPlant(int plantNumber);
 
+    /**
+     * Add a powerplant to the player class
+     * @param somePowerplant Reference to the powerplant
+     */
     void addPowerplant(Powerplant &somePowerplant);
 
+    /**
+     * Remove a powerplant from the player class
+     */
     void removePowerplant(Powerplant &somePowerplant);
 
+    /**
+     * Displays the player cass contents
+     * @param stream cout for displau
+     * @return cout for display
+     */
     ostream &displayPowerplants(ostream &stream);
 
-    void addHouses(Houses &someHouse);
+    /**
+     * Adds houses to the player class
+     * @param someHouse reference to house you want to add
+     */
+//    void addHouses(Houses &someHouse);
 
-    void removeHouses(Houses &someHouse);
+    /**
+     *Remove the house from the player clas by reference
+     * @param someHouse the house you want to remove
+     */
+//    void removeHouses(Houses &someHouse);
 
+    /**
+     * Displays all the housses of the player onbject to cout
+     * @param stream display to cout
+     * @return display to cout
+     */
     ostream &displayHouses(ostream &stream);
 
+    /**
+     * Uses display houses,and display powerplants and displays all
+     * the players values to cout
+     * @param stream cout
+     * @param Object player class
+     * @return cout
+     */
     friend ostream &operator<<(ostream &stream, Player &Object);
 
+    /*
+     * operator overload for '<' comparison between players
+     */
     bool operator<(Player &p1);
 
+    /**
+     * getter to check if the player is ready for auction
+     * @return boolean value true if the player is ready false if not
+     */
     bool isAuctionReady() const;
 
+    /**
+     * Setter method sets if the player is ready or not for an auction
+     *  If the player is not ready for an auction, set the auction value
+     *  false and the round to false, since the palyer will not participate
+     * @param auctionReady boolean value set to true/false
+     */
     void setAuctionReady(bool auctionReady);
 
+    /**
+     * Getter method to check if the player is willing to participate in the
+     * powerplant bidding round
+     * @return false if not ready, true if ready
+     */
+    bool isRoundReady() const;
+
+    /**
+     *
+     * @param roundReady
+     */
+    void setRoundReady(bool roundReady);
+    /**
+     * returns the greatest valued powerplant of the player class
+     * @return
+     */
+    Powerplant& maxPowerplant();
+
 
 };
 //close player class.h
-
-
-
 #endif //POWERPLANT_PLAYER_H
-=======
-//
-// Created by alext on 2/20/2019.
-//
-#include "Game.h"
-#include <string>
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include "../HousesAndCities/Houses.h"
-#include "../Card/Powerplant.h"
-
-#ifndef POWERPLANT_PLAYER_H
-#define POWERPLANT_PLAYER_H
-
-/*
- * Player.h
- *
- * 	MICHAEL GARNER
- * 	26338739
- * 	COMP 445
- * 	WINTER 2019
- *
- * 	ASSIGNMENT 1
- * 	POWER GRID
- *
- *
-*/
-
-//namespace Mike {
-static int MAXCOAL;
-static int MAXOIL;
-static int MAXGARBAGE;
-static int MAXURANIUM;
-
-
-
-class Player {
-private:
-    static int numOfPlayers;
-    static vector<string> houseColor;
-
-    string  myHouseColor;
-    std::string playerName;
-    int elektros;
-    int oil, coal, garbage, uranium;
-    int numbHomes;
-    int numOfCities;
-    std::vector<Powerplant> myPowerPlant;
-    std::vector<Houses> myHouses;
-
-public:
-    Player();
-
-    Player(std::string name);
-
-    virtual ~Player();
-
-    static int getNumOfPlayers();
-
-    const string &getMyHouseColor() const;
-
-    const string &getPlayerName() const;
-
-    int getElektros() const;
-
-    int getOil() const;
-
-    int getCoal() const;
-
-    int getGarbage() const;
-
-    int getUranium() const;
-
-    int getNumbHomes() const;
-
-    int getNumOfCities() const;
-
-    void addElektro(int elektro);
-
-    void removeElektro(int elektro);
-
-    void addOil(int oil);
-
-    void removeOil(int oil);
-
-    void addGarbage(int garbage);
-
-    void removeGarabge(int garbage);
-
-    void addUranium(int uranium);
-
-    void removeUranium(int uranium);
-
-    void addCoal(int coal);
-
-    void removeCoal(int coal);
-
-//    void addHomes(Houses& homes);
-//
-//    void removeHomes(Houses& homes);
-//
-//    void addCities(int cities);
-//
-//    void removeCities(int cities);
-
-    const vector<Powerplant> &getMyPowerPlant() const;
-
-    Powerplant& getPowerPlant(int plantNumber);
-
-    void addPowerplant(Powerplant& somePowerplant);
-
-    void removePowerplant(Powerplant& somePowerplant);
-
-    ostream& displayPowerplants(ostream& stream);
-
-    void addHouses(Houses& someHouse);
-
-    void removeHouses(Houses& someHouse);
-
-    ostream& displayHouses(ostream& stream);
-
-    friend ostream &operator<<(ostream &stream, Player &Object);
-
-    int generatePower();
-
-};
-//close player class.h
-
-
-
-#endif //POWERPLANT_PLAYER_H
->>>>>>> ba322169f69d5c08b2ff60172d0b5f3022c7a0e2

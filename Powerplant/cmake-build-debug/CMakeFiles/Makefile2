@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 201
 CMakeFiles/Powerplant.dir/all:
 	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/depend
 	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target Powerplant"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target Powerplant"
 .PHONY : CMakeFiles/Powerplant.dir/all
 
 # Include target in all.
@@ -81,7 +81,7 @@ all: CMakeFiles/Powerplant.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Powerplant.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug/CMakeFiles" 14
+	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug/CMakeFiles" 10
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Powerplant.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug/CMakeFiles" 0
 .PHONY : CMakeFiles/Powerplant.dir/rule

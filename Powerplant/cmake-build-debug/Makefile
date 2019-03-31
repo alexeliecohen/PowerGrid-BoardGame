@@ -285,87 +285,6 @@ GameAndPlayer/Player.cpp.s:
 	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/GameAndPlayer/Player.cpp.s
 .PHONY : GameAndPlayer/Player.cpp.s
 
-HousesAndCities/City.o: HousesAndCities/City.cpp.o
-
-.PHONY : HousesAndCities/City.o
-
-# target to build an object file
-HousesAndCities/City.cpp.o:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/HousesAndCities/City.cpp.o
-.PHONY : HousesAndCities/City.cpp.o
-
-HousesAndCities/City.i: HousesAndCities/City.cpp.i
-
-.PHONY : HousesAndCities/City.i
-
-# target to preprocess a source file
-HousesAndCities/City.cpp.i:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/HousesAndCities/City.cpp.i
-.PHONY : HousesAndCities/City.cpp.i
-
-HousesAndCities/City.s: HousesAndCities/City.cpp.s
-
-.PHONY : HousesAndCities/City.s
-
-# target to generate assembly for a file
-HousesAndCities/City.cpp.s:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/HousesAndCities/City.cpp.s
-.PHONY : HousesAndCities/City.cpp.s
-
-HousesAndCities/Houses.o: HousesAndCities/Houses.cpp.o
-
-.PHONY : HousesAndCities/Houses.o
-
-# target to build an object file
-HousesAndCities/Houses.cpp.o:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/HousesAndCities/Houses.cpp.o
-.PHONY : HousesAndCities/Houses.cpp.o
-
-HousesAndCities/Houses.i: HousesAndCities/Houses.cpp.i
-
-.PHONY : HousesAndCities/Houses.i
-
-# target to preprocess a source file
-HousesAndCities/Houses.cpp.i:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/HousesAndCities/Houses.cpp.i
-.PHONY : HousesAndCities/Houses.cpp.i
-
-HousesAndCities/Houses.s: HousesAndCities/Houses.cpp.s
-
-.PHONY : HousesAndCities/Houses.s
-
-# target to generate assembly for a file
-HousesAndCities/Houses.cpp.s:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/HousesAndCities/Houses.cpp.s
-.PHONY : HousesAndCities/Houses.cpp.s
-
-Market/Market.o: Market/Market.cpp.o
-
-.PHONY : Market/Market.o
-
-# target to build an object file
-Market/Market.cpp.o:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Market/Market.cpp.o
-.PHONY : Market/Market.cpp.o
-
-Market/Market.i: Market/Market.cpp.i
-
-.PHONY : Market/Market.i
-
-# target to preprocess a source file
-Market/Market.cpp.i:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Market/Market.cpp.i
-.PHONY : Market/Market.cpp.i
-
-Market/Market.s: Market/Market.cpp.s
-
-.PHONY : Market/Market.s
-
-# target to generate assembly for a file
-Market/Market.cpp.s:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Market/Market.cpp.s
-.PHONY : Market/Market.cpp.s
-
 Market/PowerplantMarket.o: Market/PowerplantMarket.cpp.o
 
 .PHONY : Market/PowerplantMarket.o
@@ -419,33 +338,6 @@ Market/ResourceMarket.s: Market/ResourceMarket.cpp.s
 Market/ResourceMarket.cpp.s:
 	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Market/ResourceMarket.cpp.s
 .PHONY : Market/ResourceMarket.cpp.s
-
-Resource/Resource.o: Resource/Resource.cpp.o
-
-.PHONY : Resource/Resource.o
-
-# target to build an object file
-Resource/Resource.cpp.o:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Resource/Resource.cpp.o
-.PHONY : Resource/Resource.cpp.o
-
-Resource/Resource.i: Resource/Resource.cpp.i
-
-.PHONY : Resource/Resource.i
-
-# target to preprocess a source file
-Resource/Resource.cpp.i:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Resource/Resource.cpp.i
-.PHONY : Resource/Resource.cpp.i
-
-Resource/Resource.s: Resource/Resource.cpp.s
-
-.PHONY : Resource/Resource.s
-
-# target to generate assembly for a file
-Resource/Resource.cpp.s:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Resource/Resource.cpp.s
-.PHONY : Resource/Resource.cpp.s
 
 newMain.o: newMain.cpp.o
 
@@ -501,24 +393,12 @@ help:
 	@echo "... GameAndPlayer/Player.o"
 	@echo "... GameAndPlayer/Player.i"
 	@echo "... GameAndPlayer/Player.s"
-	@echo "... HousesAndCities/City.o"
-	@echo "... HousesAndCities/City.i"
-	@echo "... HousesAndCities/City.s"
-	@echo "... HousesAndCities/Houses.o"
-	@echo "... HousesAndCities/Houses.i"
-	@echo "... HousesAndCities/Houses.s"
-	@echo "... Market/Market.o"
-	@echo "... Market/Market.i"
-	@echo "... Market/Market.s"
 	@echo "... Market/PowerplantMarket.o"
 	@echo "... Market/PowerplantMarket.i"
 	@echo "... Market/PowerplantMarket.s"
 	@echo "... Market/ResourceMarket.o"
 	@echo "... Market/ResourceMarket.i"
 	@echo "... Market/ResourceMarket.s"
-	@echo "... Resource/Resource.o"
-	@echo "... Resource/Resource.i"
-	@echo "... Resource/Resource.s"
 	@echo "... newMain.o"
 	@echo "... newMain.i"
 	@echo "... newMain.s"

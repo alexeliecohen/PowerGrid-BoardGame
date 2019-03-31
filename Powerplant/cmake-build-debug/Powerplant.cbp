@@ -116,24 +116,6 @@
 		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Player.h">
 			<Option target="Powerplant"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/HousesAndCities/City.cpp">
-			<Option target="Powerplant"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/HousesAndCities/City.h">
-			<Option target="Powerplant"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/HousesAndCities/Houses.cpp">
-			<Option target="Powerplant"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/HousesAndCities/Houses.h">
-			<Option target="Powerplant"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Market/Market.cpp">
-			<Option target="Powerplant"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Market/Market.h">
-			<Option target="Powerplant"/>
-		</Unit>
 		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Market/PowerplantMarket.cpp">
 			<Option target="Powerplant"/>
 		</Unit>
@@ -144,12 +126,6 @@
 			<Option target="Powerplant"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Market/ResourceMarket.h">
-			<Option target="Powerplant"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Resource/Resource.cpp">
-			<Option target="Powerplant"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Resource/Resource.h">
 			<Option target="Powerplant"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/newMain.cpp">

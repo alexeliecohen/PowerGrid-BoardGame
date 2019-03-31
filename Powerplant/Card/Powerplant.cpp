@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //
 // Created by alext on 2/7/2019.
 //
@@ -15,16 +14,30 @@ Powerplant::Powerplant(int priceCost, int energyCost,int productionValue, std::s
     this->energyCost = energyCost;
     this->productionValue = productionValue;
     this->resourceType= resourceType;
+    bidValue = priceCost;
 }
 Powerplant::Powerplant() {}
 
 Powerplant::Powerplant(const Powerplant &p2) {
+    //copy constructor for the object set all the attributes to the other object
     powerPlantNumber = p2.powerPlantNumber;
     priceCost = p2.priceCost;
     energyCost = p2.energyCost;
     productionValue = p2.productionValue;
     resourceType = p2.resourceType;
+    bidValue = p2.priceCost;
 }
+
+Powerplant& Powerplant::operator=(const Powerplant& p1) {
+    //set all the attributes of the new object to the other objects
+    powerPlantNumber = p1.powerPlantNumber;
+    priceCost = p1.priceCost;
+    energyCost = p1.energyCost;
+    productionValue = p1.productionValue;
+    resourceType= p1.resourceType;
+    bidValue = p1.bidValue;
+}
+
 
 int Powerplant::getEnergyCost() const {
     return this->energyCost;
@@ -46,87 +59,33 @@ const std::string &Powerplant::getResourceType() const {
 }
 
 std::ostream& Powerplant::toString(std::ostream& stream) {
+    //output to cout the attributes of the class
     stream << "Powerplant #: " << powerPlantNumber << endl;
     stream << "Cost: " << priceCost << " Elektro, " << " Energy Consumption: " << energyCost << " ";
-
+    //if the powerplant is a hybrid then output this additional string
     if (resourceType == "Hybrid") {
         stream << "combination of Coal/Oil";
-    } else {
-       stream << resourceType << ", and Powers " << productionValue << " cities." << std::endl;
     }
+    //return the rest of the class attributes
+    stream << resourceType << ", and Powers " << productionValue << " cities." << std::endl;
+    //return the stream
     return stream;
 }
 
 bool Powerplant::operator==(const Powerplant& p1) const {
+    //check if both powerplants are equal based on all attributes
     return(priceCost==p1.priceCost && energyCost == p1.energyCost && productionValue == p1.productionValue && resourceType==p1.resourceType);
 
 }
 bool Powerplant::operator<(Powerplant &p1) {
+    //check if powerplant is less than the other based on the number on the card
     return this->priceCost < p1.priceCost;
 }
 
-
-=======
-//
-// Created by alext on 2/7/2019.
-//
-
-#include "Powerplant.h"
-using namespace std;
-
-
-Powerplant::Powerplant(int priceCost, int energyCost, int productionValue, std::string resourceType) {
-    Card();
-//    powerPlantNumber = powerplants;
-//    powerplants++;
-    this->priceCost = priceCost;
-    this->energyCost = energyCost;
-    this->productionValue = productionValue;
-    this->resourceType= resourceType;
-}
-Powerplant::Powerplant() {}
-
-Powerplant::Powerplant(const Powerplant &p2) {
-    priceCost = p2.priceCost;
-    energyCost = p2.energyCost;
-    productionValue = p2.productionValue;
-    resourceType = p2.resourceType;
+int Powerplant::getBidValue() const {
+    return bidValue;
 }
 
-int Powerplant::getEnergyCost() const {
-    return this->energyCost;
+void Powerplant::setBidValue(int bidValue) {
+    Powerplant::bidValue = bidValue;
 }
-
-int Powerplant::getProductionValue() const {
-    return this->productionValue;
-}
-
-Powerplant::~Powerplant() {}
-
-
-int Powerplant::getPriceCost() const {
-    return priceCost;
-}
-
-const std::string &Powerplant::getResourceType() const {
-    return resourceType;
-}
-
-std::ostream& Powerplant::toString(std::ostream& stream) {
-//    stream << "Powerplant #: " << powerPlantNumber
-    stream << " Cost: " << priceCost << " Energy Consumption: " << energyCost <<
-           resourceType << " and Powers " << productionValue << " cities" << std::endl;
-    return stream;
-}
-
-bool Powerplant::operator==(Powerplant p1) {
-    return(priceCost==p1.priceCost && energyCost == p1.energyCost && productionValue == p1.productionValue && resourceType==p1.resourceType);
-
-}
-
-
-//std::ostream& operator<<(std::ostream& stream, Powerplant &somePowerplant) {
-//   return somePowerplant.toString(stream);
-//}
-
->>>>>>> ba322169f69d5c08b2ff60172d0b5f3022c7a0e2
