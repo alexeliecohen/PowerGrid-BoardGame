@@ -320,21 +320,28 @@ std::ostream &operator<<(std::ostream &os, Map &m) {
 //Check to see if there is a place available to build a house here, regardless of player
 bool Map::canBuildHouse(Vertex city, int gamePhase) {
     bool returnValue = true;
+    std::cout<<"\nTHE PLAYER COUNT AT THIS POINT IS "<<city.getPlayerCount()<<"\n";
 
     //If phase 1, position 1 disqualifies placement
     if (gamePhase == 1) {
-        if (city.getPlayerCount() > 0)
+        std::cout << "GAME PHASE 1 IS TRUE\n";
+        std::cout<<"The Player count at this location is "<<city.getPlayerCount()<<"\n";
+        if (city.getPlayerCount() > 0) {
             returnValue = false;
+            std::cout << "Updated returnValue to False\n";
+        }
     }
         //If phase 1&2, position 1 disqualifies placement
-    else if (gamePhase == 2) {
+    if (gamePhase == 2) {
         if (city.getPlayerCount() > 1)
             returnValue = false;
     }
     //If phase 1&2&3, position 1 disqualifies placement
-    else if (gamePhase == 3) {
+    if (gamePhase == 3) {
         if (city.getPlayerCount() > 2 )
             returnValue = false;
     }
+
+    std::cout<<"The value being returned by Map::canBuildHouse is: "<<returnValue<<"\n";
     return returnValue;
 }//close can build house function

@@ -532,9 +532,9 @@ void Player::buyCities(Map *map, int gamePhaseNumber){
 		std::cout<<playerName<<" has "<<elektros<<std::endl;
 
 		//VALIDATE THAT NO OTHER PLAYER IS ALREADY AT THIS LOCATION
-		//houseAvailbleAtLocation = map->canBuildHouse(  map->findVertex(userIn), gamePhaseNumber); <--------- just fix the error caused here
-		Vertex v = map->findVertex(userIn);
-		houseAvailbleAtLocation = map->canBuildHouse( v, gamePhaseNumber);
+		//Vertex v = map->findVertex(userIn);
+		houseAvailbleAtLocation = map->canBuildHouse(  map->findVertex(userIn), gamePhaseNumber);
+		cout<<"\nHouse available at this location? "<<houseAvailbleAtLocation<<"\n";
 
 		//VALIDATE THAT PLAYER HAS ENOUGH ELEKTROS
 		if ( totalCost > elektros ){
@@ -542,9 +542,10 @@ void Player::buyCities(Map *map, int gamePhaseNumber){
 			std::cout<<playerName<<" has "<<elektros<<" the total cost to build at location: "<<userIn<<" is "<<totalCost;
 		}//if player does not have enough elektros
 
-		else if ( !houseAvailbleAtLocation )
+		if ( !houseAvailbleAtLocation )
 			std::cout<<"\nCan not Build at this location, there is already a house here\n";
-		else{
+
+		if ( totalCost <= elektros && houseAvailbleAtLocation ){
 			std::cout<<playerName<<" has built a house in "<<userIn<<"\n";
 		//UPDATE ALL OBJECTS - VERTEX, NUMOFCITIES, Player.numOfCities, Player.myHouses, HOUSE OBJECT?
 			std::cout<<"Debug A\n";
@@ -563,6 +564,8 @@ void Player::buyCities(Map *map, int gamePhaseNumber){
 			map->findVertex( userIn ).setPlayer( playerName );
 			std::cout<<"Debug E\n";
 			startedNetwork = true;
+			map->findVertex( userIn ).
+			std::cout<<"Debug F\n";
 		}//close else, player has added this city to his network
 		std::cout<<"Debug Finish while playerTurn iteration\n";
 	}//close while player turn
