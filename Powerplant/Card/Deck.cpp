@@ -1,4 +1,3 @@
-
 //
 // Created by alext on 3/6/2019.
 //
@@ -10,9 +9,7 @@
 std::vector<Card*> Deck::CardDeck;
 Deck::Deck() {
 
-    CardDeck.push_back(new Powerplant(4,2,1,"Coal"));
-    CardDeck.push_back(new Powerplant(8,3,2,"Coal"));
-    CardDeck.push_back(new Powerplant(10,2,2,"Coal"));
+
     CardDeck.push_back(new Powerplant(15,2,3,"Coal"));
     CardDeck.push_back(new Powerplant(20,3,5,"Coal"));
     CardDeck.push_back(new Powerplant(25,2,5,"Coal"));
@@ -21,23 +18,18 @@ Deck::Deck() {
     CardDeck.push_back(new Powerplant(42,2,6,"Coal"));
 
     //Oil Powerplants
-    CardDeck.push_back(new Powerplant(3,2,1,"Oil"));
-    CardDeck.push_back(new Powerplant(7,3,2,"Oil"));
-    CardDeck.push_back(new Powerplant(9,1,1,"Oil"));
     CardDeck.push_back(new Powerplant(16,2,3,"Oil"));
     CardDeck.push_back(new Powerplant(26,2,5,"Oil"));
     CardDeck.push_back(new Powerplant(32,3,6,"Oil"));
     CardDeck.push_back(new Powerplant(35,1,5,"Oil"));
     CardDeck.push_back(new Powerplant(40,2,6,"Oil"));
 
-    CardDeck.push_back(new Powerplant(5,2,1,"Hybrid"));
     CardDeck.push_back(new Powerplant(12,2,2,"Hybrid"));
     CardDeck.push_back(new Powerplant(21,2,4,"Hybrid"));
     CardDeck.push_back(new Powerplant(29,1,4,"Hybrid"));
     CardDeck.push_back(new Powerplant(29,3,7,"Hybrid"));
 
     //Garbage Powerplants
-    CardDeck.push_back(new Powerplant(6,1,1,"Garbage"));
     CardDeck.push_back(new Powerplant(14,2,2,"Garbage"));
     CardDeck.push_back(new Powerplant(19,2,3,"Garbage"));
     CardDeck.push_back(new Powerplant(24,2,4,"Garbage"));
@@ -61,8 +53,19 @@ Deck::Deck() {
     CardDeck.push_back(new Powerplant(37,0,4,"Ecological"));
     CardDeck.push_back(new Powerplant(44,0,5,"Ecological"));
 
+
+
+    CardDeck.push_back(new Powerplant(3,2,1,"Oil"));
+    CardDeck.push_back(new Powerplant(4,2,1,"Coal"));
+    CardDeck.push_back(new Powerplant(5,2,1,"Hybrid"));
+    CardDeck.push_back(new Powerplant(6,1,1,"Garbage"));
+    CardDeck.push_back(new Powerplant(7,3,2,"Oil"));
+    CardDeck.push_back(new Powerplant(8,3,2,"Coal"));
+    CardDeck.push_back(new Powerplant(9,1,1,"Oil"));
+    CardDeck.push_back(new Powerplant(10,2,2,"Coal"));
+
 //   Add step3 Card
-    CardDeck.push_back(new Step13());
+//    CardDeck.push_back(new Step13());
 }
 Deck::~Deck() {
     for (int i = 0; i < CardDeck.size(); ++i) {
@@ -88,5 +91,11 @@ std::ostream& operator<<(std::ostream& stream,Deck& myDeck) {
 Card* Deck::removeCard(int pos) {
     Card *c1 = CardDeck[pos];
     CardDeck.erase(CardDeck.begin() + pos);
+    return c1;
+}
+
+Card* Deck::removeCard() {
+    Card* c1 = CardDeck[CardDeck.size()-1];
+    CardDeck.erase(CardDeck.begin()+ CardDeck.size()-1);
     return c1;
 }
