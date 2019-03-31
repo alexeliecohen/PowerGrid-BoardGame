@@ -1,15 +1,3 @@
-//
-// Created by alext on 2/20/2019.
-//
-#include <string>
-#include <iostream>
-#include <vector>
-#include <algorithm>
-//#include "../HousesAndCities/Houses.h"
-#include "../Card/Powerplant.h"
-
-#ifndef POWERPLANT_PLAYER_H
-#define POWERPLANT_PLAYER_H
 
 /*
  * Player.h
@@ -24,6 +12,21 @@
  *
  *
 */
+#include "Game.h"
+#include <string>
+#include <iostream>
+#include <vector>
+#include <algorithm>
+//#include "../HousesAndCities/Houses.h"
+#include "../Card/Powerplant.h"
+#include "../../Map/Map.h"
+#include "../Market/ResourceMarket.h"
+
+using namespace Mike2;
+
+#ifndef POWERPLANT_PLAYER_H
+#define POWERPLANT_PLAYER_H
+
 
 //namespace Mike {
 static int MAXCOAL;
@@ -46,6 +49,18 @@ private:
 //    std::vector<Houses> myHouses; //list of homes the player owns
     bool auctionReady,roundReady;
     int numCities;
+    static int numOfPlayers;
+    static vector<string> houseColor;
+
+    string  myHouseColor;
+    std::string playerName;
+    int elektros;
+    int oil, coal, garbage, uranium;
+    int numbHomes;
+    int numOfCities;
+    std::vector<Powerplant> myPowerPlant;
+    bool startedNetwork;					//true when player builds his/her 1st house
+    std::vector<string> myHouses;
 
 public:
     /**
@@ -284,6 +299,9 @@ public:
      * Method to power a player's cities using their power plants and resources
      */
     void powerCities();
+
+	//Building cities
+	void buyCities(Map *map, int gamePhaseNumber);
 
 };
 //close player class.h

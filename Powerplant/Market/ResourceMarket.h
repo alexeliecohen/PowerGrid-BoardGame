@@ -1,13 +1,11 @@
-//
-// Created by alext on 2/21/2019.
-//
 
-#ifndef POWERPLANT_RESOURCEMARKET_H
-#define POWERPLANT_RESOURCEMARKET_H
+#include <iostream>
+#include <string>
 
+#ifndef RESOURCEMARKET_H_
+#define RESOURCEMARKET_H_
 
-//#include "../Resource/Resource.h"
-//#include "Market.h"
+namespace Mike2 {
 
 
 static int RESSUPLYMARKET[5][3][4] = {{{3,2,1,1},{4,2,2,1},{3,4,3,1}},{{4,2,1,1},{5,3,2,1},{3,4,3,1}},
@@ -16,15 +14,58 @@ static int RESSUPLYMARKET[5][3][4] = {{{3,2,1,1},{4,2,2,1},{3,4,3,1}},{{4,2,1,1}
 
 class ResourceMarket {
 private:
-//    Resource myResources[10];
+	//Attributes
+	int oil;
+	int coal;
+	int garbage;
+	int uranium;
+	//[Number Of Players] [Game Phase Number] [RESOURCE # - 1 2 3 4]
+	int RESSUPLYMARKET[5][3][4];
+
 public:
-    ResourceMarket() {
-//        for (int i = 0; i < ; ++i) {
-//
-//        }
-    }
+	//Methods
+	void addOil();
+	void addOil(int amt);
+	void removeOil();
+	void removeOil(int amt);
+	int getOil();
+	void addCoal();
+	void addCoal(int amt);
+	void removeCoal();
+	void removeCoal(int amt);
+	int getCoal();
+	void addGarbage();
+	void addGarbage(int amt);
+	void removeGarbage();
+	void removeGarbage(int amt);
+	int getGarbage();
+	void addUranium();
+	void addUranium(int amt);
+	void removeUranium();
+	void removeUranium(int amt);
+	int getUranium();
+
+	//Get Price of next
+	int getCoalPrice();
+	int getOilPrice();
+	int getGarbagePrice();
+	int getUraniumPrice();
+
+	//Constructors / Destructors
+	ResourceMarket();
+	virtual ~ResourceMarket();
+
+	//Display
+	void printResourceMarketStock();
+	void printResourceMarket();
+
+	//Re-supply at end of turn
+	void resupplyMarket(int numOfPlayers, int gamePhase);
+
+	//Overload <<
+
+
 };
 
 
-#endif //POWERPLANT_RESOURCEMARKET_H
-
+#endif /* RESOURCEMARKET_H_ */

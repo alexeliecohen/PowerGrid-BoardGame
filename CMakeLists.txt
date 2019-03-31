@@ -17,4 +17,4 @@ add_executable(untitled
         Powerplant/GameAndPlayer/Player.cpp
         Powerplant/Market/PowerplantMarket.cpp
         Powerplant/Market/ResourceMarket.cpp
-        test.cpp)
+        Main_PowerGrid_Driver.cpp)

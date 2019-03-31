@@ -86,4 +86,38 @@ int main() {
 //    auto *rMarket = new ResourceMarket();
 //    PowerplantMarket pMarket = PowerplantMarket(d);
     return 0;
+    //Create Map
+    MapLoaderB mapLoaderPart3 = MapLoaderB();
+    Map mapPhase3 = mapLoaderPart3.buildMapB(files.at(mapFile - 1));           //ERROR HERE
+    Map *mapPhase3Ptr = &mapPhase3;
+    std::cout<<"\nThe map has been created for phase 3\n";
+
+    //Create Resource Market
+    ResourceMarket resMarket = ResourceMarket();
+    ResourceMarket *resMarketPtr = &rMarket;
+
+    //Give Power Plants To Player 2
+    std::cout<<"\nPowerplants for player2 are being placed into his/her possesion for demoing's Part 3, buying resources\n";
+
+
+    for ( int i = 0 ; i < playersPhase3.size() ; i++ )
+        playersPhase3.at(i).buyResources( resMarketPtr );
+
+    /*
+     *  HOUSE BUILDING PHASE
+     *  requires a map, resource market and players --> hard-coded below
+     */
+
+    //Source of input parameters above
+    //map: m
+    //gamePhase: 1
+    for ( int i = 0 ; i < players.size() ; i++ )
+        players.at(i).buyCities( mapPhase3Ptr, 1 );
+
+    /*
+     *  END OF PART 3 ASSIGNMENT 2
+     */
+
+
+    return 0;
 }// close main loop
