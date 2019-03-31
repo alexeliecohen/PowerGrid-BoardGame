@@ -339,32 +339,32 @@ Market/ResourceMarket.cpp.s:
 	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Market/ResourceMarket.cpp.s
 .PHONY : Market/ResourceMarket.cpp.s
 
-newMain.o: newMain.cpp.o
+Phase1.o: Phase1.cpp.o
 
-.PHONY : newMain.o
+.PHONY : Phase1.o
 
 # target to build an object file
-newMain.cpp.o:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/newMain.cpp.o
-.PHONY : newMain.cpp.o
+Phase1.cpp.o:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Phase1.cpp.o
+.PHONY : Phase1.cpp.o
 
-newMain.i: newMain.cpp.i
+Phase1.i: Phase1.cpp.i
 
-.PHONY : newMain.i
+.PHONY : Phase1.i
 
 # target to preprocess a source file
-newMain.cpp.i:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/newMain.cpp.i
-.PHONY : newMain.cpp.i
+Phase1.cpp.i:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Phase1.cpp.i
+.PHONY : Phase1.cpp.i
 
-newMain.s: newMain.cpp.s
+Phase1.s: Phase1.cpp.s
 
-.PHONY : newMain.s
+.PHONY : Phase1.s
 
 # target to generate assembly for a file
-newMain.cpp.s:
-	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/newMain.cpp.s
-.PHONY : newMain.cpp.s
+Phase1.cpp.s:
+	$(MAKE) -f CMakeFiles/Powerplant.dir/build.make CMakeFiles/Powerplant.dir/Phase1.cpp.s
+.PHONY : Phase1.cpp.s
 
 # Help Target
 help:
@@ -399,9 +399,9 @@ help:
 	@echo "... Market/ResourceMarket.o"
 	@echo "... Market/ResourceMarket.i"
 	@echo "... Market/ResourceMarket.s"
-	@echo "... newMain.o"
-	@echo "... newMain.i"
-	@echo "... newMain.s"
+	@echo "... Phase1.o"
+	@echo "... Phase1.i"
+	@echo "... Phase1.s"
 .PHONY : help
 
 

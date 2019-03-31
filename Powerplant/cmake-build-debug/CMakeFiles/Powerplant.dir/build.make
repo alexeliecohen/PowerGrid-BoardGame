@@ -57,18 +57,18 @@ include CMakeFiles/Powerplant.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Powerplant.dir/flags.make
 
-CMakeFiles/Powerplant.dir/newMain.cpp.o: CMakeFiles/Powerplant.dir/flags.make
-CMakeFiles/Powerplant.dir/newMain.cpp.o: ../newMain.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Powerplant.dir/newMain.cpp.o"
-	C:/cygwin64/bin/g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Powerplant.dir/newMain.cpp.o -c "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/newMain.cpp"
+CMakeFiles/Powerplant.dir/Phase1.cpp.o: CMakeFiles/Powerplant.dir/flags.make
+CMakeFiles/Powerplant.dir/Phase1.cpp.o: ../Phase1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Powerplant.dir/Phase1.cpp.o"
+	C:/cygwin64/bin/g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Powerplant.dir/Phase1.cpp.o -c "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Phase1.cpp"
 
-CMakeFiles/Powerplant.dir/newMain.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Powerplant.dir/newMain.cpp.i"
-	C:/cygwin64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/newMain.cpp" > CMakeFiles/Powerplant.dir/newMain.cpp.i
+CMakeFiles/Powerplant.dir/Phase1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Powerplant.dir/Phase1.cpp.i"
+	C:/cygwin64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Phase1.cpp" > CMakeFiles/Powerplant.dir/Phase1.cpp.i
 
-CMakeFiles/Powerplant.dir/newMain.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Powerplant.dir/newMain.cpp.s"
-	C:/cygwin64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/newMain.cpp" -o CMakeFiles/Powerplant.dir/newMain.cpp.s
+CMakeFiles/Powerplant.dir/Phase1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Powerplant.dir/Phase1.cpp.s"
+	C:/cygwin64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Phase1.cpp" -o CMakeFiles/Powerplant.dir/Phase1.cpp.s
 
 CMakeFiles/Powerplant.dir/Market/PowerplantMarket.cpp.o: CMakeFiles/Powerplant.dir/flags.make
 CMakeFiles/Powerplant.dir/Market/PowerplantMarket.cpp.o: ../Market/PowerplantMarket.cpp
@@ -176,7 +176,7 @@ CMakeFiles/Powerplant.dir/Card/Deck.cpp.s: cmake_force
 
 # Object files for target Powerplant
 Powerplant_OBJECTS = \
-"CMakeFiles/Powerplant.dir/newMain.cpp.o" \
+"CMakeFiles/Powerplant.dir/Phase1.cpp.o" \
 "CMakeFiles/Powerplant.dir/Market/PowerplantMarket.cpp.o" \
 "CMakeFiles/Powerplant.dir/Market/ResourceMarket.cpp.o" \
 "CMakeFiles/Powerplant.dir/Card/Powerplant.cpp.o" \
@@ -189,7 +189,7 @@ Powerplant_OBJECTS = \
 # External object files for target Powerplant
 Powerplant_EXTERNAL_OBJECTS =
 
-Powerplant.exe: CMakeFiles/Powerplant.dir/newMain.cpp.o
+Powerplant.exe: CMakeFiles/Powerplant.dir/Phase1.cpp.o
 Powerplant.exe: CMakeFiles/Powerplant.dir/Market/PowerplantMarket.cpp.o
 Powerplant.exe: CMakeFiles/Powerplant.dir/Market/ResourceMarket.cpp.o
 Powerplant.exe: CMakeFiles/Powerplant.dir/Card/Powerplant.cpp.o

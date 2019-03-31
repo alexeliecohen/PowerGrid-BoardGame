@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Powerplant.dir/newMain.cpp.o"
+  "CMakeFiles/Powerplant.dir/Phase1.cpp.o"
   "CMakeFiles/Powerplant.dir/Market/PowerplantMarket.cpp.o"
   "CMakeFiles/Powerplant.dir/Market/ResourceMarket.cpp.o"
   "CMakeFiles/Powerplant.dir/Card/Powerplant.cpp.o"
