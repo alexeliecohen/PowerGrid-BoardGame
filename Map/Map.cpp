@@ -318,7 +318,7 @@ std::ostream &operator<<(std::ostream &os, Map &m) {
 
 //House building
 //Check to see if there is a place available to build a house here, regardless of player
-bool canBuildHouse(Vertex city, int gamePhase) {
+bool Map::canBuildHouse(Vertex city, int gamePhase) {
     bool returnValue = true;
 
     //If phase 1, position 1 disqualifies placement

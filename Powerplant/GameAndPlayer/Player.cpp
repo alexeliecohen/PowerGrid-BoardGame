@@ -533,8 +533,9 @@ void Player::buyCities(Map *map, int gamePhaseNumber){
 
 		//VALIDATE THAT NO OTHER PLAYER IS ALREADY AT THIS LOCATION
 		//houseAvailbleAtLocation = map->canBuildHouse(  map->findVertex(userIn), gamePhaseNumber); <--------- just fix the error caused here
-		//Vertex v = map->findVertex(userIn);
-		//houseAvailbleAtLocation = map->canBuildHouse( map->findVertex(userIn), gamePhaseNumber);
+		Vertex v = map->findVertex(userIn);
+		houseAvailbleAtLocation = map->canBuildHouse( v, gamePhaseNumber);
+
 		//VALIDATE THAT PLAYER HAS ENOUGH ELEKTROS
 		if ( totalCost > elektros ){
 			std::cout<< playerName <<" does not have enough elektros to purchase a house at the location: "<<userIn<<"\n";

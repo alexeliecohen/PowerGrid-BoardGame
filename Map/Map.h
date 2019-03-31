@@ -31,7 +31,7 @@ public:
     void createSubgraphs();
     Map createFinalMap();
     friend std::ostream& operator<<(std::ostream& os, Map& m);
-    bool canBuildHouse(Vertex nameOfCity, int gamePhase);
+    bool canBuildHouse(Vertex city, int gamePhase);
 private:
     std::vector<Vertex> vertices;
     std::vector<Edge> edges;
