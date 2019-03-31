@@ -17,7 +17,6 @@ public:
     std::vector<Vertex> getVertices();
     std::vector<Edge> getEdges();
     std::vector<std::string> getRegions();
-    std::vector<Map> getSubgraphs();
     void addVertex(Vertex v);
     void addEdge(Vertex &u, Vertex &v, int cost);
     void addEdge(Edge &e);
@@ -25,11 +24,9 @@ public:
     Vertex opposite(Vertex v, Edge e);
     Vertex findVertex(std::string s);
     bool isVertex(std::string nameIn);
-    void removeRegion(int i);
     bool BFS();
     int shortestPath(std::string src, std::string destination);
-    void createSubgraphs();
-    Map createFinalMap();
+    void createFinalMap(std::vector<std::string> regionsUsed);
     friend std::ostream& operator<<(std::ostream& os, Map& m);
 private:
     std::vector<Vertex> vertices;

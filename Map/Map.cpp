@@ -283,14 +283,11 @@ void Map::createSubgraphs() {
  * Method to create the final map to be used in the game
  * @return a map
  */
-Map Map::createFinalMap() {
-    Map g = Map();
-    //take selected regions and add them to final graph
-//    for(every subgraph selected) {
-//
-//    }
-    //add edges between regions selected
-    return g;
+void Map::createFinalMap(std::vector<std::string> regionsUsed) {
+    for(std::string s : regions) {
+        if(!(std::find(regionsUsed.begin(), regionsUsed.end(), s) != regionsUsed.end()))
+            regions.erase(std::find(regionsUsed.begin(), regionsUsed.end(), s));
+    }
 }
 
 /**
