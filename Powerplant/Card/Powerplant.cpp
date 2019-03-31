@@ -36,6 +36,7 @@ Powerplant& Powerplant::operator=(const Powerplant& p1) {
     productionValue = p1.productionValue;
     resourceType= p1.resourceType;
     bidValue = p1.bidValue;
+    return *this;
 }
 
 

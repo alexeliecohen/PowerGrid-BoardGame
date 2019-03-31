@@ -312,10 +312,6 @@ void Player::setAuctionReady(bool auctionReady) {
     }
 }
 
-//method not used
-Powerplant &Player::maxPowerplant() {
-}
-
 void Player::setRoundReady(bool roundReady) {
     //if the player tries to join an auction and wanted to skip phase1, then
     //block him from joining the auction
