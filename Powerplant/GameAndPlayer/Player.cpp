@@ -315,10 +315,8 @@ void Player::buyResources(ResourceMarket *resourceMarket){
 				std::cout<<"INVALID INPUT - THERE SHOULD ONLY BE 1 CHARACTER ENTERED"<<std::endl;
 			}//if
 			else{
-				cout<<"debug 1 - input is valid\n";
-
 				if (isdigit(userInput.at(0))) {
-					cout<<"debug 2 - input at(0) isdigit\n";
+					//cout<<"debug 2 - input at(0) isdigit\n";
 					playerSelection = std::stoi( userInput );
 					if ( playerSelection > 0 && playerSelection < 6) {
 						validInput = true;
@@ -561,7 +559,7 @@ void Player::buyCities(Map *map, int gamePhaseNumber){
 			std::cout<<"Debug C\n";
 			numOfCities++;
 			std::cout<<"Debug D\n";
-			map->findVertex( userIn ).setPlayer( playerName );
+			map->findVertexP( userIn )->setPlayer( playerName );
 			std::cout<<"Debug E\n";
 			startedNetwork = true;
 			std::cout<<"Debug F\n";

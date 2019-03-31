@@ -151,7 +151,7 @@ Vertex Map::opposite(Vertex v, Edge e) {
  * @param s the name of the vertex
  * @return the vertex with the specified name
  */
-Vertex Map::findVertex(std::string s) {
+Vertex Map::findVertex(const std::string& s) {
     for (const auto &v : vertices) {
         if(v.getName() == s ) {
             return v;
@@ -160,6 +160,16 @@ Vertex Map::findVertex(std::string s) {
     std::cout << "Vertex does not belong to the map. Please enter a valid vertex";
     exit(0);
 }
+
+Vertex* Map::findVertexP(const std::string& s) {
+    for (auto &v : vertices) {
+        if(v.getName() == s ) {
+            return &v;
+        }//close if
+    }//close for
+    std::cout << "Vertex does not belong to the map. Please enter a valid vertex";
+    exit(0);
+}//close get vertex aaddress
 
 bool Map::isVertex(std::string nameIn){
 	bool returnValue = false;

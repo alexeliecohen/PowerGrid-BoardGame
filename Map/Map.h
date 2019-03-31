@@ -23,7 +23,8 @@ public:
     void addEdge(Edge &e);
     void addRegion(std::string region);
     Vertex opposite(Vertex v, Edge e);
-    Vertex findVertex(std::string s);
+    Vertex findVertex(const std::string& s);
+    Vertex* findVertexP(const std::string& s);
     bool isVertex(std::string nameIn);
     void removeRegion(int i);
     bool BFS();
