@@ -11,26 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff46cc20-3507-4402-9f95-3906796842fc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/COMP345Team21.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/COMP345Team21.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main_PowerGrid_Driver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Main_PowerGrid_Driver.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Map/Map.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Map.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Map/Map.h" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Map.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/GameAndPlayer/Player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Powerplant/GameAndPlayer/Player.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/GameAndPlayer/Player.h" beforeDir="false" afterPath="$PROJECT_DIR$/Powerplant/GameAndPlayer/Player.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/Market/ResourceMarket.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Powerplant/Market/ResourceMarket.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/Market/ResourceMarket.h" beforeDir="false" afterPath="$PROJECT_DIR$/Powerplant/Market/ResourceMarket.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/COMP345Team21.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/COMP345Team21.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-    </list>
+    <list default="true" id="ff46cc20-3507-4402-9f95-3906796842fc" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/Powerplant/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -95,7 +76,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
+            <state relative-caret-position="663">
               <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
             </state>
           </provider>
@@ -303,12 +284,12 @@
       <workItem from="1554044407902" duration="946000" />
       <workItem from="1554045418219" duration="1055000" />
       <workItem from="1554066688055" duration="619000" />
-      <workItem from="1554067310683" duration="1335000" />
+      <workItem from="1554067310683" duration="2224000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104681000" />
+    <option name="totallyTimeSpent" value="105570000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -327,14 +308,14 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.1474245" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.57648724" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.57648724" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.29662523" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.25070822" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.305949" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.296034" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.3285968" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.60339946" />
@@ -606,7 +587,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
+        <state relative-caret-position="663">
           <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
         </state>
       </provider>
