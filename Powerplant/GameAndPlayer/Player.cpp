@@ -453,7 +453,7 @@ void Player::buyCities(Map *map, int gamePhaseNumber){
 	Vertex houseBuildingLocation;
 	bool validEntry = false;
 	bool playerTurn = true;
-	bool houseAvailbleAtLocation = false;
+	bool houseAvailableAtLocation = false;
 	bool foundVertex = false;
 	vector<std::string> nameOfPlayerCities;
 	vector<std::string> nameOfMapCities;
@@ -463,7 +463,7 @@ void Player::buyCities(Map *map, int gamePhaseNumber){
 	while (playerTurn){
 		//Update booleans for iteration
 		validEntry = false;
-		houseAvailbleAtLocation = false;
+		houseAvailableAtLocation = false;
 		std::cout<<"STARTING playerTurn LOOP for "<<playerName<<"\n";
 		//START LOOP FOR VALID INPUT
 		while (!validEntry){
@@ -524,7 +524,7 @@ void Player::buyCities(Map *map, int gamePhaseNumber){
 			std::sort( shortestPathToAllVertices.begin(), shortestPathToAllVertices.end() );
 			connectionCost = shortestPathToAllVertices.at(0);
 		}//else get the shortest path between the vertex given and
-		std::cout<<"The connection cost to this city is: "<<connectionCost<<std::endl;
+		std::cout<<"The connection cost to his city is: "<<connectionCost<<std::endl;
 
 		//GET HOUSE COST AND ADD TO TOTAL
 		int totalCost = ( connectionCost + map->findVertex(userIn).getCost() );
@@ -533,8 +533,8 @@ void Player::buyCities(Map *map, int gamePhaseNumber){
 
 		//VALIDATE THAT NO OTHER PLAYER IS ALREADY AT THIS LOCATION
 		//Vertex v = map->findVertex(userIn);
-		houseAvailbleAtLocation = map->canBuildHouse(  map->findVertex(userIn), gamePhaseNumber);
-		cout<<"\nHouse available at this location? "<<houseAvailbleAtLocation<<"\n";
+		houseAvailableAtLocation = map->canBuildHouse(  map->findVertex(userIn), gamePhaseNumber);
+		cout<<"\nHouse available at this location? "<<houseAvailableAtLocation<<"\n";
 
 		//VALIDATE THAT PLAYER HAS ENOUGH ELEKTROS
 		if ( totalCost > elektros ){
@@ -542,10 +542,10 @@ void Player::buyCities(Map *map, int gamePhaseNumber){
 			std::cout<<playerName<<" has "<<elektros<<" the total cost to build at location: "<<userIn<<" is "<<totalCost;
 		}//if player does not have enough elektros
 
-		if ( !houseAvailbleAtLocation )
+		if ( !houseAvailableAtLocation )
 			std::cout<<"\nCan not Build at this location, there is already a house here\n";
 
-		if ( totalCost <= elektros && houseAvailbleAtLocation ){
+		if ( totalCost <= elektros && houseAvailableAtLocation ){
 			std::cout<<playerName<<" has built a house in "<<userIn<<"\n";
 		//UPDATE ALL OBJECTS - VERTEX, NUMOFCITIES, Player.numOfCities, Player.myHouses, HOUSE OBJECT?
 			std::cout<<"Debug A\n";
@@ -564,7 +564,6 @@ void Player::buyCities(Map *map, int gamePhaseNumber){
 			map->findVertex( userIn ).setPlayer( playerName );
 			std::cout<<"Debug E\n";
 			startedNetwork = true;
-			map->findVertex( userIn ).
 			std::cout<<"Debug F\n";
 		}//close else, player has added this city to his network
 		std::cout<<"Debug Finish while playerTurn iteration\n";
