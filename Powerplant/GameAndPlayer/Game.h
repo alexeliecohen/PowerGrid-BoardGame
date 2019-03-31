@@ -35,6 +35,11 @@ private:
 public:
     Game();
 
+    /**
+     *Destructor for the class deletes playerlist and sets currenntBidder to null
+     */
+    ~Game();
+
     //==============================================Phase1 Methods=========================================
 
     /**

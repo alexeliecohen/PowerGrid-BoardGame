@@ -22,13 +22,16 @@ Game::Game() {
 
 
 void Game::DeterminePlayerOrder() {
+    //sort in reverse order biggest to smallest
     sort(playerList.begin(), playerList.end());
     reverse(playerList.begin(), playerList.end());
 }
 
 bool Game::isValidInteger(std::string line) {
     char *p;
+    //convert string to long of base 10
     strtol(line.c_str(), &p, 10);
+    //check if the pointer is a number if ==0, then not a number
     return *p == 0;
 }
 
@@ -87,7 +90,6 @@ bool Game::Pass(string &msg, bool passAuction) {
             //then just keep going
         else if (skip == 'n') {
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
-//            currentBidder->setRoundReady(false);
             return false;
         }
             //otherwise the player entered an invalid entry
@@ -150,14 +152,26 @@ bool Game::Bid() {
 }
 
 bool Game::skipAuction() {
+    //send message and skip the round option
     string msg = currentBidder->getPlayerName() + " Would you like to skip this auction enter Y(yes) or N(no)?";
     return Pass(msg, true);
 }
 
 
 bool Game::SkipRound() {
+    //send message and dont skip the round option
     string msg = currentBidder->getPlayerName() + "Would you like to skip this round enter Y(yes) or N(no)?";
     return Pass(msg, false);
+}
+
+
+Game::~Game() {
+    //delete playerlist pointers
+    for (int i = 0; i < playerList.size(); ++i) {
+        delete playerList[i];
+    }
+    //set currentBidder to NULL
+    currentBidder = NULL;
 }
 
 
@@ -203,7 +217,6 @@ void Game::Phase1() {
         auctionRoundPlayersRemaining = phaseOnePlayersRemaining;
 
         Auction();
-//        currentBid = Auction();
         currentRoundBidderIndex = startNewBidIndex;
 
         //Player that chooses powerplant starts a bid
