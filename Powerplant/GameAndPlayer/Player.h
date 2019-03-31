@@ -45,6 +45,7 @@ private:
     std::vector<Powerplant> myPowerPlant; //list of powerplants a player owns
 //    std::vector<Houses> myHouses; //list of homes the player owns
     bool auctionReady,roundReady;
+    int numCities;
 
 public:
     /**
@@ -279,6 +280,10 @@ public:
      */
     Powerplant& maxPowerplant();
 
+    /**
+     * Method to power a player's cities using their power plants and resources
+     */
+    void powerCities();
 
 };
 //close player class.h

@@ -26,10 +26,8 @@
 #include "Map/Map.h"
 #include "Powerplant/GameAndPlayer/Player.h"
 #include "FileReader/MapLoader.h"
-#include "Powerplant/HousesAndCities/Houses.h"
 #include "Powerplant/Card/Powerplant.h"
 #include "Powerplant/Card/Deck.h"
-#include "Powerplant/Resource/Resource.h"
 #include "Powerplant/GameAndPlayer/Player.h"
 #include "Powerplant/Market/PowerplantMarket.h"
 

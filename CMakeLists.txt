@@ -4,7 +4,6 @@ project(COMP345Team21)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(untitled
-        Main_PowerGrid_Driver.cpp
         Map/Vertex.cpp
         Map/Edge.cpp
         Map/Map.cpp
@@ -17,4 +16,5 @@ add_executable(untitled
         Powerplant/GameAndPlayer/Game.cpp
         Powerplant/GameAndPlayer/Player.cpp
         Powerplant/Market/PowerplantMarket.cpp
-        Powerplant/Market/ResourceMarket.cpp)
+        Powerplant/Market/ResourceMarket.cpp
+        test.cpp)
