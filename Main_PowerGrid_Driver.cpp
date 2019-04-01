@@ -60,7 +60,6 @@ int main() {
     Map m = ml.buildMapB(files.at(mapFile - 1));
     //printing the loaded map
     cout << m;
-    cout << m.checkAdjacentRegions("Southwest", "Northeast");
     std::vector<string> regions = m.getRegions();
     cout << "Please enter the number of players(2-6): ";
     cin >> numPlayers;
@@ -89,12 +88,13 @@ int main() {
         cout << s << "\n";
     }
 
-//    Deck d = Deck();
-//    std::cout << d << "\n\n";
-//    d.shuffle();
-//    std::cout << d;
-//    auto *rMarket = new ResourceMarket();
-//    PowerplantMarket pMarket = PowerplantMarket(d);
+    Deck d = Deck();
+    std::cout << d << "\n\n";
+    d.shuffle();
+    std::cout << d;
+    auto rMarket = ResourceMarket();
+    PowerplantMarket pMarket = PowerplantMarket(d);
+    cout << pMarket;
 
     return 0;
 }// close main loop
