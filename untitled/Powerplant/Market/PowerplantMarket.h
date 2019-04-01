@@ -15,18 +15,48 @@ private:
     const int marketSize=4;
     vector<Powerplant> currentMarket, futureMarket;
     int futureMarketConsumption;
-public:
-    int getFutureMarketConsumption() const;
 
 public:
+    /**
+     * Default constructor for the object
+     */
     PowerplantMarket();
+
+    /**
+     * Parametrized constructor for the object
+     * @param myDeck
+     */
     PowerplantMarket(Deck &myDeck);
+
+    /**
+     * method returns to cout
+     * @param stream to cout
+     * @param p1 player
+     * @return cout
+     */
     friend ostream& operator<<(ostream& stream,PowerplantMarket& p1);
+
+    /**
+     * removes the powerplant from the current market based on index
+     * @param index removes the current market
+     * @return powerplant removes
+     */
     Powerplant removePowerplant(int index);
+
+    /**
+     * getter that returns the size of tbe current market
+     * @return size of the current market
+     */
     int getSize() const;
+
+    /**
+     * Method replaces missing values in future market
+     */
     void replaceFutureMarket(Deck& myDeck);
 
     void setFutureMarket(const vector<Powerplant> &futureMarket);
+    int getFutureMarketConsumption() const;
+
 
 private:
     /**
@@ -47,6 +77,7 @@ private:
      * @param myDeck
      */
     void FillMarkets(Deck& myDeck);
+
 
 };
 

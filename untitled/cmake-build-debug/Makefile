@@ -48,10 +48,10 @@ RM = /cygdrive/c/Users/alext/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E r
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/untitled"
+CMAKE_SOURCE_DIR = "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/untitled"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/untitled/cmake-build-debug"
+CMAKE_BINARY_DIR = "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/untitled/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/untitled/cmake-build-debug/CMakeFiles" "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/untitled/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/untitled/cmake-build-debug/CMakeFiles" "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/untitled/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/untitled/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/untitled/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -176,6 +176,33 @@ FileReader/MapLoader.s: FileReader/MapLoader.cpp.s
 FileReader/MapLoader.cpp.s:
 	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/FileReader/MapLoader.cpp.s
 .PHONY : FileReader/MapLoader.cpp.s
+
+Main_PowerGrid_Driver.o: Main_PowerGrid_Driver.cpp.o
+
+.PHONY : Main_PowerGrid_Driver.o
+
+# target to build an object file
+Main_PowerGrid_Driver.cpp.o:
+	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.o
+.PHONY : Main_PowerGrid_Driver.cpp.o
+
+Main_PowerGrid_Driver.i: Main_PowerGrid_Driver.cpp.i
+
+.PHONY : Main_PowerGrid_Driver.i
+
+# target to preprocess a source file
+Main_PowerGrid_Driver.cpp.i:
+	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.i
+.PHONY : Main_PowerGrid_Driver.cpp.i
+
+Main_PowerGrid_Driver.s: Main_PowerGrid_Driver.cpp.s
+
+.PHONY : Main_PowerGrid_Driver.s
+
+# target to generate assembly for a file
+Main_PowerGrid_Driver.cpp.s:
+	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.s
+.PHONY : Main_PowerGrid_Driver.cpp.s
 
 Map/Edge.o: Map/Edge.cpp.o
 
@@ -501,33 +528,6 @@ Powerplant/Market/ResourceMarket.cpp.s:
 	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/Powerplant/Market/ResourceMarket.cpp.s
 .PHONY : Powerplant/Market/ResourceMarket.cpp.s
 
-test.o: test.cpp.o
-
-.PHONY : test.o
-
-# target to build an object file
-test.cpp.o:
-	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/test.cpp.o
-.PHONY : test.cpp.o
-
-test.i: test.cpp.i
-
-.PHONY : test.i
-
-# target to preprocess a source file
-test.cpp.i:
-	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/test.cpp.i
-.PHONY : test.cpp.i
-
-test.s: test.cpp.s
-
-.PHONY : test.s
-
-# target to generate assembly for a file
-test.cpp.s:
-	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/test.cpp.s
-.PHONY : test.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -543,6 +543,9 @@ help:
 	@echo "... FileReader/MapLoader.o"
 	@echo "... FileReader/MapLoader.i"
 	@echo "... FileReader/MapLoader.s"
+	@echo "... Main_PowerGrid_Driver.o"
+	@echo "... Main_PowerGrid_Driver.i"
+	@echo "... Main_PowerGrid_Driver.s"
 	@echo "... Map/Edge.o"
 	@echo "... Map/Edge.i"
 	@echo "... Map/Edge.s"
@@ -579,9 +582,6 @@ help:
 	@echo "... Powerplant/Market/ResourceMarket.o"
 	@echo "... Powerplant/Market/ResourceMarket.i"
 	@echo "... Powerplant/Market/ResourceMarket.s"
-	@echo "... test.o"
-	@echo "... test.i"
-	@echo "... test.s"
 .PHONY : help
 
 

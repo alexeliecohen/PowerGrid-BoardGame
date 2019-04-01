@@ -48,13 +48,17 @@ void PowerplantMarket::replaceCurrentMarket() {
     currentMarket.push_back(futureMarket[0]);
     futureMarket.erase(futureMarket.begin());
     //sort the current market
+    futureMarketConsumption++;
     SortCurrentMarket();
 }
 
 void PowerplantMarket::replaceFutureMarket(Deck& myDeck) {
     //remove card from deck and add to list
-    Powerplant p1 = *dynamic_cast<Powerplant*>(myDeck.removeCard());
-    futureMarket.push_back(p1);
+    for (int i = 0; i < futureMarketConsumption; ++i) {
+        Powerplant p1 = *dynamic_cast<Powerplant*>(myDeck.removeCard());
+        futureMarket.push_back(p1);
+    }
+    futureMarketConsumption=0;
     SortFutureMarket();
 }
 

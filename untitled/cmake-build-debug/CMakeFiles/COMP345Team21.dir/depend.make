@@ -11,6 +11,21 @@ CMakeFiles/COMP345Team21.dir/FileReader/MapLoader.cpp.o: ../Map/Edge.h
 CMakeFiles/COMP345Team21.dir/FileReader/MapLoader.cpp.o: ../Map/Map.h
 CMakeFiles/COMP345Team21.dir/FileReader/MapLoader.cpp.o: ../Map/Vertex.h
 
+CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.o: ../FileReader/FileReader.h
+CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.o: ../FileReader/MapLoader.h
+CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.o: ../Main_PowerGrid_Driver.cpp
+CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.o: ../Map/Edge.h
+CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.o: ../Map/Map.h
+CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.o: ../Map/Vertex.h
+CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.o: ../Powerplant/Card/Card.h
+CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.o: ../Powerplant/Card/Deck.h
+CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.o: ../Powerplant/Card/Powerplant.h
+CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.o: ../Powerplant/Card/Step13.h
+CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.o: ../Powerplant/GameAndPlayer/Game.h
+CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.o: ../Powerplant/GameAndPlayer/Player.h
+CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.o: ../Powerplant/Market/PowerplantMarket.h
+CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.o: ../Powerplant/Market/ResourceMarket.h
+
 CMakeFiles/COMP345Team21.dir/Map/Edge.cpp.o: ../Map/Edge.cpp
 CMakeFiles/COMP345Team21.dir/Map/Edge.cpp.o: ../Map/Edge.h
 CMakeFiles/COMP345Team21.dir/Map/Edge.cpp.o: ../Map/Vertex.h
@@ -84,17 +99,4 @@ CMakeFiles/COMP345Team21.dir/Powerplant/Market/PowerplantMarket.cpp.o: ../Powerp
 
 CMakeFiles/COMP345Team21.dir/Powerplant/Market/ResourceMarket.cpp.o: ../Powerplant/Market/ResourceMarket.cpp
 CMakeFiles/COMP345Team21.dir/Powerplant/Market/ResourceMarket.cpp.o: ../Powerplant/Market/ResourceMarket.h
-
-CMakeFiles/COMP345Team21.dir/test.cpp.o: ../Map/Edge.h
-CMakeFiles/COMP345Team21.dir/test.cpp.o: ../Map/Map.h
-CMakeFiles/COMP345Team21.dir/test.cpp.o: ../Map/Vertex.h
-CMakeFiles/COMP345Team21.dir/test.cpp.o: ../Powerplant/Card/Card.h
-CMakeFiles/COMP345Team21.dir/test.cpp.o: ../Powerplant/Card/Deck.h
-CMakeFiles/COMP345Team21.dir/test.cpp.o: ../Powerplant/Card/Powerplant.h
-CMakeFiles/COMP345Team21.dir/test.cpp.o: ../Powerplant/Card/Step13.h
-CMakeFiles/COMP345Team21.dir/test.cpp.o: ../Powerplant/GameAndPlayer/Game.h
-CMakeFiles/COMP345Team21.dir/test.cpp.o: ../Powerplant/GameAndPlayer/Player.h
-CMakeFiles/COMP345Team21.dir/test.cpp.o: ../Powerplant/Market/PowerplantMarket.h
-CMakeFiles/COMP345Team21.dir/test.cpp.o: ../Powerplant/Market/ResourceMarket.h
-CMakeFiles/COMP345Team21.dir/test.cpp.o: ../test.cpp
 

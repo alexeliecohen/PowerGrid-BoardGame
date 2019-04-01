@@ -1,4 +1,4 @@
-# Install script for directory: /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/untitled
+# Install script for directory: /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/untitled
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/untitled/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/untitled/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

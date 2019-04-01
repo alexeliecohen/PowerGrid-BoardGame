@@ -19,10 +19,13 @@ int main() {
     p1.addGarbage(1);
     p1.addOil(1);
     p1.addUranium(1);
+//    p1.add
 //    cout << p1;
+    p1.setNumOfCities(3);
     p1.powerCities();
 //p1.getResource("HHHello");
+cout << p1 << endl;
 
-    return 0;
+return 0;
 }
 

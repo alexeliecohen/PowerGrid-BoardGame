@@ -38,4 +38,5 @@ add_executable(COMP345Team21
         Powerplant/Market/PowerplantMarket.h
         Powerplant/Market/ResourceMarket.cpp
         Powerplant/Market/ResourceMarket.h
-        test.cpp)
+        Main_PowerGrid_Driver.cpp
+        )

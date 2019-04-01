@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++1z
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/untitled/FileReader" -I"/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/untitled/Map" -I"/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/untitled/Powerplant/Card" -I"/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/untitled/Powerplant/GameAndPlayer" -I"/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/untitled/Powerplant/Market" 
+CXX_INCLUDES = -I"/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/untitled/FileReader" -I"/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/untitled/Map" -I"/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/untitled/Powerplant/Card" -I"/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/untitled/Powerplant/GameAndPlayer" -I"/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/untitled/Powerplant/Market" 
 

@@ -279,25 +279,6 @@ ostream &Player::displayPowerplants(ostream &stream) {
     return stream;
 }
 
-//void Player::addHouses(Houses &someHouse) {
-//    //add to list
-//    myHouses.push_back(someHouse);
-//    numbHomes++;
-//    numOfCities++;
-//    //increment values respectively
-//}
-
-//void Player::removeHouses(Houses &someHouse) {
-//    //remove from list
-//    std::vector<Houses>::iterator position = std::find(myHouses.begin(), myHouses.end(), someHouse);
-//    if (position != myHouses.end()) { // == myVector.end() means the element was not found
-//        myHouses.erase(position);
-//    }
-//    //decrement values respectively
-//    numbHomes--;
-//    numOfCities--;
-//}
-
 bool Player::operator<(Player &p1) {
     //if the other player has more conencted cities
     if (this->numOfCities > p1.numOfCities) {
@@ -363,22 +344,26 @@ void Player::powerCities() {
             std::cout << "No powerplants can be powered\n";
             break;
         }
+        //take choice
         cin >> powerplantChoice;
+
         resourceRef = getResourceRef(myPowerPlant[powerplantChoice].getResourceType());
         cout << *resourceRef << endl;
         *resourceRef -= myPowerPlant[powerplantChoice].getEnergyCost();
+        poweredCities += myPowerPlant[powerplantChoice].getProductionValue();
         cout << *resourceRef << endl;
     } while (UsePowerplant);
-    if (poweredCities > numCities) {
+    if (poweredCities > numOfCities) {
         elektros += PAYMENT[numCities];
-        std::cout << playerName << " has powered " << numCities << " and has a surplus of " << poweredCities - numCities
-                  << " power\n";
-        std::cout << PAYMENT[numCities] << " elecktros has been given to " << playerName << "\n";
+        std::cout << playerName << " has powered " << numOfCities << "cities and has a surplus of "
+                  << poweredCities - numOfCities
+                  << " power" << endl;
+        std::cout << PAYMENT[numOfCities] << " elecktros has been given to " << playerName << "\n";
     } else {
         elektros += PAYMENT[poweredCities];
-        std::cout << playerName << " has powered " << numCities << " and has a surplus of " << poweredCities - numCities
-                  << " power\n";
-        std::cout << PAYMENT[poweredCities] << " elecktros has been given to " << playerName << "\n";
+        std::cout << playerName << " has powered " << poweredCities << "cities and has a surplus of 0 " <<
+                  " power" << endl;
+        std::cout << PAYMENT[poweredCities] << " elecktros has been given to " << playerName << endl;
     }
 }
 
@@ -394,8 +379,10 @@ int Player::getResource(string resourceVal) {
         return oil;
     } else if (resourceVal == "garbage") {
         return garbage;
-    } else if (resourceVal == "uranium") {
+    } else if (resourceVal == "nuclear") {
         return uranium;
+    } else if (resourceVal == "hybrid") {
+        return oil;
     } else {
         cout << "Invalid entry returning -1" << endl;
         return -1;
@@ -410,7 +397,7 @@ int *Player::getResourceRef(string resourceVal) {
         return &oil;
     } else if (resourceVal == "garbage") {
         return &garbage;
-    } else if (resourceVal == "uranium") {
+    } else if (resourceVal == "nuclear") {
         return &uranium;
     } else {
         cout << "Invalid entry returning nullptr" << endl;
@@ -723,6 +710,10 @@ void Player::buyCities(Map *map, int gamePhaseNumber) {
         std::cout << "Debug Finish while playerTurn iteration\n";
     }//close while player turn
     cout << "End of " << playerName << "'s turn to build houses\n";
+}
+
+void Player::setNumOfCities(int numOfCities) {
+    Player::numOfCities = numOfCities;
 }
 
 

@@ -16,8 +16,21 @@ Game::Game() {
     playerList.push_back(p3);
     playerList.push_back(p4);
     numbPlayers = playerList.size();
-    cout << numbPlayers << endl;
     myDeck.shuffle();
+    p1->addPowerplant(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
+    p1->addPowerplant(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
+    p2->addPowerplant(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
+    p2->addPowerplant(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
+    p3->addPowerplant(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
+    p3->addPowerplant(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
+    p4->addPowerplant(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
+    p4->addPowerplant(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
+    for (int i = 0; i <playerList.size(); ++i) {
+        playerList[i]->addCoal(20);
+        playerList[i]->addGarbage(20);
+        playerList[i]->addOil(20);
+        playerList[i]->addUranium(20);
+    }
 }
 
 
@@ -273,11 +286,13 @@ void Game::Phase1() {
  * Method phase 4, powering cities by using resources and power plants to generate elecktro
  */
 void Game::Phase4() {
+    //bureaucracy
     for (Player *p : playerList) {
         p->powerCities();
     }
-    for(int i = 0; i < 4; i++) {
-        pMarket.replaceFutureMarket(myDeck);
-    }
+    //replace powerplants
+    pMarket.replaceFutureMarket(myDeck);
+    //replace resourcemarket
+    rMarket.resupplyMarket(numbPlayers,1);
 }
 //end method

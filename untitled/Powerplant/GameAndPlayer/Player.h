@@ -289,17 +289,18 @@ public:
      */
     void powerCities();
 
-	//Building cities
+    void setNumOfCities(int numOfCities);
+
+
+    //Building cities
 	void buyCities(Map *map, int gamePhaseNumber);
     void buyResources(ResourceMarket *resourceMarket);
     int getOilCap();
     int getCoalCap();
     int getUraniumCap();
     int getGarbageCap();
-
     int getResource(string resourceVal);
     int* getResourceRef(string resourceVal);
-
     bool canUsePowerplant(const Powerplant& p1);
 
 };
