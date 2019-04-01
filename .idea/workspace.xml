@@ -12,8 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff46cc20-3507-4402-9f95-3906796842fc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/untitled/Main_PowerGrid_Driver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/Main_PowerGrid_Driver.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/Powerplant/GameAndPlayer/Player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/Powerplant/GameAndPlayer/Player.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Powerplant/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -69,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/untitled/Powerplant/GameAndPlayer/Player.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2278">
-              <caret line="707" column="30" lean-forward="true" selection-start-line="707" selection-start-column="30" selection-end-line="707" selection-end-column="30" />
+            <state relative-caret-position="-1359">
+              <caret line="620" column="51" lean-forward="true" selection-start-line="620" selection-start-column="51" selection-end-line="620" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -310,7 +309,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114142000" />
+    <option name="totallyTimeSpent" value="114782000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -323,21 +322,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19395973" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.1474245" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38243628" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.52124643" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.29662523" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.94617563" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.5552408" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.47875354" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.41076487" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.43767706" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49932885" weight="0.6671388" />
@@ -572,8 +570,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/untitled/Powerplant/GameAndPlayer/Player.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2278">
-          <caret line="707" column="30" lean-forward="true" selection-start-line="707" selection-start-column="30" selection-end-line="707" selection-end-column="30" />
+        <state relative-caret-position="-1359">
+          <caret line="620" column="51" lean-forward="true" selection-start-line="620" selection-start-column="51" selection-end-line="620" selection-end-column="51" />
         </state>
       </provider>
     </entry>
