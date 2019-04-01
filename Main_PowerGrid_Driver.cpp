@@ -60,6 +60,7 @@ int main() {
     Map m = ml.buildMapB(files.at(mapFile - 1));
     //printing the loaded map
     cout << m;
+    cout << m.checkAdjacentRegions("Southwest", "Northeast");
     std::vector<string> regions = m.getRegions();
     cout << "Please enter the number of players(2-6): ";
     cin >> numPlayers;
@@ -71,8 +72,17 @@ int main() {
             cout << k + 1 << ") " << regions[k] << "\n";
         }
         cin >> regionNumber;
-        regionsUsed.push_back(regions.at(regionNumber - 1));
-        regions.erase(regions.begin()+ regionNumber - 1);
+        for(string r : regions) {
+            if(m.checkAdjacentRegions(regions.at(regionNumber - 1), r) || regionsUsed.empty()) {
+                regionsUsed.push_back(regions.at(regionNumber - 1));
+                regions.erase(regions.begin()+ regionNumber - 1);
+                break;
+            }
+            else {
+                cout << "Please pick a region adjacent to the others\n";
+                break;
+            }
+        }
     }
     m.createFinalMap(regionsUsed);
     for(string s : m.getRegions()) {

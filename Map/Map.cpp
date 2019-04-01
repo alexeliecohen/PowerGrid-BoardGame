@@ -284,6 +284,18 @@ void Map::createFinalMap(std::vector<std::string> &regionsUsed) {
     }
 }
 
+bool Map::checkAdjacentRegions(std::string r1, std::string r2) {
+    Vertex* endpoints;
+    for(Edge e : edges) {
+        endpoints = e.getEndpoints();
+        if((endpoints[0].getRegion() == r1 && endpoints[1].getRegion() == r2) ||
+        (endpoints[1].getRegion() == r1 && endpoints[0].getRegion() == r2)) {
+            return true;
+        }
+    }
+    return false;
+}
+
 /**
  * Operator overload for the output stream
  * @param os an output stream

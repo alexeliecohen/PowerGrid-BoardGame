@@ -12,70 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff46cc20-3507-4402-9f95-3906796842fc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main_PowerGrid_Driver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Main_PowerGrid_Driver.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Map/Map.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Map.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Map/Map.h" beforeDir="false" afterPath="$PROJECT_DIR$/Map/Map.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/Phase1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Phase1.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/3.13.2/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/3.13.2/CMakeRCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/3.13.2/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/Card/Deck.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/Card/Powerplant.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/Card/Step13.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/GameAndPlayer/Game.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/GameAndPlayer/Player.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/Market/PowerplantMarket.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/Market/ResourceMarket.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/Powerplant.dir/newMain.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/Powerplant.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/Powerplant.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Powerplant/cmake-build-debug/Powerplant.exe.stackdump" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/FileReader/MapLoader.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/FileReader/MapLoader.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/Map/Map.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/Map/Map.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Game.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Game.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Player.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Player.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/Powerplant/Market/PowerplantMarket.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/Powerplant/Market/PowerplantMarket.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/vc140.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/vc140.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/COMP345Team21.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/COMP345Team21.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/COMP345Team21.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/COMP345Team21.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/COMP345Team21.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/COMP345Team21.ilk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/COMP345Team21.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/COMP345Team21.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Powerplant/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -105,11 +44,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main_PowerGrid_Driver.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="73" column="60" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="60" />
+            <state relative-caret-position="199">
+              <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
               <folding>
                 <element signature="e#141#160#0" expanded="true" />
               </folding>
@@ -117,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Map/Map.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="636">
-              <caret line="294" column="38" selection-start-line="294" selection-start-column="38" selection-end-line="294" selection-end-column="38" />
+            <state relative-caret-position="374">
+              <caret line="295" column="17" selection-start-line="295" selection-start-column="17" selection-end-line="295" selection-end-column="17" />
               <folding>
                 <element signature="e#41#57#0" expanded="true" />
               </folding>
@@ -132,15 +71,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Map/Edge.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-816" />
+            <state relative-caret-position="-714" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Map/Map.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+            <state relative-caret-position="259">
+              <caret line="32" column="62" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -215,9 +154,9 @@
         <option value="$PROJECT_DIR$/Powerplant/GameAndPlayer/Player.cpp" />
         <option value="$PROJECT_DIR$/Powerplant/Market/ResourceMarket.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/Main_PowerGrid_Driver.cpp" />
         <option value="$PROJECT_DIR$/Map/Map.h" />
         <option value="$PROJECT_DIR$/Map/Map.cpp" />
+        <option value="$PROJECT_DIR$/Main_PowerGrid_Driver.cpp" />
       </list>
     </option>
   </component>
@@ -323,12 +262,12 @@
       <workItem from="1554044407902" duration="946000" />
       <workItem from="1554045418219" duration="1055000" />
       <workItem from="1554066688055" duration="619000" />
-      <workItem from="1554067310683" duration="7273000" />
+      <workItem from="1554067310683" duration="8591000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110619000" />
+    <option name="totallyTimeSpent" value="111937000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -347,17 +286,17 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.1474245" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32719547" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.52974504" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.29662523" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.25070822" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.296034" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.59773374" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.3285968" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.4532578" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.7592068" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -610,34 +549,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Map/Edge.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-714" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Map/Map.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+        <state relative-caret-position="259">
+          <caret line="32" column="62" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map/Map.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="295" column="17" selection-start-line="295" selection-start-column="17" selection-end-line="295" selection-end-column="17" />
+          <folding>
+            <element signature="e#41#57#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Main_PowerGrid_Driver.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="73" column="60" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="60" />
+        <state relative-caret-position="199">
+          <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
           <folding>
             <element signature="e#141#160#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Map/Edge.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-816" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Map/Map.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="294" column="38" selection-start-line="294" selection-start-column="38" selection-end-line="294" selection-end-column="38" />
-          <folding>
-            <element signature="e#41#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
