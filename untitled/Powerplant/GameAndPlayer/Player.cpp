@@ -23,10 +23,6 @@
 int Player::numOfPlayers = 0;
 vector<string> Player::houseColor = {"Green", "Blue", "Black", "Pink", "Yellow", "Orange"};
 
-//ADD THIS ATTRIBUTE TO PLAYER CLASS FOR FLAGGING WETHER NETWORK OF CITIES HAS BEEN STARTED
-bool startedNetwork = false;
-std::vector<string> myHouses;
-
 //Constructors
 /**
  * Player default constructor takes the playername the choice of house color and sets variables to default
@@ -66,7 +62,7 @@ Player::Player() {
     auctionReady = true;
     roundReady = true;
     numOfPlayers++;
-    numCities = 0;
+    startedNetwork = false;
 }//close constructor
 
 /**
@@ -91,7 +87,7 @@ Player::Player(std::string nameIn) {
     auctionReady = true;
     roundReady = true;
     this->numOfPlayers++;
-    numCities = 0;
+    startedNetwork = false;
 }
 
 Player::~Player() {
@@ -606,8 +602,9 @@ void Player::buyCities(Map *map, int gamePhaseNumber) {
         while (!validEntry) {
             //DISPLAY MAP AND AVAILABLE CITIES
             cout << "Now displaying map\n" << *map << "\n";
-            if (!startedNetwork)
+            if (!startedNetwork) {
                 cout << playerName << " your network is currently empty\nYou can start your city anywhere available\n";
+            }
             else {
                 //Display player network
                 std::cout << "Now displaying " << playerName << "'s network:\n";
