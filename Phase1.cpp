@@ -2,11 +2,11 @@
 // Created by alext on 3/19/2019.
 //
 
-#include "GameAndPlayer/Player.h"
-#include "Card/Deck.h"
-#include "Card/Powerplant.h"
-#include "Market/PowerplantMarket.h"
-#include "GameAndPlayer/Game.h"
+#include "Player.h"
+#include "Deck.h"
+#include "Powerplant.h"
+#include "PowerplantMarket.h"
+#include "Game.h"
 
 //int main() {
 //    Deck D =  Deck();

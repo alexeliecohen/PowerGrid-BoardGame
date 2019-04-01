@@ -1,3 +1,5 @@
+#include <utility>
+
 //
 // Created by Hubert on 2/9/2019.
 //
@@ -256,24 +258,29 @@ int Map::shortestPath(const std::string &src, const std::string &destination) {
 }
 
 /**
- * Method to create the final map to be used in the game
- * @return a map
+ * Helper method for creating the final game map
+ * @param regionsUsed the regions being used in the game
+ * @return the regions that will not be used in the game
  */
-void Map::createFinalMap(std::vector<std::string> regionsUsed) {
-    for(std::string s1 : regions) {
-        std::cout << s1 << "\n";
-    }
-    for(const std::string &s : regions) {
-        std::cout << s << "\n";
-        std::cout << "Position in regions used " << std::find(regionsUsed.begin(), regionsUsed.end(), s) - regionsUsed.begin() << "\n";
-        if(!(std::find(regionsUsed.begin(), regionsUsed.end(), s) != regionsUsed.end())) {
-            auto position = std::find(regions.begin(), regions.end(), s);
-            std::cout << "Position in regions " << position - regions.begin() << "\n";
-            if (position != regions.end()) {
-                std::cout << regions.at(position - regions.begin()) << "\n";
-                regions.erase(position);
-            }
+std::vector<std::string> Map::findingUnusedRegions(std::vector<std::string> regionsUsed) {
+    std::vector<std::string> unusedRegions;
+    for(auto r : regions) {
+        if(!(std::find(regionsUsed.begin(), regionsUsed.end(), r) != regionsUsed.end())) {
+            unusedRegions.push_back(r);
         }
+    }
+    return unusedRegions;
+}
+
+/**
+ * Method to create the final map to be used in the game
+ * @param regionsUsed the regions that will be used in the game
+ */
+void Map::createFinalMap(std::vector<std::string> &regionsUsed) {
+    std::vector<std::string> unusedRegions = findingUnusedRegions(regionsUsed);
+    for(auto &r : unusedRegions) {
+        auto it = std::find(regions.begin(), regions.end(), r);
+        regions.erase(it);
     }
 }
 

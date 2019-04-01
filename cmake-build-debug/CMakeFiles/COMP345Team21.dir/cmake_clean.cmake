@@ -13,7 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Player.cpp.obj"
   "CMakeFiles/COMP345Team21.dir/Powerplant/Market/PowerplantMarket.cpp.obj"
   "CMakeFiles/COMP345Team21.dir/Powerplant/Market/ResourceMarket.cpp.obj"
-  "CMakeFiles/COMP345Team21.dir/test.cpp.obj"
+  "CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.obj"
   "COMP345Team21.pdb"
   "COMP345Team21.exe"
   "COMP345Team21.exe.manifest"

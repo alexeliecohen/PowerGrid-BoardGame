@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Hubert/CLionProjects/COMP345Team21/FileReader/FileReader.cpp" "C:/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/COMP345Team21.dir/FileReader/FileReader.cpp.obj"
   "C:/Users/Hubert/CLionProjects/COMP345Team21/FileReader/MapLoader.cpp" "C:/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/COMP345Team21.dir/FileReader/MapLoader.cpp.obj"
+  "C:/Users/Hubert/CLionProjects/COMP345Team21/Main_PowerGrid_Driver.cpp" "C:/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.obj"
   "C:/Users/Hubert/CLionProjects/COMP345Team21/Map/Edge.cpp" "C:/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/COMP345Team21.dir/Map/Edge.cpp.obj"
   "C:/Users/Hubert/CLionProjects/COMP345Team21/Map/Map.cpp" "C:/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/COMP345Team21.dir/Map/Map.cpp.obj"
   "C:/Users/Hubert/CLionProjects/COMP345Team21/Map/Vertex.cpp" "C:/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/COMP345Team21.dir/Map/Vertex.cpp.obj"
@@ -18,7 +19,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/GameAndPlayer/Player.cpp" "C:/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Player.cpp.obj"
   "C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Market/PowerplantMarket.cpp" "C:/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/COMP345Team21.dir/Powerplant/Market/PowerplantMarket.cpp.obj"
   "C:/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Market/ResourceMarket.cpp" "C:/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/COMP345Team21.dir/Powerplant/Market/ResourceMarket.cpp.obj"
-  "C:/Users/Hubert/CLionProjects/COMP345Team21/test.cpp" "C:/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/COMP345Team21.dir/test.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 

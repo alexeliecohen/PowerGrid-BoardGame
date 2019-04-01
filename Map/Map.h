@@ -28,7 +28,8 @@ public:
     void removeRegion(int i);
     bool BFS();
     int shortestPath(const std::string& src, const std::string& destination);
-    void createFinalMap(std::vector<std::string> regionsUsed);
+    std::vector<std::string> findingUnusedRegions(std::vector<std::string> regionsUsed);
+    void createFinalMap(std::vector<std::string> &regionsUsed);
     friend std::ostream& operator<<(std::ostream& os, Map& m);
     bool canBuildHouse(Vertex city, int gamePhase);
 private:
