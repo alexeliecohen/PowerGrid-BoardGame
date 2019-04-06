@@ -4,6 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/DesignPatterns/Observer/Game.cpp" "/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Game.cpp.o"
+  "/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/DesignPatterns/Observer/Observer.cpp" "/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Observer.cpp.o"
+  "/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/DesignPatterns/Observer/Player.cpp" "/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Player.cpp.o"
+  "/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/DesignPatterns/Observer/Subject.cpp" "/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Subject.cpp.o"
   "/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/FileReader/FileReader.cpp" "/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/COMP345Team21.dir/FileReader/FileReader.cpp.o"
   "/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/FileReader/MapLoader.cpp" "/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/COMP345Team21.dir/FileReader/MapLoader.cpp.o"
   "/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/Main_PowerGrid_Driver.cpp" "/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.o"

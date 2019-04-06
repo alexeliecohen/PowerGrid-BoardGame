@@ -90,6 +90,30 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/DesignPatterns/Observer/Game.cpp">
+			<Option target="COMP345Team21"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/DesignPatterns/Observer/Game.h">
+			<Option target="COMP345Team21"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/DesignPatterns/Observer/Observer.cpp">
+			<Option target="COMP345Team21"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/DesignPatterns/Observer/Observer.h">
+			<Option target="COMP345Team21"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/DesignPatterns/Observer/Player.cpp">
+			<Option target="COMP345Team21"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/DesignPatterns/Observer/Player.h">
+			<Option target="COMP345Team21"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/DesignPatterns/Observer/Subject.cpp">
+			<Option target="COMP345Team21"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/DesignPatterns/Observer/Subject.h">
+			<Option target="COMP345Team21"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/FileReader/FileReader.cpp">
 			<Option target="COMP345Team21"/>
 		</Unit>

@@ -39,4 +39,11 @@ add_executable(COMP345Team21
         Powerplant/Market/ResourceMarket.cpp
         Powerplant/Market/ResourceMarket.h
         Main_PowerGrid_Driver.cpp
-        )
+        DesignPatterns/Observer/Subject.cpp
+        DesignPatterns/Observer/Subject.h
+        DesignPatterns/Observer/Observer.cpp
+        DesignPatterns/Observer/Observer.h
+        DesignPatterns/Observer/Player.h
+        DesignPatterns/Observer/Player.cpp
+        DesignPatterns/Observer/Game.h
+        DesignPatterns/Observer/Game.cpp)
