@@ -214,7 +214,7 @@ int ResourceMarket::getUraniumPrice(){
 
 //Display
 void ResourceMarket::printResourceMarketStock(){
-	std::cout << "Printing Resource Market Stock\nOil:\t\t"<<oil<<"\n"<<coal<<":\t\t"<<coal<<"\nGarbage:\t"<<garbage<<"\nUranium:\t"<<uranium<<"\n\n";
+	std::cout << "Printing Resource Market Stock\nOil:\t\t"<<oil<<"\ncoal:\t\t"<<coal<<"\nGarbage:\t"<<garbage<<"\nUranium:\t"<<uranium<<"\n\n";
 }//close print function
 void ResourceMarket::printResourceMarket(){
 	std::cout << "Printing Resource Market\nOil Quantity:\t"+oil<<"\tPrice of next Oil:\t\t"+getOilPrice()<<
