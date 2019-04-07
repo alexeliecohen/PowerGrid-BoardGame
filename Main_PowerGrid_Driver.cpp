@@ -1,4 +1,3 @@
-
 /*
  * Main_PowerGrid_Driver.cpp
  *
@@ -175,9 +174,9 @@ int main() {
 //     *  requires a resource market and players --> hard-coded below
 //     */
 //
-//    std::cout<<"\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n";
-//    std::cout<<"\nWELCOME TO POWER GRID PHASE 3\n";
-//    std::cout<<"\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n";
+    std::cout<<"\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n";
+    std::cout<<"\nWELCOME TO POWER GRID PHASE 3\n";
+    std::cout<<"\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n";
 //    std::cout<<"\nCREATING OBJECTS FOR PHASE 3 OF ASSIGNMENT 2\n";
 //    std::cout<<"\nCREATING 2 PLAYERS, player1 & player2\n";
 //
@@ -194,17 +193,17 @@ int main() {
 //    Map *mapPhase3Ptr = &mapPhase3;
 //    std::cout<<"\nThe map has been created for phase 3\n";
 //
-//    //Create Resource Market
-//    ResourceMarket resMarket = ResourceMarket();
-//    ResourceMarket *resMarketPtr = reinterpret_cast<ResourceMarket *>(&rMarket);
-//
+    //Create Resource Market
+    ResourceMarket resMarket = ResourceMarket();
+    ResourceMarket *resMarketPtr = &resMarket;
+
 //    //Give Power Plants To Player 2
 //    std::cout<<"\nPowerplants for player2 are being placed into his/her possesion for demoing's Part 3, buying resources\n";
 //
-//
-//    for ( int i = 0 ; i < playersPhase3.size() ; i++ )
-//        playersPhase3.at(i).buyResources( resMarketPtr );
-//
+
+    for ( int i = 0 ; i < players.size() ; i++ )
+        players.at(i).buyResources( resMarketPtr );
+
 //    /*
 //     *  HOUSE BUILDING PHASE
 //     *  requires a map, resource market and players --> hard-coded below
@@ -213,8 +212,9 @@ int main() {
 //    //Source of input parameters above
 //    //map: m
 //    //gamePhase: 1
-//    for ( int i = 0 ; i < players.size() ; i++ )
-//        players.at(i).buyCities( mapPhase3Ptr, 1 );
+
+    for ( int i = 0 ; i < players.size() ; i++ )
+        players.at(i).buyCities( &m, 1 );
 //
 //    /*
 //     *  END OF PART 3 ASSIGNMENT 2
