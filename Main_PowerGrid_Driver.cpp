@@ -42,6 +42,8 @@ int main() {
     //Phase 4
     g.Phase4();
 
+    //This is a test for gitignore
+
 
 //    int i = 1;
 //    int mapFile = 0;
