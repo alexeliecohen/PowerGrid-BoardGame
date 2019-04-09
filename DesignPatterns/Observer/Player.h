@@ -29,6 +29,7 @@ using namespace Mike2;
 #define POWERPLANT_PLAYER_H
 
 
+
 //namespace Mike {
 static int MAXCOAL;
 static int MAXOIL;
@@ -63,7 +64,7 @@ public:
      * Fully parametrized constructor for the Player object
      * @param name Name of the Player
      */
-    Player(std::string name);
+    explicit Player(std::string name);
 
     /**
      * Destructor for the player class

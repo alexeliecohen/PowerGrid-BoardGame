@@ -252,58 +252,6 @@ CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/Main_PowerGrid_Driver.cpp -o CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.s
 
-CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Subject.cpp.o: CMakeFiles/COMP345Team21.dir/flags.make
-CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Subject.cpp.o: ../DesignPatterns/Observer/Subject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Subject.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Subject.cpp.o -c /cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/DesignPatterns/Observer/Subject.cpp
-
-CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Subject.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Subject.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/DesignPatterns/Observer/Subject.cpp > CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Subject.cpp.i
-
-CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Subject.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Subject.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/DesignPatterns/Observer/Subject.cpp -o CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Subject.cpp.s
-
-CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Observer.cpp.o: CMakeFiles/COMP345Team21.dir/flags.make
-CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Observer.cpp.o: ../DesignPatterns/Observer/Observer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Observer.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Observer.cpp.o -c /cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/DesignPatterns/Observer/Observer.cpp
-
-CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Observer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Observer.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/DesignPatterns/Observer/Observer.cpp > CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Observer.cpp.i
-
-CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Observer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Observer.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/DesignPatterns/Observer/Observer.cpp -o CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Observer.cpp.s
-
-CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Player.cpp.o: CMakeFiles/COMP345Team21.dir/flags.make
-CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Player.cpp.o: ../DesignPatterns/Observer/Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Player.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Player.cpp.o -c /cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/DesignPatterns/Observer/Player.cpp
-
-CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Player.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Player.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/DesignPatterns/Observer/Player.cpp > CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Player.cpp.i
-
-CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Player.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Player.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/DesignPatterns/Observer/Player.cpp -o CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Player.cpp.s
-
-CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Game.cpp.o: CMakeFiles/COMP345Team21.dir/flags.make
-CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Game.cpp.o: ../DesignPatterns/Observer/Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Game.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Game.cpp.o -c /cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/DesignPatterns/Observer/Game.cpp
-
-CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Game.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Game.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/DesignPatterns/Observer/Game.cpp > CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Game.cpp.i
-
-CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Game.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Game.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/DesignPatterns/Observer/Game.cpp -o CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Game.cpp.s
-
 # Object files for target COMP345Team21
 COMP345Team21_OBJECTS = \
 "CMakeFiles/COMP345Team21.dir/FileReader/FileReader.cpp.o" \
@@ -320,11 +268,7 @@ COMP345Team21_OBJECTS = \
 "CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Player.cpp.o" \
 "CMakeFiles/COMP345Team21.dir/Powerplant/Market/PowerplantMarket.cpp.o" \
 "CMakeFiles/COMP345Team21.dir/Powerplant/Market/ResourceMarket.cpp.o" \
-"CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.o" \
-"CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Subject.cpp.o" \
-"CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Observer.cpp.o" \
-"CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Player.cpp.o" \
-"CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Game.cpp.o"
+"CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.o"
 
 # External object files for target COMP345Team21
 COMP345Team21_EXTERNAL_OBJECTS =
@@ -344,13 +288,9 @@ COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Player.
 COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/Powerplant/Market/PowerplantMarket.cpp.o
 COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/Powerplant/Market/ResourceMarket.cpp.o
 COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.o
-COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Subject.cpp.o
-COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Observer.cpp.o
-COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Player.cpp.o
-COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Game.cpp.o
 COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/build.make
 COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable COMP345Team21.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable COMP345Team21.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/COMP345Team21.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

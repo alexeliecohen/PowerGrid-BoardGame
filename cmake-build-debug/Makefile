@@ -123,114 +123,6 @@ COMP345Team21/fast:
 	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/build
 .PHONY : COMP345Team21/fast
 
-DesignPatterns/Observer/Game.o: DesignPatterns/Observer/Game.cpp.o
-
-.PHONY : DesignPatterns/Observer/Game.o
-
-# target to build an object file
-DesignPatterns/Observer/Game.cpp.o:
-	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Game.cpp.o
-.PHONY : DesignPatterns/Observer/Game.cpp.o
-
-DesignPatterns/Observer/Game.i: DesignPatterns/Observer/Game.cpp.i
-
-.PHONY : DesignPatterns/Observer/Game.i
-
-# target to preprocess a source file
-DesignPatterns/Observer/Game.cpp.i:
-	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Game.cpp.i
-.PHONY : DesignPatterns/Observer/Game.cpp.i
-
-DesignPatterns/Observer/Game.s: DesignPatterns/Observer/Game.cpp.s
-
-.PHONY : DesignPatterns/Observer/Game.s
-
-# target to generate assembly for a file
-DesignPatterns/Observer/Game.cpp.s:
-	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Game.cpp.s
-.PHONY : DesignPatterns/Observer/Game.cpp.s
-
-DesignPatterns/Observer/Observer.o: DesignPatterns/Observer/Observer.cpp.o
-
-.PHONY : DesignPatterns/Observer/Observer.o
-
-# target to build an object file
-DesignPatterns/Observer/Observer.cpp.o:
-	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Observer.cpp.o
-.PHONY : DesignPatterns/Observer/Observer.cpp.o
-
-DesignPatterns/Observer/Observer.i: DesignPatterns/Observer/Observer.cpp.i
-
-.PHONY : DesignPatterns/Observer/Observer.i
-
-# target to preprocess a source file
-DesignPatterns/Observer/Observer.cpp.i:
-	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Observer.cpp.i
-.PHONY : DesignPatterns/Observer/Observer.cpp.i
-
-DesignPatterns/Observer/Observer.s: DesignPatterns/Observer/Observer.cpp.s
-
-.PHONY : DesignPatterns/Observer/Observer.s
-
-# target to generate assembly for a file
-DesignPatterns/Observer/Observer.cpp.s:
-	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Observer.cpp.s
-.PHONY : DesignPatterns/Observer/Observer.cpp.s
-
-DesignPatterns/Observer/Player.o: DesignPatterns/Observer/Player.cpp.o
-
-.PHONY : DesignPatterns/Observer/Player.o
-
-# target to build an object file
-DesignPatterns/Observer/Player.cpp.o:
-	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Player.cpp.o
-.PHONY : DesignPatterns/Observer/Player.cpp.o
-
-DesignPatterns/Observer/Player.i: DesignPatterns/Observer/Player.cpp.i
-
-.PHONY : DesignPatterns/Observer/Player.i
-
-# target to preprocess a source file
-DesignPatterns/Observer/Player.cpp.i:
-	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Player.cpp.i
-.PHONY : DesignPatterns/Observer/Player.cpp.i
-
-DesignPatterns/Observer/Player.s: DesignPatterns/Observer/Player.cpp.s
-
-.PHONY : DesignPatterns/Observer/Player.s
-
-# target to generate assembly for a file
-DesignPatterns/Observer/Player.cpp.s:
-	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Player.cpp.s
-.PHONY : DesignPatterns/Observer/Player.cpp.s
-
-DesignPatterns/Observer/Subject.o: DesignPatterns/Observer/Subject.cpp.o
-
-.PHONY : DesignPatterns/Observer/Subject.o
-
-# target to build an object file
-DesignPatterns/Observer/Subject.cpp.o:
-	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Subject.cpp.o
-.PHONY : DesignPatterns/Observer/Subject.cpp.o
-
-DesignPatterns/Observer/Subject.i: DesignPatterns/Observer/Subject.cpp.i
-
-.PHONY : DesignPatterns/Observer/Subject.i
-
-# target to preprocess a source file
-DesignPatterns/Observer/Subject.cpp.i:
-	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Subject.cpp.i
-.PHONY : DesignPatterns/Observer/Subject.cpp.i
-
-DesignPatterns/Observer/Subject.s: DesignPatterns/Observer/Subject.cpp.s
-
-.PHONY : DesignPatterns/Observer/Subject.s
-
-# target to generate assembly for a file
-DesignPatterns/Observer/Subject.cpp.s:
-	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/DesignPatterns/Observer/Subject.cpp.s
-.PHONY : DesignPatterns/Observer/Subject.cpp.s
-
 FileReader/FileReader.o: FileReader/FileReader.cpp.o
 
 .PHONY : FileReader/FileReader.o
@@ -645,18 +537,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... COMP345Team21"
 	@echo "... edit_cache"
-	@echo "... DesignPatterns/Observer/Game.o"
-	@echo "... DesignPatterns/Observer/Game.i"
-	@echo "... DesignPatterns/Observer/Game.s"
-	@echo "... DesignPatterns/Observer/Observer.o"
-	@echo "... DesignPatterns/Observer/Observer.i"
-	@echo "... DesignPatterns/Observer/Observer.s"
-	@echo "... DesignPatterns/Observer/Player.o"
-	@echo "... DesignPatterns/Observer/Player.i"
-	@echo "... DesignPatterns/Observer/Player.s"
-	@echo "... DesignPatterns/Observer/Subject.o"
-	@echo "... DesignPatterns/Observer/Subject.i"
-	@echo "... DesignPatterns/Observer/Subject.s"
 	@echo "... FileReader/FileReader.o"
 	@echo "... FileReader/FileReader.i"
 	@echo "... FileReader/FileReader.s"
