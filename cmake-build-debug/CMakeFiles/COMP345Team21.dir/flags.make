@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++1z
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/FileReader -I/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/Map -I/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Card -I/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/GameAndPlayer -I/cygdrive/c/Users/Hubert/CLionProjects/COMP345Team21/Powerplant/Market 
+CXX_INCLUDES = -I/cygdrive/c/Users/Hubert/COMP345Team21/FileReader -I/cygdrive/c/Users/Hubert/COMP345Team21/Map -I/cygdrive/c/Users/Hubert/COMP345Team21/Powerplant/Card -I/cygdrive/c/Users/Hubert/COMP345Team21/Powerplant/GameAndPlayer -I/cygdrive/c/Users/Hubert/COMP345Team21/Powerplant/Market 
 
