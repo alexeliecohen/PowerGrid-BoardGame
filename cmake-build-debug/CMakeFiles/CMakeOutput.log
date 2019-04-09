@@ -1,6 +1,6 @@
-The system is: CYGWIN - 2.11.1(0.329/5/3) - x86_64
+The system is: CYGWIN - 3.0.5(0.338/5/3) - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: C:/cygwin64/bin/gcc.exe 
+Compiler: /usr/bin/cc 
 Build flags: 
 Id flags:  
 
@@ -10,10 +10,10 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
 
-The C compiler identification is GNU, found in "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/3.13.4/CompilerIdC/a.exe"
+The C compiler identification is GNU, found in "/cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/3.13.4/CompilerIdC/a.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: C:/cygwin64/bin/g++.exe 
+Compiler: /usr/bin/c++.exe 
 Build flags: 
 Id flags:  
 
@@ -23,76 +23,76 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
 
-The CXX compiler identification is GNU, found in "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/3.13.4/CompilerIdCXX/a.exe"
+The CXX compiler identification is GNU, found in "/cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/3.13.4/CompilerIdCXX/a.exe"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/cygwin64/bin/make.exe" "cmTC_f7951/fast"
-C:/cygwin64/bin/make -f CMakeFiles/cmTC_f7951.dir/build.make CMakeFiles/cmTC_f7951.dir/build
-make[1]: Entering directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f7951.dir/testCCompiler.c.o
-C:/cygwin64/bin/gcc.exe    -o CMakeFiles/cmTC_f7951.dir/testCCompiler.c.o   -c "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c"
-Linking C executable cmTC_f7951.exe
-/cygdrive/c/Users/alext/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_f7951.dir/link.txt --verbose=1
-C:/cygwin64/bin/gcc.exe    -Wl,--enable-auto-import  CMakeFiles/cmTC_f7951.dir/testCCompiler.c.o  -o cmTC_f7951.exe -Wl,--out-implib,libcmTC_f7951.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
-make[1]: Leaving directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make.exe" "cmTC_ac41c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ac41c.dir/build.make CMakeFiles/cmTC_ac41c.dir/build
+make[1]: Entering directory '/cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ac41c.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_ac41c.dir/testCCompiler.c.o   -c /cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_ac41c.exe
+/cygdrive/c/Users/Hubert/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_ac41c.dir/link.txt --verbose=1
+/usr/bin/cc    -Wl,--enable-auto-import  CMakeFiles/cmTC_ac41c.dir/testCCompiler.c.o  -o cmTC_ac41c.exe -Wl,--out-implib,libcmTC_ac41c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+make[1]: Leaving directory '/cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/cygwin64/bin/make.exe" "cmTC_5feaf/fast"
-C:/cygwin64/bin/make -f CMakeFiles/cmTC_5feaf.dir/build.make CMakeFiles/cmTC_5feaf.dir/build
-make[1]: Entering directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5feaf.dir/CMakeCCompilerABI.c.o
-C:/cygwin64/bin/gcc.exe    -o CMakeFiles/cmTC_5feaf.dir/CMakeCCompilerABI.c.o   -c /cygdrive/c/Users/alext/.CLion2019.1/system/cygwin_cmake/share/cmake-3.13.4/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_5feaf.exe
-/cygdrive/c/Users/alext/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_5feaf.dir/link.txt --verbose=1
-C:/cygwin64/bin/gcc.exe    -Wl,--enable-auto-import -v CMakeFiles/cmTC_5feaf.dir/CMakeCCompilerABI.c.o  -o cmTC_5feaf.exe -Wl,--out-implib,libcmTC_5feaf.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Run Build Command:"/usr/bin/make.exe" "cmTC_84071/fast"
+/usr/bin/make -f CMakeFiles/cmTC_84071.dir/build.make CMakeFiles/cmTC_84071.dir/build
+make[1]: Entering directory '/cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_84071.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_84071.dir/CMakeCCompilerABI.c.o   -c /cygdrive/c/Users/Hubert/.CLion2019.1/system/cygwin_cmake/share/cmake-3.13.4/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_84071.exe
+/cygdrive/c/Users/Hubert/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_84071.dir/link.txt --verbose=1
+/usr/bin/cc    -Wl,--enable-auto-import -v CMakeFiles/cmTC_84071.dir/CMakeCCompilerABI.c.o  -o cmTC_84071.exe -Wl,--out-implib,libcmTC_84071.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
 Using built-in specs.
-COLLECT_GCC=C:/cygwin64/bin/gcc
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/lto-wrapper.exe
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/lto-wrapper.exe
 Target: x86_64-pc-cygwin
-Configured with: /cygdrive/i/szsz/tmpp/gcc/gcc-7.3.0-3.x86_64/src/gcc-7.3.0/configure --srcdir=/cygdrive/i/szsz/tmpp/gcc/gcc-7.3.0-3.x86_64/src/gcc-7.3.0 --prefix=/usr --exec-prefix=/usr --localstatedir=/var --sysconfdir=/etc --docdir=/usr/share/doc/gcc --htmldir=/usr/share/doc/gcc/html -C --build=x86_64-pc-cygwin --host=x86_64-pc-cygwin --target=x86_64-pc-cygwin --without-libiconv-prefix --without-libintl-prefix --libexecdir=/usr/lib --enable-shared --enable-shared-libgcc --enable-static --enable-version-specific-runtime-libs --enable-bootstrap --enable-__cxa_atexit --with-dwarf2 --with-tune=generic --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-graphite --enable-threads=posix --enable-libatomic --enable-libcilkrts --enable-libgomp --enable-libitm --enable-libquadmath --enable-libquadmath-support --disable-libssp --enable-libada --disable-symvers --with-gnu-ld --with-gnu-as --with-cloog-include=/usr/include/cloog-isl --without-libiconv-prefix --without-libintl-prefix --with-system-zlib --enable-linker-build-id --with-default-libstdcxx-abi=gcc4-compatible --enable-libstdcxx-filesystem-ts
+Configured with: /cygdrive/i/szsz/tmpp/gcc/gcc-7.4.0-1.x86_64/src/gcc-7.4.0/configure --srcdir=/cygdrive/i/szsz/tmpp/gcc/gcc-7.4.0-1.x86_64/src/gcc-7.4.0 --prefix=/usr --exec-prefix=/usr --localstatedir=/var --sysconfdir=/etc --docdir=/usr/share/doc/gcc --htmldir=/usr/share/doc/gcc/html -C --build=x86_64-pc-cygwin --host=x86_64-pc-cygwin --target=x86_64-pc-cygwin --without-libiconv-prefix --without-libintl-prefix --libexecdir=/usr/lib --enable-shared --enable-shared-libgcc --enable-static --enable-version-specific-runtime-libs --enable-bootstrap --enable-__cxa_atexit --with-dwarf2 --with-tune=generic --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-graphite --enable-threads=posix --enable-libatomic --enable-libcilkrts --enable-libgomp --enable-libitm --enable-libquadmath --enable-libquadmath-support --disable-libssp --enable-libada --disable-symvers --with-gnu-ld --with-gnu-as --with-cloog-include=/usr/include/cloog-isl --without-libiconv-prefix --without-libintl-prefix --with-system-zlib --enable-linker-build-id --with-default-libstdcxx-abi=gcc4-compatible --enable-libstdcxx-filesystem-ts
 Thread model: posix
-gcc version 7.3.0 (GCC) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/:/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/:/usr/lib/gcc/x86_64-pc-cygwin/:/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/:/usr/lib/gcc/x86_64-pc-cygwin/:/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/:/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/lib/../lib/:/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/lib/:/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5feaf.exe' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/collect2.exe -plugin /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/cyglto_plugin.dll -plugin-opt=/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/lto-wrapper.exe -plugin-opt=-fresolution=/tmp/ccEI2ugr.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lcygwin -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id -m i386pep --wrap _Znwm --wrap _Znam --wrap _ZdlPv --wrap _ZdaPv --wrap _ZnwmRKSt9nothrow_t --wrap _ZnamRKSt9nothrow_t --wrap _ZdlPvRKSt9nothrow_t --wrap _ZdaPvRKSt9nothrow_t -Bdynamic --dll-search-prefix=cyg --tsaware -o cmTC_5feaf.exe /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib/crt0.o /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/crtbegin.o -L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0 -L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/lib/../lib -L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/lib -L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../.. --enable-auto-import CMakeFiles/cmTC_5feaf.dir/CMakeCCompilerABI.c.o --out-implib libcmTC_5feaf.dll.a --major-image-version 0 --minor-image-version 0 -lgcc_s -lgcc -lcygwin -ladvapi32 -lshell32 -luser32 -lkernel32 -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib/default-manifest.o /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/crtend.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5feaf.exe' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
+gcc version 7.4.0 (GCC) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/bin/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib/../lib/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_84071.exe' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/collect2.exe -plugin /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/cyglto_plugin.dll -plugin-opt=/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/lto-wrapper.exe -plugin-opt=-fresolution=/tmp/ccnFnyjb.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lcygwin -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id -m i386pep --wrap _Znwm --wrap _Znam --wrap _ZdlPv --wrap _ZdaPv --wrap _ZnwmRKSt9nothrow_t --wrap _ZnamRKSt9nothrow_t --wrap _ZdlPvRKSt9nothrow_t --wrap _ZdaPvRKSt9nothrow_t -Bdynamic --dll-search-prefix=cyg --tsaware -o cmTC_84071.exe /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/crt0.o /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/crtbegin.o -L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0 -L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib/../lib -L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib -L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../.. --enable-auto-import CMakeFiles/cmTC_84071.dir/CMakeCCompilerABI.c.o --out-implib libcmTC_84071.dll.a --major-image-version 0 --minor-image-version 0 -lgcc_s -lgcc -lcygwin -ladvapi32 -lshell32 -luser32 -lkernel32 -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/default-manifest.o /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_84071.exe' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:/cygwin64/bin/make.exe" "cmTC_5feaf/fast"]
-  ignore line: [C:/cygwin64/bin/make -f CMakeFiles/cmTC_5feaf.dir/build.make CMakeFiles/cmTC_5feaf.dir/build]
-  ignore line: [make[1]: Entering directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_5feaf.dir/CMakeCCompilerABI.c.o]
-  ignore line: [C:/cygwin64/bin/gcc.exe    -o CMakeFiles/cmTC_5feaf.dir/CMakeCCompilerABI.c.o   -c /cygdrive/c/Users/alext/.CLion2019.1/system/cygwin_cmake/share/cmake-3.13.4/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_5feaf.exe]
-  ignore line: [/cygdrive/c/Users/alext/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_5feaf.dir/link.txt --verbose=1]
-  ignore line: [C:/cygwin64/bin/gcc.exe    -Wl,--enable-auto-import -v CMakeFiles/cmTC_5feaf.dir/CMakeCCompilerABI.c.o  -o cmTC_5feaf.exe -Wl,--out-implib,libcmTC_5feaf.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
+  ignore line: [Run Build Command:"/usr/bin/make.exe" "cmTC_84071/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_84071.dir/build.make CMakeFiles/cmTC_84071.dir/build]
+  ignore line: [make[1]: Entering directory '/cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_84071.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_84071.dir/CMakeCCompilerABI.c.o   -c /cygdrive/c/Users/Hubert/.CLion2019.1/system/cygwin_cmake/share/cmake-3.13.4/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_84071.exe]
+  ignore line: [/cygdrive/c/Users/Hubert/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_84071.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc    -Wl,--enable-auto-import -v CMakeFiles/cmTC_84071.dir/CMakeCCompilerABI.c.o  -o cmTC_84071.exe -Wl,--out-implib,libcmTC_84071.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=C:/cygwin64/bin/gcc]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/lto-wrapper.exe]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/lto-wrapper.exe]
   ignore line: [Target: x86_64-pc-cygwin]
-  ignore line: [Configured with: /cygdrive/i/szsz/tmpp/gcc/gcc-7.3.0-3.x86_64/src/gcc-7.3.0/configure --srcdir=/cygdrive/i/szsz/tmpp/gcc/gcc-7.3.0-3.x86_64/src/gcc-7.3.0 --prefix=/usr --exec-prefix=/usr --localstatedir=/var --sysconfdir=/etc --docdir=/usr/share/doc/gcc --htmldir=/usr/share/doc/gcc/html -C --build=x86_64-pc-cygwin --host=x86_64-pc-cygwin --target=x86_64-pc-cygwin --without-libiconv-prefix --without-libintl-prefix --libexecdir=/usr/lib --enable-shared --enable-shared-libgcc --enable-static --enable-version-specific-runtime-libs --enable-bootstrap --enable-__cxa_atexit --with-dwarf2 --with-tune=generic --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-graphite --enable-threads=posix --enable-libatomic --enable-libcilkrts --enable-libgomp --enable-libitm --enable-libquadmath --enable-libquadmath-support --disable-libssp --enable-libada --disable-symvers --with-gnu-ld --with-gnu-as --with-cloog-include=/usr/include/cloog-isl --without-libiconv-prefix --without-libintl-prefix --with-system-zlib --enable-linker-build-id --with-default-libstdcxx-abi=gcc4-compatible --enable-libstdcxx-filesystem-ts]
+  ignore line: [Configured with: /cygdrive/i/szsz/tmpp/gcc/gcc-7.4.0-1.x86_64/src/gcc-7.4.0/configure --srcdir=/cygdrive/i/szsz/tmpp/gcc/gcc-7.4.0-1.x86_64/src/gcc-7.4.0 --prefix=/usr --exec-prefix=/usr --localstatedir=/var --sysconfdir=/etc --docdir=/usr/share/doc/gcc --htmldir=/usr/share/doc/gcc/html -C --build=x86_64-pc-cygwin --host=x86_64-pc-cygwin --target=x86_64-pc-cygwin --without-libiconv-prefix --without-libintl-prefix --libexecdir=/usr/lib --enable-shared --enable-shared-libgcc --enable-static --enable-version-specific-runtime-libs --enable-bootstrap --enable-__cxa_atexit --with-dwarf2 --with-tune=generic --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-graphite --enable-threads=posix --enable-libatomic --enable-libcilkrts --enable-libgomp --enable-libitm --enable-libquadmath --enable-libquadmath-support --disable-libssp --enable-libada --disable-symvers --with-gnu-ld --with-gnu-as --with-cloog-include=/usr/include/cloog-isl --without-libiconv-prefix --without-libintl-prefix --with-system-zlib --enable-linker-build-id --with-default-libstdcxx-abi=gcc4-compatible --enable-libstdcxx-filesystem-ts]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 7.3.0 (GCC) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/:/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/:/usr/lib/gcc/x86_64-pc-cygwin/:/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/:/usr/lib/gcc/x86_64-pc-cygwin/:/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/:/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/lib/../lib/:/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/lib/:/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5feaf.exe' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/collect2.exe -plugin /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/cyglto_plugin.dll -plugin-opt=/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/lto-wrapper.exe -plugin-opt=-fresolution=/tmp/ccEI2ugr.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lcygwin -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id -m i386pep --wrap _Znwm --wrap _Znam --wrap _ZdlPv --wrap _ZdaPv --wrap _ZnwmRKSt9nothrow_t --wrap _ZnamRKSt9nothrow_t --wrap _ZdlPvRKSt9nothrow_t --wrap _ZdaPvRKSt9nothrow_t -Bdynamic --dll-search-prefix=cyg --tsaware -o cmTC_5feaf.exe /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib/crt0.o /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/crtbegin.o -L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0 -L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/lib/../lib -L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/lib -L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../.. --enable-auto-import CMakeFiles/cmTC_5feaf.dir/CMakeCCompilerABI.c.o --out-implib libcmTC_5feaf.dll.a --major-image-version 0 --minor-image-version 0 -lgcc_s -lgcc -lcygwin -ladvapi32 -lshell32 -luser32 -lkernel32 -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib/default-manifest.o /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/crtend.o]
-    arg [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/collect2.exe] ==> ignore
+  ignore line: [gcc version 7.4.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib/../lib/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_84071.exe' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/collect2.exe -plugin /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/cyglto_plugin.dll -plugin-opt=/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/lto-wrapper.exe -plugin-opt=-fresolution=/tmp/ccnFnyjb.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lcygwin -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id -m i386pep --wrap _Znwm --wrap _Znam --wrap _ZdlPv --wrap _ZdaPv --wrap _ZnwmRKSt9nothrow_t --wrap _ZnamRKSt9nothrow_t --wrap _ZdlPvRKSt9nothrow_t --wrap _ZdaPvRKSt9nothrow_t -Bdynamic --dll-search-prefix=cyg --tsaware -o cmTC_84071.exe /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/crt0.o /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/crtbegin.o -L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0 -L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib/../lib -L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib -L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../.. --enable-auto-import CMakeFiles/cmTC_84071.dir/CMakeCCompilerABI.c.o --out-implib libcmTC_84071.dll.a --major-image-version 0 --minor-image-version 0 -lgcc_s -lgcc -lcygwin -ladvapi32 -lshell32 -luser32 -lkernel32 -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/default-manifest.o /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/crtend.o]
+    arg [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/collect2.exe] ==> ignore
     arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/cyglto_plugin.dll] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccEI2ugr.res] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/cyglto_plugin.dll] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/lto-wrapper.exe] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccnFnyjb.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lcygwin] ==> ignore
@@ -125,20 +125,20 @@ Parsed C implicit link information from above output:
     arg [--dll-search-prefix=cyg] ==> ignore
     arg [--tsaware] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_5feaf.exe] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib/crt0.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/crtbegin.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0]
-    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/lib/../lib] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib]
+    arg [cmTC_84071.exe] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/crt0.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0]
+    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib/../lib] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib]
     arg [-L/lib/../lib] ==> dir [/lib/../lib]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/lib] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/lib]
-    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../..]
+    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib]
+    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../..]
     arg [--enable-auto-import] ==> ignore
-    arg [CMakeFiles/cmTC_5feaf.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_84071.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTC_5feaf.dll.a] ==> ignore
+    arg [libcmTC_84071.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
@@ -152,34 +152,34 @@ Parsed C implicit link information from above output:
     arg [-lkernel32] ==> lib [kernel32]
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib/default-manifest.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/crtend.o] ==> ignore
-  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0] ==> [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0]
-  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/lib/../lib] ==> [/usr/x86_64-pc-cygwin/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib] ==> [/usr/lib]
+    arg [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/default-manifest.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/crtend.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0] ==> [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib/../lib] ==> [/usr/x86_64-pc-cygwin/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib] ==> [/usr/lib]
   collapse library dir [/lib/../lib] ==> [/lib]
   collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/lib] ==> [/usr/x86_64-pc-cygwin/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../..] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib] ==> [/usr/x86_64-pc-cygwin/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../..] ==> [/usr/lib]
   implicit libs: [gcc_s;gcc;cygwin;advapi32;shell32;user32;kernel32;gcc_s;gcc]
-  implicit dirs: [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0;/usr/x86_64-pc-cygwin/lib;/usr/lib;/lib]
+  implicit dirs: [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0;/usr/x86_64-pc-cygwin/lib;/usr/lib;/lib]
   implicit fwks: []
 
 
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/cygwin64/bin/make.exe" "cmTC_9eb25/fast"
-C:/cygwin64/bin/make -f CMakeFiles/cmTC_9eb25.dir/build.make CMakeFiles/cmTC_9eb25.dir/build
-make[1]: Entering directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_9eb25.dir/feature_tests.c.o
-C:/cygwin64/bin/gcc.exe   -std=c11 -o CMakeFiles/cmTC_9eb25.dir/feature_tests.c.o   -c "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/feature_tests.c"
-Linking C executable cmTC_9eb25.exe
-/cygdrive/c/Users/alext/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_9eb25.dir/link.txt --verbose=1
-C:/cygwin64/bin/gcc.exe    -Wl,--enable-auto-import  CMakeFiles/cmTC_9eb25.dir/feature_tests.c.o  -o cmTC_9eb25.exe -Wl,--out-implib,libcmTC_9eb25.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
-make[1]: Leaving directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make.exe" "cmTC_32b02/fast"
+/usr/bin/make -f CMakeFiles/cmTC_32b02.dir/build.make CMakeFiles/cmTC_32b02.dir/build
+make[1]: Entering directory '/cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_32b02.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_32b02.dir/feature_tests.c.o   -c /cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_32b02.exe
+/cygdrive/c/Users/Hubert/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_32b02.dir/link.txt --verbose=1
+/usr/bin/cc    -Wl,--enable-auto-import  CMakeFiles/cmTC_32b02.dir/feature_tests.c.o  -o cmTC_32b02.exe -Wl,--out-implib,libcmTC_32b02.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+make[1]: Leaving directory '/cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -189,17 +189,17 @@ make[1]: Leaving directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Wi
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/cygwin64/bin/make.exe" "cmTC_bf47b/fast"
-C:/cygwin64/bin/make -f CMakeFiles/cmTC_bf47b.dir/build.make CMakeFiles/cmTC_bf47b.dir/build
-make[1]: Entering directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_bf47b.dir/feature_tests.c.o
-C:/cygwin64/bin/gcc.exe   -std=c99 -o CMakeFiles/cmTC_bf47b.dir/feature_tests.c.o   -c "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/feature_tests.c"
-Linking C executable cmTC_bf47b.exe
-/cygdrive/c/Users/alext/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_bf47b.dir/link.txt --verbose=1
-C:/cygwin64/bin/gcc.exe    -Wl,--enable-auto-import  CMakeFiles/cmTC_bf47b.dir/feature_tests.c.o  -o cmTC_bf47b.exe -Wl,--out-implib,libcmTC_bf47b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
-make[1]: Leaving directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make.exe" "cmTC_988db/fast"
+/usr/bin/make -f CMakeFiles/cmTC_988db.dir/build.make CMakeFiles/cmTC_988db.dir/build
+make[1]: Entering directory '/cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_988db.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_988db.dir/feature_tests.c.o   -c /cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_988db.exe
+/cygdrive/c/Users/Hubert/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_988db.dir/link.txt --verbose=1
+/usr/bin/cc    -Wl,--enable-auto-import  CMakeFiles/cmTC_988db.dir/feature_tests.c.o  -o cmTC_988db.exe -Wl,--out-implib,libcmTC_988db.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+make[1]: Leaving directory '/cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -209,17 +209,17 @@ make[1]: Leaving directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Wi
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/cygwin64/bin/make.exe" "cmTC_fd2f8/fast"
-C:/cygwin64/bin/make -f CMakeFiles/cmTC_fd2f8.dir/build.make CMakeFiles/cmTC_fd2f8.dir/build
-make[1]: Entering directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_fd2f8.dir/feature_tests.c.o
-C:/cygwin64/bin/gcc.exe   -std=c90 -o CMakeFiles/cmTC_fd2f8.dir/feature_tests.c.o   -c "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/feature_tests.c"
-Linking C executable cmTC_fd2f8.exe
-/cygdrive/c/Users/alext/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_fd2f8.dir/link.txt --verbose=1
-C:/cygwin64/bin/gcc.exe    -Wl,--enable-auto-import  CMakeFiles/cmTC_fd2f8.dir/feature_tests.c.o  -o cmTC_fd2f8.exe -Wl,--out-implib,libcmTC_fd2f8.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
-make[1]: Leaving directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make.exe" "cmTC_de3ac/fast"
+/usr/bin/make -f CMakeFiles/cmTC_de3ac.dir/build.make CMakeFiles/cmTC_de3ac.dir/build
+make[1]: Entering directory '/cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_de3ac.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_de3ac.dir/feature_tests.c.o   -c /cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_de3ac.exe
+/cygdrive/c/Users/Hubert/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_de3ac.dir/link.txt --verbose=1
+/usr/bin/cc    -Wl,--enable-auto-import  CMakeFiles/cmTC_de3ac.dir/feature_tests.c.o  -o cmTC_de3ac.exe -Wl,--out-implib,libcmTC_de3ac.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+make[1]: Leaving directory '/cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -227,73 +227,73 @@ make[1]: Leaving directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Wi
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/cygwin64/bin/make.exe" "cmTC_13122/fast"
-C:/cygwin64/bin/make -f CMakeFiles/cmTC_13122.dir/build.make CMakeFiles/cmTC_13122.dir/build
-make[1]: Entering directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_13122.dir/testCXXCompiler.cxx.o
-C:/cygwin64/bin/g++.exe     -o CMakeFiles/cmTC_13122.dir/testCXXCompiler.cxx.o -c "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx"
-Linking CXX executable cmTC_13122.exe
-/cygdrive/c/Users/alext/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_13122.dir/link.txt --verbose=1
-C:/cygwin64/bin/g++.exe    -Wl,--enable-auto-import  CMakeFiles/cmTC_13122.dir/testCXXCompiler.cxx.o  -o cmTC_13122.exe -Wl,--out-implib,libcmTC_13122.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
-make[1]: Leaving directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make.exe" "cmTC_c64b6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c64b6.dir/build.make CMakeFiles/cmTC_c64b6.dir/build
+make[1]: Entering directory '/cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c64b6.dir/testCXXCompiler.cxx.o
+/usr/bin/c++.exe     -o CMakeFiles/cmTC_c64b6.dir/testCXXCompiler.cxx.o -c /cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_c64b6.exe
+/cygdrive/c/Users/Hubert/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_c64b6.dir/link.txt --verbose=1
+/usr/bin/c++.exe    -Wl,--enable-auto-import  CMakeFiles/cmTC_c64b6.dir/testCXXCompiler.cxx.o  -o cmTC_c64b6.exe -Wl,--out-implib,libcmTC_c64b6.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+make[1]: Leaving directory '/cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/cygwin64/bin/make.exe" "cmTC_bd2a8/fast"
-C:/cygwin64/bin/make -f CMakeFiles/cmTC_bd2a8.dir/build.make CMakeFiles/cmTC_bd2a8.dir/build
-make[1]: Entering directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_bd2a8.dir/CMakeCXXCompilerABI.cpp.o
-C:/cygwin64/bin/g++.exe     -o CMakeFiles/cmTC_bd2a8.dir/CMakeCXXCompilerABI.cpp.o -c /cygdrive/c/Users/alext/.CLion2019.1/system/cygwin_cmake/share/cmake-3.13.4/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_bd2a8.exe
-/cygdrive/c/Users/alext/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_bd2a8.dir/link.txt --verbose=1
-C:/cygwin64/bin/g++.exe    -Wl,--enable-auto-import -v CMakeFiles/cmTC_bd2a8.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_bd2a8.exe -Wl,--out-implib,libcmTC_bd2a8.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Run Build Command:"/usr/bin/make.exe" "cmTC_932c6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_932c6.dir/build.make CMakeFiles/cmTC_932c6.dir/build
+make[1]: Entering directory '/cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_932c6.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++.exe     -o CMakeFiles/cmTC_932c6.dir/CMakeCXXCompilerABI.cpp.o -c /cygdrive/c/Users/Hubert/.CLion2019.1/system/cygwin_cmake/share/cmake-3.13.4/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_932c6.exe
+/cygdrive/c/Users/Hubert/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_932c6.dir/link.txt --verbose=1
+/usr/bin/c++.exe    -Wl,--enable-auto-import -v CMakeFiles/cmTC_932c6.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_932c6.exe -Wl,--out-implib,libcmTC_932c6.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
 Using built-in specs.
-COLLECT_GCC=C:/cygwin64/bin/g++
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/lto-wrapper.exe
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/lto-wrapper.exe
 Target: x86_64-pc-cygwin
-Configured with: /cygdrive/i/szsz/tmpp/gcc/gcc-7.3.0-3.x86_64/src/gcc-7.3.0/configure --srcdir=/cygdrive/i/szsz/tmpp/gcc/gcc-7.3.0-3.x86_64/src/gcc-7.3.0 --prefix=/usr --exec-prefix=/usr --localstatedir=/var --sysconfdir=/etc --docdir=/usr/share/doc/gcc --htmldir=/usr/share/doc/gcc/html -C --build=x86_64-pc-cygwin --host=x86_64-pc-cygwin --target=x86_64-pc-cygwin --without-libiconv-prefix --without-libintl-prefix --libexecdir=/usr/lib --enable-shared --enable-shared-libgcc --enable-static --enable-version-specific-runtime-libs --enable-bootstrap --enable-__cxa_atexit --with-dwarf2 --with-tune=generic --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-graphite --enable-threads=posix --enable-libatomic --enable-libcilkrts --enable-libgomp --enable-libitm --enable-libquadmath --enable-libquadmath-support --disable-libssp --enable-libada --disable-symvers --with-gnu-ld --with-gnu-as --with-cloog-include=/usr/include/cloog-isl --without-libiconv-prefix --without-libintl-prefix --with-system-zlib --enable-linker-build-id --with-default-libstdcxx-abi=gcc4-compatible --enable-libstdcxx-filesystem-ts
+Configured with: /cygdrive/i/szsz/tmpp/gcc/gcc-7.4.0-1.x86_64/src/gcc-7.4.0/configure --srcdir=/cygdrive/i/szsz/tmpp/gcc/gcc-7.4.0-1.x86_64/src/gcc-7.4.0 --prefix=/usr --exec-prefix=/usr --localstatedir=/var --sysconfdir=/etc --docdir=/usr/share/doc/gcc --htmldir=/usr/share/doc/gcc/html -C --build=x86_64-pc-cygwin --host=x86_64-pc-cygwin --target=x86_64-pc-cygwin --without-libiconv-prefix --without-libintl-prefix --libexecdir=/usr/lib --enable-shared --enable-shared-libgcc --enable-static --enable-version-specific-runtime-libs --enable-bootstrap --enable-__cxa_atexit --with-dwarf2 --with-tune=generic --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-graphite --enable-threads=posix --enable-libatomic --enable-libcilkrts --enable-libgomp --enable-libitm --enable-libquadmath --enable-libquadmath-support --disable-libssp --enable-libada --disable-symvers --with-gnu-ld --with-gnu-as --with-cloog-include=/usr/include/cloog-isl --without-libiconv-prefix --without-libintl-prefix --with-system-zlib --enable-linker-build-id --with-default-libstdcxx-abi=gcc4-compatible --enable-libstdcxx-filesystem-ts
 Thread model: posix
-gcc version 7.3.0 (GCC) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/:/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/:/usr/lib/gcc/x86_64-pc-cygwin/:/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/:/usr/lib/gcc/x86_64-pc-cygwin/:/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/:/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/lib/../lib/:/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/lib/:/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bd2a8.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/collect2.exe -plugin /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/cyglto_plugin.dll -plugin-opt=/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/lto-wrapper.exe -plugin-opt=-fresolution=/tmp/ccPpWcxK.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lcygwin -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id -m i386pep --wrap _Znwm --wrap _Znam --wrap _ZdlPv --wrap _ZdaPv --wrap _ZnwmRKSt9nothrow_t --wrap _ZnamRKSt9nothrow_t --wrap _ZdlPvRKSt9nothrow_t --wrap _ZdaPvRKSt9nothrow_t -Bdynamic --dll-search-prefix=cyg --tsaware -o cmTC_bd2a8.exe /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib/crt0.o /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/crtbegin.o -L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0 -L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/lib/../lib -L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/lib -L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../.. --enable-auto-import CMakeFiles/cmTC_bd2a8.dir/CMakeCXXCompilerABI.cpp.o --out-implib libcmTC_bd2a8.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lgcc_s -lgcc -lcygwin -ladvapi32 -lshell32 -luser32 -lkernel32 -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib/default-manifest.o /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/crtend.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bd2a8.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
+gcc version 7.4.0 (GCC) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/bin/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib/../lib/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_932c6.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/collect2.exe -plugin /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/cyglto_plugin.dll -plugin-opt=/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/lto-wrapper.exe -plugin-opt=-fresolution=/tmp/cc08AVjq.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lcygwin -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id -m i386pep --wrap _Znwm --wrap _Znam --wrap _ZdlPv --wrap _ZdaPv --wrap _ZnwmRKSt9nothrow_t --wrap _ZnamRKSt9nothrow_t --wrap _ZdlPvRKSt9nothrow_t --wrap _ZdaPvRKSt9nothrow_t -Bdynamic --dll-search-prefix=cyg --tsaware -o cmTC_932c6.exe /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/crt0.o /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/crtbegin.o -L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0 -L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib/../lib -L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib -L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../.. --enable-auto-import CMakeFiles/cmTC_932c6.dir/CMakeCXXCompilerABI.cpp.o --out-implib libcmTC_932c6.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lgcc_s -lgcc -lcygwin -ladvapi32 -lshell32 -luser32 -lkernel32 -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/default-manifest.o /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_932c6.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:/cygwin64/bin/make.exe" "cmTC_bd2a8/fast"]
-  ignore line: [C:/cygwin64/bin/make -f CMakeFiles/cmTC_bd2a8.dir/build.make CMakeFiles/cmTC_bd2a8.dir/build]
-  ignore line: [make[1]: Entering directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_bd2a8.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [C:/cygwin64/bin/g++.exe     -o CMakeFiles/cmTC_bd2a8.dir/CMakeCXXCompilerABI.cpp.o -c /cygdrive/c/Users/alext/.CLion2019.1/system/cygwin_cmake/share/cmake-3.13.4/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_bd2a8.exe]
-  ignore line: [/cygdrive/c/Users/alext/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_bd2a8.dir/link.txt --verbose=1]
-  ignore line: [C:/cygwin64/bin/g++.exe    -Wl,--enable-auto-import -v CMakeFiles/cmTC_bd2a8.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_bd2a8.exe -Wl,--out-implib,libcmTC_bd2a8.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
+  ignore line: [Run Build Command:"/usr/bin/make.exe" "cmTC_932c6/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_932c6.dir/build.make CMakeFiles/cmTC_932c6.dir/build]
+  ignore line: [make[1]: Entering directory '/cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_932c6.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++.exe     -o CMakeFiles/cmTC_932c6.dir/CMakeCXXCompilerABI.cpp.o -c /cygdrive/c/Users/Hubert/.CLion2019.1/system/cygwin_cmake/share/cmake-3.13.4/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_932c6.exe]
+  ignore line: [/cygdrive/c/Users/Hubert/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_932c6.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++.exe    -Wl,--enable-auto-import -v CMakeFiles/cmTC_932c6.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_932c6.exe -Wl,--out-implib,libcmTC_932c6.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=C:/cygwin64/bin/g++]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/lto-wrapper.exe]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/lto-wrapper.exe]
   ignore line: [Target: x86_64-pc-cygwin]
-  ignore line: [Configured with: /cygdrive/i/szsz/tmpp/gcc/gcc-7.3.0-3.x86_64/src/gcc-7.3.0/configure --srcdir=/cygdrive/i/szsz/tmpp/gcc/gcc-7.3.0-3.x86_64/src/gcc-7.3.0 --prefix=/usr --exec-prefix=/usr --localstatedir=/var --sysconfdir=/etc --docdir=/usr/share/doc/gcc --htmldir=/usr/share/doc/gcc/html -C --build=x86_64-pc-cygwin --host=x86_64-pc-cygwin --target=x86_64-pc-cygwin --without-libiconv-prefix --without-libintl-prefix --libexecdir=/usr/lib --enable-shared --enable-shared-libgcc --enable-static --enable-version-specific-runtime-libs --enable-bootstrap --enable-__cxa_atexit --with-dwarf2 --with-tune=generic --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-graphite --enable-threads=posix --enable-libatomic --enable-libcilkrts --enable-libgomp --enable-libitm --enable-libquadmath --enable-libquadmath-support --disable-libssp --enable-libada --disable-symvers --with-gnu-ld --with-gnu-as --with-cloog-include=/usr/include/cloog-isl --without-libiconv-prefix --without-libintl-prefix --with-system-zlib --enable-linker-build-id --with-default-libstdcxx-abi=gcc4-compatible --enable-libstdcxx-filesystem-ts]
+  ignore line: [Configured with: /cygdrive/i/szsz/tmpp/gcc/gcc-7.4.0-1.x86_64/src/gcc-7.4.0/configure --srcdir=/cygdrive/i/szsz/tmpp/gcc/gcc-7.4.0-1.x86_64/src/gcc-7.4.0 --prefix=/usr --exec-prefix=/usr --localstatedir=/var --sysconfdir=/etc --docdir=/usr/share/doc/gcc --htmldir=/usr/share/doc/gcc/html -C --build=x86_64-pc-cygwin --host=x86_64-pc-cygwin --target=x86_64-pc-cygwin --without-libiconv-prefix --without-libintl-prefix --libexecdir=/usr/lib --enable-shared --enable-shared-libgcc --enable-static --enable-version-specific-runtime-libs --enable-bootstrap --enable-__cxa_atexit --with-dwarf2 --with-tune=generic --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-graphite --enable-threads=posix --enable-libatomic --enable-libcilkrts --enable-libgomp --enable-libitm --enable-libquadmath --enable-libquadmath-support --disable-libssp --enable-libada --disable-symvers --with-gnu-ld --with-gnu-as --with-cloog-include=/usr/include/cloog-isl --without-libiconv-prefix --without-libintl-prefix --with-system-zlib --enable-linker-build-id --with-default-libstdcxx-abi=gcc4-compatible --enable-libstdcxx-filesystem-ts]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 7.3.0 (GCC) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/:/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/:/usr/lib/gcc/x86_64-pc-cygwin/:/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/:/usr/lib/gcc/x86_64-pc-cygwin/:/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/:/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/lib/../lib/:/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/lib/:/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bd2a8.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/collect2.exe -plugin /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/cyglto_plugin.dll -plugin-opt=/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/lto-wrapper.exe -plugin-opt=-fresolution=/tmp/ccPpWcxK.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lcygwin -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id -m i386pep --wrap _Znwm --wrap _Znam --wrap _ZdlPv --wrap _ZdaPv --wrap _ZnwmRKSt9nothrow_t --wrap _ZnamRKSt9nothrow_t --wrap _ZdlPvRKSt9nothrow_t --wrap _ZdaPvRKSt9nothrow_t -Bdynamic --dll-search-prefix=cyg --tsaware -o cmTC_bd2a8.exe /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib/crt0.o /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/crtbegin.o -L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0 -L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/lib/../lib -L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/lib -L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../.. --enable-auto-import CMakeFiles/cmTC_bd2a8.dir/CMakeCXXCompilerABI.cpp.o --out-implib libcmTC_bd2a8.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lgcc_s -lgcc -lcygwin -ladvapi32 -lshell32 -luser32 -lkernel32 -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib/default-manifest.o /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/crtend.o]
-    arg [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/collect2.exe] ==> ignore
+  ignore line: [gcc version 7.4.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib/../lib/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib/:/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_932c6.exe' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/collect2.exe -plugin /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/cyglto_plugin.dll -plugin-opt=/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/lto-wrapper.exe -plugin-opt=-fresolution=/tmp/cc08AVjq.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lcygwin -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id -m i386pep --wrap _Znwm --wrap _Znam --wrap _ZdlPv --wrap _ZdaPv --wrap _ZnwmRKSt9nothrow_t --wrap _ZnamRKSt9nothrow_t --wrap _ZdlPvRKSt9nothrow_t --wrap _ZdaPvRKSt9nothrow_t -Bdynamic --dll-search-prefix=cyg --tsaware -o cmTC_932c6.exe /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/crt0.o /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/crtbegin.o -L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0 -L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib/../lib -L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib -L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../.. --enable-auto-import CMakeFiles/cmTC_932c6.dir/CMakeCXXCompilerABI.cpp.o --out-implib libcmTC_932c6.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lgcc_s -lgcc -lcygwin -ladvapi32 -lshell32 -luser32 -lkernel32 -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/default-manifest.o /usr/lib/gcc/x86_64-pc-cygwin/7.4.0/crtend.o]
+    arg [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/collect2.exe] ==> ignore
     arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/cyglto_plugin.dll] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccPpWcxK.res] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/cyglto_plugin.dll] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/lto-wrapper.exe] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc08AVjq.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lcygwin] ==> ignore
@@ -326,20 +326,20 @@ Parsed CXX implicit link information from above output:
     arg [--dll-search-prefix=cyg] ==> ignore
     arg [--tsaware] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_bd2a8.exe] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib/crt0.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/crtbegin.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0]
-    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/lib/../lib] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib]
+    arg [cmTC_932c6.exe] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/crt0.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0]
+    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib/../lib] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib]
     arg [-L/lib/../lib] ==> dir [/lib/../lib]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/lib] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/lib]
-    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../..]
+    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib]
+    arg [-L/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../..]
     arg [--enable-auto-import] ==> ignore
-    arg [CMakeFiles/cmTC_bd2a8.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_932c6.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTC_bd2a8.dll.a] ==> ignore
+    arg [libcmTC_932c6.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
@@ -354,34 +354,34 @@ Parsed CXX implicit link information from above output:
     arg [-lkernel32] ==> lib [kernel32]
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib/default-manifest.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/crtend.o] ==> ignore
-  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0] ==> [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0]
-  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/lib/../lib] ==> [/usr/x86_64-pc-cygwin/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib] ==> [/usr/lib]
+    arg [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/default-manifest.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/crtend.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0] ==> [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib/../lib] ==> [/usr/x86_64-pc-cygwin/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib] ==> [/usr/lib]
   collapse library dir [/lib/../lib] ==> [/lib]
   collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/lib] ==> [/usr/x86_64-pc-cygwin/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../..] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../x86_64-pc-cygwin/lib] ==> [/usr/x86_64-pc-cygwin/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../..] ==> [/usr/lib]
   implicit libs: [stdc++;gcc_s;gcc;cygwin;advapi32;shell32;user32;kernel32;gcc_s;gcc]
-  implicit dirs: [/usr/lib/gcc/x86_64-pc-cygwin/7.3.0;/usr/x86_64-pc-cygwin/lib;/usr/lib;/lib]
+  implicit dirs: [/usr/lib/gcc/x86_64-pc-cygwin/7.4.0;/usr/x86_64-pc-cygwin/lib;/usr/lib;/lib]
   implicit fwks: []
 
 
 
 
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/cygwin64/bin/make.exe" "cmTC_20f00/fast"
-C:/cygwin64/bin/make -f CMakeFiles/cmTC_20f00.dir/build.make CMakeFiles/cmTC_20f00.dir/build
-make[1]: Entering directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_20f00.dir/feature_tests.cxx.o
-C:/cygwin64/bin/g++.exe    -std=c++1z -o CMakeFiles/cmTC_20f00.dir/feature_tests.cxx.o -c "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/feature_tests.cxx"
-Linking CXX executable cmTC_20f00.exe
-/cygdrive/c/Users/alext/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_20f00.dir/link.txt --verbose=1
-C:/cygwin64/bin/g++.exe    -Wl,--enable-auto-import  CMakeFiles/cmTC_20f00.dir/feature_tests.cxx.o  -o cmTC_20f00.exe -Wl,--out-implib,libcmTC_20f00.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
-make[1]: Leaving directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make.exe" "cmTC_c6219/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c6219.dir/build.make CMakeFiles/cmTC_c6219.dir/build
+make[1]: Entering directory '/cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c6219.dir/feature_tests.cxx.o
+/usr/bin/c++.exe    -std=c++1z -o CMakeFiles/cmTC_c6219.dir/feature_tests.cxx.o -c /cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_c6219.exe
+/cygdrive/c/Users/Hubert/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_c6219.dir/link.txt --verbose=1
+/usr/bin/c++.exe    -Wl,--enable-auto-import  CMakeFiles/cmTC_c6219.dir/feature_tests.cxx.o  -o cmTC_c6219.exe -Wl,--out-implib,libcmTC_c6219.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+make[1]: Leaving directory '/cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -444,17 +444,17 @@ make[1]: Leaving directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Wi
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/cygwin64/bin/make.exe" "cmTC_f0c4e/fast"
-C:/cygwin64/bin/make -f CMakeFiles/cmTC_f0c4e.dir/build.make CMakeFiles/cmTC_f0c4e.dir/build
-make[1]: Entering directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f0c4e.dir/feature_tests.cxx.o
-C:/cygwin64/bin/g++.exe    -std=c++14 -o CMakeFiles/cmTC_f0c4e.dir/feature_tests.cxx.o -c "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/feature_tests.cxx"
-Linking CXX executable cmTC_f0c4e.exe
-/cygdrive/c/Users/alext/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_f0c4e.dir/link.txt --verbose=1
-C:/cygwin64/bin/g++.exe    -Wl,--enable-auto-import  CMakeFiles/cmTC_f0c4e.dir/feature_tests.cxx.o  -o cmTC_f0c4e.exe -Wl,--out-implib,libcmTC_f0c4e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
-make[1]: Leaving directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make.exe" "cmTC_f150f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f150f.dir/build.make CMakeFiles/cmTC_f150f.dir/build
+make[1]: Entering directory '/cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f150f.dir/feature_tests.cxx.o
+/usr/bin/c++.exe    -std=c++14 -o CMakeFiles/cmTC_f150f.dir/feature_tests.cxx.o -c /cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_f150f.exe
+/cygdrive/c/Users/Hubert/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_f150f.dir/link.txt --verbose=1
+/usr/bin/c++.exe    -Wl,--enable-auto-import  CMakeFiles/cmTC_f150f.dir/feature_tests.cxx.o  -o cmTC_f150f.exe -Wl,--out-implib,libcmTC_f150f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+make[1]: Leaving directory '/cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -517,17 +517,17 @@ make[1]: Leaving directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Wi
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/cygwin64/bin/make.exe" "cmTC_a7544/fast"
-C:/cygwin64/bin/make -f CMakeFiles/cmTC_a7544.dir/build.make CMakeFiles/cmTC_a7544.dir/build
-make[1]: Entering directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_a7544.dir/feature_tests.cxx.o
-C:/cygwin64/bin/g++.exe    -std=c++11 -o CMakeFiles/cmTC_a7544.dir/feature_tests.cxx.o -c "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/feature_tests.cxx"
-Linking CXX executable cmTC_a7544.exe
-/cygdrive/c/Users/alext/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_a7544.dir/link.txt --verbose=1
-C:/cygwin64/bin/g++.exe    -Wl,--enable-auto-import  CMakeFiles/cmTC_a7544.dir/feature_tests.cxx.o  -o cmTC_a7544.exe -Wl,--out-implib,libcmTC_a7544.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
-make[1]: Leaving directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make.exe" "cmTC_37be7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_37be7.dir/build.make CMakeFiles/cmTC_37be7.dir/build
+make[1]: Entering directory '/cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_37be7.dir/feature_tests.cxx.o
+/usr/bin/c++.exe    -std=c++11 -o CMakeFiles/cmTC_37be7.dir/feature_tests.cxx.o -c /cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_37be7.exe
+/cygdrive/c/Users/Hubert/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_37be7.dir/link.txt --verbose=1
+/usr/bin/c++.exe    -Wl,--enable-auto-import  CMakeFiles/cmTC_37be7.dir/feature_tests.cxx.o  -o cmTC_37be7.exe -Wl,--out-implib,libcmTC_37be7.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+make[1]: Leaving directory '/cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -590,17 +590,17 @@ make[1]: Leaving directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Wi
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/cygwin64/bin/make.exe" "cmTC_24a1f/fast"
-C:/cygwin64/bin/make -f CMakeFiles/cmTC_24a1f.dir/build.make CMakeFiles/cmTC_24a1f.dir/build
-make[1]: Entering directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_24a1f.dir/feature_tests.cxx.o
-C:/cygwin64/bin/g++.exe    -std=c++98 -o CMakeFiles/cmTC_24a1f.dir/feature_tests.cxx.o -c "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/feature_tests.cxx"
-Linking CXX executable cmTC_24a1f.exe
-/cygdrive/c/Users/alext/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_24a1f.dir/link.txt --verbose=1
-C:/cygwin64/bin/g++.exe    -Wl,--enable-auto-import  CMakeFiles/cmTC_24a1f.dir/feature_tests.cxx.o  -o cmTC_24a1f.exe -Wl,--out-implib,libcmTC_24a1f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
-make[1]: Leaving directory '/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make.exe" "cmTC_4a3aa/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4a3aa.dir/build.make CMakeFiles/cmTC_4a3aa.dir/build
+make[1]: Entering directory '/cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4a3aa.dir/feature_tests.cxx.o
+/usr/bin/c++.exe    -std=c++98 -o CMakeFiles/cmTC_4a3aa.dir/feature_tests.cxx.o -c /cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_4a3aa.exe
+/cygdrive/c/Users/Hubert/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_4a3aa.dir/link.txt --verbose=1
+/usr/bin/c++.exe    -Wl,--enable-auto-import  CMakeFiles/cmTC_4a3aa.dir/feature_tests.cxx.o  -o cmTC_4a3aa.exe -Wl,--out-implib,libcmTC_4a3aa.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+make[1]: Leaving directory '/cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

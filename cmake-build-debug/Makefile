@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/alext/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /cygdrive/c/Users/Hubert/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/alext/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /cygdrive/c/Users/Hubert/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21"
+CMAKE_SOURCE_DIR = /cygdrive/c/Users/Hubert/COMP345Team21
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug"
+CMAKE_BINARY_DIR = /cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 201
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/cygdrive/c/Users/alext/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/cygdrive/c/Users/Hubert/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/cygdrive/c/Users/alext/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
+	/cygdrive/c/Users/Hubert/.CLion2019.1/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles" "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles /cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/Hubert/COMP345Team21/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -528,6 +528,60 @@ Powerplant/Market/ResourceMarket.cpp.s:
 	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/Powerplant/Market/ResourceMarket.cpp.s
 .PHONY : Powerplant/Market/ResourceMarket.cpp.s
 
+Powerplant/Phase1.o: Powerplant/Phase1.cpp.o
+
+.PHONY : Powerplant/Phase1.o
+
+# target to build an object file
+Powerplant/Phase1.cpp.o:
+	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/Powerplant/Phase1.cpp.o
+.PHONY : Powerplant/Phase1.cpp.o
+
+Powerplant/Phase1.i: Powerplant/Phase1.cpp.i
+
+.PHONY : Powerplant/Phase1.i
+
+# target to preprocess a source file
+Powerplant/Phase1.cpp.i:
+	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/Powerplant/Phase1.cpp.i
+.PHONY : Powerplant/Phase1.cpp.i
+
+Powerplant/Phase1.s: Powerplant/Phase1.cpp.s
+
+.PHONY : Powerplant/Phase1.s
+
+# target to generate assembly for a file
+Powerplant/Phase1.cpp.s:
+	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/Powerplant/Phase1.cpp.s
+.PHONY : Powerplant/Phase1.cpp.s
+
+test.o: test.cpp.o
+
+.PHONY : test.o
+
+# target to build an object file
+test.cpp.o:
+	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/test.cpp.o
+.PHONY : test.cpp.o
+
+test.i: test.cpp.i
+
+.PHONY : test.i
+
+# target to preprocess a source file
+test.cpp.i:
+	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/test.cpp.i
+.PHONY : test.cpp.i
+
+test.s: test.cpp.s
+
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.cpp.s:
+	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/test.cpp.s
+.PHONY : test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -582,6 +636,12 @@ help:
 	@echo "... Powerplant/Market/ResourceMarket.o"
 	@echo "... Powerplant/Market/ResourceMarket.i"
 	@echo "... Powerplant/Market/ResourceMarket.s"
+	@echo "... Powerplant/Phase1.o"
+	@echo "... Powerplant/Phase1.i"
+	@echo "... Powerplant/Phase1.s"
+	@echo "... test.o"
+	@echo "... test.i"
+	@echo "... test.s"
 .PHONY : help
 
 
