@@ -11,11 +11,15 @@ Game::Game() {
     Player *p2 = new Player("Mike");
     Player *p3 = new Player("Hubert");
     Player *p4 = new Player("Marc");
-    playerList.push_back(p1);
-    playerList.push_back(p2);
-    playerList.push_back(p3);
-    playerList.push_back(p4);
-    numbPlayers = playerList.size();
+    Attach(p1);
+    Attach(p2);
+    Attach(p3);
+    Attach(p4);
+//    (*playerList).push_back(p1);
+//    (*playerList).push_back(p2);
+//    (*playerList).push_back(p3);
+//    (*playerList).push_back(p4);
+    numbPlayers = (*playerList).size();
     myDeck.shuffle();
     p1->addPowerplant(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
     p1->addPowerplant(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
@@ -25,23 +29,24 @@ Game::Game() {
     p3->addPowerplant(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
     p4->addPowerplant(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
     p4->addPowerplant(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
-//    for (int i = 0; i <playerList.size(); ++i) {
-//        playerList[i]->addCoal(20);
-//        playerList[i]->addGarbage(20);
-//        playerList[i]->addOil(20);
-//        playerList[i]->addUranium(20);
-//    }
+    for (int i = 0; i <(*playerList).size(); ++i) {
+        dynamic_cast<Player*>((*playerList)[i])->addCoal(20);
+        dynamic_cast<Player*>((*playerList)[i])->addGarbage(20);
+        dynamic_cast<Player*>((*playerList)[i])->addOil(20);
+        dynamic_cast<Player*>((*playerList)[i])->addUranium(20);
+    }
     p1->setNumOfCities(2);
     p2->setNumOfCities(3);
     p3->setNumOfCities(4);
     p4->setNumOfCities(5);
+    cout << "Hello world" << endl;
 }
 
 
 void Game::DeterminePlayerOrder() {
     //sort in reverse order biggest to smallest
-    sort(playerList.begin(), playerList.end());
-    reverse(playerList.begin(), playerList.end());
+    sort(playerList->begin(), playerList->end());
+    reverse(playerList->begin(), playerList->end());
 }
 
  bool Game::isValidInteger(std::string line) {
@@ -184,8 +189,8 @@ bool Game::SkipRound() {
 
 Game::~Game() {
     //delete playerlist pointers
-    for (int i = 0; i < playerList.size(); ++i) {
-        delete playerList[i];
+    for (int i = 0; i < playerList->size(); ++i) {
+        delete (*playerList)[i];
     }
     //set currentBidder to NULL
     currentBidder = NULL;
@@ -193,6 +198,7 @@ Game::~Game() {
 
 
 void Game::Phase1() {
+    Notify();
     //Determine the player order here by sorting the vector of values
     DeterminePlayerOrder();
     //this number is initially set to the number of players in the list
@@ -218,7 +224,8 @@ void Game::Phase1() {
 //while there are still players that can/want to auction
     while (phaseOnePlayersRemaining > NoAvailablePlayers) {
         //loop through the player list starting from the beginning
-        currentBidder = playerList[startNewBidIndex];
+        currentBidder = dynamic_cast<Player*>((*playerList)[startNewBidIndex]);
+//        currentBidder = playerList         [startNewBidIndex];
         //If Player has bought a powerplant or doesnt want to auction then skip
         if (!currentBidder->isAuctionReady()) {
             startNewBidIndex = (startNewBidIndex + 1) % numbPlayers;
@@ -244,7 +251,7 @@ void Game::Phase1() {
         //while there is still more than one player left
         while (auctionRoundPlayersRemaining > oneRemainingPlayer) {
             //next bidder for the round
-            currentBidder = playerList[currentRoundBidderIndex];
+            currentBidder = dynamic_cast<Player*>((*playerList)[currentRoundBidderIndex]);
 
             //if the current player has already bought a powerplant,or has decided to pass on current bid
             //then go to next player
@@ -271,7 +278,7 @@ void Game::Phase1() {
             //go to the next bidder in the player list
             currentRoundBidderIndex = (currentRoundBidderIndex + 1) % numbPlayers;
         }//end of Round
-        currentBidder = playerList[mostRecentBidIndex];
+        currentBidder = dynamic_cast<Player*>((*playerList)[mostRecentBidIndex]);
         cout << endl << currentBidder->getPlayerName() << " has won this bidding round and has received " << endl
              << currentBid << endl
              << "he will not be able to participate in the rest of the phase" << endl;
@@ -290,9 +297,12 @@ void Game::Phase1() {
  * Method phase 4, powering cities by using resources and power plants to generate elecktro
  */
 void Game::Phase4() {
+//    cout << "Hello world" << endl;
+    Notify();
+
     //bureaucracy
-    for (Player *p : playerList)
-        p->powerCities();
+    for (Observer *o : *playerList)
+        dynamic_cast<Player*>(o)->powerCities();
 
     //replace powerplants
     pMarket.replaceFutureMarket(myDeck);

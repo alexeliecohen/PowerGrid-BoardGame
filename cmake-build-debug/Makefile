@@ -447,6 +447,33 @@ Powerplant/GameAndPlayer/Game.cpp.s:
 	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Game.cpp.s
 .PHONY : Powerplant/GameAndPlayer/Game.cpp.s
 
+Powerplant/GameAndPlayer/Observer.o: Powerplant/GameAndPlayer/Observer.cpp.o
+
+.PHONY : Powerplant/GameAndPlayer/Observer.o
+
+# target to build an object file
+Powerplant/GameAndPlayer/Observer.cpp.o:
+	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Observer.cpp.o
+.PHONY : Powerplant/GameAndPlayer/Observer.cpp.o
+
+Powerplant/GameAndPlayer/Observer.i: Powerplant/GameAndPlayer/Observer.cpp.i
+
+.PHONY : Powerplant/GameAndPlayer/Observer.i
+
+# target to preprocess a source file
+Powerplant/GameAndPlayer/Observer.cpp.i:
+	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Observer.cpp.i
+.PHONY : Powerplant/GameAndPlayer/Observer.cpp.i
+
+Powerplant/GameAndPlayer/Observer.s: Powerplant/GameAndPlayer/Observer.cpp.s
+
+.PHONY : Powerplant/GameAndPlayer/Observer.s
+
+# target to generate assembly for a file
+Powerplant/GameAndPlayer/Observer.cpp.s:
+	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Observer.cpp.s
+.PHONY : Powerplant/GameAndPlayer/Observer.cpp.s
+
 Powerplant/GameAndPlayer/Player.o: Powerplant/GameAndPlayer/Player.cpp.o
 
 .PHONY : Powerplant/GameAndPlayer/Player.o
@@ -473,6 +500,33 @@ Powerplant/GameAndPlayer/Player.s: Powerplant/GameAndPlayer/Player.cpp.s
 Powerplant/GameAndPlayer/Player.cpp.s:
 	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Player.cpp.s
 .PHONY : Powerplant/GameAndPlayer/Player.cpp.s
+
+Powerplant/GameAndPlayer/Subject.o: Powerplant/GameAndPlayer/Subject.cpp.o
+
+.PHONY : Powerplant/GameAndPlayer/Subject.o
+
+# target to build an object file
+Powerplant/GameAndPlayer/Subject.cpp.o:
+	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Subject.cpp.o
+.PHONY : Powerplant/GameAndPlayer/Subject.cpp.o
+
+Powerplant/GameAndPlayer/Subject.i: Powerplant/GameAndPlayer/Subject.cpp.i
+
+.PHONY : Powerplant/GameAndPlayer/Subject.i
+
+# target to preprocess a source file
+Powerplant/GameAndPlayer/Subject.cpp.i:
+	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Subject.cpp.i
+.PHONY : Powerplant/GameAndPlayer/Subject.cpp.i
+
+Powerplant/GameAndPlayer/Subject.s: Powerplant/GameAndPlayer/Subject.cpp.s
+
+.PHONY : Powerplant/GameAndPlayer/Subject.s
+
+# target to generate assembly for a file
+Powerplant/GameAndPlayer/Subject.cpp.s:
+	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Subject.cpp.s
+.PHONY : Powerplant/GameAndPlayer/Subject.cpp.s
 
 Powerplant/Market/PowerplantMarket.o: Powerplant/Market/PowerplantMarket.cpp.o
 
@@ -573,9 +627,15 @@ help:
 	@echo "... Powerplant/GameAndPlayer/Game.o"
 	@echo "... Powerplant/GameAndPlayer/Game.i"
 	@echo "... Powerplant/GameAndPlayer/Game.s"
+	@echo "... Powerplant/GameAndPlayer/Observer.o"
+	@echo "... Powerplant/GameAndPlayer/Observer.i"
+	@echo "... Powerplant/GameAndPlayer/Observer.s"
 	@echo "... Powerplant/GameAndPlayer/Player.o"
 	@echo "... Powerplant/GameAndPlayer/Player.i"
 	@echo "... Powerplant/GameAndPlayer/Player.s"
+	@echo "... Powerplant/GameAndPlayer/Subject.o"
+	@echo "... Powerplant/GameAndPlayer/Subject.i"
+	@echo "... Powerplant/GameAndPlayer/Subject.s"
 	@echo "... Powerplant/Market/PowerplantMarket.o"
 	@echo "... Powerplant/Market/PowerplantMarket.i"
 	@echo "... Powerplant/Market/PowerplantMarket.s"

@@ -20,6 +20,7 @@
 #include "../Card/Powerplant.h"
 #include "../../Map/Map.h"
 #include "../Market/ResourceMarket.h"
+#include "Observer.h"
 
 class Game;
 
@@ -36,7 +37,7 @@ static int MAXGARBAGE;
 static int MAXURANIUM;
 
 using namespace std;
-class Player {
+class Player: public Observer {
 private:
     static int numOfPlayers; //keeps a a tabk
     static vector<string> houseColor;  //Keeps a tab of the available house colors to choose from
@@ -54,6 +55,15 @@ private:
     std::vector<string> myHouses;
 
 public:
+    void Update();
+
+    /**
+     * Parametized Constructore for taking in the game class for observer pattern
+     * @param name Player name
+     * @param g Pointer to the game class
+     */
+    Player(std::string name,Game* g);
+
     /**
      * Default constructor for the Player object
      */

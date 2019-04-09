@@ -23,7 +23,9 @@ CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.o
  /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Powerplant.h
  /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Step13.h
  /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Game.h
+ /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Observer.h
  /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Player.h
+ /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Subject.h
  /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Market/PowerplantMarket.h
  /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Market/ResourceMarket.h
 CMakeFiles/COMP345Team21.dir/Map/Edge.cpp.o
@@ -69,9 +71,14 @@ CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Game.cpp.o
  /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Step13.h
  /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Game.cpp
  /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Game.h
+ /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Observer.h
  /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Player.h
+ /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Subject.h
  /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Market/PowerplantMarket.h
  /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Market/ResourceMarket.h
+CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Observer.cpp.o
+ /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Observer.cpp
+ /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Observer.h
 CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Player.cpp.o
  /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Map/Edge.h
  /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Map/Map.h
@@ -81,9 +88,22 @@ CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Player.cpp.o
  /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Powerplant.h
  /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Step13.h
  /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Game.h
+ /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Observer.h
  /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Player.cpp
  /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Player.h
+ /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Subject.h
  /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Market/PowerplantMarket.h
+ /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Market/ResourceMarket.h
+CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Subject.cpp.o
+ /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Map/Edge.h
+ /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Map/Map.h
+ /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Map/Vertex.h
+ /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Card.h
+ /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Powerplant.h
+ /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Observer.h
+ /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Player.h
+ /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Subject.cpp
+ /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Subject.h
  /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Market/ResourceMarket.h
 CMakeFiles/COMP345Team21.dir/Powerplant/Market/PowerplantMarket.cpp.o
  /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Map/Edge.h
@@ -93,6 +113,7 @@ CMakeFiles/COMP345Team21.dir/Powerplant/Market/PowerplantMarket.cpp.o
  /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Deck.h
  /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Powerplant.h
  /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Step13.h
+ /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Observer.h
  /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Player.h
  /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Market/PowerplantMarket.cpp
  /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Market/PowerplantMarket.h

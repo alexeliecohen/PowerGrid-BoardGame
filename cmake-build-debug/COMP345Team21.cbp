@@ -159,10 +159,22 @@
 		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Game.h">
 			<Option target="COMP345Team21"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Observer.cpp">
+			<Option target="COMP345Team21"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Observer.h">
+			<Option target="COMP345Team21"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Player.cpp">
 			<Option target="COMP345Team21"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Player.h">
+			<Option target="COMP345Team21"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Subject.cpp">
+			<Option target="COMP345Team21"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Subject.h">
 			<Option target="COMP345Team21"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Market/PowerplantMarket.cpp">

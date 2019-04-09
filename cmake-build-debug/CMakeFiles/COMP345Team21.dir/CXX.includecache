@@ -71,26 +71,14 @@ Game.h
 /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Game.h
 Player.h
 /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Player.h
+Subject.h
+/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Subject.h
 ../Market/PowerplantMarket.h
 /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Market/PowerplantMarket.h
 ../Market/ResourceMarket.h
 /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Market/ResourceMarket.h
 
-/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Player.cpp
-Player.h
-/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Player.h
-../../Map/Vertex.h
-/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Map/Vertex.h
-../../Map/Map.h
-/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Map/Map.h
-string
--
-iostream
--
-locale
--
-Game.h
-/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Game.h
+/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Observer.h
 
 /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Player.h
 string
@@ -107,6 +95,24 @@ algorithm
 /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Map/Map.h
 ../Market/ResourceMarket.h
 /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Market/ResourceMarket.h
+Observer.h
+/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Observer.h
+
+/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Subject.cpp
+Subject.h
+/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Subject.h
+Subject.h
+/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Subject.h
+
+/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Subject.h
+iostream
+-
+vector
+-
+Observer.h
+/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Observer.h
+Player.h
+/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Player.h
 
 /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Market/PowerplantMarket.h
 ../Card/Powerplant.h

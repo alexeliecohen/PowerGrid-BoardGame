@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 201
 CMakeFiles/COMP345Team21.dir/all:
 	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/depend
 	$(MAKE) -f CMakeFiles/COMP345Team21.dir/build.make CMakeFiles/COMP345Team21.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 "Built target COMP345Team21"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18 "Built target COMP345Team21"
 .PHONY : CMakeFiles/COMP345Team21.dir/all
 
 # Include target in all.
@@ -81,7 +81,7 @@ all: CMakeFiles/COMP345Team21.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/COMP345Team21.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles" 16
+	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles" 18
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/COMP345Team21.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles" 0
 .PHONY : CMakeFiles/COMP345Team21.dir/rule

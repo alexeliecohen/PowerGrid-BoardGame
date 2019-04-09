@@ -187,9 +187,22 @@ CMakeFiles/COMP345Team21.dir/Powerplant/Card/Summary.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP345Team21.dir/Powerplant/Card/Summary.cpp.s"
 	C:/cygwin64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Summary.cpp" -o CMakeFiles/COMP345Team21.dir/Powerplant/Card/Summary.cpp.s
 
+CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Subject.cpp.o: CMakeFiles/COMP345Team21.dir/flags.make
+CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Subject.cpp.o: ../Powerplant/GameAndPlayer/Subject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Subject.cpp.o"
+	C:/cygwin64/bin/g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Subject.cpp.o -c "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Subject.cpp"
+
+CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Subject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Subject.cpp.i"
+	C:/cygwin64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Subject.cpp" > CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Subject.cpp.i
+
+CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Subject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Subject.cpp.s"
+	C:/cygwin64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Subject.cpp" -o CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Subject.cpp.s
+
 CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Game.cpp.o: CMakeFiles/COMP345Team21.dir/flags.make
 CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Game.cpp.o: ../Powerplant/GameAndPlayer/Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Game.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Game.cpp.o"
 	C:/cygwin64/bin/g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Game.cpp.o -c "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Game.cpp"
 
 CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Game.cpp.i: cmake_force
@@ -200,9 +213,22 @@ CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Game.cpp.s"
 	C:/cygwin64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Game.cpp" -o CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Game.cpp.s
 
+CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Observer.cpp.o: CMakeFiles/COMP345Team21.dir/flags.make
+CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Observer.cpp.o: ../Powerplant/GameAndPlayer/Observer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Observer.cpp.o"
+	C:/cygwin64/bin/g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Observer.cpp.o -c "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Observer.cpp"
+
+CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Observer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Observer.cpp.i"
+	C:/cygwin64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Observer.cpp" > CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Observer.cpp.i
+
+CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Observer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Observer.cpp.s"
+	C:/cygwin64/bin/g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Observer.cpp" -o CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Observer.cpp.s
+
 CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Player.cpp.o: CMakeFiles/COMP345Team21.dir/flags.make
 CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Player.cpp.o: ../Powerplant/GameAndPlayer/Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Player.cpp.o"
 	C:/cygwin64/bin/g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Player.cpp.o -c "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Player.cpp"
 
 CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Player.cpp.i: cmake_force
@@ -215,7 +241,7 @@ CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Player.cpp.s: cmake_force
 
 CMakeFiles/COMP345Team21.dir/Powerplant/Market/PowerplantMarket.cpp.o: CMakeFiles/COMP345Team21.dir/flags.make
 CMakeFiles/COMP345Team21.dir/Powerplant/Market/PowerplantMarket.cpp.o: ../Powerplant/Market/PowerplantMarket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/COMP345Team21.dir/Powerplant/Market/PowerplantMarket.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/COMP345Team21.dir/Powerplant/Market/PowerplantMarket.cpp.o"
 	C:/cygwin64/bin/g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COMP345Team21.dir/Powerplant/Market/PowerplantMarket.cpp.o -c "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Market/PowerplantMarket.cpp"
 
 CMakeFiles/COMP345Team21.dir/Powerplant/Market/PowerplantMarket.cpp.i: cmake_force
@@ -228,7 +254,7 @@ CMakeFiles/COMP345Team21.dir/Powerplant/Market/PowerplantMarket.cpp.s: cmake_for
 
 CMakeFiles/COMP345Team21.dir/Powerplant/Market/ResourceMarket.cpp.o: CMakeFiles/COMP345Team21.dir/flags.make
 CMakeFiles/COMP345Team21.dir/Powerplant/Market/ResourceMarket.cpp.o: ../Powerplant/Market/ResourceMarket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/COMP345Team21.dir/Powerplant/Market/ResourceMarket.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/COMP345Team21.dir/Powerplant/Market/ResourceMarket.cpp.o"
 	C:/cygwin64/bin/g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COMP345Team21.dir/Powerplant/Market/ResourceMarket.cpp.o -c "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Market/ResourceMarket.cpp"
 
 CMakeFiles/COMP345Team21.dir/Powerplant/Market/ResourceMarket.cpp.i: cmake_force
@@ -241,7 +267,7 @@ CMakeFiles/COMP345Team21.dir/Powerplant/Market/ResourceMarket.cpp.s: cmake_force
 
 CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.o: CMakeFiles/COMP345Team21.dir/flags.make
 CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.o: ../Main_PowerGrid_Driver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.o"
 	C:/cygwin64/bin/g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.o -c "/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Main_PowerGrid_Driver.cpp"
 
 CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.i: cmake_force
@@ -264,7 +290,9 @@ COMP345Team21_OBJECTS = \
 "CMakeFiles/COMP345Team21.dir/Powerplant/Card/Powerplant.cpp.o" \
 "CMakeFiles/COMP345Team21.dir/Powerplant/Card/Step13.cpp.o" \
 "CMakeFiles/COMP345Team21.dir/Powerplant/Card/Summary.cpp.o" \
+"CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Subject.cpp.o" \
 "CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Game.cpp.o" \
+"CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Observer.cpp.o" \
 "CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Player.cpp.o" \
 "CMakeFiles/COMP345Team21.dir/Powerplant/Market/PowerplantMarket.cpp.o" \
 "CMakeFiles/COMP345Team21.dir/Powerplant/Market/ResourceMarket.cpp.o" \
@@ -283,14 +311,16 @@ COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/Powerplant/Card/Deck.cpp.o
 COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/Powerplant/Card/Powerplant.cpp.o
 COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/Powerplant/Card/Step13.cpp.o
 COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/Powerplant/Card/Summary.cpp.o
+COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Subject.cpp.o
 COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Game.cpp.o
+COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Observer.cpp.o
 COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Player.cpp.o
 COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/Powerplant/Market/PowerplantMarket.cpp.o
 COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/Powerplant/Market/ResourceMarket.cpp.o
 COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.o
 COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/build.make
 COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable COMP345Team21.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable COMP345Team21.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/COMP345Team21.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

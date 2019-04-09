@@ -30,8 +30,12 @@ add_executable(COMP345Team21
         Powerplant/Card/Step13.h
         Powerplant/Card/Summary.cpp
         Powerplant/Card/Summary.h
+        Powerplant/GameAndPlayer/Subject.h
+        Powerplant/GameAndPlayer/Subject.cpp
         Powerplant/GameAndPlayer/Game.cpp
         Powerplant/GameAndPlayer/Game.h
+        Powerplant/GameAndPlayer/Observer.h
+        Powerplant/GameAndPlayer/Observer.cpp
         Powerplant/GameAndPlayer/Player.cpp
         Powerplant/GameAndPlayer/Player.h
         Powerplant/Market/PowerplantMarket.cpp
