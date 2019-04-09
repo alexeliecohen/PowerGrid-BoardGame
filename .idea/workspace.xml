@@ -12,21 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff46cc20-3507-4402-9f95-3906796842fc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignPatterns/Observer/Player.h" beforeDir="false" afterPath="$PROJECT_DIR$/DesignPatterns/Observer/Player.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/COMP345Team21.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/COMP345Team21.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main_PowerGrid_Driver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Main_PowerGrid_Driver.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Powerplant/GameAndPlayer/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Powerplant/GameAndPlayer/Game.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Powerplant/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -57,14 +44,20 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main_PowerGrid_Driver.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="96" column="5" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
-              <folding>
-                <element signature="e#140#159#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Powerplant/GameAndPlayer/Game.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -133,7 +126,6 @@
         <option value="$PROJECT_DIR$/Powerplant/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Powerplant/newMain.cpp" />
         <option value="$PROJECT_DIR$/Powerplant/GameAndPlayer/Game.h" />
-        <option value="$PROJECT_DIR$/Powerplant/GameAndPlayer/Game.cpp" />
         <option value="$PROJECT_DIR$/Powerplant/Market/ResourceMarket.h" />
         <option value="$PROJECT_DIR$/Powerplant/GameAndPlayer/Player.h" />
         <option value="$PROJECT_DIR$/Powerplant/GameAndPlayer/Player.cpp" />
@@ -151,7 +143,6 @@
         <option value="$PROJECT_DIR$/untitled/Powerplant/GameAndPlayer/Player.cpp" />
         <option value="$PROJECT_DIR$/Map/Map.h" />
         <option value="$PROJECT_DIR$/Map/Map.cpp" />
-        <option value="$PROJECT_DIR$/Main_PowerGrid_Driver.cpp" />
         <option value="$PROJECT_DIR$/DesignPatterns/Observer/AbstractGame.h" />
         <option value="$PROJECT_DIR$/DesignPatterns/Observer/AbstractPlayer.h" />
         <option value="$PROJECT_DIR$/DesignPatterns/Observer/Player.cpp" />
@@ -161,6 +152,8 @@
         <option value="$PROJECT_DIR$/DesignPatterns/Observer/Game.h" />
         <option value="$PROJECT_DIR$/DesignPatterns/Observer/Player.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/Main_PowerGrid_Driver.cpp" />
+        <option value="$PROJECT_DIR$/Powerplant/GameAndPlayer/Game.cpp" />
       </list>
     </option>
   </component>
@@ -174,6 +167,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="COMP345Team21" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -184,62 +188,13 @@
             <path>
               <item name="COMP345Team21" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="C:\Users\Hubert\CLionProjects\COMP345Team21" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="DesignPatterns" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="COMP345Team21" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Hubert\CLionProjects\COMP345Team21" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="DesignPatterns" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Observer" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="COMP345Team21" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Hubert\CLionProjects\COMP345Team21" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="FileReader" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="COMP345Team21" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Hubert\CLionProjects\COMP345Team21" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="Map" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="COMP345Team21" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Hubert\CLionProjects\COMP345Team21" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="MapFiles" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="COMP345Team21" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Hubert\CLionProjects\COMP345Team21" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="Powerplant" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="COMP345Team21" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Hubert\CLionProjects\COMP345Team21" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="Powerplant" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Card" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="COMP345Team21" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="C:\Users\Hubert\CLionProjects\COMP345Team21" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="Powerplant" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="GameAndPlayer" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="COMP345Team21" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Hubert\CLionProjects\COMP345Team21" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="Powerplant" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Market" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="COMP345Team21" type="b2602c69:ProjectViewProjectNode" />
-              <item name="untitled" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -333,7 +288,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125834000" />
+    <option name="totallyTimeSpent" value="126178000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -347,12 +302,12 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.152349" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15436241" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.4674221" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.41076487" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35977337" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.29662523" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -456,7 +411,6 @@
     <entry file="file://$PROJECT_DIR$/Powerplant/Market/PowerplantMarket.cpp" />
     <entry file="file://$PROJECT_DIR$/Powerplant/Card/Summary.h" />
     <entry file="file://$PROJECT_DIR$/Powerplant/Card/Summary.cpp" />
-    <entry file="file://$PROJECT_DIR$/Powerplant/GameAndPlayer/Game.cpp" />
     <entry file="file://$PROJECT_DIR$/FileReader/MapLoader.cpp" />
     <entry file="file://$PROJECT_DIR$/Powerplant/Market/ResourceMarket.h" />
     <entry file="file://$PROJECT_DIR$/Powerplant/Market/ResourceMarket.cpp" />
@@ -589,11 +543,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Main_PowerGrid_Driver.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="96" column="5" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
-          <folding>
-            <element signature="e#140#159#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Powerplant/GameAndPlayer/Game.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>

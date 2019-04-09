@@ -59,6 +59,8 @@ CMakeFiles/COMP345Team21.dir/Powerplant/Card/Step13.cpp.o: ../Powerplant/Card/St
 CMakeFiles/COMP345Team21.dir/Powerplant/Card/Summary.cpp.o: ../Powerplant/Card/Summary.cpp
 CMakeFiles/COMP345Team21.dir/Powerplant/Card/Summary.cpp.o: ../Powerplant/Card/Summary.h
 
+CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Game.cpp.o: ../FileReader/FileReader.h
+CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Game.cpp.o: ../FileReader/MapLoader.h
 CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Game.cpp.o: ../Map/Edge.h
 CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Game.cpp.o: ../Map/Map.h
 CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Game.cpp.o: ../Map/Vertex.h
