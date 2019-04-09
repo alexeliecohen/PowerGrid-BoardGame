@@ -25,12 +25,12 @@ Game::Game() {
     p3->addPowerplant(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
     p4->addPowerplant(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
     p4->addPowerplant(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
-    for (int i = 0; i <playerList.size(); ++i) {
-        playerList[i]->addCoal(20);
-        playerList[i]->addGarbage(20);
-        playerList[i]->addOil(20);
-        playerList[i]->addUranium(20);
-    }
+//    for (int i = 0; i <playerList.size(); ++i) {
+//        playerList[i]->addCoal(20);
+//        playerList[i]->addGarbage(20);
+//        playerList[i]->addOil(20);
+//        playerList[i]->addUranium(20);
+//    }
     p1->setNumOfCities(2);
     p2->setNumOfCities(3);
     p3->setNumOfCities(4);
@@ -291,9 +291,9 @@ void Game::Phase1() {
  */
 void Game::Phase4() {
     //bureaucracy
-    for (Player *p : playerList) {
+    for (Player *p : playerList)
         p->powerCities();
-    }
+
     //replace powerplants
     pMarket.replaceFutureMarket(myDeck);
     cout << pMarket << endl;

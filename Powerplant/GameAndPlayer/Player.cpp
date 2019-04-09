@@ -358,8 +358,9 @@ void Player::powerCities() {
 //            break;
 //
         powerplantChoice = chooseAPowerplant(usePowerplant);
-        if (choice == -1)
+        if (powerplantChoice == -1)
             break;
+
         //take choice
 //        cin >> powerplantChoice;
         if (myPowerPlant[powerplantChoice].getResourceType() == "Ecological") {
@@ -373,13 +374,13 @@ void Player::powerCities() {
     } while (usePowerplant);
     if (poweredCities > numOfCities) {
         elektros += PAYMENT[numCities];
-        std::cout << playerName << " has powered " << numOfCities << "cities and has a surplus of "
+        std::cout << playerName << " has powered " << numOfCities << " cities and has a surplus of "
                   << poweredCities - numOfCities
                   << " power" << endl;
         std::cout << PAYMENT[numOfCities] << " elecktros has been given to " << playerName << "\n";
     } else {
         elektros += PAYMENT[poweredCities];
-        std::cout << playerName << " has powered " << poweredCities << "cities and has a surplus of 0 " <<
+        std::cout << playerName << " has powered " << poweredCities << " cities and has a surplus of 0 " <<
                   " power" << endl;
         std::cout << PAYMENT[poweredCities] << " elecktros has been given to " << playerName << endl;
     }
@@ -388,7 +389,7 @@ void Player::powerCities() {
 bool Player::wantsAPowerplant() {
     char buyPowerplant;
     do {
-        cout << "Do you want to power a plant Yes(y) or No(n): "; //output the message to the user
+        cout << this->playerName << " Do you want to power a plant Yes(y) or No(n): "; //output the message to the user
         cin >> buyPowerplant; //decision made by user
         buyPowerplant = tolower(buyPowerplant); //convert to lower case
         if (buyPowerplant == 'y') {
@@ -426,7 +427,7 @@ int Player::chooseAPowerplant(int &usePowerplant) {
         cout << i << ": " << myPowerPlant[i] << endl;
     }
     if (usePowerplant == 0) {
-        std::cout << "No powerplants can be powered\n";
+        std::cout << "No powerplants can be powered" << endl;
         return -1;
     }
     do {
@@ -459,7 +460,7 @@ bool Player::canUsePowerplant(const Powerplant &p1) {
 
 int Player::getResource(string resourceVal) {
     transform(resourceVal.begin(), resourceVal.end(), resourceVal.begin(), ::tolower);
-    cout << resourceVal << endl;
+//    cout << resourceVal << endl;
     if (resourceVal == "coal") {
         return coal;
     } else if (resourceVal == "oil") {

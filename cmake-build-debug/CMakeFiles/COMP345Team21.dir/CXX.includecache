@@ -62,6 +62,12 @@ string
 Card.h
 /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/Card/Card.h
 
+/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Game.cpp
+iostream
+-
+Game.h
+/cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Game.h
+
 /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Game.h
 Player.h
 /cygdrive/c/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21/Powerplant/GameAndPlayer/Player.h
