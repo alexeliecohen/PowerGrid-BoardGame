@@ -239,6 +239,9 @@ void Player::removeCoal(int coal) {
     this->coal -= coal;
 }
 
+
+/*====================================Get Powerplant Methods====================================*/
+
 void Player::addPowerplant(Powerplant &somePowerplant) {
     //put the powerplant in the array
     myPowerPlant.push_back(somePowerplant);
@@ -269,6 +272,12 @@ Powerplant &Player::getPowerPlant(int plantNumber) {
     return cpy;
 }
 
+/*====================================End Get Powerplant Methods====================================*/
+
+
+
+/*====================================Display Class to Cout Methods====================================*/
+
 ostream &Player::displayPowerplants(ostream &stream) {
     //show all the oiwerokants
     for (int i = 0; i < myPowerPlant.size(); ++i) {
@@ -287,7 +296,10 @@ bool Player::operator<(Player &p1) {
     }
     return true;
 }
+/*====================================Display Class to Cout Methods====================================*/
 
+
+/*====================================Auction and Round Ready Method====================================*/
 bool Player::isAuctionReady() const {
     return auctionReady;
 }
@@ -315,35 +327,41 @@ void Player::setRoundReady(bool roundReady) {
 bool Player::isRoundReady() const {
     return roundReady;
 }
+/*====================================End of Auction and Round Ready Method====================================*/
+
+
+/*================================End of Methods used to power the Powerplants=====================================*/
 
 void Player::powerCities() {
     int powerplantChoice;
     int poweredCities = 0;
     int *resourceRef;
-    int UsePowerplant;
-    char choice;
+    int usePowerplant = 0;
+//    int UsePowerplant;
+    int choice;
     do {
-        UsePowerplant = 0;
-        std::cout << "Do you want to power a plant: ";
-        cin >> choice;
-        if (tolower(choice) == 'n') {
-            std::cout << playerName << " has decided to skip phase 5 \n";
+        usePowerplant = 0;
+//        std::cout << "Do you want to power a plant Yes(y) or No(n): ";
+//        cin >> choice;
+        if (!wantsAPowerplant())
             break;
-        }
-        std::cout << "Please choose a power plant you want to power: \n";
-        for (int i = 0; i < myPowerPlant.size(); i++) {
-            if (!canUsePowerplant(myPowerPlant[i])) {
-                continue;
-            }
-            UsePowerplant++;
-            cout << i << ": " << myPowerPlant[i] << endl;
-        }
-        if (UsePowerplant == 0) {
-            std::cout << "No powerplants can be powered\n";
+//        std::cout << "Please choose a power plant you want to power: \n";
+//        for (int i = 0; i < myPowerPlant.size(); i++) {
+//            if (!canUsePowerplant(myPowerPlant[i])) {
+//                continue;
+//            }
+//            UsePowerplant++;
+//            cout << i << ": " << myPowerPlant[i] << endl;
+//        }
+//        if (UsePowerplant == 0) {
+//            std::cout << "No powerplants can be powered\n";
+//            break;
+//
+        powerplantChoice = chooseAPowerplant(usePowerplant);
+        if (choice == -1)
             break;
-        }
         //take choice
-        cin >> powerplantChoice;
+//        cin >> powerplantChoice;
         if (myPowerPlant[powerplantChoice].getResourceType() == "Ecological") {
             poweredCities += myPowerPlant[powerplantChoice].getProductionValue();
 
@@ -352,7 +370,7 @@ void Player::powerCities() {
             *resourceRef -= myPowerPlant[powerplantChoice].getEnergyCost();
             poweredCities += myPowerPlant[powerplantChoice].getProductionValue();
         }
-    } while (UsePowerplant);
+    } while (usePowerplant);
     if (poweredCities > numOfCities) {
         elektros += PAYMENT[numCities];
         std::cout << playerName << " has powered " << numOfCities << "cities and has a surplus of "
@@ -365,6 +383,74 @@ void Player::powerCities() {
                   " power" << endl;
         std::cout << PAYMENT[poweredCities] << " elecktros has been given to " << playerName << endl;
     }
+}
+
+bool Player::wantsAPowerplant() {
+    char buyPowerplant;
+    do {
+        cout << "Do you want to power a plant Yes(y) or No(n): "; //output the message to the user
+        cin >> buyPowerplant; //decision made by user
+        buyPowerplant = tolower(buyPowerplant); //convert to lower case
+        if (buyPowerplant == 'y') {
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            return true;
+        }
+            //player doesnt want to skip the round or the auction
+            //then just keep going
+        else if (buyPowerplant == 'n') {
+            std::cout << playerName << " has decided to skip phase 5 \n";
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            return false;
+        }
+            //otherwise the player entered an invalid entry
+        else {
+            cout << endl << "error invalid entry" << endl;
+            //clear the cin buffer of other characters if there are any
+            //and restart the loop
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        }
+    } while (buyPowerplant != 'y' || buyPowerplant != 'n');
+
+}
+
+int Player::chooseAPowerplant(int &usePowerplant) {
+    string powerplantChoice;
+//    int UsePowerplant=0;
+    bool validChoice = false;
+
+    for (int i = 0; i < myPowerPlant.size(); i++) {
+        if (!canUsePowerplant(myPowerPlant[i])) {
+            continue;
+        }
+        usePowerplant++;
+        cout << i << ": " << myPowerPlant[i] << endl;
+    }
+    if (usePowerplant == 0) {
+        std::cout << "No powerplants can be powered\n";
+        return -1;
+    }
+    do {
+        cout << "Please choose a power plant you want to power: " << endl;
+        cin >> powerplantChoice;
+        if (!Game::isValidInteger(powerplantChoice) || stoi(powerplantChoice) > myPowerPlant.size() ||
+            stoi(powerplantChoice) < 0) {
+            cout << "Invalid Entry, value is not a number or exceeds index of the array" << endl;
+            continue;
+        }
+        for (int i = 0; i < myPowerPlant.size(); i++) {
+            if (!canUsePowerplant(myPowerPlant[i])) {
+                continue;
+            }
+            if (i == stoi(powerplantChoice))
+                return stoi(powerplantChoice);
+        }
+        cout << "Invalid choice, you did not select an available powerplant" << endl;
+    } while (!Game::isValidInteger(powerplantChoice) || stoi(powerplantChoice) > myPowerPlant.size() - 1 ||
+             stoi(powerplantChoice) < 0 || !validChoice);
+}
+
+void Player::declarePoweredCities(int resourceSpent) {
+
 }
 
 bool Player::canUsePowerplant(const Powerplant &p1) {
@@ -408,6 +494,9 @@ int *Player::getResourceRef(string resourceVal) {
         return nullptr;
     }
 }
+
+/*================================End of Methods used to power the Powerplants=====================================*/
+
 
 //Buy resources method - Call this method in the driver, using a loop for each player
 void Player::buyResources(ResourceMarket *resourceMarket) {
@@ -719,6 +808,11 @@ void Player::buyCities(Map *map, int gamePhaseNumber) {
 void Player::setNumOfCities(int numOfCities) {
     Player::numOfCities = numOfCities;
 }
+
+
+
+
+
 
 
 //close build cities

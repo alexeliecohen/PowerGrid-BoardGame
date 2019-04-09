@@ -44,7 +44,7 @@ void Game::DeterminePlayerOrder() {
     reverse(playerList.begin(), playerList.end());
 }
 
-bool Game::isValidInteger(std::string line) {
+ bool Game::isValidInteger(std::string line) {
     char *p;
     //convert string to long of base 10
     strtol(line.c_str(), &p, 10);

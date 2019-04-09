@@ -21,6 +21,8 @@
 #include "../../Map/Map.h"
 #include "../Market/ResourceMarket.h"
 
+class Game;
+
 using namespace Mike2;
 
 #ifndef POWERPLANT_PLAYER_H
@@ -291,6 +293,11 @@ public:
 
     void setNumOfCities(int numOfCities);
 
+    bool wantsAPowerplant();
+
+    int chooseAPowerplant(int& usePowerplant);
+
+    void declarePoweredCities(int resourceSpent);
 
     //Building cities
 	void buyCities(Map *map, int gamePhaseNumber);

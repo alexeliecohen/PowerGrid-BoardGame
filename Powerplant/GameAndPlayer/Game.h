@@ -103,7 +103,7 @@ public:
      * @param line string for input
      * @return boolean if integer or not
      */
-    bool isValidInteger(std::string line);
+    static bool isValidInteger(std::string line);
 
     /**
      * This method initiates PhaseI() of the game, where player order is determined and
