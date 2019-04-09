@@ -265,7 +265,7 @@ int Map::shortestPath(const std::string &src, const std::string &destination) {
  */
 std::vector<std::string> Map::findingUnusedRegions(std::vector<std::string> regionsUsed) {
     std::vector<std::string> unusedRegions;
-    for(auto r : regions) {
+    for(const auto& r : regions) {
         if(!(std::find(regionsUsed.begin(), regionsUsed.end(), r) != regionsUsed.end())) {
             unusedRegions.push_back(r);
         }
@@ -285,9 +285,9 @@ void Map::createFinalMap(std::vector<std::string> &regionsUsed) {
     }
 }
 
-bool Map::checkAdjacentRegions(std::string r1, std::string r2) {
+bool Map::checkAdjacentRegions(const std::string& r1, const std::string& r2) {
     Vertex* endpoints;
-    for(Edge e : edges) {
+    for(const Edge& e : edges) {
         endpoints = e.getEndpoints();
         if((endpoints[0].getRegion() == r1 && endpoints[1].getRegion() == r2) ||
         (endpoints[1].getRegion() == r1 && endpoints[0].getRegion() == r2)) {

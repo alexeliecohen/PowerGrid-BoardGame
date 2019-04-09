@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.13)
 project(COMP345Team21)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
 include_directories(FileReader)
 include_directories(Map)
@@ -38,6 +38,4 @@ add_executable(COMP345Team21
         Powerplant/Market/PowerplantMarket.h
         Powerplant/Market/ResourceMarket.cpp
         Powerplant/Market/ResourceMarket.h
-        Powerplant/Phase1.cpp
-        Main_PowerGrid_Driver.cpp
-        test.cpp)
+        Main_PowerGrid_Driver.cpp)
