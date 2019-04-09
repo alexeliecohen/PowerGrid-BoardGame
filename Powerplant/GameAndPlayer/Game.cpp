@@ -201,6 +201,7 @@ void Game::Phase1() {
     std::vector<string> files = std::vector<string>();
     std::vector<Player> players = std::vector<Player>();
     std::vector<string> regionsUsed;
+    Map map;
 
     std::cout << "----------------------------------------\n";
     std::cout << "          WELCOME TO POWERGRID!!        \n";
@@ -218,20 +219,20 @@ void Game::Phase1() {
     cin >> mapFile;
     //Loading a map
     Mike::MapLoaderB ml = Mike::MapLoaderB();
-    Map m;
     if(mapFile == 1) {
-        m = ml.buildMapB("../MapFiles/file");
+        map = ml.buildMapB("../MapFiles/file");
     }
     else if(mapFile == 2) {
-        m = ml.buildMapB("../MapFiles/mapFile.txt");
+        map = ml.buildMapB("../MapFiles/mapFile.txt");
     }
     else if(mapFile == 3) {
-        m = ml.buildMapB("../MapFiles/test2.txt");
+        map = ml.buildMapB("../MapFiles/test2.txt");
     }
+    m = map;
     //Map m = ml.buildMapB(files.at(mapFile - 1));
     //printing the loaded map
-    cout << m;
-    std::vector<string> regions = m.getRegions();
+    cout << map;
+    std::vector<string> regions = map.getRegions();
     cout << "Please enter the number of players(2-6): ";
     cin >> numPlayers;
     for(int j = 0; j < numPlayers; j++) {
@@ -243,7 +244,7 @@ void Game::Phase1() {
         }
         cin >> regionNumber;
         for(const string& r : regions) {
-            if(m.checkAdjacentRegions(regions.at(regionNumber - 1), r) || regionsUsed.empty()) {
+            if(map.checkAdjacentRegions(regions.at(regionNumber - 1), r) || regionsUsed.empty()) {
                 regionsUsed.push_back(regions.at(regionNumber - 1));
                 regions.erase(regions.begin()+ regionNumber - 1);
                 break;
@@ -254,8 +255,8 @@ void Game::Phase1() {
             }
         }
     }
-    m.createFinalMap(regionsUsed);
-    for(const string& s : m.getRegions()) {
+    map.createFinalMap(regionsUsed);
+    for(const string& s : map.getRegions()) {
         cout << s << "\n";
     }
 
@@ -263,9 +264,9 @@ void Game::Phase1() {
     std::cout << d << "\n\n";
     d.shuffle();
     std::cout << d;
-    auto rMarket = ResourceMarket();
-    PowerplantMarket pMarket = PowerplantMarket(d);
-    cout << pMarket;
+    ResourceMarket rmarket = ResourceMarket();
+    PowerplantMarket pmarket = PowerplantMarket(d);
+    cout << pmarket;
 }
 
 void Game::Phase2() {
