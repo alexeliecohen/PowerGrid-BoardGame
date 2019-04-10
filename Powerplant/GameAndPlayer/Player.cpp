@@ -95,6 +95,29 @@ Player::Player(std::string nameIn) {
     numCities = 0;
 }
 
+Player::Player(std::string name, Game *g) {
+    subject=g;
+    subject->Attach(this);
+//if they try to add more players than the max
+    if (numOfPlayers == MAXNUMBERPLAYERS) {
+        std::cout << "Max Number of players reached, cannot create more";
+        return;
+    }
+    playerName = name;
+    this->myHouseColor = myHouseColor;
+    elektros = DEFAULTELECTRO;
+    oil = DEFAULTRESOURCE;
+    coal = DEFAULTRESOURCE;
+    uranium = DEFAULTRESOURCE;
+    garbage = DEFAULTRESOURCE;
+    numOfCities = DEFAULTHOME;
+    numbHomes = DEFAULTHOME;
+    auctionReady = true;
+    roundReady = true;
+    this->numOfPlayers++;
+    numCities = 0;
+}
+
 Player::~Player() {
     std::cout << "Player " << playerName << " has left the game" << endl;
     numOfPlayers--;

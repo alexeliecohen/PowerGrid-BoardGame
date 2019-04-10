@@ -7,14 +7,14 @@
 #include "Game.h"
 
 Game::Game() {
-    Player *p1 = new Player("Alex");
-    Player *p2 = new Player("Mike");
-    Player *p3 = new Player("Hubert");
-    Player *p4 = new Player("Marc");
-    Attach(p1);
-    Attach(p2);
-    Attach(p3);
-    Attach(p4);
+    Player *p1 = new Player("Alex",this);
+    Player *p2 = new Player("Mike",this);
+    Player *p3 = new Player("Hubert",this);
+    Player *p4 = new Player("Marc",this);
+//    Attach(p1);
+//    Attach(p2);
+//    Attach(p3);
+//    Attach(p4);
 //    (*playerList).push_back(p1);
 //    (*playerList).push_back(p2);
 //    (*playerList).push_back(p3);
@@ -39,7 +39,6 @@ Game::Game() {
     p2->setNumOfCities(3);
     p3->setNumOfCities(4);
     p4->setNumOfCities(5);
-    cout << "Hello world" << endl;
 }
 
 

@@ -23,7 +23,7 @@ static int const DEFAULTRESOURCE = 0;//default resource at the beginning of the 
 static int const DEFAULTHOME = 0;//default number of homes for each player at the beginning of the game
 static int const MAXNUMBERPLAYERS = 6; //max number of players in the game
 static int const MINNUMBERPLAYERS = 2;//min number players in the game.
-class Game: Subject {
+class Game: public Subject {
 private:
 //    std::vector<Player*>* playerList = dynamic_cast<vector<Player*>*>(playerList); //list of players in the game
     Deck myDeck; //Create deck of cards of for the game

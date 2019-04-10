@@ -12,36 +12,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff46cc20-3507-4402-9f95-3906796842fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Powerplant/GameAndPlayer/Observer.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Powerplant/GameAndPlayer/Observer.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Powerplant/GameAndPlayer/Subject.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Powerplant/GameAndPlayer/Subject.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main_PowerGrid_Driver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Main_PowerGrid_Driver.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Powerplant/GameAndPlayer/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Powerplant/GameAndPlayer/Game.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Powerplant/GameAndPlayer/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/Powerplant/GameAndPlayer/Game.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Powerplant/GameAndPlayer/Player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Powerplant/GameAndPlayer/Player.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Powerplant/GameAndPlayer/Player.h" beforeDir="false" afterPath="$PROJECT_DIR$/Powerplant/GameAndPlayer/Player.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/COMP345Team21.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/COMP345Team21.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/COMP345Team21.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/COMP345Team21.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Powerplant/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -75,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Powerplant/GameAndPlayer/Game.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+            <state relative-caret-position="119">
+              <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
               <folding>
                 <element signature="e#40#59#0" expanded="true" />
               </folding>
@@ -84,20 +60,44 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Powerplant/GameAndPlayer/Game.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="300" column="6" selection-start-line="300" selection-start-column="6" selection-end-line="300" selection-end-column="6" />
+            <state relative-caret-position="15">
+              <caret line="9" column="41" lean-forward="true" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+              <folding>
+                <element signature="e#1576#1764#0" />
+                <element signature="e#1767#1986#0" />
+                <element signature="e#1989#2843#0" />
+                <element signature="e#2846#3266#0" />
+                <element signature="e#3268#4562#0" />
+                <element signature="e#4564#5233#0" />
+                <element signature="e#5235#6476#0" />
+                <element signature="e#6478#6692#0" />
+                <element signature="e#6695#6910#0" />
+                <element signature="e#7114#11574#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Powerplant/GameAndPlayer/Subject.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Powerplant/GameAndPlayer/Subject.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+              <folding>
+                <element signature="e#39#58#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,10 +105,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Powerplant/GameAndPlayer/Player.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6596">
-              <caret line="418" column="64" lean-forward="true" selection-start-line="418" selection-start-column="64" selection-end-line="418" selection-end-column="64" />
+            <state relative-caret-position="154">
+              <caret line="102" column="38" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
               <folding>
                 <element signature="e#127#146#0" expanded="true" />
+                <element signature="e#591#1918#0" />
+                <element signature="e#1939#2597#0" />
+                <element signature="e#9859#12116#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Powerplant/GameAndPlayer/Player.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
+              <folding>
+                <element signature="e#144#161#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -202,18 +217,20 @@
         <option value="$PROJECT_DIR$/Powerplant/GameAndPlayer/Subject.h" />
         <option value="$PROJECT_DIR$/Powerplant/GameAndPlayer/Observer.cpp" />
         <option value="$PROJECT_DIR$/Main_PowerGrid_Driver.cpp" />
-        <option value="$PROJECT_DIR$/Powerplant/GameAndPlayer/Game.h" />
+        <option value="$PROJECT_DIR$/Powerplant/GameAndPlayer/Subject.cpp" />
         <option value="$PROJECT_DIR$/Powerplant/GameAndPlayer/Player.h" />
+        <option value="$PROJECT_DIR$/Powerplant/GameAndPlayer/Game.h" />
         <option value="$PROJECT_DIR$/Powerplant/GameAndPlayer/Player.cpp" />
         <option value="$PROJECT_DIR$/Powerplant/GameAndPlayer/Game.cpp" />
-        <option value="$PROJECT_DIR$/Powerplant/GameAndPlayer/Subject.cpp" />
       </list>
     </option>
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="948" />
-    <option name="width" value="981" />
-    <option name="height" value="1032" />
+    <option name="x" value="15" />
+    <option name="y" value="30" />
+    <option name="width" value="1890" />
+    <option name="height" value="930" />
   </component>
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
@@ -231,12 +248,6 @@
               <item name="COMP345Team21" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="C:\Users\alext\Desktop\MyFiles\Concordia\Winter 2019\COMP 345\COMP345Team21" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="Powerplant" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="COMP345Team21" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\alext\Desktop\MyFiles\Concordia\Winter 2019\COMP 345\COMP345Team21" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="Powerplant" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Card" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="COMP345Team21" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -264,7 +275,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DesignPattern" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../DesignPattern" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
@@ -338,12 +349,14 @@
       <workItem from="1554073566321" duration="2649000" />
       <workItem from="1554080781821" duration="4083000" />
       <workItem from="1554823069544" duration="4229000" />
-      <workItem from="1554830757516" duration="9409000" />
+      <workItem from="1554830757516" duration="9440000" />
+      <workItem from="1554851298013" duration="224000" />
+      <workItem from="1554862536932" duration="1295000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129415000" />
+    <option name="totallyTimeSpent" value="130965000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -356,14 +369,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20080972" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20728745" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.4674221" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.053285968" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4582593" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.13854352" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -372,8 +384,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.9449378" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.25399646" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.41076487" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.053285968" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49932885" weight="0.6483126" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.5328597" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49932885" weight="0.64298403" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -455,8 +467,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/7.3.0/include/c++/bits/basic_string.h" />
-    <entry file="file://$PROJECT_DIR$/Powerplant/Market/PowerplantMarket.h" />
     <entry file="file://$PROJECT_DIR$/Powerplant/Card/Step13.h" />
     <entry file="file://$PROJECT_DIR$/Powerplant/Card/Step13.cpp" />
     <entry file="file://$PROJECT_DIR$/Powerplant/Card/Powerplant.h" />
@@ -514,13 +524,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Powerplant/GameAndPlayer/Subject.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/7.3.0/include/c++/bits/stl_vector.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="86">
@@ -542,16 +545,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Powerplant/GameAndPlayer/Player.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-          <folding>
-            <element signature="e#144#161#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -582,20 +575,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/7.3.0/include/c++/bits/stringfwd.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Powerplant/GameAndPlayer/Player.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="e#144#161#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Powerplant/GameAndPlayer/Subject.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Powerplant/GameAndPlayer/Subject.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding>
+            <element signature="e#39#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Powerplant/GameAndPlayer/Player.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6596">
-          <caret line="418" column="64" lean-forward="true" selection-start-line="418" selection-start-column="64" selection-end-line="418" selection-end-column="64" />
+        <state relative-caret-position="154">
+          <caret line="102" column="38" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
           <folding>
             <element signature="e#127#146#0" expanded="true" />
+            <element signature="e#591#1918#0" />
+            <element signature="e#1939#2597#0" />
+            <element signature="e#9859#12116#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Powerplant/GameAndPlayer/Game.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+        <state relative-caret-position="119">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
           <folding>
             <element signature="e#40#59#0" expanded="true" />
           </folding>
@@ -604,15 +637,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Powerplant/GameAndPlayer/Game.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="300" column="6" selection-start-line="300" selection-start-column="6" selection-end-line="300" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Powerplant/GameAndPlayer/Subject.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        <state relative-caret-position="15">
+          <caret line="9" column="41" lean-forward="true" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+          <folding>
+            <element signature="e#1576#1764#0" />
+            <element signature="e#1767#1986#0" />
+            <element signature="e#1989#2843#0" />
+            <element signature="e#2846#3266#0" />
+            <element signature="e#3268#4562#0" />
+            <element signature="e#4564#5233#0" />
+            <element signature="e#5235#6476#0" />
+            <element signature="e#6478#6692#0" />
+            <element signature="e#6695#6910#0" />
+            <element signature="e#7114#11574#0" />
+          </folding>
         </state>
       </provider>
     </entry>
