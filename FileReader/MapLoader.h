@@ -14,21 +14,16 @@
 #ifndef MAPLOADERB_H_
 #define MAPLOADERB_H_
 
-#include <iostream>
-#include <string>
-#include <cstdlib>
-#include <vector>
 #include "FileReader.h"
 #include "../Map/Map.h"
 
-	class MapLoaderB {
-	public:
-		MapLoaderB();
-		virtual ~MapLoaderB();
-
-		Map* buildMapB(std::string s);
-		std::vector<string> getMapInfoB(std::string s);
-	};//close class
+class MapLoaderB {
+public:
+    MapLoaderB();
+    virtual ~MapLoaderB();
+    static Map* buildMapB(std::string s);
+    static std::vector<std::string> getMapInfoB(std::string& s);
+};//close class
 
 
 #endif /* MAPLOADERB_H_ */

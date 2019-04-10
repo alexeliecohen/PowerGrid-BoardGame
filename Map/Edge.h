@@ -5,8 +5,8 @@
 #ifndef COMP345TEAM21_EDGE_H
 #define COMP345TEAM21_EDGE_H
 
-#include <vector>
 #include "Vertex.h"
+#include <iostream>
 
 class Vertex;
 

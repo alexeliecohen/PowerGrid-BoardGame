@@ -13,23 +13,13 @@
 
 
 #include "FileReader.h"
-#include <string>
-#include <iostream>
-#include <fstream>
-#include <vector>
-#include <cstdlib>
-#include <sstream>
-
-using std::string;
-using std::cout;
-using std::vector;
 
 //METHODS
-vector<string> File_Reader::getLines(std::string s){
+std::vector<std::string> File_Reader::getLines(std::string& s) {
 	//Declare variables
-	vector<string> fileContent;			//fileContent = {"do", "re", "mi"};
+	std::vector<std::string> fileContent;			//fileContent = {"do", "re", "mi"};
 	std::ifstream fileStream;
-	string line;
+	std::string line;
 
 	//open file
 	fileStream.open(s);
@@ -43,16 +33,14 @@ vector<string> File_Reader::getLines(std::string s){
 		 std::cout << "The file contains " << fileContent.size() << " lines\n" ;
 		//Print results before returning string array
 		std::cout << "The FileReader.getLines function will display its string array values before returning them: " << std::endl ;
-		for (int i = 0 ; i < (int) fileContent.size() ; i++){
-			std::cout << fileContent.at(i) << std::endl ;
+		for (const auto & i : fileContent){
+			std::cout << i << std::endl ;
 		}//close for
 		fileStream.close();
 	return fileContent;
 }//close get file content
-string File_Reader::getName() { return fileName; }
 
 //CONSTRUCTORS
-File_Reader::File_Reader() {}//close constructor
-File_Reader::File_Reader(string fName) { fileName = fName; }//close constructor
-File_Reader::~File_Reader() {} //close constructor
+File_Reader::File_Reader() = default;//close constructor
+File_Reader::~File_Reader() = default; //close constructor
 

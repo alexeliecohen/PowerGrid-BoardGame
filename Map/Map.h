@@ -5,10 +5,8 @@
 #ifndef COMP345TEAM21_MAP_H
 #define COMP345TEAM21_MAP_H
 
-#include <vector>
-#include <string>
-#include <list>
 #include "Vertex.h"
+
 class Map {
 public:
     int numVertex();
@@ -18,10 +16,8 @@ public:
     std::vector<std::string> getRegions();
     void addVertex(const Vertex &v);
     void addEdge(Vertex &u, Vertex &v, int cost);
-    void addEdge(Edge &e);
     void addRegion(const std::string& region);
     static Vertex opposite(const Vertex& v, const Edge& e);
-    bool isVertex(const std::string& nameIn);
     Vertex findVertex(const std::string& s);
     Vertex* findVertexP(const std::string& s);
     bool BFS();

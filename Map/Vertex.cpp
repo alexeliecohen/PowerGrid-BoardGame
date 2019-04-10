@@ -6,7 +6,6 @@
 
 #include "Vertex.h"
 #include <iostream>
-#include <string>
 
 /**
  * Constructor for a Vertex
@@ -29,7 +28,7 @@ Vertex::Vertex() {
  * @param name the name of the city
  * @param region the region the city is in
  */
-Vertex::Vertex(const std::string name, const std::string region) {
+Vertex::Vertex(const std::string& name, const std::string& region) {
     this->region = region;
     this->name = name;
     cost[0] = 10;
@@ -59,14 +58,6 @@ Vertex::Vertex(const Vertex &v) {
 }
 
 /**
- * Getter for the edges
- * @return the set of edges adjacent to this vertex
- */
-std::vector<Edge> Vertex::getEdges() {
-    return edges;
-}
-
-/**
  * Getter for the cost of placing a house
  * @return the cost of placing a house
  */
@@ -88,15 +79,6 @@ std::string Vertex::getRegion() const {
  */
 int Vertex::getPlayerCount() {
     return playerCount;
-}
-
-/**
- * Getter for the player
- * @param i which player to return
- * @return the specified player on this city
- */
-std::string Vertex::getPlayer(const int i) {
-    return players[i];
 }
 
 /**
@@ -144,7 +126,7 @@ bool Vertex::operator==(const Vertex &v) {
  * @param v a Vertex
  * @return ouputs the Vertex in string format
  */
-std::ostream &operator<<(std::ostream &os, const Vertex v) {
+std::ostream &operator<<(std::ostream &os, const Vertex& v) {
     os << v.getName() << ", " << v.getRegion() << "\n";
     return os;
 }
@@ -153,11 +135,11 @@ std::ostream &operator<<(std::ostream &os, const Vertex v) {
  * Adds an adjacent edge to this vertex
  * @param e the edge to be added
  */
-void Vertex::addEdge(Edge e) {
+void Vertex::addEdge(const Edge& e) {
     edges.push_back(e);
 }
 
-void Vertex::setPlayer(std::string name) {
-    players[playerCount] = name;
+void Vertex::setPlayer(const std::string& newName) {
+    players[playerCount] = newName;
     playerCount++;
 }

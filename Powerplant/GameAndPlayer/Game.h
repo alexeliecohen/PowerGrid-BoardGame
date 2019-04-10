@@ -28,10 +28,10 @@ private:
     Deck myDeck; //Create deck of cards of for the game
     PowerplantMarket pMarket = PowerplantMarket(myDeck);     //Powerplant Market for buying powerplants
     ResourceMarket* rMarket;     //Resource market for buying resource
-    bool gameStart; //at gamestart all players must buy powerplants and cannot skip phase 1
+    bool gameStart; //at gamestart all players m{}ust buy powerplants and cannot skip phase 1
     int numbPlayers; //Represents the number of participating players in the game
     Powerplant currentBid; //Represents the current powerplant up for bid
-    Player *currentBidder; //Represents the currentBidder for phaseI
+    Player *currentBidder; //Represents the currentBidder {}for phaseI
     Map* m;
 public:
     Game();
@@ -104,11 +104,11 @@ public:
      * @param line string for input
      * @return boolean if integer or not
      */
-    static bool isValidInteger(std::string line);
+    static bool isValidInteger(const std::string& line);
 
     /**
-     * This method initiates PhaseI() of the game, where player order is determined and
-     * powerplants are auctioned off
+     * This method initiates PhaseI() of the game, where player order is deterconst mined and
+ &    * powerplants are auctioned off
      */
     void Phase1();
 //================================================End Phase I========================================================
