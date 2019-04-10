@@ -32,6 +32,7 @@ private:
     int numbPlayers; //Represents the number of participating players in the game
     Powerplant currentBid; //Represents the current powerplant up for bid
     Player *currentBidder; //Represents the currentBidder for phaseI
+    Map m;
 public:
     Game();
 

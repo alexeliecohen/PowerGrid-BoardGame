@@ -31,9 +31,9 @@ public:
     int shortestPath(const std::string& src, const std::string& destination);
     std::vector<std::string> findingUnusedRegions(std::vector<std::string> regionsUsed);
     void createFinalMap(std::vector<std::string> &regionsUsed);
-    bool checkAdjacentRegions(std::string r1, std::string r2);
+    bool checkAdjacentRegions(const std::string& r1, const std::string& r2);
     friend std::ostream& operator<<(std::ostream& os, Map& m);
-    bool canBuildHouse(Vertex city, int gamePhase);
+    static bool canBuildHouse(Vertex city, int gamePhase);
 private:
     std::vector<Vertex> vertices;
     std::vector<Edge> edges;
