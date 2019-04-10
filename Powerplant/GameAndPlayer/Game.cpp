@@ -36,6 +36,8 @@ Game::Game() {
     p2->setNumOfCities(3);
     p3->setNumOfCities(4);
     p4->setNumOfCities(5);
+    rMarket = new ResourceMarket();
+    m = Map::Instance();
 }
 
 
@@ -45,7 +47,7 @@ void Game::DeterminePlayerOrder() {
     reverse(playerList.begin(), playerList.end());
 }
 
- bool Game::isValidInteger(std::string line) {
+ bool Game::isValidInteger(const std::string& line) {
     char *p;
     //convert string to long of base 10
     strtol(line.c_str(), &p, 10);
@@ -185,15 +187,17 @@ bool Game::SkipRound() {
 
 Game::~Game() {
     //delete playerlist pointers
-    for (int i = 0; i < playerList.size(); ++i) {
-        delete playerList[i];
+    for (auto & i : playerList) {
+        delete i;
     }
+    delete rMarket;
+    delete m;
     //set currentBidder to NULL
-    currentBidder = NULL;
+    //currentBidder = NULL;
+    delete currentBidder;
 }
 
 void Game::Phase1() {
-    //    int i = 1;
     int mapFile = 0;
     int numPlayers = 0;
     int regionNumber = 0;
@@ -201,38 +205,30 @@ void Game::Phase1() {
     std::vector<string> files = std::vector<string>();
     std::vector<Player> players = std::vector<Player>();
     std::vector<string> regionsUsed;
-    Map map;
 
     std::cout << "----------------------------------------\n";
     std::cout << "          WELCOME TO POWERGRID!!        \n";
     std::cout << "----------------------------------------\n";
 
     std::cout << "\nPlease enter the number of the map you would like to play: \n";
-//    for (const auto& entry : std::experimental::filesystem::directory_iterator(path)) {
-//        files.push_back(entry.path().string());
-//        std::cout << i << ") " << entry.path().string().substr(12) << std::endl;
-//        i++;
-//    }
     cout << "1) file\n";
     cout << "2) mapFile.txt\n";
     cout << "3) test2.txt\n";
     cin >> mapFile;
     //Loading a map
-    Mike::MapLoaderB ml = Mike::MapLoaderB();
+    MapLoaderB ml = MapLoaderB();
     if(mapFile == 1) {
-        map = ml.buildMapB("../MapFiles/file");
+        m = ml.buildMapB("../MapFiles/file");
     }
     else if(mapFile == 2) {
-        map = ml.buildMapB("../MapFiles/mapFile.txt");
+        m = ml.buildMapB("../MapFiles/mapFile.txt");
     }
     else if(mapFile == 3) {
-        map = ml.buildMapB("../MapFiles/test2.txt");
+        m = ml.buildMapB("../MapFiles/test2.txt");
     }
-    m = map;
-    //Map m = ml.buildMapB(files.at(mapFile - 1));
     //printing the loaded map
-    cout << map;
-    std::vector<string> regions = map.getRegions();
+    cout << *m;
+    std::vector<string> regions = m->getRegions();
     cout << "Please enter the number of players(2-6): ";
     cin >> numPlayers;
     for(int j = 0; j < numPlayers; j++) {
@@ -244,7 +240,7 @@ void Game::Phase1() {
         }
         cin >> regionNumber;
         for(const string& r : regions) {
-            if(map.checkAdjacentRegions(regions.at(regionNumber - 1), r) || regionsUsed.empty()) {
+            if(m->checkAdjacentRegions(regions.at(regionNumber - 1), r) || regionsUsed.empty()) {
                 regionsUsed.push_back(regions.at(regionNumber - 1));
                 regions.erase(regions.begin()+ regionNumber - 1);
                 break;
@@ -255,8 +251,8 @@ void Game::Phase1() {
             }
         }
     }
-    map.createFinalMap(regionsUsed);
-    for(const string& s : map.getRegions()) {
+    m->createFinalMap(regionsUsed);
+    for(const string& s : m->getRegions()) {
         cout << s << "\n";
     }
 
@@ -363,6 +359,47 @@ void Game::Phase2() {
     cout << endl << "All players have either skipped or purchases a powerplant, Phase 1 Terminated" << endl;
 }
 
+void Game::Phase3() {
+    /*
+    *  PART 3 ASSIGNMENT 2
+    */
+
+    /*
+     *  RESOURCE BUYING PHASE
+     *  requires a resource market and players --> hard-coded below
+     */
+
+    std::cout<<"\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n";
+    std::cout<<"\nWELCOME TO POWER GRID PHASE 3\n";
+    std::cout<<"\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n";
+    std::cout<<"\nCREATING OBJECTS FOR PHASE 3 OF ASSIGNMENT 2\n";
+    std::cout<<"\nCREATING 2 PLAYERS, player1 & player2\n";
+
+    //Create Map
+    MapLoaderB mapLoaderPart3 = MapLoaderB();
+    Map* mapPhase3 = mapLoaderPart3.buildMapB("../MapFiles/file");
+    std::cout<<"\nThe map has been created for phase 3\n";
+
+    //Give Power Plants To Player 2
+    std::cout<<"\nPowerplants for player2 are being placed into his/her possesion for demoing's Part 3, buying resources\n";
+
+    for (auto & i : playerList)
+        i->buyResources( rMarket );
+
+    /*
+     *  HOUSE BUILDING PHASE
+     *  requires a map, resource market and players --> hard-coded below
+     */
+
+    //gamePhase: 1
+    for (auto & i : playerList)
+        i->buyCities( mapPhase3, 1 );
+
+    /*
+     *  END OF PART 3 ASSIGNMENT 2
+     */
+}
+
 /**
  * Method phase 4, powering cities by using resources and power plants to generate elecktro
  */
@@ -375,7 +412,7 @@ void Game::Phase4() {
     pMarket.replaceFutureMarket(myDeck);
     cout << pMarket << endl;
     //replace resourcemarket
-    rMarket.resupplyMarket(numbPlayers,1);
+    rMarket->resupplyMarket(numbPlayers,1);
     cout << pMarket << endl;
 }
 //end method

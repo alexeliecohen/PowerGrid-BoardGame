@@ -1,4 +1,3 @@
-#include <utility>
 
 //
 // Created by Hubert on 2/9/2019.
@@ -19,8 +18,18 @@
  * @param p2 a second standard library pair
  * @return if the first pair is smaller than the second
  */
+
 static bool comparePair(const std::pair<int, std::string> &p1, const std::pair<int, std::string> &p2) {
     return p1.first < p2.first;
+}
+
+Map* Map::_instance = nullptr;
+
+Map* Map::Instance() {
+    if(_instance == nullptr) {
+        _instance = new Map();
+    }
+    return _instance;
 }
 
 /**
@@ -104,19 +113,6 @@ void Map::addEdge(Vertex &u, Vertex &v, int cost) {
 }
 
 /**
- * Adds an edge to the graph
- * @param e an edge
- */
-void Map::addEdge(Edge &e) {
-    if(!(std::find(edges.begin(), edges.end(), e) != edges.end())) {
-        edges.push_back(e);
-    }
-    else {
-        std::cout << "Edge already exists";
-    }
-}
-
-/**
  * Adds a new region name to the graph
  * @param region a region name
  */
@@ -155,14 +151,6 @@ Vertex Map::findVertex(const std::string &s) {
     exit(0);
 }
 
-bool Map::isVertex(const std::string &nameIn){
-	bool returnValue = false;
-	for (auto &vertex : vertices)
-		if ( vertex.getName() == nameIn)
-			returnValue = true;
-	return returnValue;
-}//close isVertex
-
 Vertex* Map::findVertexP(const std::string& s) {
     for (auto &v : vertices) {
         if(v.getName() == s ) {
@@ -171,11 +159,7 @@ Vertex* Map::findVertexP(const std::string& s) {
     }//close for
     std::cout << "Vertex does not belong to the map. Please enter a valid vertex";
     exit(0);
-}//close get vertex aaddress
-
-void Map::removeRegion(int i) {
-    regions.erase(regions.begin() + i);
-}
+}//close get vertex address
 
 /**
  * Method to check if the map is connected, implemented using breadth-first search

@@ -4,7 +4,6 @@
 
 #include "Edge.h"
 #include <iostream>
-#include <string>
 
 /**
  * Default constructor for an edge
