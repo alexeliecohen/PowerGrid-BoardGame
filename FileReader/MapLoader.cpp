@@ -25,8 +25,6 @@ using std::vector;
 using std::cout;
 using std::endl;
 
-namespace Mike {
-
 //Gets a vector containing all of the strings from the file
     vector<string> MapLoaderB::getMapInfoB(std::string s){
         //Variables
@@ -115,5 +113,3 @@ namespace Mike {
 
     MapLoaderB::MapLoaderB() = default;
     MapLoaderB::~MapLoaderB() = default;
-
-} /* namespace Mike */

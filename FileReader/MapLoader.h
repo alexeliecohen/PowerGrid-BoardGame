@@ -21,8 +21,6 @@
 #include "FileReader.h"
 #include "../Map/Map.h"
 
-namespace Mike {
-
 	class MapLoaderB {
 	public:
 		MapLoaderB();
@@ -32,6 +30,5 @@ namespace Mike {
 		std::vector<string> getMapInfoB(std::string s);
 	};//close class
 
-} // close namespace
 
 #endif /* MAPLOADERB_H_ */

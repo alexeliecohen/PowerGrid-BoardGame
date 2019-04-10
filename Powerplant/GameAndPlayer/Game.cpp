@@ -36,6 +36,7 @@ Game::Game() {
     p2->setNumOfCities(3);
     p3->setNumOfCities(4);
     p4->setNumOfCities(5);
+    rMarket = new ResourceMarket();
 }
 
 
@@ -218,7 +219,7 @@ void Game::Phase1() {
     cout << "3) test2.txt\n";
     cin >> mapFile;
     //Loading a map
-    Mike::MapLoaderB ml = Mike::MapLoaderB();
+    MapLoaderB ml = MapLoaderB();
     if(mapFile == 1) {
         map = ml.buildMapB("../MapFiles/file");
     }
@@ -363,6 +364,59 @@ void Game::Phase2() {
     cout << endl << "All players have either skipped or purchases a powerplant, Phase 1 Terminated" << endl;
 }
 
+void Game::Phase3() {
+    /*
+    *  PART 3 ASSIGNMENT 2
+    */
+
+    /*
+     *  RESOURCE BUYING PHASE
+     *  requires a resource market and players --> hard-coded below
+     */
+
+    std::cout<<"\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n";
+    std::cout<<"\nWELCOME TO POWER GRID PHASE 3\n";
+    std::cout<<"\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n";
+    std::cout<<"\nCREATING OBJECTS FOR PHASE 3 OF ASSIGNMENT 2\n";
+    std::cout<<"\nCREATING 2 PLAYERS, player1 & player2\n";
+
+    //Create Players
+    std::vector<Player> playersPhase3 = std::vector<Player>();
+    Player p1 = Player( "player1" );
+    Player p2 = Player( "player2" );
+    playersPhase3.push_back( p1 );
+    playersPhase3.push_back( p2 );
+    //Create Map
+    MapLoaderB mapLoaderPart3 = MapLoaderB();
+    Map* mapPhase3 = mapLoaderPart3.buildMapB("../MapFiles/file");
+    std::cout<<"\nThe map has been created for phase 3\n";
+
+    //Create Resource Market
+    //auto resMarket = new ResourceMarket();
+
+    //Give Power Plants To Player 2
+    std::cout<<"\nPowerplants for player2 are being placed into his/her possesion for demoing's Part 3, buying resources\n";
+
+
+    for ( int i = 0 ; i < playerList.size() ; i++ )
+        playerList.at(i)->buyResources( rMarket );
+
+    /*
+     *  HOUSE BUILDING PHASE
+     *  requires a map, resource market and players --> hard-coded below
+     */
+
+    //Source of input parameters above
+    //map: m
+    //gamePhase: 1
+    for ( int i = 0 ; i < playerList.size() ; i++ )
+        playerList.at(i)->buyCities( mapPhase3, 1 );
+
+    /*
+     *  END OF PART 3 ASSIGNMENT 2
+     */
+}
+
 /**
  * Method phase 4, powering cities by using resources and power plants to generate elecktro
  */
@@ -375,7 +429,7 @@ void Game::Phase4() {
     pMarket.replaceFutureMarket(myDeck);
     cout << pMarket << endl;
     //replace resourcemarket
-    rMarket.resupplyMarket(numbPlayers,1);
+    rMarket->resupplyMarket(numbPlayers,1);
     cout << pMarket << endl;
 }
 //end method

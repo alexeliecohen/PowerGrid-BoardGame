@@ -503,7 +503,7 @@ int *Player::getResourceRef(string resourceVal) {
 void Player::buyResources(ResourceMarket *resourceMarket) {
     //Declare variables
     string userInput;
-    int playerSelection;
+    int playerSelection = -1;
     int playerOilCapacity, playerCoalCapacity, playerUraniumCapacity, playerGarbageCapacity;
     bool validInput = false;
     bool playerTurn = true;
@@ -521,9 +521,9 @@ void Player::buyResources(ResourceMarket *resourceMarket) {
         //cout<<"The user input is "<<userInput<<std::endl;
         //VALIDATE INPUT
         while (!validInput) {
-            if (!(userInput.size() == 1)) {
-                //validInput == false;
+            if (userInput.size() != 1) {
                 std::cout << "INVALID INPUT - THERE SHOULD ONLY BE 1 CHARACTER ENTERED" << std::endl;
+                break;
             }//if
             else {
                 if (isdigit(userInput.at(0))) {

@@ -24,9 +24,6 @@ using std::string;
 using std::cout;
 using std::vector;
 
-
-namespace Mike {
-
 //METHODS
 vector<string> File_Reader::getLines(std::string s){
 	//Declare variables
@@ -59,4 +56,3 @@ File_Reader::File_Reader() {}//close constructor
 File_Reader::File_Reader(string fName) { fileName = fName; }//close constructor
 File_Reader::~File_Reader() {} //close constructor
 
-};//close name space Mike

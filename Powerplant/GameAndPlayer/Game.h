@@ -27,7 +27,7 @@ private:
     std::vector<Player *> playerList; //list of players in the game
     Deck myDeck; //Create deck of cards of for the game
     PowerplantMarket pMarket = PowerplantMarket(myDeck);     //Powerplant Market for buying powerplants
-    ResourceMarket rMarket;     //Resource market for buying resource
+    ResourceMarket* rMarket;     //Resource market for buying resource
     bool gameStart; //at gamestart all players must buy powerplants and cannot skip phase 1
     int numbPlayers; //Represents the number of participating players in the game
     Powerplant currentBid; //Represents the current powerplant up for bid

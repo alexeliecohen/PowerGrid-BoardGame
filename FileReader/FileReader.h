@@ -23,9 +23,6 @@
 
 using std::string;
 
-
-namespace Mike {
-
 class File_Reader {
 
 private:
@@ -44,7 +41,5 @@ public:
 
 
 };//close class
-
-}; /* namespace Mike */
 
 #endif /* FILEREADER_H_ */

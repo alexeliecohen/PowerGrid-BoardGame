@@ -16,10 +16,12 @@
 
 int main() {
     Game g = Game();
-    //Phase 1
-    g.Phase1();
-    //Phase 2
-    g.Phase2();
+//    //Phase 1
+//    g.Phase1();
+//    //Phase 2
+//    g.Phase2();
+    //Phase 3
+    g.Phase3();
     //Phase 4
     g.Phase4();
     return 0;
