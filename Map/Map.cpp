@@ -23,6 +23,15 @@ static bool comparePair(const std::pair<int, std::string> &p1, const std::pair<i
     return p1.first < p2.first;
 }
 
+Map* Map::_instance = nullptr;
+
+Map* Map::Instance() {
+    if(_instance == nullptr) {
+        _instance = new Map();
+    }
+    return _instance;
+}
+
 /**
  * Default constructor for the map
  */
@@ -172,10 +181,6 @@ Vertex* Map::findVertexP(const std::string& s) {
     std::cout << "Vertex does not belong to the map. Please enter a valid vertex";
     exit(0);
 }//close get vertex aaddress
-
-void Map::removeRegion(int i) {
-    regions.erase(regions.begin() + i);
-}
 
 /**
  * Method to check if the map is connected, implemented using breadth-first search

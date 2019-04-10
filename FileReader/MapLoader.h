@@ -28,7 +28,7 @@ namespace Mike {
 		MapLoaderB();
 		virtual ~MapLoaderB();
 
-		Map buildMapB(std::string s);
+		Map* buildMapB(std::string s);
 		std::vector<string> getMapInfoB(std::string s);
 	};//close class
 

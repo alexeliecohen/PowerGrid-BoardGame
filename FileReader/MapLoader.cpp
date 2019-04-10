@@ -37,10 +37,10 @@ namespace Mike {
     }//close getMapInfo
 
 //Uses mapFile.txt to load all data
-    Map MapLoaderB::buildMapB(std::string s) {
+    Map* MapLoaderB::buildMapB(std::string s) {
         //Declare variables
         vector<string> fileInput;
-        Map returnMap;
+        Map* returnMap = Map::Instance();
         bool validMap = true;
         string nextCity;
         string nextRegion;
@@ -63,7 +63,7 @@ namespace Mike {
         //READ IN REGIONS
         region = fileInput.at(iCount);
         while(region != "cities") {
-            returnMap.addRegion(region);
+            returnMap->addRegion(region);
             iCount++;
             region = fileInput.at(iCount);
         }
@@ -77,7 +77,7 @@ namespace Mike {
             //create vertex
             Vertex *vtx = new Vertex( nextCity, nextRegion);
             //add vertex to map
-            returnMap.addVertex( *vtx );
+            returnMap->addVertex( *vtx );
             //Update all values for next iteration
             nextCity = fileInput.at( iCount );
             iCount++;
@@ -92,17 +92,17 @@ namespace Mike {
         iCount++;
         do {
             string city1 = fileInput.at(iCount);
-            Vertex u = returnMap.findVertex(city1);
+            Vertex u = returnMap->findVertex(city1);
             iCount++;
             string city2 = fileInput.at(iCount);
-            Vertex v = returnMap.findVertex(city2);
+            Vertex v = returnMap->findVertex(city2);
             iCount++;
             int i = std::stoi(fileInput.at(iCount));
             iCount++;
-            returnMap.addEdge(u, v, i);
+            returnMap->addEdge(u, v, i);
         } while(iCount < fileInput.size());
 
-        if (returnMap.BFS())
+        if (returnMap->BFS())
             cout << "\n\nThe Map loader is now returning a valid map\n\n";
         else {
             cout << "\n\nTHE MAP LOADER READ AN INVALID MAP TYPE FILE\nPLEASE LOAD A VALID MAP FILE!\n\n";
@@ -113,7 +113,7 @@ namespace Mike {
         return returnMap;
     }//close map builder
 
-    MapLoaderB::MapLoaderB() {}
-    MapLoaderB::~MapLoaderB() {}
+    MapLoaderB::MapLoaderB() = default;
+    MapLoaderB::~MapLoaderB() = default;
 
 } /* namespace Mike */

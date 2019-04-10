@@ -201,7 +201,7 @@ void Game::Phase1() {
     std::vector<string> files = std::vector<string>();
     std::vector<Player> players = std::vector<Player>();
     std::vector<string> regionsUsed;
-    Map map;
+    Map* map = Map::Instance();
 
     std::cout << "----------------------------------------\n";
     std::cout << "          WELCOME TO POWERGRID!!        \n";
@@ -231,8 +231,8 @@ void Game::Phase1() {
     m = map;
     //Map m = ml.buildMapB(files.at(mapFile - 1));
     //printing the loaded map
-    cout << map;
-    std::vector<string> regions = map.getRegions();
+    cout << *map;
+    std::vector<string> regions = map->getRegions();
     cout << "Please enter the number of players(2-6): ";
     cin >> numPlayers;
     for(int j = 0; j < numPlayers; j++) {
@@ -244,7 +244,7 @@ void Game::Phase1() {
         }
         cin >> regionNumber;
         for(const string& r : regions) {
-            if(map.checkAdjacentRegions(regions.at(regionNumber - 1), r) || regionsUsed.empty()) {
+            if(map->checkAdjacentRegions(regions.at(regionNumber - 1), r) || regionsUsed.empty()) {
                 regionsUsed.push_back(regions.at(regionNumber - 1));
                 regions.erase(regions.begin()+ regionNumber - 1);
                 break;
@@ -255,8 +255,8 @@ void Game::Phase1() {
             }
         }
     }
-    map.createFinalMap(regionsUsed);
-    for(const string& s : map.getRegions()) {
+    map->createFinalMap(regionsUsed);
+    for(const string& s : map->getRegions()) {
         cout << s << "\n";
     }
 

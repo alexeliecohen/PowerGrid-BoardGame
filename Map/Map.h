@@ -9,10 +9,8 @@
 #include <string>
 #include <list>
 #include "Vertex.h"
-//#include <bits/stdc++.h>
 class Map {
 public:
-    Map();
     int numVertex();
     int numEdges();
     std::vector<Vertex> getVertices();
@@ -26,7 +24,6 @@ public:
     bool isVertex(const std::string& nameIn);
     Vertex findVertex(const std::string& s);
     Vertex* findVertexP(const std::string& s);
-    void removeRegion(int i);
     bool BFS();
     int shortestPath(const std::string& src, const std::string& destination);
     std::vector<std::string> findingUnusedRegions(std::vector<std::string> regionsUsed);
@@ -34,10 +31,14 @@ public:
     bool checkAdjacentRegions(const std::string& r1, const std::string& r2);
     friend std::ostream& operator<<(std::ostream& os, Map& m);
     static bool canBuildHouse(Vertex city, int gamePhase);
+    static Map* Instance();
+protected:
+    Map();
 private:
     std::vector<Vertex> vertices;
     std::vector<Edge> edges;
     std::vector<std::string> regions;
+    static Map* _instance;
 };
 
 #endif //COMP345TEAM21_MAP_H
