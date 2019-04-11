@@ -741,8 +741,8 @@ void Player::buyCities(Map *map, int gamePhaseNumber) {
                 //Validation 2 - player does not own that city and it is available
                 if (validEntry && startedNetwork) {
                     //Make invalid if a match is already found
-                    for (int i = 0; i < myHouses.size(); i++)
-                        if (myHouses.at(i) == userIn) {
+                    for (const auto & myHouse : myHouses)
+                        if (myHouse == userIn) {
                             validEntry = false;
                             std::cout << "\nError - " << playerName << " already owns the vertex " << userIn << "\n";
                         }//close if found player owns a house at this vertex/city
@@ -870,12 +870,12 @@ void Player::setStrategy(Strategy* newStrategy) {
     this->strategy = newStrategy;
 }
 
-Powerplant Player::executeBid(Game* g, Player* p) {
-    return this->strategy->executeBid(Game* g, Player* p);
+bool Player::executeBid(Game* g, Player* p) {
+    return this->strategy->executeBid(g, p);
 }
 
-bool Player::executeAuction(Game* g, Player* p) {
-    return this->strategy->executeAuction(Game* g, Player* p);
+Powerplant Player::executeAuction(Game* g, Player* p) {
+    return this->strategy->executeAuction(g, p);
 }
 
 //close build cities

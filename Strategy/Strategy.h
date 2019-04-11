@@ -8,6 +8,10 @@
 
 #include <Powerplant.h>
 #include <../Powerplant/GameAndPlayer/Game.h>
+#include <Player.h>
+
+class Game;
+class Player;
 
 class Strategy {
 public:

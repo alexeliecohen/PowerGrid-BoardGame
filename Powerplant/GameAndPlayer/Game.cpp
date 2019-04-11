@@ -5,13 +5,13 @@
 #include <iostream>
 #include "Game.h"
 #include "../../FileReader/MapLoader.h"
-#include "../../Strategy/Aggressive.h"
+#include "../../Strategy/Normal.h"
 
 Game::Game() {
-    Player *p1 = new Player("Alex", new Aggressive());
-    Player *p2 = new Player("Mike", new Aggressive());
-    Player *p3 = new Player("Hubert", new Aggressive());
-    Player *p4 = new Player("Marc", new Aggressive());
+    Player *p1 = new Player("Alex", new Normal());
+    Player *p2 = new Player("Mike", new Normal());
+    Player *p3 = new Player("Hubert", new Normal());
+    Player *p4 = new Player("Marc", new Normal());
     playerList.push_back(p1);
     playerList.push_back(p2);
     playerList.push_back(p3);
@@ -38,6 +38,7 @@ Game::Game() {
     p4->setNumOfCities(5);
     rMarket = new ResourceMarket();
     m = Map::Instance();
+    currentBidder = nullptr;
 }
 
 
@@ -306,7 +307,7 @@ void Game::Phase2() {
         currentRoundBidderIndex = startNewBidIndex;
 
         //Player that chooses powerplant starts a bid
-        currentBidder->Bid(this);
+        currentBidder->executeBid(this, currentBidder);
         //store the player as a the most recent bid
         mostRecentBidIndex = currentRoundBidderIndex;
 

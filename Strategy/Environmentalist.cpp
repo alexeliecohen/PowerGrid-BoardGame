@@ -4,10 +4,10 @@
 
 #include "Environmentalist.h"
 
-Powerplant Environmentalist::executeBid() {
-    return Powerplant();
+bool Environmentalist::executeBid(Game* g, Player* p) {
+    return false;
 }
 
-bool Environmentalist::executeAuction() {
-    return false;
+Powerplant Environmentalist::executeAuction(Game* g, Player* p) {
+    return Powerplant();
 }

@@ -2,10 +2,9 @@
 // Created by Hubert on 4/11/2019.
 //
 
-#include <PowerplantMarket.h>
-#include "Aggressive.h"
+#include "Normal.h"
 
-Powerplant Aggressive::executeAuction(Game* g, Player* p) {
+Powerplant Normal::executeAuction(Game* g, Player* p) {
     std::string bid;
     PowerplantMarket pMarket = g->pMarket;
     int marketSize = pMarket.getSize();
@@ -26,7 +25,7 @@ Powerplant Aggressive::executeAuction(Game* g, Player* p) {
     return currentBid;
 }
 
-bool Aggressive::executeBid(Game *g, Player *p) {
+bool Normal::executeBid(Game *g, Player *p) {
     string bid;
     do {
         cout << "Current Bid for the Powerplant " << g->currentBid.getBidValue() << " elektro" << endl

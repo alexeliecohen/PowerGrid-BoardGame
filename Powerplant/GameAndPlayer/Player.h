@@ -4,7 +4,7 @@
  *
  * 	MICHAEL GARNER
  * 	26338739
- * 	COMP 445
+ * 	COMP 345
  * 	WINTER 2019
  *
  * 	ASSIGNMENT 1
@@ -22,6 +22,7 @@
 #include "../../Strategy/Strategy.h"
 
 class Game;
+class Strategy;
 
 #ifndef POWERPLANT_PLAYER_H
 #define POWERPLANT_PLAYER_H
@@ -41,7 +42,7 @@ private:
     int numCities;
     bool startedNetwork;					//true when player builds his/her 1st house
     std::vector<std::string> myHouses;
-    Strategy *strategy;
+    Strategy* strategy;
 public:
     /**
      * Default constructor for the Player object
@@ -63,9 +64,9 @@ public:
 
     void setStrategy(Strategy* newStrategy);
 
-    Powerplant executeBid(Game* g, Player* p);
+    bool executeBid(Game* g, Player* p);
 
-    bool executeAuction(Game* g, Player* p);
+    Powerplant executeAuction(Game* g, Player* p);
 
     /**
      * Static method Gets the total number of players playing the game
@@ -297,7 +298,7 @@ public:
     void declarePoweredCities(int resourceSpent);
 
     //Building cities
-	void buyCities(Map *map, int gamePhaseNumber);
+    void buyCities(Map *map, int gamePhaseNumber);
     void buyResources(ResourceMarket *resourceMarket);
     int getOilCap();
     int getCoalCap();
@@ -309,5 +310,5 @@ public:
     Powerplant Auction(Game* g);
     bool Bid(Game* g);
 };
-//close player class.h
+
 #endif //POWERPLANT_PLAYER_H

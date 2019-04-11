@@ -4,10 +4,10 @@
 
 #include "Moderate.h"
 
-Powerplant Moderate::executeBid() {
-    return Powerplant();
+bool Moderate::executeBid(Game* g, Player* p) {
+    return false;
 }
 
-bool Moderate::executeAuction() {
-    return false;
+Powerplant Moderate::executeAuction(Game* g, Player* p) {
+    return Powerplant();
 }
