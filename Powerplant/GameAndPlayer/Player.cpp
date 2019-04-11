@@ -874,8 +874,8 @@ bool Player::executeBid(Game* g, Player* p) {
     return this->strategy->executeBid(g, p);
 }
 
-Powerplant Player::executeAuction(Game* g, Player* p) {
-    return this->strategy->executeAuction(g, p);
+void Player::executeAuction(Game* g, Player* p) {
+    this->strategy->executeAuction(g, p);
 }
 
 //close build cities

@@ -11,7 +11,7 @@
 class Moderate : public Strategy {
 public:
     bool executeBid(Game* g, Player* p) override;
-    Powerplant executeAuction(Game* g, Player* p) override;
+    void executeAuction(Game* g, Player* p) override;
 };
 
 

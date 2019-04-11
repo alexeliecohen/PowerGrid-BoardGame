@@ -142,35 +142,35 @@ bool Game::canBid() {
     }
 }
 
-//bool Game::Bid() {
-//    string bid;
-//    do {
-//        cout << "Current Bid for the Powerplant " << currentBid.getBidValue() << " elektro" << endl
-//             << "You have " << currentBidder->getElektros() << " elektro available: ";
-//        //enter the bid
-//        cin >> bid;
-//        //if the bid is not a valid number report error
-//        if (!isValidInteger(bid)) {
-//            cout << "Not a valid number, please enter a number";
-//            //clear the buffer
-//            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-//            continue;
-//        }
-//
-//            //if the bid the player entered is greater than the number of elektros a player owns report error
-//        else if (stoi(bid) > currentBidder->getElektros() || stoi(bid) < 0 || stoi(bid) < currentBid.getBidValue()) {
-//            cout << "You entered " << stoi(bid) << " elektro,You only have " << currentBidder->getElektros() << endl;
-//            //clear the buffer
-//            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-//            continue;
-//        } else {
-//            currentBid.setBidValue(stoi(bid));
-//            //clear the buffer
-//            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-//            return true;
-//        }
-//    } while (true);
-//}
+bool Game::Bid() {
+    string bid;
+    do {
+        cout << "Current Bid for the Powerplant " << currentBid.getBidValue() << " elektro" << endl
+             << "You have " << currentBidder->getElektros() << " elektro available: ";
+        //enter the bid
+        cin >> bid;
+        //if the bid is not a valid number report error
+        if (!isValidInteger(bid)) {
+            cout << "Not a valid number, please enter a number";
+            //clear the buffer
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            continue;
+        }
+
+            //if the bid the player entered is greater than the number of elektros a player owns report error
+        else if (stoi(bid) > currentBidder->getElektros() || stoi(bid) < 0 || stoi(bid) < currentBid.getBidValue()) {
+            cout << "You entered " << stoi(bid) << " elektro,You only have " << currentBidder->getElektros() << endl;
+            //clear the buffer
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            continue;
+        } else {
+            currentBid.setBidValue(stoi(bid));
+            //clear the buffer
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            return true;
+        }
+    } while (true);
+}
 
 bool Game::skipAuction() {
     //send message and skip the round option
@@ -303,7 +303,7 @@ void Game::Phase2() {
         //number of players to start the round
         auctionRoundPlayersRemaining = phaseOnePlayersRemaining;
 
-        currentBid = currentBidder->executeAuction(this, currentBidder);
+        currentBidder->executeAuction(this, currentBidder);
         currentRoundBidderIndex = startNewBidIndex;
 
         //Player that chooses powerplant starts a bid

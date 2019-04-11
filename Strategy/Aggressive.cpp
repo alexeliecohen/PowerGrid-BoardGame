@@ -5,7 +5,7 @@
 #include <PowerplantMarket.h>
 #include "Aggressive.h"
 
-Powerplant Aggressive::executeAuction(Game* g, Player* p) {
+void Aggressive::executeAuction(Game* g, Player* p) {
     std::string bid;
     PowerplantMarket pMarket = g->pMarket;
     int marketSize = pMarket.getSize();
@@ -21,9 +21,8 @@ Powerplant Aggressive::executeAuction(Game* g, Player* p) {
         }
     } while (!Game::isValidInteger(bid) || stoi(bid) > marketSize - 1 || stoi(bid) < 0);
     int val = stoi(bid);
-    Powerplant currentBid = pMarket.removePowerplant(val);
-    cout << currentBid << endl;
-    return currentBid;
+    g->currentBid = pMarket.removePowerplant(val);
+    cout << g->currentBid << endl;
 }
 
 bool Aggressive::executeBid(Game *g, Player *p) {

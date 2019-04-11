@@ -4,13 +4,12 @@
 
 #include "Normal.h"
 
-Powerplant Normal::executeAuction(Game* g, Player* p) {
+void Normal::executeAuction(Game* g, Player* p) {
     std::string bid;
-    PowerplantMarket pMarket = g->pMarket;
-    int marketSize = pMarket.getSize();
+    int marketSize = g->pMarket.getSize();
     do {
         cout << p->getPlayerName() << " Please enter a number to pick a powerplant" << endl;
-        cout << pMarket << endl;
+        cout << g->pMarket << endl;
         cin >> bid;
         //if the input was not a valid integer,or the number picked was larger/less than the powerplant size
         //output error clear buffer and restart.
@@ -20,9 +19,8 @@ Powerplant Normal::executeAuction(Game* g, Player* p) {
         }
     } while (!Game::isValidInteger(bid) || stoi(bid) > marketSize - 1 || stoi(bid) < 0);
     int val = stoi(bid);
-    Powerplant currentBid = pMarket.removePowerplant(val);
-    cout << currentBid << endl;
-    return currentBid;
+    g->currentBid = g->pMarket.removePowerplant(val);
+    cout << g->currentBid << endl;
 }
 
 bool Normal::executeBid(Game *g, Player *p) {

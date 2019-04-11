@@ -15,7 +15,7 @@ class Player;
 
 class Strategy {
 public:
-    virtual Powerplant executeAuction(Game* g, Player* p) = 0;
+    virtual void executeAuction(Game* g, Player* p) = 0;
     virtual bool executeBid(Game* g, Player* p) = 0;
 };
 

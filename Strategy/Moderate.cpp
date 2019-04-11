@@ -8,6 +8,6 @@ bool Moderate::executeBid(Game* g, Player* p) {
     return false;
 }
 
-Powerplant Moderate::executeAuction(Game* g, Player* p) {
-    return Powerplant();
+void Moderate::executeAuction(Game* g, Player* p) {
+
 }

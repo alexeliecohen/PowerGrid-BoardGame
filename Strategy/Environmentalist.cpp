@@ -8,6 +8,6 @@ bool Environmentalist::executeBid(Game* g, Player* p) {
     return false;
 }
 
-Powerplant Environmentalist::executeAuction(Game* g, Player* p) {
-    return Powerplant();
+void Environmentalist::executeAuction(Game* g, Player* p) {
+
 }

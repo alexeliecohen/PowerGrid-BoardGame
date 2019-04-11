@@ -66,7 +66,7 @@ public:
 
     bool executeBid(Game* g, Player* p);
 
-    Powerplant executeAuction(Game* g, Player* p);
+    void executeAuction(Game* g, Player* p);
 
     /**
      * Static method Gets the total number of players playing the game

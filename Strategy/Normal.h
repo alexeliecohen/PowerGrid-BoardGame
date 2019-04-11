@@ -7,7 +7,7 @@
 #include "Strategy.h"
 
 class Normal : public Strategy {
-    Powerplant executeAuction(Game* g, Player* p) override ;
+    void executeAuction(Game* g, Player* p) override ;
     bool executeBid(Game* g, Player* p) override ;
 };
 
