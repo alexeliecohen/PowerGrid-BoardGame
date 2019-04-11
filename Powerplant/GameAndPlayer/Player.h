@@ -23,8 +23,6 @@
 
 class Game;
 
-using namespace Mike2;
-
 #ifndef POWERPLANT_PLAYER_H
 #define POWERPLANT_PLAYER_H
 
@@ -45,7 +43,6 @@ private:
     int elektros; //the number of elektros a player owns
     int oil, coal, garbage, uranium; //the resources the player owns
     int numbHomes, numOfCities; //the number of totals homes and the number of connected cities
-    int currentBid;
     std::vector<Powerplant> myPowerPlant; //list of powerplants a player owns
 //    std::vector<Houses> myHouses; //list of homes the player owns
     bool auctionReady,roundReady;
@@ -63,7 +60,7 @@ public:
      * Fully parametrized constructor for the Player object
      * @param name Name of the Player
      */
-    Player(std::string name);
+    Player(const std::string& name);
 
     /**
      * Destructor for the player class
@@ -309,7 +306,8 @@ public:
     int getResource(string resourceVal);
     int* getResourceRef(string resourceVal);
     bool canUsePowerplant(const Powerplant& p1);
-
+    Powerplant Auction(Game* g);
+    bool Bid(Game* g);
 };
 //close player class.h
 #endif //POWERPLANT_PLAYER_H

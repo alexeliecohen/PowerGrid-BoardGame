@@ -5,9 +5,6 @@
 #ifndef RESOURCEMARKET_H_
 #define RESOURCEMARKET_H_
 
-namespace Mike2 {
-
-
     static int RESSUPLYMARKET[5][3][4] = {{{3, 2, 1, 1}, {4, 2, 2, 1}, {3, 4, 3, 1}},
                                           {{4, 2, 1, 1}, {5, 3, 2, 1}, {3, 4, 3, 1}},
                                           {{5, 3, 2, 1}, {6, 4, 3, 2}, {4, 5, 4, 2}},
@@ -92,6 +89,5 @@ namespace Mike2 {
 
 
     };
-}
 
 #endif /* RESOURCEMARKET_H_ */

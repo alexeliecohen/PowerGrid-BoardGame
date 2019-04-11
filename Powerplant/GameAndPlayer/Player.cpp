@@ -1,3 +1,4 @@
+
 /*
  * Player.cpp
  *
@@ -22,10 +23,6 @@
 
 int Player::numOfPlayers = 0;
 vector<string> Player::houseColor = {"Green", "Blue", "Black", "Pink", "Yellow", "Orange"};
-
-//ADD THIS ATTRIBUTE TO PLAYER CLASS FOR FLAGGING WETHER NETWORK OF CITIES HAS BEEN STARTED
-bool startedNetwork = false;
-std::vector<string> myHouses;
 
 //Constructors
 /**
@@ -73,7 +70,7 @@ Player::Player() {
  *
  * @param nameIn parametrized constructor takes name
  */
-Player::Player(std::string nameIn) {
+Player::Player(const std::string& nameIn) {
     //if they try to add more palyers than the max
     if (numOfPlayers == MAXNUMBERPLAYERS) {
         std::cout << "Max Number of players reached, cannot create more";
@@ -90,7 +87,7 @@ Player::Player(std::string nameIn) {
     numbHomes = DEFAULTHOME;
     auctionReady = true;
     roundReady = true;
-    this->numOfPlayers++;
+    Player::numOfPlayers++;
     numCities = 0;
 }
 
@@ -810,10 +807,55 @@ void Player::setNumOfCities(int numOfCities) {
     Player::numOfCities = numOfCities;
 }
 
+Powerplant Player::Auction(Game* g) {
+    string bid;
+    PowerplantMarket pMarket = g->pMarket;
+    int marketSize = pMarket.getSize();
+    do {
+        cout << playerName << " Please enter a number to pick a powerplant" << endl;
+        cout << pMarket << endl;
+        cin >> bid;
+        //if the input was not a valid integer,or the number picked was larger/less than the powerplant size
+        //output error clear buffer and restart.
+        if (!g->isValidInteger(bid) || stoi(bid) > marketSize || stoi(bid) < 0) {
+            cout << "Error: Entered wrong value for bid, please enter a correct powerplant number" << endl;
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        }
+    } while (!g->isValidInteger(bid) || stoi(bid) > marketSize - 1 || stoi(bid) < 0);
+    int val = stoi(bid);
+    Powerplant currentBid = pMarket.removePowerplant(val);
+    cout << currentBid << endl;
+    return currentBid;
+}
 
+bool Player::Bid(Game* g) {
+    string bid;
+    do {
+        cout << "Current Bid for the Powerplant " << g->currentBid.getBidValue() << " elektro" << endl
+             << "You have " << g->currentBidder->getElektros() << " elektro available: ";
+        //enter the bid
+        cin >> bid;
+        //if the bid is not a valid number report error
+        if (!Game::isValidInteger(bid)) {
+            cout << "Not a valid number, please enter a number";
+            //clear the buffer
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            continue;
+        }
 
-
-
-
+            //if the bid the player entered is greater than the number of elektros a player owns report error
+        else if (stoi(bid) > g->currentBidder->getElektros() || stoi(bid) < 0 || stoi(bid) < g->currentBid.getBidValue()) {
+            cout << "You entered " << stoi(bid) << " elektro,You only have " << g->currentBidder->getElektros() << endl;
+            //clear the buffer
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            continue;
+        } else {
+            g->currentBid.setBidValue(stoi(bid));
+            //clear the buffer
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            return true;
+        }
+    } while (true);
+}
 
 //close build cities

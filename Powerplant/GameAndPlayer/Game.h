@@ -26,14 +26,16 @@ class Game {
 private:
     std::vector<Player *> playerList; //list of players in the game
     Deck myDeck; //Create deck of cards of for the game
-    PowerplantMarket pMarket = PowerplantMarket(myDeck);     //Powerplant Market for buying powerplants
+    //PowerplantMarket pMarket = PowerplantMarket(myDeck);     //Powerplant Market for buying powerplants
     ResourceMarket* rMarket;     //Resource market for buying resource
-    bool gameStart; //at gamestart all players m{}ust buy powerplants and cannot skip phase 1
     int numbPlayers; //Represents the number of participating players in the game
-    Powerplant currentBid; //Represents the current powerplant up for bid
-    Player *currentBidder; //Represents the currentBidder {}for phaseI
+//    Powerplant currentBid; //Represents the current powerplant up for bid
+//    Player *currentBidder; //Represents the currentBidder {}for phaseI
     Map* m;
 public:
+    PowerplantMarket pMarket = PowerplantMarket(myDeck);
+    Player *currentBidder;
+    Powerplant currentBid;
     Game();
 
     /**

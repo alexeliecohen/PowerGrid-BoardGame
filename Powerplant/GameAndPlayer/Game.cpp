@@ -3,7 +3,6 @@
 //
 
 #include <iostream>
-//#include <w32api/commctrl.h>
 #include "Game.h"
 #include "../../FileReader/MapLoader.h"
 
@@ -56,24 +55,24 @@ void Game::DeterminePlayerOrder() {
 }
 
 
-void Game::Auction() {
-    string bid;
-    int marketSize = pMarket.getSize();
-    do {
-        cout << currentBidder->getPlayerName() << "Please enter a number to pick a powerplant" << endl;
-        cout << pMarket << endl;
-        cin >> bid;
-        //if the input was not a valid integer,or the number picked was larger/less than the powerplant size
-        //output error clear buffer and restart.
-        if (!isValidInteger(bid) || stoi(bid) > marketSize || stoi(bid) < 0) {
-            cout << "Error: Entered wrong value for bid, please enter a correct powerplant number" << endl;
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        }
-    } while (!isValidInteger(bid) || stoi(bid) > marketSize - 1 || stoi(bid) < 0);
-    int val = stoi(bid);
-    currentBid = pMarket.removePowerplant(val);
-    cout << currentBid << endl;
-}
+//void Game::Auction() {
+//    string bid;
+//    int marketSize = pMarket.getSize();
+//    do {
+//        cout << currentBidder->getPlayerName() << " Please enter a number to pick a powerplant" << endl;
+//        cout << pMarket << endl;
+//        cin >> bid;
+//        //if the input was not a valid integer,or the number picked was larger/less than the powerplant size
+//        //output error clear buffer and restart.
+//        if (!isValidInteger(bid) || stoi(bid) > marketSize || stoi(bid) < 0) {
+//            cout << "Error: Entered wrong value for bid, please enter a correct powerplant number" << endl;
+//            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+//        }
+//    } while (!isValidInteger(bid) || stoi(bid) > marketSize - 1 || stoi(bid) < 0);
+//    int val = stoi(bid);
+//    currentBid = pMarket.removePowerplant(val);
+//    cout << currentBid << endl;
+//}
 
 
 bool Game::canAffordPowerplant() {
@@ -141,35 +140,35 @@ bool Game::canBid() {
     }
 }
 
-bool Game::Bid() {
-    string bid;
-    do {
-        cout << "Current Bid for the Powerplant " << currentBid.getBidValue() << " elektro" << endl
-             << "You have " << currentBidder->getElektros() << " elektro available: ";
-        //enter the bid
-        cin >> bid;
-        //if the bid is not a valid number report error
-        if (!isValidInteger(bid)) {
-            cout << "Not a valid number, please enter a number";
-            //clear the buffer
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            continue;
-        }
-
-            //if the bid the player entered is greater than the number of elektros a player owns report error
-        else if (stoi(bid) > currentBidder->getElektros() || stoi(bid) < 0 || stoi(bid) < currentBid.getBidValue()) {
-            cout << "You entered " << stoi(bid) << " elektro,You only have " << currentBidder->getElektros() << endl;
-            //clear the buffer
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            continue;
-        } else {
-            currentBid.setBidValue(stoi(bid));
-            //clear the buffer
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            return true;
-        }
-    } while (true);
-}
+//bool Game::Bid() {
+//    string bid;
+//    do {
+//        cout << "Current Bid for the Powerplant " << currentBid.getBidValue() << " elektro" << endl
+//             << "You have " << currentBidder->getElektros() << " elektro available: ";
+//        //enter the bid
+//        cin >> bid;
+//        //if the bid is not a valid number report error
+//        if (!isValidInteger(bid)) {
+//            cout << "Not a valid number, please enter a number";
+//            //clear the buffer
+//            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+//            continue;
+//        }
+//
+//            //if the bid the player entered is greater than the number of elektros a player owns report error
+//        else if (stoi(bid) > currentBidder->getElektros() || stoi(bid) < 0 || stoi(bid) < currentBid.getBidValue()) {
+//            cout << "You entered " << stoi(bid) << " elektro,You only have " << currentBidder->getElektros() << endl;
+//            //clear the buffer
+//            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+//            continue;
+//        } else {
+//            currentBid.setBidValue(stoi(bid));
+//            //clear the buffer
+//            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+//            return true;
+//        }
+//    } while (true);
+//}
 
 bool Game::skipAuction() {
     //send message and skip the round option
@@ -218,13 +217,13 @@ void Game::Phase1() {
     //Loading a map
     MapLoaderB ml = MapLoaderB();
     if(mapFile == 1) {
-        m = ml.buildMapB("../MapFiles/file");
+        m = MapLoaderB::buildMapB("../MapFiles/file");
     }
     else if(mapFile == 2) {
-        m = ml.buildMapB("../MapFiles/mapFile.txt");
+        m = MapLoaderB::buildMapB("../MapFiles/mapFile.txt");
     }
     else if(mapFile == 3) {
-        m = ml.buildMapB("../MapFiles/test2.txt");
+        m = MapLoaderB::buildMapB("../MapFiles/test2.txt");
     }
     //printing the loaded map
     cout << *m;
@@ -280,10 +279,6 @@ void Game::Phase2() {
     //when this value reaches 0
     int auctionRoundPlayersRemaining;
 
-    //used for bidding for a powerplant
-    //if the value reaches 1 then the remaining bidder gets the plant
-    int marketSize = pMarket.getSize();
-
     //startNewBidIndex is the next player in the list to start the bid round on the next powerplant
     //currentBidder is the index for next player to participate in the round bid for the selected powerplant
     int startNewBidIndex = 0, currentRoundBidderIndex, mostRecentBidIndex;
@@ -306,11 +301,11 @@ void Game::Phase2() {
         //number of players to start the round
         auctionRoundPlayersRemaining = phaseOnePlayersRemaining;
 
-        Auction();
+        currentBid = currentBidder->Auction(this);
         currentRoundBidderIndex = startNewBidIndex;
 
         //Player that chooses powerplant starts a bid
-        Bid();
+        currentBidder->Bid(this);
         //store the player as a the most recent bid
         mostRecentBidIndex = currentRoundBidderIndex;
 
@@ -335,7 +330,7 @@ void Game::Phase2() {
                 currentRoundBidderIndex = (currentRoundBidderIndex + 1) % numbPlayers;
                 continue;
             }
-            Bid();
+            currentBidder->Bid(this);
 
             //The last bidder to have bid for the poweprlant is stored just in case
             //we reach only one player, then the loop is terminated
@@ -377,7 +372,7 @@ void Game::Phase3() {
 
     //Create Map
     MapLoaderB mapLoaderPart3 = MapLoaderB();
-    Map* mapPhase3 = mapLoaderPart3.buildMapB("../MapFiles/file");
+    Map* mapPhase3 = MapLoaderB::buildMapB("../MapFiles/file");
     std::cout<<"\nThe map has been created for phase 3\n";
 
     //Give Power Plants To Player 2
