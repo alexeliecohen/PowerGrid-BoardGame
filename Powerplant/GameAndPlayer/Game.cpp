@@ -5,12 +5,13 @@
 #include <iostream>
 #include "Game.h"
 #include "../../FileReader/MapLoader.h"
+#include "../../Strategy/Aggressive.h"
 
 Game::Game() {
-    Player *p1 = new Player("Alex");
-    Player *p2 = new Player("Mike");
-    Player *p3 = new Player("Hubert");
-    Player *p4 = new Player("Marc");
+    Player *p1 = new Player("Alex", new Aggressive());
+    Player *p2 = new Player("Mike", new Aggressive());
+    Player *p3 = new Player("Hubert", new Aggressive());
+    Player *p4 = new Player("Marc", new Aggressive());
     playerList.push_back(p1);
     playerList.push_back(p2);
     playerList.push_back(p3);
@@ -301,7 +302,7 @@ void Game::Phase2() {
         //number of players to start the round
         auctionRoundPlayersRemaining = phaseOnePlayersRemaining;
 
-        currentBid = currentBidder->Auction(this);
+        currentBid = currentBidder->executeAuction(this, currentBidder);
         currentRoundBidderIndex = startNewBidIndex;
 
         //Player that chooses powerplant starts a bid

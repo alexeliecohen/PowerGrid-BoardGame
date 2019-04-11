@@ -6,9 +6,12 @@
 #define COMP345TEAM21_AGGRESSIVE_H
 
 
-class Aggressive {
+#include "Strategy.h"
+
+class Aggressive : public Strategy {
 public:
-    int execute();
+    Powerplant executeAuction(Game* g, Player* p) override;
+    bool executeBid(Game* g, Player* p) override;
 };
 
 

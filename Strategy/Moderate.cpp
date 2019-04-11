@@ -4,6 +4,10 @@
 
 #include "Moderate.h"
 
-int Moderate::execute() {
-    return 0;
+Powerplant Moderate::executeBid() {
+    return Powerplant();
+}
+
+bool Moderate::executeAuction() {
+    return false;
 }

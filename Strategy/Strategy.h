@@ -6,9 +6,13 @@
 #define COMP345TEAM21_STRATEGY_H
 
 
+#include <Powerplant.h>
+#include <../Powerplant/GameAndPlayer/Game.h>
+
 class Strategy {
 public:
-    virtual int execute() = 0;
+    virtual Powerplant executeAuction(Game* g, Player* p) = 0;
+    virtual bool executeBid(Game* g, Player* p) = 0;
 };
 
 

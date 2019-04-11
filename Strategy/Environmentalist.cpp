@@ -4,6 +4,10 @@
 
 #include "Environmentalist.h"
 
-int Environmentalist::execute() {
-    return 0;
+Powerplant Environmentalist::executeBid() {
+    return Powerplant();
+}
+
+bool Environmentalist::executeAuction() {
+    return false;
 }

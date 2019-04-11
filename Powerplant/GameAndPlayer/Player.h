@@ -12,7 +12,6 @@
  *
  *
 */
-//#include "Game.h"
 #include <string>
 #include <iostream>
 #include <vector>
@@ -20,25 +19,18 @@
 #include "../Card/Powerplant.h"
 #include "../../Map/Map.h"
 #include "../Market/ResourceMarket.h"
+#include "../../Strategy/Strategy.h"
 
 class Game;
 
 #ifndef POWERPLANT_PLAYER_H
 #define POWERPLANT_PLAYER_H
 
-
-//namespace Mike {
-static int MAXCOAL;
-static int MAXOIL;
-static int MAXGARBAGE;
-static int MAXURANIUM;
-
-using namespace std;
 class Player {
 private:
     static int numOfPlayers; //keeps a a tabk
-    static vector<string> houseColor;  //Keeps a tab of the available house colors to choose from
-    string myHouseColor; //specific house color for the player class
+    static std::vector<std::string> houseColor;  //Keeps a tab of the available house colors to choose from
+    std::string myHouseColor; //specific house color for the player class
     std::string playerName; //player name
     int elektros; //the number of elektros a player owns
     int oil, coal, garbage, uranium; //the resources the player owns
@@ -48,8 +40,8 @@ private:
     bool auctionReady,roundReady;
     int numCities;
     bool startedNetwork;					//true when player builds his/her 1st house
-    std::vector<string> myHouses;
-
+    std::vector<std::string> myHouses;
+    Strategy *strategy;
 public:
     /**
      * Default constructor for the Player object
@@ -62,10 +54,18 @@ public:
      */
     Player(const std::string& name);
 
+    Player(const std::string& name, Strategy* initStrategy);
+
     /**
      * Destructor for the player class
      */
     virtual ~Player();
+
+    void setStrategy(Strategy* newStrategy);
+
+    Powerplant executeBid(Game* g, Player* p);
+
+    bool executeAuction(Game* g, Player* p);
 
     /**
      * Static method Gets the total number of players playing the game
@@ -77,13 +77,13 @@ public:
      * Returns a string value representing the players chosen house color
      * @return
      */
-    const string &getMyHouseColor() const;
+    const std::string &getMyHouseColor() const;
 
     /**
      * Getter method returns the player name
      * @return
      */
-    const string &getPlayerName() const;
+    const std::string &getPlayerName() const;
 
     /**
      * Getter method returns the players money
@@ -191,7 +191,7 @@ public:
      * Returnsa list of powerplants that the player owns
      * @return list of powerplants
      */
-    const vector<Powerplant> &getMyPowerPlant() const;
+    const std::vector<Powerplant> &getMyPowerPlant() const;
 
     /**
      * Returns a poweprlant owned by the player based on index
@@ -216,7 +216,7 @@ public:
      * @param stream cout for displau
      * @return cout for display
      */
-    ostream &displayPowerplants(ostream &stream);
+    std::ostream &displayPowerplants(std::ostream &stream);
 
     /**
      * Adds houses to the player class
@@ -235,7 +235,7 @@ public:
      * @param stream display to cout
      * @return display to cout
      */
-    ostream &displayHouses(ostream &stream);
+    std::ostream &displayHouses(std::ostream &stream);
 
     /**
      * Uses display houses,and display powerplants and displays all
@@ -244,7 +244,7 @@ public:
      * @param Object player class
      * @return cout
      */
-    friend ostream &operator<<(ostream &stream, Player &Object);
+    friend std::ostream &operator<<(std::ostream &stream, Player &Object);
 
     /*
      * operator overload for '<' comparison between players
@@ -303,8 +303,8 @@ public:
     int getCoalCap();
     int getUraniumCap();
     int getGarbageCap();
-    int getResource(string resourceVal);
-    int* getResourceRef(string resourceVal);
+    int getResource(std::string resourceVal);
+    int* getResourceRef(std::string resourceVal);
     bool canUsePowerplant(const Powerplant& p1);
     Powerplant Auction(Game* g);
     bool Bid(Game* g);

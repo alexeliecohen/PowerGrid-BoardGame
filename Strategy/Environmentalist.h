@@ -6,9 +6,12 @@
 #define COMP345TEAM21_ENVIRONMENTALIST_H
 
 
-class Environmentalist {
+#include "Strategy.h"
+
+class Environmentalist : public Strategy {
 public:
-    int execute();
+    Powerplant executeBid() override;
+    bool executeAuction() override;
 };
 
 

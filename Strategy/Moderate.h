@@ -6,9 +6,12 @@
 #define COMP345TEAM21_MODERATE_H
 
 
-class Moderate {
+#include "Strategy.h"
+
+class Moderate : public Strategy {
 public:
-    int execute();
+    Powerplant executeBid() override;
+    bool executeAuction() override;
 };
 
 

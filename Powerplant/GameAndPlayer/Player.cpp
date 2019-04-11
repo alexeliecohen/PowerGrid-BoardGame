@@ -64,6 +64,8 @@ Player::Player() {
     roundReady = true;
     numOfPlayers++;
     numCities = 0;
+    strategy = nullptr;
+    startedNetwork = false;
 }//close constructor
 
 /**
@@ -89,23 +91,37 @@ Player::Player(const std::string& nameIn) {
     roundReady = true;
     Player::numOfPlayers++;
     numCities = 0;
+    this->strategy = nullptr;
+    startedNetwork = false;
+}
+
+Player::Player(const std::string& nameIn, Strategy *initStrategy) {
+    //if they try to add more palyers than the max
+    if (numOfPlayers == MAXNUMBERPLAYERS) {
+        std::cout << "Max Number of players reached, cannot create more";
+        return;
+    }
+    playerName = nameIn;
+    this->myHouseColor = myHouseColor;
+    elektros = DEFAULTELECTRO;
+    oil = DEFAULTRESOURCE;
+    coal = DEFAULTRESOURCE;
+    uranium = DEFAULTRESOURCE;
+    garbage = DEFAULTRESOURCE;
+    numOfCities = DEFAULTHOME;
+    numbHomes = DEFAULTHOME;
+    auctionReady = true;
+    roundReady = true;
+    Player::numOfPlayers++;
+    numCities = 0;
+    this->strategy = initStrategy;
+    startedNetwork = false;
 }
 
 Player::~Player() {
     std::cout << "Player " << playerName << " has left the game" << endl;
     numOfPlayers--;
 }//close destructor
-
-//Setters and Getters
-
-
-//ostream &Player::displayHouses(ostream &stream) {
-//    for (int i = 0; i < myHouses.size(); ++i) {
-//        stream << myHouses[i] << endl;
-//    }
-//    return stream;
-//}
-
 
 ostream &operator<<(ostream &stream, Player &Object) {
     //Output the player contents to the stream
@@ -118,10 +134,6 @@ ostream &operator<<(ostream &stream, Player &Object) {
     for (int i = 0; i < Object.myPowerPlant.size(); ++i) {
         stream << "Powerplant Index " << i + 1 << ": " << endl << Object.myPowerPlant[i] << endl;
     }
-    //output hoses
-//    for (int i = 0; i < Object.myHouses.size(); ++i) {
-//        stream << "House # " << i << " " << Object.myHouses[i] << endl;
-//    }
     return stream;
 }
 
@@ -445,10 +457,6 @@ int Player::chooseAPowerplant(int &usePowerplant) {
         cout << "Invalid choice, you did not select an available powerplant" << endl;
     } while (!Game::isValidInteger(powerplantChoice) || stoi(powerplantChoice) > myPowerPlant.size() - 1 ||
              stoi(powerplantChoice) < 0 || !validChoice);
-}
-
-void Player::declarePoweredCities(int resourceSpent) {
-
 }
 
 bool Player::canUsePowerplant(const Powerplant &p1) {
@@ -817,11 +825,11 @@ Powerplant Player::Auction(Game* g) {
         cin >> bid;
         //if the input was not a valid integer,or the number picked was larger/less than the powerplant size
         //output error clear buffer and restart.
-        if (!g->isValidInteger(bid) || stoi(bid) > marketSize || stoi(bid) < 0) {
+        if (!Game::isValidInteger(bid) || stoi(bid) > marketSize || stoi(bid) < 0) {
             cout << "Error: Entered wrong value for bid, please enter a correct powerplant number" << endl;
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
-    } while (!g->isValidInteger(bid) || stoi(bid) > marketSize - 1 || stoi(bid) < 0);
+    } while (!Game::isValidInteger(bid) || stoi(bid) > marketSize - 1 || stoi(bid) < 0);
     int val = stoi(bid);
     Powerplant currentBid = pMarket.removePowerplant(val);
     cout << currentBid << endl;
@@ -856,6 +864,18 @@ bool Player::Bid(Game* g) {
             return true;
         }
     } while (true);
+}
+
+void Player::setStrategy(Strategy* newStrategy) {
+    this->strategy = newStrategy;
+}
+
+Powerplant Player::executeBid(Game* g, Player* p) {
+    return this->strategy->executeBid(Game* g, Player* p);
+}
+
+bool Player::executeAuction(Game* g, Player* p) {
+    return this->strategy->executeAuction(Game* g, Player* p);
 }
 
 //close build cities
