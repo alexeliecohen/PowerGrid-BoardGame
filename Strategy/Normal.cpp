@@ -77,7 +77,7 @@ int Normal::Bid(Game* g, Player* p, int currentRoundBidderIndex, int auctionRoun
         }
             //The player decides to skip the reound decrement the players available to play this round and continue;
         else if (g->SkipRound()) {
-            auctionRoundPlayersRemaining--;
+            //auctionRoundPlayersRemaining--;
             currentRoundBidderIndex = (currentRoundBidderIndex + 1) % g->getNumPlayers();
             continue;
         }

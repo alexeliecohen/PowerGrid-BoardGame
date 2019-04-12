@@ -57,7 +57,7 @@ Deck::Deck() {
 
     CardDeck.push_back(new Powerplant(3,2,1,"Oil"));
     CardDeck.push_back(new Powerplant(4,2,1,"Coal"));
-    CardDeck.push_back(new Powerplant(5,2,1,"c"));
+    CardDeck.push_back(new Powerplant(5,2,1,"Ecological"));
     CardDeck.push_back(new Powerplant(6,1,1,"Garbage"));
     CardDeck.push_back(new Powerplant(7,3,2,"Oil"));
     CardDeck.push_back(new Powerplant(8,3,2,"Coal"));

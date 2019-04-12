@@ -12,7 +12,7 @@ class Aggressive : public Strategy {
 public:
     void executeAuction(Game* g, Player* p) override;
     bool executeBid(Game* g) override;
-    int Bid(Game* g, int currentRoundBidderIndex, int auctionRoundPlayersRemaining, int oneRemainingPlayer);
+    int Bid(Game* g, Player* p, int currentRoundBidderIndex, int auctionRoundPlayersRemaining, int oneRemainingPlayer) override;
 };
 
 

@@ -60,7 +60,6 @@ bool Environmentalist::executeBid(Game *g) {
 
 int Environmentalist::Bid(Game* g, Player* p, int currentRoundBidderIndex, int auctionRoundPlayersRemaining, int oneRemainingPlayer) {
     int mostRecentBidIndex;
-    Player player = *p;
     //Player that chooses powerplant starts a bid
     g->currentBidder->executeBid(g);
     //store the player as a the most recent bid
@@ -76,7 +75,7 @@ int Environmentalist::Bid(Game* g, Player* p, int currentRoundBidderIndex, int a
 
         //if the current player has already bought the powerplant or has decided to skip
         //the round/auction
-        if(g->currentBid.getResourceType() != "Ecological" && g->currentBidder->getPlayerName() == player.getPlayerName()) {
+        if(/*g->currentBid.getResourceType() != "Ecological" && g->currentBidder->getPlayerName() == p->getPlayerName()*/false) {
             auctionRoundPlayersRemaining--;
             currentRoundBidderIndex = (currentRoundBidderIndex + 1) % g->getNumPlayers();
             continue;
