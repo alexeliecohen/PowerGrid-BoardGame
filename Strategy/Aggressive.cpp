@@ -25,7 +25,7 @@ void Aggressive::executeAuction(Game* g, Player* p) {
     cout << g->currentBid << endl;
 }
 
-bool Aggressive::executeBid(Game *g, Player *p) {
+bool Aggressive::executeBid(Game *g) {
     string bid;
     do {
         cout << "Current Bid for the Powerplant " << g->currentBid.getBidValue() << " elektro" << endl
@@ -53,4 +53,8 @@ bool Aggressive::executeBid(Game *g, Player *p) {
             return true;
         }
     } while (true);
+}
+
+int Aggressive::Bid(Game *g, int currentRoundBidderIndex, int auctionRoundPlayersRemaining, int oneRemainingPlayer) {
+    return 0;
 }

@@ -64,9 +64,11 @@ public:
 
     void setStrategy(Strategy* newStrategy);
 
-    bool executeBid(Game* g, Player* p);
+    bool executeBid(Game* g);
 
     void executeAuction(Game* g, Player* p);
+
+    int Bid(Game* g, Player* p, int a, int b, int c);
 
     /**
      * Static method Gets the total number of players playing the game
@@ -307,8 +309,6 @@ public:
     int getResource(std::string resourceVal);
     int* getResourceRef(std::string resourceVal);
     bool canUsePowerplant(const Powerplant& p1);
-    Powerplant Auction(Game* g);
-    bool Bid(Game* g);
 };
 
 #endif //POWERPLANT_PLAYER_H

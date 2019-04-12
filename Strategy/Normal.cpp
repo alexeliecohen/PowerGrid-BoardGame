@@ -23,7 +23,7 @@ void Normal::executeAuction(Game* g, Player* p) {
     cout << g->currentBid << endl;
 }
 
-bool Normal::executeBid(Game *g, Player *p) {
+bool Normal::executeBid(Game *g) {
     string bid;
     do {
         cout << "Current Bid for the Powerplant " << g->currentBid.getBidValue() << " elektro" << endl
@@ -51,4 +51,44 @@ bool Normal::executeBid(Game *g, Player *p) {
             return true;
         }
     } while (true);
+}
+
+int Normal::Bid(Game* g, Player* p, int currentRoundBidderIndex, int auctionRoundPlayersRemaining, int oneRemainingPlayer) {
+    int mostRecentBidIndex;
+    //Player that chooses powerplant starts a bid
+    g->currentBidder->executeBid(g);
+    //store the player as a the most recent bid
+    mostRecentBidIndex = currentRoundBidderIndex;
+
+    //while there is still more than one player left
+    while (auctionRoundPlayersRemaining > oneRemainingPlayer) {
+        //next bidder for the round
+        g->currentBidder = g->getPlayerList()[currentRoundBidderIndex];
+
+        //if the current player has already bought a powerplant,or has decided to pass on current bid
+        //then go to next player
+
+        //if the current player has already bought the powerplant or has decided to skip
+        //the round/auction
+        if (!g->canBid()) {
+            auctionRoundPlayersRemaining--;
+            currentRoundBidderIndex = (currentRoundBidderIndex + 1) % g->getNumPlayers();
+            continue;
+        }
+            //The player decides to skip the reound decrement the players available to play this round and continue;
+        else if (g->SkipRound()) {
+            auctionRoundPlayersRemaining--;
+            currentRoundBidderIndex = (currentRoundBidderIndex + 1) % g->getNumPlayers();
+            continue;
+        }
+        g->currentBidder->executeBid(g);
+
+        //The last bidder to have bid for the poweprlant is stored just in case
+        //we reach only one player, then the loop is terminated
+        mostRecentBidIndex = currentRoundBidderIndex;
+
+        //go to the next bidder in the player list
+        currentRoundBidderIndex = (currentRoundBidderIndex + 1) % g->getNumPlayers();
+    }//end of Round
+    return mostRecentBidIndex;
 }

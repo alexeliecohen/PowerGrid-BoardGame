@@ -6,12 +6,13 @@
 #include "Game.h"
 #include "../../FileReader/MapLoader.h"
 #include "../../Strategy/Normal.h"
+#include "../../Strategy/Environmentalist.h"
 
 Game::Game() {
-    Player *p1 = new Player("Alex", new Normal());
     Player *p2 = new Player("Mike", new Normal());
     Player *p3 = new Player("Hubert", new Normal());
     Player *p4 = new Player("Marc", new Normal());
+    Player *p1 = new Player("Alex", new Environmentalist());
     playerList.push_back(p1);
     playerList.push_back(p2);
     playerList.push_back(p3);
@@ -26,12 +27,12 @@ Game::Game() {
     p3->addPowerplant(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
     p4->addPowerplant(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
     p4->addPowerplant(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
-//    for (int i = 0; i <playerList.size(); ++i) {
-//        playerList[i]->addCoal(20);
-//        playerList[i]->addGarbage(20);
-//        playerList[i]->addOil(20);
-//        playerList[i]->addUranium(20);
-//    }
+    for (auto & i : playerList) {
+        i->addCoal(20);
+        i->addGarbage(20);
+        i->addOil(20);
+        i->addUranium(20);
+    }
     p1->setNumOfCities(2);
     p2->setNumOfCities(3);
     p3->setNumOfCities(4);
@@ -41,6 +42,13 @@ Game::Game() {
     currentBidder = nullptr;
 }
 
+std::vector<Player*> Game::getPlayerList() {
+    return playerList;
+}
+
+int Game::getNumPlayers() {
+    return numbPlayers;
+}
 
 void Game::DeterminePlayerOrder() {
     //sort in reverse order biggest to smallest
@@ -55,27 +63,6 @@ void Game::DeterminePlayerOrder() {
     //check if the pointer is a number if ==0, then not a number
     return *p == 0;
 }
-
-
-//void Game::Auction() {
-//    string bid;
-//    int marketSize = pMarket.getSize();
-//    do {
-//        cout << currentBidder->getPlayerName() << " Please enter a number to pick a powerplant" << endl;
-//        cout << pMarket << endl;
-//        cin >> bid;
-//        //if the input was not a valid integer,or the number picked was larger/less than the powerplant size
-//        //output error clear buffer and restart.
-//        if (!isValidInteger(bid) || stoi(bid) > marketSize || stoi(bid) < 0) {
-//            cout << "Error: Entered wrong value for bid, please enter a correct powerplant number" << endl;
-//            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-//        }
-//    } while (!isValidInteger(bid) || stoi(bid) > marketSize - 1 || stoi(bid) < 0);
-//    int val = stoi(bid);
-//    currentBid = pMarket.removePowerplant(val);
-//    cout << currentBid << endl;
-//}
-
 
 bool Game::canAffordPowerplant() {
     //if the player does not have enough money to afford the powerplant
@@ -120,7 +107,7 @@ bool Game::Pass(string &msg, bool passAuction) {
             //and restart the loop
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
-    } while (skip != 'y' || skip != 'n');
+    } while (true);
 }
 
 bool Game::canBid() {
@@ -140,36 +127,6 @@ bool Game::canBid() {
     } else {
         return true;
     }
-}
-
-bool Game::Bid() {
-    string bid;
-    do {
-        cout << "Current Bid for the Powerplant " << currentBid.getBidValue() << " elektro" << endl
-             << "You have " << currentBidder->getElektros() << " elektro available: ";
-        //enter the bid
-        cin >> bid;
-        //if the bid is not a valid number report error
-        if (!isValidInteger(bid)) {
-            cout << "Not a valid number, please enter a number";
-            //clear the buffer
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            continue;
-        }
-
-            //if the bid the player entered is greater than the number of elektros a player owns report error
-        else if (stoi(bid) > currentBidder->getElektros() || stoi(bid) < 0 || stoi(bid) < currentBid.getBidValue()) {
-            cout << "You entered " << stoi(bid) << " elektro,You only have " << currentBidder->getElektros() << endl;
-            //clear the buffer
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            continue;
-        } else {
-            currentBid.setBidValue(stoi(bid));
-            //clear the buffer
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            return true;
-        }
-    } while (true);
 }
 
 bool Game::skipAuction() {
@@ -305,42 +262,7 @@ void Game::Phase2() {
 
         currentBidder->executeAuction(this, currentBidder);
         currentRoundBidderIndex = startNewBidIndex;
-
-        //Player that chooses powerplant starts a bid
-        currentBidder->executeBid(this, currentBidder);
-        //store the player as a the most recent bid
-        mostRecentBidIndex = currentRoundBidderIndex;
-
-        //while there is still more than one player left
-        while (auctionRoundPlayersRemaining > oneRemainingPlayer) {
-            //next bidder for the round
-            currentBidder = playerList[currentRoundBidderIndex];
-
-            //if the current player has already bought a powerplant,or has decided to pass on current bid
-            //then go to next player
-
-            //if the current player has already bought the powerplant or has decided to skip
-            //the round/auction
-            if (!canBid()) {
-                auctionRoundPlayersRemaining--;
-                currentRoundBidderIndex = (currentRoundBidderIndex + 1) % numbPlayers;
-                continue;
-            }
-                //The player decides to skip the reound decrement the players available to play this round and continue;
-            else if (SkipRound()) {
-                auctionRoundPlayersRemaining--;
-                currentRoundBidderIndex = (currentRoundBidderIndex + 1) % numbPlayers;
-                continue;
-            }
-            currentBidder->Bid(this);
-
-            //The last bidder to have bid for the poweprlant is stored just in case
-            //we reach only one player, then the loop is terminated
-            mostRecentBidIndex = currentRoundBidderIndex;
-
-            //go to the next bidder in the player list
-            currentRoundBidderIndex = (currentRoundBidderIndex + 1) % numbPlayers;
-        }//end of Round
+        mostRecentBidIndex = currentBidder->Bid(this, currentBidder, currentRoundBidderIndex, auctionRoundPlayersRemaining, oneRemainingPlayer);
         currentBidder = playerList[mostRecentBidIndex];
         cout << endl << currentBidder->getPlayerName() << " has won this bidding round and has received " << endl
              << currentBid << endl

@@ -43,6 +43,10 @@ public:
      */
     ~Game();
 
+    std::vector<Player*> getPlayerList();
+
+    int getNumPlayers();
+
     //==============================================Phase1 Methods=========================================
 
     /**
