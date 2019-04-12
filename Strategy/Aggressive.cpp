@@ -41,7 +41,13 @@ bool Aggressive::executeBid(Game *g) {
         cout << "Current Bid for the Powerplant " << g->currentBid.getBidValue() << " elektro" << endl
              << "You have " << g->currentBidder->getElektros() << " elektro available: ";
         //enter the bid
-        cin >> bid;
+        if(g->currentBid.getBidValue() <= g->currentBid.getPriceCost()) {
+            bid = std::to_string(g->currentBid.getPriceCost());
+        }
+        else {
+            bid = std::to_string(g->currentBid.getBidValue() + 1);
+        }
+        cout << bid << endl;
         //if the bid is not a valid number report error
         if (!Game::isValidInteger(bid)) {
             cout << "Not a valid number, please enter a number";
@@ -57,9 +63,6 @@ bool Aggressive::executeBid(Game *g) {
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             continue;
         } else {
-            g->currentBid.setBidValue(stoi(bid));
-            //clear the buffer
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
             return true;
         }
     } while (true);
@@ -82,17 +85,20 @@ int Aggressive::Bid(Game* g, Player* p, int currentRoundBidderIndex, int auction
 
         //if the current player has already bought the powerplant or has decided to skip
         //the round/auction
-        if (!g->canBid()) {
-            auctionRoundPlayersRemaining--;
-            currentRoundBidderIndex = (currentRoundBidderIndex + 1) % g->getNumPlayers();
-            continue;
+        if(g->currentBidder->getPlayerName() != p->getPlayerName()) {
+            if (!g->canBid()) {
+                auctionRoundPlayersRemaining--;
+                currentRoundBidderIndex = (currentRoundBidderIndex + 1) % g->getNumPlayers();
+                continue;
+            }
+                //The player decides to skip the reound decrement the players available to play this round and continue;
+            else if (g->SkipRound()) {
+                //auctionRoundPlayersRemaining--;
+                currentRoundBidderIndex = (currentRoundBidderIndex + 1) % g->getNumPlayers();
+                continue;
+            }
         }
-            //The player decides to skip the reound decrement the players available to play this round and continue;
-        else if (g->SkipRound()) {
-            auctionRoundPlayersRemaining--;
-            currentRoundBidderIndex = (currentRoundBidderIndex + 1) % g->getNumPlayers();
-            continue;
-        }
+        std::cout << g->currentBidder->getPlayerName() << "'s turn to bid\n";
         g->currentBidder->executeBid(g);
 
         //The last bidder to have bid for the poweprlant is stored just in case

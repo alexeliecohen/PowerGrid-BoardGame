@@ -81,6 +81,7 @@ int Normal::Bid(Game* g, Player* p, int currentRoundBidderIndex, int auctionRoun
             currentRoundBidderIndex = (currentRoundBidderIndex + 1) % g->getNumPlayers();
             continue;
         }
+        std::cout << g->currentBidder->getPlayerName() << "'s turn to bid\n";
         g->currentBidder->executeBid(g);
 
         //The last bidder to have bid for the poweprlant is stored just in case

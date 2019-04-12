@@ -75,24 +75,25 @@ int Environmentalist::Bid(Game* g, Player* p, int currentRoundBidderIndex, int a
 
         //if the current player has already bought the powerplant or has decided to skip
         //the round/auction
-        if(/*g->currentBid.getResourceType() != "Ecological" && g->currentBidder->getPlayerName() == p->getPlayerName()*/false) {
+        if(g->currentBid.getResourceType() != "Ecological" && g->currentBidder->getPlayerName() == p->getPlayerName()) {
             auctionRoundPlayersRemaining--;
             currentRoundBidderIndex = (currentRoundBidderIndex + 1) % g->getNumPlayers();
             continue;
         }
-        else {
+        else if(g->currentBidder->getPlayerName() != p->getPlayerName()){
             if (!g->canBid()) {
                 auctionRoundPlayersRemaining--;
                 currentRoundBidderIndex = (currentRoundBidderIndex + 1) % g->getNumPlayers();
                 continue;
             }
-                //The player decides to skip the reound decrement the players available to play this round and continue;
+                //The player decides to skip the round decrement the players available to play this round and continue;
             else if (g->SkipRound()) {
-                auctionRoundPlayersRemaining--;
+                //auctionRoundPlayersRemaining--;
                 currentRoundBidderIndex = (currentRoundBidderIndex + 1) % g->getNumPlayers();
                 continue;
             }
         }
+        std::cout << g->currentBidder->getPlayerName() << "'s turn to bid\n";
         g->currentBidder->executeBid(g);
 
         //The last bidder to have bid for the poweprlant is stored just in case

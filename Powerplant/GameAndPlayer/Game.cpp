@@ -13,7 +13,7 @@ Game::Game() {
     Player *p2 = new Player("Mike", new Normal());
     Player *p3 = new Player("Hubert", new Normal());
     Player *p4 = new Player("Marc", new Normal());
-    Player *p1 = new Player("Alex", new Normal());
+    Player *p1 = new Player("Alex", new Aggressive());
     playerList.push_back(p1);
     playerList.push_back(p2);
     playerList.push_back(p3);
