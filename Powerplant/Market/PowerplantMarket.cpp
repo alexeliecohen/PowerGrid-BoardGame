@@ -5,6 +5,15 @@
 
 #include "PowerplantMarket.h"
 
+bool PowerplantMarket::canAffordAny(Player* p) {
+    for (int i = 0; i < currentMarket.size(); ++i) {
+        if (p->getElektros() >= currentMarket[i].getPriceCost())
+            return true;
+    }
+    return false;
+}
+
+
 PowerplantMarket::PowerplantMarket(Deck &myDeck) {
     //fill the current market and the future market
     FillMarkets(myDeck);

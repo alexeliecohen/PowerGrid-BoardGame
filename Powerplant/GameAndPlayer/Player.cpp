@@ -19,6 +19,7 @@
 #include <iostream>
 #include <locale>
 #include "Game.h"
+#include "Observer.h"
 
 int Player::numOfPlayers = 0;
 vector<string> Player::houseColor = {"Green", "Blue", "Black", "Pink", "Yellow", "Orange"};
@@ -82,6 +83,30 @@ Player::Player(std::string nameIn) {
     playerName = nameIn;
     this->myHouseColor = myHouseColor;
     elektros = DEFAULTELECTRO;
+    oil = DEFAULTRESOURCE;
+    coal = DEFAULTRESOURCE;
+    uranium = DEFAULTRESOURCE;
+    garbage = DEFAULTRESOURCE;
+    numOfCities = DEFAULTHOME;
+    numbHomes = DEFAULTHOME;
+    auctionReady = true;
+    roundReady = true;
+    this->numOfPlayers++;
+    numCities = 0;
+}
+
+Player::Player(std::string name, Game *g) {
+    subject = g;
+    subject->Attach(this);
+//if they try to add more players than the max
+    if (numOfPlayers == MAXNUMBERPLAYERS) {
+        std::cout << "Max Number of players reached, cannot create more";
+        return;
+    }
+    playerName = name;
+    this->myHouseColor = myHouseColor;
+//    elektros = DEFAULTELECTRO;
+    elektros = rand()%50;
     oil = DEFAULTRESOURCE;
     coal = DEFAULTRESOURCE;
     uranium = DEFAULTRESOURCE;
@@ -296,6 +321,21 @@ bool Player::operator<(Player &p1) {
     }
     return true;
 }
+
+
+bool Player::operator==(Player &p1) {
+    //if the other player has more conencted cities
+    return this->playerName == p1.getPlayerName();
+}
+////
+////    if (this->numOfCities > p1.numOfCities) {
+////        return false;
+////    } //if equal number of cities then compare the highest numbered powerplant
+////    else if (this->numOfCities == p1.numOfCities) {
+////        return (this->myPowerPlant.front() < p1.myPowerPlant.front());
+////    }
+////    return true;
+//}
 /*====================================Display Class to Cout Methods====================================*/
 
 
@@ -399,7 +439,7 @@ bool Player::wantsAPowerplant() {
             //player doesnt want to skip the round or the auction
             //then just keep going
         else if (buyPowerplant == 'n') {
-            std::cout << playerName << " has decided to skip phase 5 \n";
+            std::cout << playerName << " has decided to skip phase 4 \n";
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             return false;
         }
@@ -808,6 +848,16 @@ void Player::buyCities(Map *map, int gamePhaseNumber) {
 
 void Player::setNumOfCities(int numOfCities) {
     Player::numOfCities = numOfCities;
+}
+
+void Player::Update(int i ) {
+//    subject->add(this);
+    subject->Update(this,i);
+//    subject->display(this);
+    cout << "==============================Player " << i << " Info==============================" << endl;
+    cout << *this << endl;
+    cout << "===================================================================================" << endl;
+
 }
 
 

@@ -1,12 +1,34 @@
-//
-// Created by alext on 2/26/2019.
-//
-#include "Player.h"
-#include "../Market/PowerplantMarket.h"
-#include "../Market/ResourceMarket.h"
 
 #ifndef POWERPLANT_GAME_H
 #define POWERPLANT_GAME_H
+
+// widget initialization
+#include <iostream>
+#include <QApplication>
+#include <QtWidgets/QMainWindow>
+#include <QtCharts/QChartView>
+#include <QtCharts/QBarSeries>
+#include <QtCharts/QBarSet>
+#include <QtCharts/QLegend>
+#include <QtCharts/QBarCategoryAxis>
+#include <QtCharts/QHorizontalStackedBarSeries>
+#include <QtCharts/QLineSeries>
+#include <QtCharts/QCategoryAxis>
+#include <QTimer>
+//#include "Runner.cpp"
+//#include "Player.h"
+#include "../Market/PowerplantMarket.h"
+#include "../Market/ResourceMarket.h"
+#include "../Card/Deck.h"
+#include "../Card/Powerplant.h"
+#include "Subject.h"
+#include <../../mainwindow.h>
+
+
+
+
+
+using namespace std;
 
 static int const NUMBREGIONS[] = {3, 3, 4, 5, 5};//Number of regions chosen on the map
 static int const REMOVEPOWERPLANTS[] = {8, 8, 4, 0, 0};
@@ -22,19 +44,42 @@ static int const DEFAULTRESOURCE = 0;//default resource at the beginning of the 
 static int const DEFAULTHOME = 0;//default number of homes for each player at the beginning of the game
 static int const MAXNUMBERPLAYERS = 6; //max number of players in the game
 static int const MINNUMBERPLAYERS = 2;//min number players in the game.
-class Game {
+//static int const string phaseMessage
+//static int const string
+//class Deck;
+
+//class QBarSet;
+QT_CHARTS_USE_NAMESPACE
+
+
+class Game : public Subject {
 private:
-    std::vector<Player *> playerList; //list of players in the game
     Deck myDeck; //Create deck of cards of for the game
     PowerplantMarket pMarket = PowerplantMarket(myDeck);     //Powerplant Market for buying powerplants
     ResourceMarket* rMarket;     //Resource market for buying resource
     bool gameStart; //at gamestart all players m{}ust buy powerplants and cannot skip phase 1
     int numbPlayers; //Represents the number of participating players in the game
     Powerplant currentBid; //Represents the current powerplant up for bid
-    Player *currentBidder; //Represents the currentBidder {}for phaseI
-    Map* m;
+    Player *currentBidder; //Represents the currentBidder for phaseI
+     QList<QBarSet*> set;
+     int Step,Phase;
+//    QBarSeries *series = new QBarSeries();
+//    QChart *chart;
+//    QBarCategoryAxis *axis;
+//    QChartView *chartView;
+
 public:
-    Game();
+    int argc;
+    char **argv;
+
+    void add(Player* p);
+
+    int display() override;
+
+
+    void Update(Player *p,int i);
+
+    Game(int argc, char *argv[]);
 
     /**
      *Destructor for the class deletes playerlist and sets currenntBidder to null
@@ -48,6 +93,12 @@ public:
      * the playerlist vector based on powerplant price cost (or number on the card)
      */
     void DeterminePlayerOrder();
+
+    /**
+     * Determines if the player can afford to auction for any powerplants at all
+     * in the game
+     */
+    void canAuction();
 
     /**
      * Utility method allows the player to pick the Powerplant for auction and store

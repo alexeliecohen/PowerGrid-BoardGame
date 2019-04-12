@@ -20,6 +20,8 @@
 #include "../Card/Powerplant.h"
 #include "../../Map/Map.h"
 #include "../Market/ResourceMarket.h"
+#include "Observer.h"
+//#include "../../Display.h"
 
 class Game;
 
@@ -36,9 +38,9 @@ static int MAXGARBAGE;
 static int MAXURANIUM;
 
 using namespace std;
-class Player {
+class Player: public Observer {
 private:
-    static int numOfPlayers; //keeps a a tabk
+    static int numOfPlayers; //keeps a tab of numb of players
     static vector<string> houseColor;  //Keeps a tab of the available house colors to choose from
     string myHouseColor; //specific house color for the player class
     std::string playerName; //player name
@@ -52,8 +54,17 @@ private:
     int numCities;
     bool startedNetwork;					//true when player builds his/her 1st house
     std::vector<string> myHouses;
-
+    Game* subject;
 public:
+    void Update(int i);
+
+    /**
+     * Parametized Constructore for taking in the game class for observer pattern
+     * @param name Player name
+     * @param g Pointer to the game class
+     */
+    Player(std::string name,Game* g);
+
     /**
      * Default constructor for the Player object
      */
@@ -254,6 +265,7 @@ public:
      */
     bool operator<(Player &p1);
 
+    bool operator==(Player &p1);
     /**
      * getter to check if the player is ready for auction
      * @return boolean value true if the player is ready false if not

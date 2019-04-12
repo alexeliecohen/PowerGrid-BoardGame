@@ -7,58 +7,153 @@
 #include "Game.h"
 #include "../../FileReader/MapLoader.h"
 
-Game::Game() {
-    Player *p1 = new Player("Alex");
-    Player *p2 = new Player("Mike");
-    Player *p3 = new Player("Hubert");
-    Player *p4 = new Player("Marc");
-    playerList.push_back(p1);
-    playerList.push_back(p2);
-    playerList.push_back(p3);
-    playerList.push_back(p4);
-    numbPlayers = playerList.size();
-    myDeck.shuffle();
-    p1->addPowerplant(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
-    p1->addPowerplant(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
-    p2->addPowerplant(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
-    p2->addPowerplant(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
-    p3->addPowerplant(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
-    p3->addPowerplant(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
-    p4->addPowerplant(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
-    p4->addPowerplant(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
-//    for (int i = 0; i <playerList.size(); ++i) {
-//        playerList[i]->addCoal(20);
-//        playerList[i]->addGarbage(20);
-//        playerList[i]->addOil(20);
-//        playerList[i]->addUranium(20);
+int Game::display() {
+    QApplication a(argc, argv);
+    QBarSeries *series = new QBarSeries();
+
+    for (int j = 0; j < set.size(); ++j)
+        series->append(set[j]);
+    // Used to define the bar chart to display, title
+    // legend,
+    QChart *chart = new QChart();
+
+    // Add the chart
+    chart->addSeries(series);
+
+    // Set title
+    chart->setTitle("Player Stats");
+
+    // Define starting animation
+    // NoAnimation, GridAxisAnimations, SeriesAnimations
+    chart->setAnimationOptions(QChart::AllAnimations);
+
+    // Holds the category titles
+    QStringList categories;
+    categories << "Coal" << "Oil" << "Garbage" << "Uranium" << "Numb Cities" << "Elektro";
+
+    // Adds categories to the axes
+    QBarCategoryAxis *axis = new QBarCategoryAxis();
+    axis->append(categories);
+    chart->createDefaultAxes();
+
+    // 1. Bar chart
+    chart->setAxisX(axis, series);
+
+    // 2. Stacked Bar chart
+    // chart->setAxisY(axis, series);
+
+    // Define where the legend is displayed
+    chart->legend()->setVisible(true);
+    chart->legend()->setAlignment(Qt::AlignBottom);
+
+    // Used to display the chart
+    QChartView *chartView = new QChartView(chart);
+    chartView->setRenderHint(QPainter::Antialiasing);
+
+    // Used to change the palette
+    QPalette pal = qApp->palette();
+
+    // Change the color around the chart widget and text
+    pal.setColor(QPalette::Window, QRgb(0xffffff));
+    pal.setColor(QPalette::WindowText, QRgb(0x404044));
+
+    // Apply palette changes to the application
+    qApp->setPalette(pal);
+
+    QMainWindow window;
+
+//    Set the main window widget
+    window.setCentralWidget(chartView);
+    window.resize(420, 300);
+    window.show();
+    a.exec();
+//    for (int i = 0; i <set.size(); ++i) {
+//
 //    }
+//    set.clear();
+    return 0;
+}
+
+void Game::add(Player *p) {
+    set.push_back(new QBarSet(QString::fromStdString(p->getPlayerName())));
+
+    *set[set.size() - 1] << p->getCoal() << p->getOil() << p->getGarbage() << p->getUranium() << p->getNumOfCities()
+                         << p->getElektros();
+}
+//end method
+
+void Game::Update(Player *p, int i) {
+    set[i]->replace(0, p->getCoal());
+    set[i]->replace(1, p->getOil());
+    set[i]->replace(2, p->getGarbage());
+    set[i]->replace(3, p->getUranium());
+    set[i]->replace(4, p->getNumOfCities());
+    set[i]->replace(5, p->getElektros());
+}
+
+
+Game::Game(int argc, char *argv[]) {
+    this->argc = argc;
+    this->argv = argv;
+    Player *p1 = new Player("Alex", this);
+    Player *p2 = new Player("Mike", this);
+    Player *p3 = new Player("Hubert", this);
+    Player *p4 = new Player("Marc", this);
+    numbPlayers = (*playerList).size();
+    myDeck.shuffle();
+    p1->addPowerplant(*dynamic_cast<Powerplant *>(myDeck.removeCard()));
+    p1->addPowerplant(*dynamic_cast<Powerplant *>(myDeck.removeCard()));
+    p2->addPowerplant(*dynamic_cast<Powerplant *>(myDeck.removeCard()));
+    p2->addPowerplant(*dynamic_cast<Powerplant *>(myDeck.removeCard()));
+    p3->addPowerplant(*dynamic_cast<Powerplant *>(myDeck.removeCard()));
+    p3->addPowerplant(*dynamic_cast<Powerplant *>(myDeck.removeCard()));
+    p4->addPowerplant(*dynamic_cast<Powerplant *>(myDeck.removeCard()));
+    p4->addPowerplant(*dynamic_cast<Powerplant *>(myDeck.removeCard()));
+    for (int i = 0; i < (*playerList).size(); ++i) {
+        dynamic_cast<Player *>((*playerList)[i])->addCoal(rand() % 21);
+        dynamic_cast<Player *>((*playerList)[i])->addGarbage(rand() % 21);
+        dynamic_cast<Player *>((*playerList)[i])->addOil(rand() % 21);
+        dynamic_cast<Player *>((*playerList)[i])->addUranium(rand() % 21);
+    }
     p1->setNumOfCities(2);
-    p2->setNumOfCities(3);
-    p3->setNumOfCities(4);
-    p4->setNumOfCities(5);
-    rMarket = new ResourceMarket();
-    m = Map::Instance();
+    p2->setNumOfCities(7);
+    p3->setNumOfCities(6);
+    p4->setNumOfCities(1);
+    add(p1);
+    add(p2);
+    add(p3);
+    add(p4);
 }
 
 
 void Game::DeterminePlayerOrder() {
     //sort in reverse order biggest to smallest
-    sort(playerList.begin(), playerList.end());
-    reverse(playerList.begin(), playerList.end());
+    sort(playerList->begin(), playerList->end());
+    reverse(playerList->begin(), playerList->end());
 }
 
- bool Game::isValidInteger(const std::string& line) {
+bool Game::isValidInteger(std::string line) {
     char *p;
     //convert string to long of base 10
     strtol(line.c_str(), &p, 10);
     //check if the pointer is a number if ==0, then not a number
     return *p == 0;
 }
-
+void Game::canAuction() {
+   if (!pMarket.canAffordAny(currentBidder)) {
+       currentBidder->setAuctionReady(false);
+       cout <<  currentBidder->getPlayerName() << " Cannot enter the auction as he cannot afford any powerplants" << endl;
+   }
+}
 
 void Game::Auction() {
     string bid;
     int marketSize = pMarket.getSize();
+//    bool canAffordAnyPowerrpl
+//    for (int i = 0; i < marketSize ; ++i) {
+//
+//
+//    }
     do {
         cout << currentBidder->getPlayerName() << "Please enter a number to pick a powerplant" << endl;
         cout << pMarket << endl;
@@ -187,8 +282,8 @@ bool Game::SkipRound() {
 
 Game::~Game() {
     //delete playerlist pointers
-    for (auto & i : playerList) {
-        delete i;
+    for (int i = 0; i < playerList->size(); ++i) {
+        delete (*playerList)[i];
     }
     delete rMarket;
     delete m;
@@ -198,7 +293,7 @@ Game::~Game() {
 }
 
 void Game::Phase1() {
-    int mapFile = 0;
+    int mapFile = -1;
     int numPlayers = 0;
     int regionNumber = 0;
     string path = "../MapFiles/";
@@ -266,6 +361,12 @@ void Game::Phase1() {
 }
 
 void Game::Phase2() {
+//    Notify();
+display();
+    cout << dynamic_cast<Player*>((*playerList)[2])->getPlayerName() << endl;
+    dynamic_cast<Player*>((*playerList)[2])->addOil(44);
+//    dynamic_cast<Player*>((*playerList)[0])->;
+    Notify();
     //Determine the player order here by sorting the vector of values
     DeterminePlayerOrder();
     //this number is initially set to the number of players in the list
@@ -291,7 +392,10 @@ void Game::Phase2() {
 //while there are still players that can/want to auction
     while (phaseOnePlayersRemaining > NoAvailablePlayers) {
         //loop through the player list starting from the beginning
-        currentBidder = playerList[startNewBidIndex];
+        currentBidder = dynamic_cast<Player *>((*playerList)[startNewBidIndex]);
+        //if the player can afford any current powerplants
+//        canAuction();
+//        currentBidder = playerList         [startNewBidIndex];
         //If Player has bought a powerplant or doesnt want to auction then skip
         if (!currentBidder->isAuctionReady()) {
             startNewBidIndex = (startNewBidIndex + 1) % numbPlayers;
@@ -317,7 +421,7 @@ void Game::Phase2() {
         //while there is still more than one player left
         while (auctionRoundPlayersRemaining > oneRemainingPlayer) {
             //next bidder for the round
-            currentBidder = playerList[currentRoundBidderIndex];
+            currentBidder = dynamic_cast<Player *>((*playerList)[currentRoundBidderIndex]);
 
             //if the current player has already bought a powerplant,or has decided to pass on current bid
             //then go to next player
@@ -344,7 +448,7 @@ void Game::Phase2() {
             //go to the next bidder in the player list
             currentRoundBidderIndex = (currentRoundBidderIndex + 1) % numbPlayers;
         }//end of Round
-        currentBidder = playerList[mostRecentBidIndex];
+        currentBidder = dynamic_cast<Player *>((*playerList)[mostRecentBidIndex]);
         cout << endl << currentBidder->getPlayerName() << " has won this bidding round and has received " << endl
              << currentBid << endl
              << "he will not be able to participate in the rest of the phase" << endl;
@@ -404,15 +508,21 @@ void Game::Phase3() {
  * Method phase 4, powering cities by using resources and power plants to generate elecktro
  */
 void Game::Phase4() {
-    //bureaucracy
-    for (Player *p : playerList)
-        p->powerCities();
+    cout << "Welcome to Phase 4" << endl;
+//    cout << "Hello world" << endl;
+    Notify();
 
+    //bureaucracy
+    for (Observer *o : *playerList)
+        dynamic_cast<Player *>(o)->powerCities();
+
+    Notify();
     //replace powerplants
     pMarket.replaceFutureMarket(myDeck);
     cout << pMarket << endl;
     //replace resourcemarket
-    rMarket->resupplyMarket(numbPlayers,1);
+    rMarket.resupplyMarket(numbPlayers, 1);
     cout << pMarket << endl;
 }
-//end method
+
+
