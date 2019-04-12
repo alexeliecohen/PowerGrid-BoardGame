@@ -1,33 +1,25 @@
 cmake_minimum_required(VERSION 3.13)
 project(COMP345Team21)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 14)
 
-# Find includes in corresponding build directories
-set(CMAKE_INCLUDE_CURRENT_DIR ON)
-# Instruct CMake to run moc automatically when needed
-set(CMAKE_AUTOMOC ON)
-
-# Create code from a list of Qt designer ui files
-set(CMAKE_AUTOUIC ON)
-
-set(Qt5Charts_DIR  "C:\\Qt\\5.12.2\\mingw73_64\\lib\\cmake\\Qt5Charts")
-set(Qt5Widgets_DIR  "C:\\Qt\\5.12.2\\mingw73_64\\lib\\cmake\\Qt5Widgets")
-set(Qt5Core_DIR  "C:\\Qt\\5.12.2\\mingw73_64\\lib\\cmake\\Qt5Core")
-
-# Find the QtWidgets library
-find_package(Qt5Widgets CONFIG REQUIRED)
-find_package(Qt5Core CONFIG REQUIRED)
-find_package(Qt5Charts CONFIG REQUIRED)
-
+include_directories(.)
+include_directories(cmake-build-debug/COMP345Team21_autogen)
+include_directories(cmake-build-debug/COMP345Team21_autogen/include)
 include_directories(FileReader)
 include_directories(Map)
 include_directories(Powerplant/Card)
 include_directories(Powerplant/GameAndPlayer)
 include_directories(Powerplant/Market)
-#include_directories(UI)
+include_directories(Strategy)
 
-set(SOURCE
+add_executable(COMP345Team21
+        cmake-build-debug/COMP345Team21_autogen/BCPV7IRI3O/moc_Runner.cpp
+        cmake-build-debug/COMP345Team21_autogen/EWIEGA46WW/moc_mainwindow.cpp
+        cmake-build-debug/COMP345Team21_autogen/include/ui_mainwindow.h
+        cmake-build-debug/COMP345Team21_autogen/KRKR4BN5RM/moc_mainwindow.cpp
+        cmake-build-debug/COMP345Team21_autogen/moc_predefs.h
+        cmake-build-debug/COMP345Team21_autogen/mocs_compilation.cpp
         FileReader/FileReader.cpp
         FileReader/FileReader.h
         FileReader/MapLoader.cpp
@@ -48,27 +40,27 @@ set(SOURCE
         Powerplant/Card/Step13.h
         Powerplant/Card/Summary.cpp
         Powerplant/Card/Summary.h
-        Powerplant/GameAndPlayer/Subject.h
-        Powerplant/GameAndPlayer/Subject.cpp
         Powerplant/GameAndPlayer/Game.cpp
         Powerplant/GameAndPlayer/Game.h
-        Powerplant/GameAndPlayer/Observer.h
         Powerplant/GameAndPlayer/Observer.cpp
+        Powerplant/GameAndPlayer/Observer.h
         Powerplant/GameAndPlayer/Player.cpp
         Powerplant/GameAndPlayer/Player.h
+        Powerplant/GameAndPlayer/Subject.cpp
+        Powerplant/GameAndPlayer/Subject.h
         Powerplant/Market/PowerplantMarket.cpp
         Powerplant/Market/PowerplantMarket.h
         Powerplant/Market/ResourceMarket.cpp
         Powerplant/Market/ResourceMarket.h
-#        Powerplant/Market/ResourceMarket.h
-        mainwindow.cpp
+        Strategy/Aggressive.cpp
+        Strategy/Aggressive.h
+        Strategy/Environmentalist.cpp
+        Strategy/Environmentalist.h
+        Strategy/Moderate.cpp
+        Strategy/Moderate.h
+        Strategy/Normal.cpp
+        Strategy/Normal.h
+        Strategy/Strategy.h
         Main_PowerGrid_Driver.cpp
-        )
-# Tell CMake to create the helloworld executable
-#add_executable(${PROJECT_NAME} ${UI_HEADERS} ${SOURCE})
-add_executable(COMP345Team21 WIN32 ${SOURCE})
-
-# Use the Widgets module from Qt 5
-target_link_libraries(COMP345Team21 Qt5::Widgets)
-target_link_libraries(COMP345Team21 Qt5::Core)
-target_link_libraries(COMP345Team21 Qt5::Charts)
+        mainwindow.cpp
+        mainwindow.h)
