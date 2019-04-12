@@ -39,7 +39,7 @@ static int const GAMEEND[] = {21, 17, 17, 15, 14};//number of cities to trigger 
 static int const PAYMENT[] = {10, 22, 33, 44, 54, 64, 73, 82, 90, 98, 105, 112, 118, 124, 129, 134, 138, 142, 145, 148,
                               150};
 //payment in electros based on cities supplied with electricity
-static int const DEFAULTELECTRO = 50;//default electro for each player at the start of the game
+static int const DEFAULTELECTRO = 200;//default electro for each player at the start of the game
 static int const DEFAULTRESOURCE = 0;//default resource at the beginning of the game
 static int const DEFAULTHOME = 0;//default number of homes for each player at the beginning of the game
 static int const MAXNUMBERPLAYERS = 6; //max number of players in the game
@@ -55,10 +55,12 @@ QT_CHARTS_USE_NAMESPACE
 class Game : public Subject {
 private:
     Deck myDeck; //Create deck of cards of for the game
-    PowerplantMarket pMarket = PowerplantMarket(myDeck);     //Powerplant Market for buying powerplants
+    //PowerplantMarket pMarket = PowerplantMarket(myDeck);     //Powerplant Market for buying powerplants
     ResourceMarket* rMarket;     //Resource market for buying resource
-    bool gameStart; //at gamestart all players m{}ust buy powerplants and cannot skip phase 1
     int numbPlayers; //Represents the number of participating players in the game
+//    Powerplant currentBid; //Represents the current powerplant up for bid
+//    Player *currentBidder; //Represents the currentBidder {}for phaseI
+    Map* m;
     Powerplant currentBid; //Represents the current powerplant up for bid
     Player *currentBidder; //Represents the currentBidder for phaseI
      QList<QBarSet*> set;
@@ -69,6 +71,10 @@ private:
 //    QChartView *chartView;
 
 public:
+    PowerplantMarket pMarket = PowerplantMarket(myDeck);
+    Player *currentBidder;
+    Powerplant currentBid;
+    Game();
     int argc;
     char **argv;
 
@@ -85,6 +91,10 @@ public:
      *Destructor for the class deletes playerlist and sets currenntBidder to null
      */
     ~Game();
+
+    std::vector<Player*> getPlayerList();
+
+    int getNumPlayers();
 
     //==============================================Phase1 Methods=========================================
 

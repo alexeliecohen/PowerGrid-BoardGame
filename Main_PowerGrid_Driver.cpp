@@ -26,6 +26,8 @@ int main(int argc, char *argv[]) {
 
     Game *g = new Game(argc, argv);
     g->Phase1();
+    g->Phase2();
+    g->Phase3();
     g->Phase4();
 //    g->add();
 //    g->Notify();

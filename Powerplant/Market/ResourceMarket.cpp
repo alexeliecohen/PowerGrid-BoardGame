@@ -14,10 +14,6 @@
 #include <string>
 #include "ResourceMarket.h"
 
-
-
-namespace Mike2 {
-
 //Attributes
 int oil;
 int coal;
@@ -232,4 +228,3 @@ void ResourceMarket::resupplyMarket(int numOfPlayas, int gamePhaseNum){
 	addGarbage( RESSUPLYMARKET[numOfPlayas][gamePhaseNum][3] );
 	addUranium( RESSUPLYMARKET[numOfPlayas][gamePhaseNum][4] );
 }//close re-supply resources
-} /* namespace Mike */

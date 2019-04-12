@@ -5,6 +5,7 @@
 #include "../Card/Powerplant.h"
 #include "../Card/Deck.h"
 #include "../GameAndPlayer/Player.h"
+
 #ifndef POWERPLANT_POWERPLANTMARKET_H
 #define POWERPLANT_POWERPLANTMARKET_H
 
@@ -55,6 +56,9 @@ public:
     void replaceFutureMarket(Deck& myDeck);
 
     void setFutureMarket(const vector<Powerplant> &futureMarket);
+
+    std::vector<Powerplant> getCurrentMarket();
+
     int getFutureMarketConsumption() const;
 
     bool canAffordAny(Player* p);

@@ -24,7 +24,7 @@ void PowerplantMarket::FillMarkets(Deck &myDeck) {
         futureMarket.push_back(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
     }
     //loop throught the current market and add values
-    for (int j = 0; j < marketSize ; ++j) {
+    for (int j = 0; j < marketSize; ++j) {
         currentMarket.push_back(*dynamic_cast<Powerplant*>(myDeck.removeCard()));
     }
     //sort both markets
@@ -87,3 +87,6 @@ void PowerplantMarket::setFutureMarket(const vector<Powerplant> &futureMarket) {
     PowerplantMarket::futureMarket = futureMarket;
 }
 
+std::vector<Powerplant> PowerplantMarket::getCurrentMarket() {
+    return currentMarket;
+}

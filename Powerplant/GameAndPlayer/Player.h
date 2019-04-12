@@ -4,7 +4,7 @@
  *
  * 	MICHAEL GARNER
  * 	26338739
- * 	COMP 445
+ * 	COMP 345
  * 	WINTER 2019
  *
  * 	ASSIGNMENT 1
@@ -12,7 +12,6 @@
  *
  *
 */
-//#include "Game.h"
 #include <string>
 #include <iostream>
 #include <vector>
@@ -22,23 +21,15 @@
 #include "../Market/ResourceMarket.h"
 #include "Observer.h"
 //#include "../../Display.h"
+#include "../../Strategy/Strategy.h"
 
 class Game;
-
-using namespace Mike2;
+class Strategy;
 
 #ifndef POWERPLANT_PLAYER_H
 #define POWERPLANT_PLAYER_H
 
-
-//namespace Mike {
-static int MAXCOAL;
-static int MAXOIL;
-static int MAXGARBAGE;
-static int MAXURANIUM;
-
-using namespace std;
-class Player: public Observer {
+class Player {
 private:
     static int numOfPlayers; //keeps a tab of numb of players
     static vector<string> houseColor;  //Keeps a tab of the available house colors to choose from
@@ -47,7 +38,6 @@ private:
     int elektros; //the number of elektros a player owns
     int oil, coal, garbage, uranium; //the resources the player owns
     int numbHomes, numOfCities; //the number of totals homes and the number of connected cities
-    int currentBid;
     std::vector<Powerplant> myPowerPlant; //list of powerplants a player owns
 //    std::vector<Houses> myHouses; //list of homes the player owns
     bool auctionReady,roundReady;
@@ -55,6 +45,8 @@ private:
     bool startedNetwork;					//true when player builds his/her 1st house
     std::vector<string> myHouses;
     Game* subject;
+    std::vector<std::string> myHouses;
+    Strategy* strategy;
 public:
     void Update(int i);
 
@@ -74,12 +66,34 @@ public:
      * Fully parametrized constructor for the Player object
      * @param name Name of the Player
      */
-    Player(std::string name);
+    Player(const std::string& name);
+
+    Player(const std::string& name, Strategy* initStrategy);
 
     /**
      * Destructor for the player class
      */
     virtual ~Player();
+
+    void setStrategy(Strategy* newStrategy);
+
+    bool executeBid(Game* g);
+
+    void executeAuction(Game* g, Player* p);
+
+    int Bid(Game* g, Player* p, int a, int b, int c);
+
+    void buyCities(Map* map, Player* p, int gamePhaseNumber);
+
+    bool getStartedNetwork();
+
+    void setStartedNetwork(bool b);
+
+    std::vector<std::string> getMyHouses();
+
+    void addHouse(const std::string& s);
+
+    void setElektros(int n);
 
     /**
      * Static method Gets the total number of players playing the game
@@ -91,13 +105,13 @@ public:
      * Returns a string value representing the players chosen house color
      * @return
      */
-    const string &getMyHouseColor() const;
+    const std::string &getMyHouseColor() const;
 
     /**
      * Getter method returns the player name
      * @return
      */
-    const string &getPlayerName() const;
+    const std::string &getPlayerName() const;
 
     /**
      * Getter method returns the players money
@@ -205,7 +219,7 @@ public:
      * Returnsa list of powerplants that the player owns
      * @return list of powerplants
      */
-    const vector<Powerplant> &getMyPowerPlant() const;
+    const std::vector<Powerplant> &getMyPowerPlant() const;
 
     /**
      * Returns a poweprlant owned by the player based on index
@@ -230,7 +244,7 @@ public:
      * @param stream cout for displau
      * @return cout for display
      */
-    ostream &displayPowerplants(ostream &stream);
+    std::ostream &displayPowerplants(std::ostream &stream);
 
     /**
      * Adds houses to the player class
@@ -249,7 +263,7 @@ public:
      * @param stream display to cout
      * @return display to cout
      */
-    ostream &displayHouses(ostream &stream);
+    std::ostream &displayHouses(std::ostream &stream);
 
     /**
      * Uses display houses,and display powerplants and displays all
@@ -258,7 +272,7 @@ public:
      * @param Object player class
      * @return cout
      */
-    friend ostream &operator<<(ostream &stream, Player &Object);
+    friend std::ostream &operator<<(std::ostream &stream, Player &Object);
 
     /*
      * operator overload for '<' comparison between players
@@ -312,16 +326,15 @@ public:
     void declarePoweredCities(int resourceSpent);
 
     //Building cities
-	void buyCities(Map *map, int gamePhaseNumber);
+    void buyCities(Map *map, int gamePhaseNumber);
     void buyResources(ResourceMarket *resourceMarket);
     int getOilCap();
     int getCoalCap();
     int getUraniumCap();
     int getGarbageCap();
-    int getResource(string resourceVal);
-    int* getResourceRef(string resourceVal);
+    int getResource(std::string resourceVal);
+    int* getResourceRef(std::string resourceVal);
     bool canUsePowerplant(const Powerplant& p1);
-
 };
-//close player class.h
+
 #endif //POWERPLANT_PLAYER_H

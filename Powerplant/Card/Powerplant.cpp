@@ -16,6 +16,12 @@ Powerplant::Powerplant(int priceCost, int energyCost,int productionValue, std::s
     this->productionValue = productionValue;
     this->resourceType= resourceType;
     bidValue = priceCost;
+    if(energyCost != 0) {
+        this->priority = productionValue / energyCost;
+    }
+    else {
+        this->priority = 0;
+    }
 }
 Powerplant::Powerplant() {}
 
@@ -27,6 +33,7 @@ Powerplant::Powerplant(const Powerplant &p2) {
     productionValue = p2.productionValue;
     resourceType = p2.resourceType;
     bidValue = p2.priceCost;
+    priority = p2.priority;
 }
 
 Powerplant& Powerplant::operator=(const Powerplant& p1) {
@@ -37,9 +44,13 @@ Powerplant& Powerplant::operator=(const Powerplant& p1) {
     productionValue = p1.productionValue;
     resourceType= p1.resourceType;
     bidValue = p1.bidValue;
+    priority = p1.priority;
     return *this;
 }
 
+int Powerplant::getPriority() {
+    return priority;
+}
 
 int Powerplant::getEnergyCost() const {
     return this->energyCost;

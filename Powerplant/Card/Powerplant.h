@@ -14,7 +14,7 @@
  */
 class Powerplant : public Card {
 private:
-    int priceCost, energyCost, productionValue, powerPlantNumber, bidValue;
+    int priceCost, energyCost, productionValue, powerPlantNumber, bidValue, priority;
     std::string resourceType;
     static int number;
 public:
@@ -44,6 +44,8 @@ public:
      * Default destructor for the object
      */
     ~Powerplant();
+
+    int getPriority();
 
     /**
      * Get the name of the resource used for the powerplant
