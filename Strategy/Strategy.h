@@ -18,6 +18,7 @@ public:
     virtual void executeAuction(Game* g, Player* p) = 0;
     virtual bool executeBid(Game* g) = 0;
     virtual int Bid(Game* g, Player* p, int currentRoundBidderIndex, int auctionRoundPlayersRemaining, int oneRemainingPlayer) = 0;
+    virtual void buyCities(Map* map, Player* p, int gamePhaseNumber) = 0;
 };
 
 

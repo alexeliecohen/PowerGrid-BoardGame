@@ -8,12 +8,13 @@
 #include "../../Strategy/Normal.h"
 #include "../../Strategy/Environmentalist.h"
 #include "../../Strategy/Aggressive.h"
+#include "../../Strategy/Moderate.h"
 
 Game::Game() {
     Player *p2 = new Player("Mike", new Normal());
-    Player *p3 = new Player("Hubert", new Normal());
-    Player *p4 = new Player("Marc", new Normal());
-    Player *p1 = new Player("Alex", new Aggressive());
+    Player *p3 = new Player("Hubert", new Environmentalist());
+    Player *p4 = new Player("Marc", new Aggressive());
+    Player *p1 = new Player("Alex", new Moderate());
     playerList.push_back(p1);
     playerList.push_back(p2);
     playerList.push_back(p3);
@@ -313,7 +314,7 @@ void Game::Phase3() {
 
     //gamePhase: 1
     for (auto & i : playerList)
-        i->buyCities( mapPhase3, 1 );
+        i->buyCities( mapPhase3, i, 1 );
 
     /*
      *  END OF PART 3 ASSIGNMENT 2

@@ -19,9 +19,9 @@ int main() {
     //Phase 1
 //    g.Phase1();
     //Phase 2
-    g.Phase2();
+//    g.Phase2();
     //Phase 3
-//    g.Phase3();
+    g.Phase3();
     //Phase 4
 //    g.Phase4();
     return 0;

@@ -70,6 +70,18 @@ public:
 
     int Bid(Game* g, Player* p, int a, int b, int c);
 
+    void buyCities(Map* map, Player* p, int gamePhaseNumber);
+
+    bool getStartedNetwork();
+
+    void setStartedNetwork(bool b);
+
+    std::vector<std::string> getMyHouses();
+
+    void addHouse(const std::string& s);
+
+    void setElektros(int n);
+
     /**
      * Static method Gets the total number of players playing the game
      * @return Number of players

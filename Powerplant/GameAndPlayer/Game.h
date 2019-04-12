@@ -17,7 +17,7 @@ static int const GAMEEND[] = {21, 17, 17, 15, 14};//number of cities to trigger 
 static int const PAYMENT[] = {10, 22, 33, 44, 54, 64, 73, 82, 90, 98, 105, 112, 118, 124, 129, 134, 138, 142, 145, 148,
                               150};
 //payment in electros based on cities supplied with electricity
-static int const DEFAULTELECTRO = 50;//default electro for each player at the start of the game
+static int const DEFAULTELECTRO = 200;//default electro for each player at the start of the game
 static int const DEFAULTRESOURCE = 0;//default resource at the beginning of the game
 static int const DEFAULTHOME = 0;//default number of homes for each player at the beginning of the game
 static int const MAXNUMBERPLAYERS = 6; //max number of players in the game
