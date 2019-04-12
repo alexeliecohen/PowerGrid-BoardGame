@@ -15,8 +15,12 @@ void Subject::Detach(Observer* o){
     playerList->erase(std::remove(playerList->begin(),playerList->end(), o), playerList->end());
 };
 void Subject::Notify(){
-    for (std::vector<Observer *>::iterator i = playerList->begin(); i != playerList->end(); ++i)
-        (*i)->Update();
+     int j =0;
+    for (std::vector<Observer*>::iterator i = playerList->begin(); i != playerList->end(); ++i) {
+        (*i)->Update(j);
+        j++;
+    }
+    display();
 };
 
 #include "Subject.h"

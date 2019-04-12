@@ -57,6 +57,8 @@ public:
     void setFutureMarket(const vector<Powerplant> &futureMarket);
     int getFutureMarketConsumption() const;
 
+    bool canAffordAny(Player* p);
+
 
 private:
     /**

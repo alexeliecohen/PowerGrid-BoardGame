@@ -280,10 +280,24 @@ CMakeFiles/COMP345Team21.dir/Powerplant/Market/ResourceMarket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP345Team21.dir/Powerplant/Market/ResourceMarket.cpp.s"
 	C:\Qt\Tools\mingw730_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\alext\Desktop\MyFiles\Concordia\Winter 2019\COMP 345\COMP345Team21\Powerplant\Market\ResourceMarket.cpp" -o CMakeFiles\COMP345Team21.dir\Powerplant\Market\ResourceMarket.cpp.s
 
+CMakeFiles/COMP345Team21.dir/mainwindow.cpp.obj: CMakeFiles/COMP345Team21.dir/flags.make
+CMakeFiles/COMP345Team21.dir/mainwindow.cpp.obj: CMakeFiles/COMP345Team21.dir/includes_CXX.rsp
+CMakeFiles/COMP345Team21.dir/mainwindow.cpp.obj: ../mainwindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\alext\Desktop\MyFiles\Concordia\Winter 2019\COMP 345\COMP345Team21\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/COMP345Team21.dir/mainwindow.cpp.obj"
+	C:\Qt\Tools\mingw730_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP345Team21.dir\mainwindow.cpp.obj -c "C:\Users\alext\Desktop\MyFiles\Concordia\Winter 2019\COMP 345\COMP345Team21\mainwindow.cpp"
+
+CMakeFiles/COMP345Team21.dir/mainwindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP345Team21.dir/mainwindow.cpp.i"
+	C:\Qt\Tools\mingw730_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\alext\Desktop\MyFiles\Concordia\Winter 2019\COMP 345\COMP345Team21\mainwindow.cpp" > CMakeFiles\COMP345Team21.dir\mainwindow.cpp.i
+
+CMakeFiles/COMP345Team21.dir/mainwindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP345Team21.dir/mainwindow.cpp.s"
+	C:\Qt\Tools\mingw730_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\alext\Desktop\MyFiles\Concordia\Winter 2019\COMP 345\COMP345Team21\mainwindow.cpp" -o CMakeFiles\COMP345Team21.dir\mainwindow.cpp.s
+
 CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.obj: CMakeFiles/COMP345Team21.dir/flags.make
 CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.obj: CMakeFiles/COMP345Team21.dir/includes_CXX.rsp
 CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.obj: ../Main_PowerGrid_Driver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\alext\Desktop\MyFiles\Concordia\Winter 2019\COMP 345\COMP345Team21\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\alext\Desktop\MyFiles\Concordia\Winter 2019\COMP 345\COMP345Team21\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.obj"
 	C:\Qt\Tools\mingw730_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP345Team21.dir\Main_PowerGrid_Driver.cpp.obj -c "C:\Users\alext\Desktop\MyFiles\Concordia\Winter 2019\COMP 345\COMP345Team21\Main_PowerGrid_Driver.cpp"
 
 CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.i: cmake_force
@@ -293,6 +307,20 @@ CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.i: cmake_force
 CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.s"
 	C:\Qt\Tools\mingw730_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\alext\Desktop\MyFiles\Concordia\Winter 2019\COMP 345\COMP345Team21\Main_PowerGrid_Driver.cpp" -o CMakeFiles\COMP345Team21.dir\Main_PowerGrid_Driver.cpp.s
+
+CMakeFiles/COMP345Team21.dir/COMP345Team21_autogen/mocs_compilation.cpp.obj: CMakeFiles/COMP345Team21.dir/flags.make
+CMakeFiles/COMP345Team21.dir/COMP345Team21_autogen/mocs_compilation.cpp.obj: CMakeFiles/COMP345Team21.dir/includes_CXX.rsp
+CMakeFiles/COMP345Team21.dir/COMP345Team21_autogen/mocs_compilation.cpp.obj: COMP345Team21_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\alext\Desktop\MyFiles\Concordia\Winter 2019\COMP 345\COMP345Team21\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/COMP345Team21.dir/COMP345Team21_autogen/mocs_compilation.cpp.obj"
+	C:\Qt\Tools\mingw730_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\COMP345Team21.dir\COMP345Team21_autogen\mocs_compilation.cpp.obj -c "C:\Users\alext\Desktop\MyFiles\Concordia\Winter 2019\COMP 345\COMP345Team21\cmake-build-debug\COMP345Team21_autogen\mocs_compilation.cpp"
+
+CMakeFiles/COMP345Team21.dir/COMP345Team21_autogen/mocs_compilation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COMP345Team21.dir/COMP345Team21_autogen/mocs_compilation.cpp.i"
+	C:\Qt\Tools\mingw730_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\alext\Desktop\MyFiles\Concordia\Winter 2019\COMP 345\COMP345Team21\cmake-build-debug\COMP345Team21_autogen\mocs_compilation.cpp" > CMakeFiles\COMP345Team21.dir\COMP345Team21_autogen\mocs_compilation.cpp.i
+
+CMakeFiles/COMP345Team21.dir/COMP345Team21_autogen/mocs_compilation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COMP345Team21.dir/COMP345Team21_autogen/mocs_compilation.cpp.s"
+	C:\Qt\Tools\mingw730_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\alext\Desktop\MyFiles\Concordia\Winter 2019\COMP 345\COMP345Team21\cmake-build-debug\COMP345Team21_autogen\mocs_compilation.cpp" -o CMakeFiles\COMP345Team21.dir\COMP345Team21_autogen\mocs_compilation.cpp.s
 
 # Object files for target COMP345Team21
 COMP345Team21_OBJECTS = \
@@ -312,7 +340,9 @@ COMP345Team21_OBJECTS = \
 "CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Player.cpp.obj" \
 "CMakeFiles/COMP345Team21.dir/Powerplant/Market/PowerplantMarket.cpp.obj" \
 "CMakeFiles/COMP345Team21.dir/Powerplant/Market/ResourceMarket.cpp.obj" \
-"CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.obj"
+"CMakeFiles/COMP345Team21.dir/mainwindow.cpp.obj" \
+"CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.obj" \
+"CMakeFiles/COMP345Team21.dir/COMP345Team21_autogen/mocs_compilation.cpp.obj"
 
 # External object files for target COMP345Team21
 COMP345Team21_EXTERNAL_OBJECTS =
@@ -333,12 +363,19 @@ COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Observe
 COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Player.cpp.obj
 COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/Powerplant/Market/PowerplantMarket.cpp.obj
 COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/Powerplant/Market/ResourceMarket.cpp.obj
+COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/mainwindow.cpp.obj
 COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.obj
+COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/COMP345Team21_autogen/mocs_compilation.cpp.obj
 COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/build.make
+COMP345Team21.exe: C:/Qt/5.12.2/mingw73_64/lib/libQt5Chartsd.a
+COMP345Team21.exe: C:/Qt/5.12.2/mingw73_64/lib/libQt5Widgetsd.a
+COMP345Team21.exe: C:/Qt/5.12.2/mingw73_64/lib/libQt5Guid.a
+COMP345Team21.exe: C:/Qt/5.12.2/mingw73_64/lib/libQt5Cored.a
+COMP345Team21.exe: C:/Qt/5.12.2/mingw73_64/lib/libqtmaind.a
 COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/linklibs.rsp
 COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/objects1.rsp
 COMP345Team21.exe: CMakeFiles/COMP345Team21.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\alext\Desktop\MyFiles\Concordia\Winter 2019\COMP 345\COMP345Team21\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable COMP345Team21.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\alext\Desktop\MyFiles\Concordia\Winter 2019\COMP 345\COMP345Team21\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable COMP345Team21.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\COMP345Team21.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

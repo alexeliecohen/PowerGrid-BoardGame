@@ -4,7 +4,7 @@
 # compile CXX with C:/Qt/Tools/mingw730_64/bin/g++.exe
 CXX_FLAGS = -g   -std=gnu++1z
 
-CXX_DEFINES = 
+CXX_DEFINES = -DQT_CHARTS_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
 
 CXX_INCLUDES = @CMakeFiles/COMP345Team21.dir/includes_CXX.rsp
 

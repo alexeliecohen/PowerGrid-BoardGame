@@ -96,7 +96,7 @@ Player::Player(std::string nameIn) {
 }
 
 Player::Player(std::string name, Game *g) {
-    subject=g;
+    subject = g;
     subject->Attach(this);
 //if they try to add more players than the max
     if (numOfPlayers == MAXNUMBERPLAYERS) {
@@ -105,7 +105,8 @@ Player::Player(std::string name, Game *g) {
     }
     playerName = name;
     this->myHouseColor = myHouseColor;
-    elektros = DEFAULTELECTRO;
+//    elektros = DEFAULTELECTRO;
+    elektros = rand()%50;
     oil = DEFAULTRESOURCE;
     coal = DEFAULTRESOURCE;
     uranium = DEFAULTRESOURCE;
@@ -321,11 +322,11 @@ bool Player::operator<(Player &p1) {
     return true;
 }
 
-//
-//bool Player::operator==(Player &p1) {
-//    //if the other player has more conencted cities
-//    return this->playerName==p1.getPlayerName();
-//
+
+bool Player::operator==(Player &p1) {
+    //if the other player has more conencted cities
+    return this->playerName == p1.getPlayerName();
+}
 ////
 ////    if (this->numOfCities > p1.numOfCities) {
 ////        return false;
@@ -849,8 +850,14 @@ void Player::setNumOfCities(int numOfCities) {
     Player::numOfCities = numOfCities;
 }
 
-void Player::Update() {
+void Player::Update(int i ) {
+//    subject->add(this);
+    subject->Update(this,i);
+//    subject->display(this);
+    cout << "==============================Player " << i << " Info==============================" << endl;
     cout << *this << endl;
+    cout << "===================================================================================" << endl;
+
 }
 
 

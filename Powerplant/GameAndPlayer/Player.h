@@ -21,6 +21,7 @@
 #include "../../Map/Map.h"
 #include "../Market/ResourceMarket.h"
 #include "Observer.h"
+//#include "../../Display.h"
 
 class Game;
 
@@ -39,7 +40,7 @@ static int MAXURANIUM;
 using namespace std;
 class Player: public Observer {
 private:
-    static int numOfPlayers; //keeps a a tabk
+    static int numOfPlayers; //keeps a tab of numb of players
     static vector<string> houseColor;  //Keeps a tab of the available house colors to choose from
     string myHouseColor; //specific house color for the player class
     std::string playerName; //player name
@@ -55,7 +56,7 @@ private:
     std::vector<string> myHouses;
     Game* subject;
 public:
-    void Update();
+    void Update(int i);
 
     /**
      * Parametized Constructore for taking in the game class for observer pattern
@@ -264,6 +265,7 @@ public:
      */
     bool operator<(Player &p1);
 
+    bool operator==(Player &p1);
     /**
      * getter to check if the player is ready for auction
      * @return boolean value true if the player is ready false if not

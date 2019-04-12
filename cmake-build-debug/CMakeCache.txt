@@ -244,6 +244,18 @@ COMP345Team21_BINARY_DIR:STATIC=C:/Users/alext/Desktop/MyFiles/Concordia/Winter 
 //Value Computed by CMake
 COMP345Team21_SOURCE_DIR:STATIC=C:/Users/alext/Desktop/MyFiles/Concordia/Winter 2019/COMP 345/COMP345Team21
 
+//The directory containing a CMake configuration file for Qt5Charts.
+Qt5Charts_DIR:PATH=C:/Qt/5.12.2/mingw73_64/lib/cmake/Qt5Charts
+
+//The directory containing a CMake configuration file for Qt5Core.
+Qt5Core_DIR:PATH=C:/Qt/5.12.2/mingw73_64/lib/cmake/Qt5Core
+
+//The directory containing a CMake configuration file for Qt5Gui.
+Qt5Gui_DIR:PATH=C:/Qt/5.12.2/mingw73_64/lib/cmake/Qt5Gui
+
+//The directory containing a CMake configuration file for Qt5Widgets.
+Qt5Widgets_DIR:PATH=C:/Qt/5.12.2/mingw73_64/lib/cmake/Qt5Widgets
+
 
 ########################
 # INTERNAL cache entries

@@ -122,6 +122,46 @@ COMP345Team21/fast:
 	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make CMakeFiles/COMP345Team21.dir/build
 .PHONY : COMP345Team21/fast
 
+#=============================================================================
+# Target rules for targets named COMP345Team21_autogen
+
+# Build rule for target.
+COMP345Team21_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 COMP345Team21_autogen
+.PHONY : COMP345Team21_autogen
+
+# fast build rule for target.
+COMP345Team21_autogen/fast:
+	$(MAKE) -f CMakeFiles\COMP345Team21_autogen.dir\build.make CMakeFiles/COMP345Team21_autogen.dir/build
+.PHONY : COMP345Team21_autogen/fast
+
+COMP345Team21_autogen/mocs_compilation.obj: COMP345Team21_autogen/mocs_compilation.cpp.obj
+
+.PHONY : COMP345Team21_autogen/mocs_compilation.obj
+
+# target to build an object file
+COMP345Team21_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make CMakeFiles/COMP345Team21.dir/COMP345Team21_autogen/mocs_compilation.cpp.obj
+.PHONY : COMP345Team21_autogen/mocs_compilation.cpp.obj
+
+COMP345Team21_autogen/mocs_compilation.i: COMP345Team21_autogen/mocs_compilation.cpp.i
+
+.PHONY : COMP345Team21_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+COMP345Team21_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make CMakeFiles/COMP345Team21.dir/COMP345Team21_autogen/mocs_compilation.cpp.i
+.PHONY : COMP345Team21_autogen/mocs_compilation.cpp.i
+
+COMP345Team21_autogen/mocs_compilation.s: COMP345Team21_autogen/mocs_compilation.cpp.s
+
+.PHONY : COMP345Team21_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+COMP345Team21_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make CMakeFiles/COMP345Team21.dir/COMP345Team21_autogen/mocs_compilation.cpp.s
+.PHONY : COMP345Team21_autogen/mocs_compilation.cpp.s
+
 FileReader/FileReader.obj: FileReader/FileReader.cpp.obj
 
 .PHONY : FileReader/FileReader.obj
@@ -581,6 +621,33 @@ Powerplant/Market/ResourceMarket.cpp.s:
 	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make CMakeFiles/COMP345Team21.dir/Powerplant/Market/ResourceMarket.cpp.s
 .PHONY : Powerplant/Market/ResourceMarket.cpp.s
 
+mainwindow.obj: mainwindow.cpp.obj
+
+.PHONY : mainwindow.obj
+
+# target to build an object file
+mainwindow.cpp.obj:
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make CMakeFiles/COMP345Team21.dir/mainwindow.cpp.obj
+.PHONY : mainwindow.cpp.obj
+
+mainwindow.i: mainwindow.cpp.i
+
+.PHONY : mainwindow.i
+
+# target to preprocess a source file
+mainwindow.cpp.i:
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make CMakeFiles/COMP345Team21.dir/mainwindow.cpp.i
+.PHONY : mainwindow.cpp.i
+
+mainwindow.s: mainwindow.cpp.s
+
+.PHONY : mainwindow.s
+
+# target to generate assembly for a file
+mainwindow.cpp.s:
+	$(MAKE) -f CMakeFiles\COMP345Team21.dir\build.make CMakeFiles/COMP345Team21.dir/mainwindow.cpp.s
+.PHONY : mainwindow.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -590,6 +657,10 @@ help:
 	@echo ... edit_cache
 	@echo ... COMP345Team21
 	@echo ... rebuild_cache
+	@echo ... COMP345Team21_autogen
+	@echo ... COMP345Team21_autogen/mocs_compilation.obj
+	@echo ... COMP345Team21_autogen/mocs_compilation.i
+	@echo ... COMP345Team21_autogen/mocs_compilation.s
 	@echo ... FileReader/FileReader.obj
 	@echo ... FileReader/FileReader.i
 	@echo ... FileReader/FileReader.s
@@ -641,6 +712,9 @@ help:
 	@echo ... Powerplant/Market/ResourceMarket.obj
 	@echo ... Powerplant/Market/ResourceMarket.i
 	@echo ... Powerplant/Market/ResourceMarket.s
+	@echo ... mainwindow.obj
+	@echo ... mainwindow.i
+	@echo ... mainwindow.s
 .PHONY : help
 
 

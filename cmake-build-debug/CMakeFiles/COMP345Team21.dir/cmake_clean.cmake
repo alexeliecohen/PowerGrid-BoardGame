@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "COMP345Team21_autogen"
+  "CMakeFiles/COMP345Team21_autogen.dir/AutogenOldSettings.txt"
   "CMakeFiles/COMP345Team21.dir/FileReader/FileReader.cpp.obj"
   "CMakeFiles/COMP345Team21.dir/FileReader/MapLoader.cpp.obj"
   "CMakeFiles/COMP345Team21.dir/Map/Edge.cpp.obj"
@@ -15,7 +17,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/COMP345Team21.dir/Powerplant/GameAndPlayer/Player.cpp.obj"
   "CMakeFiles/COMP345Team21.dir/Powerplant/Market/PowerplantMarket.cpp.obj"
   "CMakeFiles/COMP345Team21.dir/Powerplant/Market/ResourceMarket.cpp.obj"
+  "CMakeFiles/COMP345Team21.dir/mainwindow.cpp.obj"
   "CMakeFiles/COMP345Team21.dir/Main_PowerGrid_Driver.cpp.obj"
+  "CMakeFiles/COMP345Team21.dir/COMP345Team21_autogen/mocs_compilation.cpp.obj"
   "COMP345Team21.pdb"
   "COMP345Team21.exe"
   "COMP345Team21.exe.manifest"
