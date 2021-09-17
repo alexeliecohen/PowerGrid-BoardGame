@@ -1,4 +1,3 @@
-# COMP345Team21
 
 Welcome to the Powergrid board game! 
 This game involves using a Game Board space for which players are assigned to specific regions of the board for which the player can 
